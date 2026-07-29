@@ -455,11 +455,8 @@ Example structure:
 ```markdown
 ## TS-AUTH-001: Authenticate with valid credentials
 
-**Requirements:** REQ-AUTH-001
-**Priority:** Critical
-**Type:** Functional, positive
-**Automation:** Candidate
-**Actor:** Registered user
+**Requirements:** REQ-AUTH-001 **Priority:** Critical **Type:** Functional,
+positive **Automation:** Candidate **Actor:** Registered user
 
 ### Objective
 
