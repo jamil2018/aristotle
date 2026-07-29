@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+blob-report/
+artifacts/**
+!artifacts/.gitkeep
+playwright/.auth/
+*.pem
+*.key
+.DS_Store
+*.log
