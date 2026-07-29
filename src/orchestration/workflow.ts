@@ -32,11 +32,7 @@ const legalTransitions: Readonly<
     "cancelled",
   ],
   "playwright-implementation": ["test-execution", "cancelled"],
-  "test-execution": [
-    "failure-triage",
-    "final-quality-assessment",
-    "cancelled",
-  ],
+  "test-execution": ["failure-triage", "final-quality-assessment", "cancelled"],
   "failure-triage": [
     "test-repair",
     "final-quality-assessment",
@@ -84,9 +80,7 @@ export type TransitionGate =
   | {
       readonly kind: "FINAL_ASSESSMENT";
       readonly decision:
-        | "READY_FOR_HUMAN_REVIEW"
-        | "REVISION_REQUIRED"
-        | "BLOCKED";
+        "READY_FOR_HUMAN_REVIEW" | "REVISION_REQUIRED" | "BLOCKED";
     }
   | { readonly kind: "FINAL_HUMAN_DECISION" }
   | { readonly kind: "CANCELLATION" };
@@ -155,10 +149,7 @@ export function transitionWorkflow(
     input.gate?.kind === "HUMAN_SCENARIO_APPROVAL"
       ? [input.gate.subject]
       : [];
-  const inputReferences = [
-    ...(input.inputReferences ?? []),
-    ...gateSubject,
-  ];
+  const inputReferences = [...(input.inputReferences ?? []), ...gateSubject];
 
   return workflowManifestSchema.parse({
     ...workflow,
@@ -287,7 +278,9 @@ function incrementRetry(
 ): void {
   const next = (retries[retryType] ?? 0) + 1;
   if (next > MAX_RETRIES) {
-    throw new Error(`${retryType} retry limit of ${String(MAX_RETRIES)} exceeded`);
+    throw new Error(
+      `${retryType} retry limit of ${String(MAX_RETRIES)} exceeded`,
+    );
   }
   retries[retryType] = next;
 }

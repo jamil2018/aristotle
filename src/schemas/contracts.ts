@@ -116,7 +116,13 @@ export const taskManifestSchema = z.object({
   runId: identifierSchema,
   feature: identifierSchema,
   subfeature: identifierSchema,
-  status: z.enum(["ACTIVE", "AWAITING_HUMAN", "BLOCKED", "COMPLETED", "CANCELLED"]),
+  status: z.enum([
+    "ACTIVE",
+    "AWAITING_HUMAN",
+    "BLOCKED",
+    "COMPLETED",
+    "CANCELLED",
+  ]),
 });
 
 export const exactSubjectSchema = z.object({
@@ -159,7 +165,13 @@ export const workflowManifestSchema = z.object({
   workflowId: identifierSchema,
   taskId: identifierSchema,
   currentStage: workflowStageSchema,
-  status: z.enum(["ACTIVE", "AWAITING_HUMAN", "BLOCKED", "COMPLETED", "CANCELLED"]),
+  status: z.enum([
+    "ACTIVE",
+    "AWAITING_HUMAN",
+    "BLOCKED",
+    "COMPLETED",
+    "CANCELLED",
+  ]),
   retries: z.record(z.string(), z.number().int().nonnegative()),
   transitionHistory: z.array(
     z.object({
