@@ -46,7 +46,7 @@ environment before running browser tests.
 | `npm run test:unit`        | Run unit tests                   |
 | `npm run test:integration` | Run integration tests            |
 | `npm run test:e2e`         | Run Playwright browser tests     |
-| `npm run static:analysis`  | Audit changed code with Fallow   |
+| `npm run static:analysis`  | Audit the codebase with Fallow   |
 | `npm run build`            | Compile runtime TypeScript       |
 | `npm run check`            | Run all required quality gates   |
 

@@ -7,7 +7,7 @@
 3. Select one unchecked task whose dependencies are complete.
 4. Write or update tests before behavior.
 5. Keep the change scoped and update the tracker with evidence.
-6. Run `npm run check`, including the changed-code Fallow static analysis gate.
+6. Run `npm run check`, including the full-codebase Fallow static analysis gate.
 7. Commit atomically using Conventional Commit style.
 
 Do not combine workflow-policy changes with feature implementation. Policy,

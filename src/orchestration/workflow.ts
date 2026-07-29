@@ -5,6 +5,7 @@ import {
   type WorkflowManifest,
   type WorkflowStage,
 } from "../schemas/contracts.js";
+import { sameArtifactReference } from "./artifact-reference.js";
 
 const MAX_RETRIES = 3;
 
@@ -182,6 +183,16 @@ function validateGate(
     requireGate(input, "CANCELLATION");
     return;
   }
+  validateRequirementGate(workflow, input);
+  validateScenarioGate(workflow, input);
+  validateRepairGate(input);
+  validateFinalReviewGate(input);
+}
+
+function validateRequirementGate(
+  workflow: WorkflowManifest,
+  input: TransitionInput,
+): void {
   if (
     workflow.currentStage === "requirement-analysis" &&
     input.to === "scenario-generation"
@@ -198,6 +209,12 @@ function validateGate(
     requireHuman(input.actor);
     requireGate(input, "CLARIFICATION_ANSWERED");
   }
+}
+
+function validateScenarioGate(
+  workflow: WorkflowManifest,
+  input: TransitionInput,
+): void {
   if (
     workflow.currentStage === "scenario-evaluation" &&
     input.to === "human-scenario-review"
@@ -222,17 +239,27 @@ function validateGate(
   if (input.to === "playwright-implementation") {
     requireHuman(input.actor);
     requireGate(input, "HUMAN_SCENARIO_APPROVAL");
-    const evaluated = workflow.transitionHistory.at(-1)?.inputReferences[0];
-    if (
-      evaluated === undefined ||
-      input.gate?.kind !== "HUMAN_SCENARIO_APPROVAL" ||
-      !sameReference(evaluated, input.gate.subject)
-    ) {
-      throw new Error(
-        "Human approval must reference the exact evaluated scenario revision and checksum",
-      );
-    }
+    validateExactScenarioApproval(workflow, input);
   }
+}
+
+function validateExactScenarioApproval(
+  workflow: WorkflowManifest,
+  input: TransitionInput,
+): void {
+  const evaluated = workflow.transitionHistory.at(-1)?.inputReferences[0];
+  if (
+    evaluated === undefined ||
+    input.gate?.kind !== "HUMAN_SCENARIO_APPROVAL" ||
+    !sameArtifactReference(evaluated, input.gate.subject)
+  ) {
+    throw new Error(
+      "Human approval must reference the exact evaluated scenario revision and checksum",
+    );
+  }
+}
+
+function validateRepairGate(input: TransitionInput): void {
   if (input.to === "test-repair") {
     requireGate(input, "TRIAGE");
     if (
@@ -242,6 +269,9 @@ function validateGate(
       throw new Error("Only SCRIPT_ERROR authorizes automatic test repair");
     }
   }
+}
+
+function validateFinalReviewGate(input: TransitionInput): void {
   if (input.to === "final-human-review") {
     requireRole(input.actor, "final-quality-assessor");
     requireGate(input, "FINAL_ASSESSMENT");
@@ -305,18 +335,6 @@ function statusFor(stage: WorkflowStage): WorkflowManifest["status"] {
   if (stage === "completed") return "COMPLETED";
   if (stage === "cancelled") return "CANCELLED";
   return "ACTIVE";
-}
-
-function sameReference(
-  left: ArtifactReference,
-  right: ArtifactReference,
-): boolean {
-  return (
-    left.artifactId === right.artifactId &&
-    left.artifactType === right.artifactType &&
-    left.revision === right.revision &&
-    left.semanticChecksum === right.semanticChecksum
-  );
 }
 
 function uniqueReferences(

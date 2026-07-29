@@ -6,7 +6,7 @@ import type {
   WorkflowStage,
 } from "../schemas/contracts.js";
 
-export interface ArtifactDefinition {
+interface ArtifactDefinition {
   readonly producingRole: ProducingRole;
   readonly workflowStage: WorkflowStage;
   readonly schemaVersion: 1;

@@ -14,7 +14,7 @@
     "format:check": "prettier --check .",
     "health": "node --import tsx src/validation/repository-health.cli.ts",
     "lint": "eslint .",
-    "static:analysis": "fallow audit --base main",
+    "static:analysis": "fallow --summary --fail-on-issues",
     "test": "vitest run",
     "test:unit": "vitest run tests/unit",
     "test:integration": "vitest run tests/integration --passWithNoTests",

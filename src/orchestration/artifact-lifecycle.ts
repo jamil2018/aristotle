@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 
+import { sameArtifactReference } from "./artifact-reference.js";
 import { artifactRegistry } from "./artifact-registry.js";
 import {
   artifactManifestSchema,
@@ -63,7 +64,7 @@ export function acceptArtifact(
   });
 }
 
-export function validateArtifactReferences(
+function validateArtifactReferences(
   manifest: ArtifactManifest,
   availableArtifacts: readonly ArtifactManifest[],
   requiredTypes: readonly ArtifactManifest["artifactType"][] = [],
@@ -146,39 +147,26 @@ export function invalidateDownstreamArtifacts(
   return artifacts.map((artifactInput) => {
     const artifact = artifactManifestSchema.parse(artifactInput);
     const dependsOnChangedRevision = artifact.references.some((reference) =>
-      sameReference(reference, changed),
+      sameArtifactReference(reference, changed),
     );
     if (!dependsOnChangedRevision) return artifact;
     return artifactManifestSchema.parse({ ...artifact, status: "STALE" });
   });
 }
 
-function sameReference(
-  left: ArtifactReference,
-  right: ArtifactReference,
-): boolean {
-  return (
-    left.artifactId === right.artifactId &&
-    left.artifactType === right.artifactType &&
-    left.revision === right.revision &&
-    left.semanticChecksum === right.semanticChecksum
-  );
-}
-
 function canonicalJson(value: unknown): string {
   return JSON.stringify(normalizeJson(value, new WeakSet()));
 }
 
-function normalizeJson(
-  value: unknown,
-  ancestors: WeakSet<object>,
-):
+type JsonValue =
   | null
   | boolean
   | number
   | string
-  | readonly unknown[]
-  | Record<string, unknown> {
+  | readonly JsonValue[]
+  | { readonly [key: string]: JsonValue };
+
+function normalizeJson(value: unknown, ancestors: WeakSet<object>): JsonValue {
   if (
     value === null ||
     typeof value === "boolean" ||
@@ -190,26 +178,39 @@ function normalizeJson(
     if (!Number.isFinite(value)) throw new Error("Content must be valid JSON");
     return value;
   }
-  if (Array.isArray(value)) {
-    if (ancestors.has(value)) throw new Error("Content must not be cyclic");
-    ancestors.add(value);
-    const normalized = value.map((item) => normalizeJson(item, ancestors));
-    ancestors.delete(value);
-    return normalized;
-  }
-  if (typeof value === "object") {
-    if (ancestors.has(value)) throw new Error("Content must not be cyclic");
-    ancestors.add(value);
-    const normalized: Record<string, unknown> = {};
-    for (const key of Object.keys(value).sort()) {
-      const item = (value as Record<string, unknown>)[key];
-      if (item === undefined) {
-        throw new Error("Content must not contain undefined values");
-      }
-      normalized[key] = normalizeJson(item, ancestors);
-    }
-    ancestors.delete(value);
-    return normalized;
-  }
+  if (Array.isArray(value)) return normalizeArray(value, ancestors);
+  if (typeof value === "object") return normalizeObject(value, ancestors);
   throw new Error("Content must be valid JSON");
+}
+
+function normalizeArray(
+  value: readonly unknown[],
+  ancestors: WeakSet<object>,
+): readonly JsonValue[] {
+  assertNotCyclic(value, ancestors);
+  const normalized = value.map((item) => normalizeJson(item, ancestors));
+  ancestors.delete(value);
+  return normalized;
+}
+
+function normalizeObject(
+  value: object,
+  ancestors: WeakSet<object>,
+): Readonly<Record<string, JsonValue>> {
+  assertNotCyclic(value, ancestors);
+  const normalized: Record<string, JsonValue> = {};
+  for (const key of Object.keys(value).sort()) {
+    const item = (value as Record<string, unknown>)[key];
+    if (item === undefined) {
+      throw new Error("Content must not contain undefined values");
+    }
+    normalized[key] = normalizeJson(item, ancestors);
+  }
+  ancestors.delete(value);
+  return normalized;
+}
+
+function assertNotCyclic(value: object, ancestors: WeakSet<object>): void {
+  if (ancestors.has(value)) throw new Error("Content must not be cyclic");
+  ancestors.add(value);
 }
