@@ -21,7 +21,7 @@ export const ingestedRequirementSourceSchema = z.object({
   ),
 });
 
-export const atomicRequirementSchema = z.object({
+const atomicRequirementSchema = z.object({
   requirementId: identifierSchema,
   text: z.string().min(1),
   classification: z.enum(["STATED_REQUIREMENT", "ASSUMPTION", "OBSERVATION"]),
@@ -53,10 +53,3 @@ export const requirementAnalysisSchema = z.object({
   clarificationQuestions: z.array(z.string().min(1)),
   hasBlockingAmbiguity: z.boolean(),
 });
-
-export type ValidatedRequirementSource = z.infer<
-  typeof ingestedRequirementSourceSchema
->;
-export type ValidatedNormalizedRequirements = z.infer<
-  typeof normalizedRequirementsSchema
->;
