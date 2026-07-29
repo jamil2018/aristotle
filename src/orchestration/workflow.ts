@@ -56,6 +56,7 @@ const legalTransitions: Readonly<
 export type TransitionGate =
   | { readonly kind: "NO_BLOCKING_AMBIGUITY" }
   | { readonly kind: "CLARIFICATION_REQUIRED" }
+  | { readonly kind: "CLARIFICATION_ANSWERED" }
   | {
       readonly kind: "EVALUATOR_PASS";
       readonly subject: ArtifactReference;
@@ -191,6 +192,13 @@ function validateGate(
     requireGate(input, "CLARIFICATION_REQUIRED");
   }
   if (
+    workflow.currentStage === "requirement-clarification" &&
+    input.to === "requirement-analysis"
+  ) {
+    requireHuman(input.actor);
+    requireGate(input, "CLARIFICATION_ANSWERED");
+  }
+  if (
     workflow.currentStage === "scenario-evaluation" &&
     input.to === "human-scenario-review"
   ) {
@@ -235,6 +243,7 @@ function validateGate(
     }
   }
   if (input.to === "final-human-review") {
+    requireRole(input.actor, "final-quality-assessor");
     requireGate(input, "FINAL_ASSESSMENT");
     if (
       input.gate?.kind !== "FINAL_ASSESSMENT" ||

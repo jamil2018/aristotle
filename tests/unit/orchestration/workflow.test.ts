@@ -133,6 +133,34 @@ describe("workflow transitions", () => {
     ).toThrow(/SCRIPT_ERROR/);
   });
 
+  it("requires a recorded human answer to leave clarification", () => {
+    const workflow = createWorkflowAt("requirement-clarification");
+
+    expect(() =>
+      transitionWorkflow(workflow, {
+        to: "requirement-analysis",
+        actor: coordinator,
+        occurredAt: "2026-07-29T10:04:00.000Z",
+      }),
+    ).toThrow(/human actor/);
+  });
+
+  it("requires the final assessor to open final human review", () => {
+    const workflow = createWorkflowAt("final-quality-assessment");
+
+    expect(() =>
+      transitionWorkflow(workflow, {
+        to: "final-human-review",
+        actor: coordinator,
+        occurredAt: "2026-07-29T10:04:00.000Z",
+        gate: {
+          kind: "FINAL_ASSESSMENT",
+          decision: "READY_FOR_HUMAN_REVIEW",
+        },
+      }),
+    ).toThrow(/final-quality-assessor/);
+  });
+
   it("enforces bounded scenario revision retries", () => {
     let workflow = createWorkflowAt("scenario-evaluation");
     for (let retry = 0; retry < 3; retry += 1) {
