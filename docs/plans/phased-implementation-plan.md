@@ -30,7 +30,7 @@ tracker and should be updated in the same change that completes a task.
 | ----: | ------------------------------- | ----------- | ---------- | ------------------------------------------------------------------------------ |
 |     1 | Repository foundation           | IN_PROGRESS | None       | Fresh clone installs, validates, builds, and exposes a safe Playwright harness |
 |     2 | Contracts and orchestration     | COMPLETE    | Phase 1    | State transitions and authorization gates pass contract tests                  |
-|     3 | Requirement pipeline            | NOT_STARTED | Phase 2    | All supported inputs produce validated, source-linked requirements             |
+|     3 | Requirement pipeline            | COMPLETE    | Phase 2    | All supported inputs produce validated, source-linked requirements             |
 |     4 | Scenario pipeline               | NOT_STARTED | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
 |     5 | Playwright pipeline             | NOT_STARTED | Phase 4    | Only approved scenarios produce executable, linked tests                       |
 |     6 | Failure and assessment pipeline | NOT_STARTED | Phase 5    | Failures are classified before repair and final packages are assessable        |
@@ -145,25 +145,39 @@ and stop when material ambiguity remains.
 
 ### Tasks
 
-- [ ] `P3-01` Preserve and ingest direct text and Markdown sources.
-- [ ] `P3-02` Extract PDF text with `pdfjs-dist` without executing embedded
+- [x] `P3-01` Preserve and ingest direct text and Markdown sources.
+- [x] `P3-02` Extract PDF text with `pdfjs-dist` without executing embedded
       content.
-- [ ] `P3-03` Extract DOCX text with `mammoth` without executing macros.
-- [ ] `P3-04` Normalize atomic requirements with stable IDs and source
+- [x] `P3-03` Extract DOCX text with `mammoth` without executing macros.
+- [x] `P3-04` Normalize atomic requirements with stable IDs and source
       references.
-- [ ] `P3-05` Detect contradictions, omissions, assumptions, and blocking
+- [x] `P3-05` Detect contradictions, omissions, assumptions, and blocking
       ambiguity.
-- [ ] `P3-06` Inspect taxonomy and implement placement proposals and
+- [x] `P3-06` Inspect taxonomy and implement placement proposals and
       clarification.
-- [ ] `P3-07` Add bounded, allowlisted browser exploration as optional evidence.
-- [ ] `P3-08` Reconcile human answers into a new revision and run impact
+- [x] `P3-07` Add bounded, allowlisted browser exploration as optional evidence.
+- [x] `P3-08` Reconcile human answers into a new revision and run impact
       analysis.
 
 ### Checkpoint
 
-- [ ] Every supported format passes the sanitized corpus.
-- [ ] Blocking ambiguity always pauses progression.
-- [ ] Observed behavior is never silently promoted to intended behavior.
+- [x] Every supported format passes the sanitized corpus.
+- [x] Blocking ambiguity always pauses progression.
+- [x] Observed behavior is never silently promoted to intended behavior.
+
+### Phase 3 verification record
+
+- Date: 2026-07-29
+- Branch: `agent/phase-3-requirement-pipeline`
+- Result: `npm run check` passed with 8 unit-test files and 45 unit tests;
+  `npm run test:integration` passed with 1 integration-test file and 4
+  integration tests.
+- Corpus coverage: direct text, Markdown with frontmatter, generated PDF, and
+  macro-free DOCX extraction; empty and oversized inputs; ambiguous,
+  contradictory, observational, and taxonomy-placement cases.
+- Security coverage: inert document parsing, source checksums, schema
+  validation, exact source links, human-only clarification reconciliation,
+  bounded page counts, HTTP(S)-only URLs, and exact origin allowlists.
 
 ## Phase 4: Scenario pipeline
 

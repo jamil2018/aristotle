@@ -17,6 +17,22 @@ describe("artifact registry", () => {
     });
   });
 
+  it("registers requirement artifacts and their provenance chain", () => {
+    expect(artifactRegistry["requirement-source"]).toMatchObject({
+      producingRole: "workflow-coordinator",
+      workflowStage: "requirement-intake",
+    });
+    expect(
+      artifactRegistry["normalized-requirements"].requiredReferences,
+    ).toEqual(["requirement-source"]);
+    expect(artifactRegistry["requirement-analysis"].requiredReferences).toEqual(
+      ["normalized-requirements"],
+    );
+    expect(artifactRegistry["requirement-exploration"].retentionPolicy).toBe(
+      "RUN",
+    );
+  });
+
   it("resolves a path below the configured artifact root", () => {
     expect(
       resolveArtifactPath("/repo/artifacts", {
