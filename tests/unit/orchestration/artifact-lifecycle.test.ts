@@ -37,6 +37,7 @@ describe("artifact lifecycle", () => {
       actor: designer,
       content: { id: "scenario-1", title: "Login" },
       acceptedAt: "2026-07-29T10:01:00.000Z",
+      availableArtifacts: [acceptedRequirement()],
     });
 
     expect(accepted.status).toBe("ACCEPTED");
@@ -50,6 +51,7 @@ describe("artifact lifecycle", () => {
         },
         content: {},
         acceptedAt: "2026-07-29T10:01:00.000Z",
+        availableArtifacts: [acceptedRequirement()],
       }),
     ).toThrow(/registered producing role/);
   });
@@ -76,11 +78,23 @@ describe("artifact lifecycle", () => {
     ).toThrow(/human actor/);
   });
 
+  it("rejects missing, stale, or checksum-mismatched references", () => {
+    expect(() =>
+      acceptArtifact(draftScenario(), {
+        actor: designer,
+        content: { id: "scenario-1" },
+        acceptedAt: "2026-07-29T10:01:00.000Z",
+        availableArtifacts: [],
+      }),
+    ).toThrow(/exact accepted revision/);
+  });
+
   it("creates a new draft revision without mutating the accepted artifact", () => {
     const accepted = acceptArtifact(draftScenario(), {
       actor: designer,
       content: { id: "scenario-1" },
       acceptedAt: "2026-07-29T10:01:00.000Z",
+      availableArtifacts: [acceptedRequirement()],
     });
 
     const revision = createArtifactRevision(
@@ -142,10 +156,35 @@ function draftScenario(): ArtifactManifest {
     workflowStage: "scenario-generation",
     revision: 1,
     provenance,
-    references: [],
+    references: [
+      {
+        artifactId: "requirements-001",
+        artifactType: "normalized-requirements",
+        revision: 1,
+        semanticChecksum: "e".repeat(64),
+      },
+    ],
     artifactId: "scenario-001",
     taskId: "task-001",
     path: "scenario-001.r1.json",
     status: "DRAFT",
+  };
+}
+
+function acceptedRequirement(): ArtifactManifest {
+  return {
+    artifactType: "normalized-requirements",
+    schemaVersion: 1,
+    producingRole: "requirement-analyst",
+    workflowStage: "requirement-analysis",
+    revision: 1,
+    provenance,
+    references: [],
+    artifactId: "requirements-001",
+    taskId: "task-001",
+    path: "requirements-001.r1.json",
+    status: "ACCEPTED",
+    semanticChecksum: "e".repeat(64),
+    acceptedAt: "2026-07-29T09:00:00.000Z",
   };
 }

@@ -11,6 +11,7 @@ export interface ArtifactDefinition {
   readonly workflowStage: WorkflowStage;
   readonly schemaVersion: 1;
   readonly retentionPolicy: "PERMANENT" | "RUN";
+  readonly requiredReferences: readonly ArtifactType[];
 }
 
 export const artifactRegistry = {
@@ -19,78 +20,95 @@ export const artifactRegistry = {
     workflowStage: "requirement-intake",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: [],
   },
   "decision-manifest": {
     producingRole: "workflow-coordinator",
     workflowStage: "requirement-intake",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: [],
   },
   "workflow-manifest": {
     producingRole: "workflow-coordinator",
     workflowStage: "requirement-intake",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: [],
   },
   "artifact-manifest": {
     producingRole: "workflow-coordinator",
     workflowStage: "requirement-intake",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: [],
   },
   "normalized-requirements": {
     producingRole: "requirement-analyst",
     workflowStage: "requirement-analysis",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: [],
   },
   "scenario-specification": {
     producingRole: "scenario-designer",
     workflowStage: "scenario-generation",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: ["normalized-requirements"],
   },
   "scenario-evaluation": {
     producingRole: "scenario-quality-evaluator",
     workflowStage: "scenario-evaluation",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: ["scenario-specification"],
   },
   "human-scenario-review": {
     producingRole: "human-scenario-reviewer",
     workflowStage: "human-scenario-review",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: ["scenario-specification", "scenario-evaluation"],
   },
   "playwright-test": {
     producingRole: "playwright-test-engineer",
     workflowStage: "playwright-implementation",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: [
+      "normalized-requirements",
+      "scenario-specification",
+      "human-scenario-review",
+    ],
   },
   "execution-summary": {
     producingRole: "playwright-test-engineer",
     workflowStage: "test-execution",
     schemaVersion: 1,
     retentionPolicy: "RUN",
+    requiredReferences: ["playwright-test"],
   },
   "failure-triage": {
     producingRole: "failure-triage-analyst",
     workflowStage: "failure-triage",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: ["execution-summary"],
   },
   "final-quality-assessment": {
     producingRole: "final-quality-assessor",
     workflowStage: "final-quality-assessment",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: ["execution-summary"],
   },
   "final-human-review": {
     producingRole: "final-human-reviewer",
     workflowStage: "final-human-review",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
+    requiredReferences: ["final-quality-assessment"],
   },
 } as const satisfies Record<ArtifactType, ArtifactDefinition>;
 

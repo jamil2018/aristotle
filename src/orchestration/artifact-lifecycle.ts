@@ -16,6 +16,7 @@ export interface AcceptArtifactInput {
   readonly actor: Actor;
   readonly content: unknown;
   readonly acceptedAt: string;
+  readonly availableArtifacts?: readonly ArtifactManifest[];
 }
 
 export function acceptArtifact(
@@ -48,6 +49,11 @@ export function acceptArtifact(
   ) {
     throw new Error("Actor is not the registered producing role");
   }
+  validateArtifactReferences(
+    manifest,
+    input.availableArtifacts ?? [],
+    definition.requiredReferences,
+  );
 
   return artifactManifestSchema.parse({
     ...manifest,
@@ -55,6 +61,57 @@ export function acceptArtifact(
     semanticChecksum: semanticChecksum(input.content),
     acceptedAt: input.acceptedAt,
   });
+}
+
+export function validateArtifactReferences(
+  manifest: ArtifactManifest,
+  availableArtifacts: readonly ArtifactManifest[],
+  requiredTypes: readonly ArtifactManifest["artifactType"][] = [],
+): void {
+  const acceptedByReference = new Set(
+    availableArtifacts
+      .map((artifact) => artifactManifestSchema.parse(artifact))
+      .filter(
+        (
+          artifact,
+        ): artifact is ArtifactManifest & {
+          semanticChecksum: string;
+        } =>
+          artifact.status === "ACCEPTED" &&
+          artifact.semanticChecksum !== undefined,
+      )
+      .map((artifact) =>
+        [
+          artifact.artifactId,
+          artifact.artifactType,
+          artifact.revision,
+          artifact.semanticChecksum,
+        ].join(":"),
+      ),
+  );
+
+  for (const reference of manifest.references) {
+    const key = [
+      reference.artifactId,
+      reference.artifactType,
+      reference.revision,
+      reference.semanticChecksum,
+    ].join(":");
+    if (!acceptedByReference.has(key)) {
+      throw new Error(
+        `Artifact reference ${reference.artifactId} does not resolve to an exact accepted revision`,
+      );
+    }
+  }
+  for (const requiredType of requiredTypes) {
+    if (
+      !manifest.references.some(
+        (reference) => reference.artifactType === requiredType,
+      )
+    ) {
+      throw new Error(`Artifact requires a ${requiredType} reference`);
+    }
+  }
 }
 
 export function createArtifactRevision(
