@@ -29,7 +29,7 @@ tracker and should be updated in the same change that completes a task.
 | Phase | Name                            | Status      | Depends on | Exit checkpoint                                                                |
 | ----: | ------------------------------- | ----------- | ---------- | ------------------------------------------------------------------------------ |
 |     1 | Repository foundation           | IN_PROGRESS | None       | Fresh clone installs, validates, builds, and exposes a safe Playwright harness |
-|     2 | Contracts and orchestration     | NOT_STARTED | Phase 1    | State transitions and authorization gates pass contract tests                  |
+|     2 | Contracts and orchestration     | COMPLETE    | Phase 1    | State transitions and authorization gates pass contract tests                  |
 |     3 | Requirement pipeline            | NOT_STARTED | Phase 2    | All supported inputs produce validated, source-linked requirements             |
 |     4 | Scenario pipeline               | NOT_STARTED | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
 |     5 | Playwright pipeline             | NOT_STARTED | Phase 4    | Only approved scenarios produce executable, linked tests                       |
@@ -101,27 +101,42 @@ machine whose authorization gates are enforced in code.
 
 ### Tasks
 
-- [ ] `P2-01` Define Zod schemas for task, decision, workflow, and artifact
+- [x] `P2-01` Define Zod schemas for task, decision, workflow, and artifact
       manifests.
-- [ ] `P2-02` Create the versioned artifact registry and output-path resolver.
-- [ ] `P2-03` Implement workflow stages, legal transitions, retry limits, and
+- [x] `P2-02` Create the versioned artifact registry and output-path resolver.
+- [x] `P2-03` Implement workflow stages, legal transitions, retry limits, and
       locking.
-- [ ] `P2-04` Enforce clarification, evaluator, human approval, triage, and
+- [x] `P2-04` Enforce clarification, evaluator, human approval, triage, and
       final-review gates.
-- [ ] `P2-05` Add semantic checksums, immutable acceptance records, and revision
+- [x] `P2-05` Add semantic checksums, immutable acceptance records, and revision
       rules.
-- [ ] `P2-06` Add atomic persistence, resumption, cancellation, and
+- [x] `P2-06` Add atomic persistence, resumption, cancellation, and
       partial-output recovery.
-- [ ] `P2-07` Record provenance for Git, runtime, provider, configuration, and
+- [x] `P2-07` Record provenance for Git, runtime, provider, configuration, and
       revisions.
-- [ ] `P2-08` Add schema, contract, integration, and interrupted-resumption
+- [x] `P2-08` Add schema, contract, integration, and interrupted-resumption
       tests.
 
 ### Checkpoint
 
-- [ ] Invalid artifacts cannot advance state.
-- [ ] Agents cannot create or overwrite human approvals.
-- [ ] Material changes invalidate exact downstream artifacts.
+- [x] Invalid artifacts cannot advance state.
+- [x] Agents cannot create or overwrite human approvals.
+- [x] Material changes invalidate exact downstream artifacts.
+
+### Phase 2 verification record
+
+- Date: 2026-07-29
+- Branch: `agent/phase-2-contracts-orchestration`
+- Result: `npm run check` passed with 7 unit-test files and 29 unit tests;
+  `npm run test:integration` passed with 1 integration-test file and 4
+  integration tests.
+- Contract coverage: schemas, exact accepted references, registered producers,
+  legal transitions, authorization gates, retry limits, semantic checksums,
+  immutable revisions, downstream invalidation, atomic persistence, optimistic
+  revision checks, interrupted recovery, run locking, cancellation, and
+  provenance.
+- Environment note: verification ran on Node 26.5.0. The repository remains
+  pinned to Node 22, whose fresh-clone check is still tracked in Phase 1.
 
 ## Phase 3: Requirement pipeline
 
