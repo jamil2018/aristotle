@@ -29,7 +29,7 @@ tracker and should be updated in the same change that completes a task.
 | Phase | Name                            | Status      | Depends on | Exit checkpoint                                                                |
 | ----: | ------------------------------- | ----------- | ---------- | ------------------------------------------------------------------------------ |
 |     1 | Repository foundation           | IN_PROGRESS | None       | Fresh clone installs, validates, builds, and exposes a safe Playwright harness |
-|     2 | Contracts and orchestration     | NOT_STARTED | Phase 1    | State transitions and authorization gates pass contract tests                  |
+|     2 | Contracts and orchestration     | IN_PROGRESS | Phase 1    | State transitions and authorization gates pass contract tests                  |
 |     3 | Requirement pipeline            | NOT_STARTED | Phase 2    | All supported inputs produce validated, source-linked requirements             |
 |     4 | Scenario pipeline               | NOT_STARTED | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
 |     5 | Playwright pipeline             | NOT_STARTED | Phase 4    | Only approved scenarios produce executable, linked tests                       |
