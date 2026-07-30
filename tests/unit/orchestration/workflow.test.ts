@@ -24,6 +24,12 @@ const scenario: ArtifactReference = {
   revision: 2,
   semanticChecksum: "a".repeat(64),
 };
+const playwrightTest: ArtifactReference = {
+  artifactId: "playwright-login-001",
+  artifactType: "playwright-test",
+  revision: 1,
+  semanticChecksum: "d".repeat(64),
+};
 
 describe("workflow transitions", () => {
   it("permits the legal happy path while recording transition evidence", () => {
@@ -118,6 +124,32 @@ describe("workflow transitions", () => {
         },
       }),
     ).toThrow(/exact evaluated scenario/);
+  });
+
+  it("executes only a registered Playwright test from the test engineer", () => {
+    const workflow = createWorkflowAt("playwright-implementation");
+
+    expect(() =>
+      transitionWorkflow(workflow, {
+        to: "test-execution",
+        actor: coordinator,
+        occurredAt: "2026-07-29T10:06:00.000Z",
+      }),
+    ).toThrow(/playwright-test-engineer/);
+
+    const executing = transitionWorkflow(workflow, {
+      to: "test-execution",
+      actor: {
+        actorType: "AGENT",
+        actorId: "playwright-test-engineer",
+      },
+      occurredAt: "2026-07-29T10:06:00.000Z",
+      gate: { kind: "PLAYWRIGHT_TEST_READY", subject: playwrightTest },
+    });
+
+    expect(executing.transitionHistory.at(-1)?.inputReferences).toEqual([
+      playwrightTest,
+    ]);
   });
 
   it("allows test repair only after SCRIPT_ERROR classification", () => {

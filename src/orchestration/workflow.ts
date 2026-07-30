@@ -70,6 +70,10 @@ export type TransitionGate =
     }
   | { readonly kind: "HUMAN_CHANGES_REQUESTED" }
   | {
+      readonly kind: "PLAYWRIGHT_TEST_READY";
+      readonly subject: ArtifactReference;
+    }
+  | {
       readonly kind: "TRIAGE";
       readonly classification:
         | "SCRIPT_ERROR"
@@ -148,7 +152,8 @@ export function transitionWorkflow(
 
   const gateSubject =
     input.gate?.kind === "EVALUATOR_PASS" ||
-    input.gate?.kind === "HUMAN_SCENARIO_APPROVAL"
+    input.gate?.kind === "HUMAN_SCENARIO_APPROVAL" ||
+    input.gate?.kind === "PLAYWRIGHT_TEST_READY"
       ? [input.gate.subject]
       : [];
   const inputReferences = [...(input.inputReferences ?? []), ...gateSubject];
@@ -185,8 +190,31 @@ function validateGate(
   }
   validateRequirementGate(workflow, input);
   validateScenarioGate(workflow, input);
+  validatePlaywrightGate(workflow, input);
   validateRepairGate(input);
   validateFinalReviewGate(input);
+}
+
+function validatePlaywrightGate(
+  workflow: WorkflowManifest,
+  input: TransitionInput,
+): void {
+  if (
+    workflow.currentStage !== "playwright-implementation" ||
+    input.to !== "test-execution"
+  ) {
+    return;
+  }
+  requireRole(input.actor, "playwright-test-engineer");
+  requireGate(input, "PLAYWRIGHT_TEST_READY");
+  if (
+    input.gate?.kind !== "PLAYWRIGHT_TEST_READY" ||
+    input.gate.subject.artifactType !== "playwright-test"
+  ) {
+    throw new Error(
+      "Test execution requires an exact registered playwright-test artifact",
+    );
+  }
 }
 
 function validateRequirementGate(
