@@ -46,8 +46,8 @@ tracker and should be updated in the same change that completes a task.
   remains `IN_PROGRESS` until a fresh clone passes `npm ci` and the complete
   quality gate on the pinned Node 22 runtime.
 - Active delivery branch: `codex/phase-6-failure-assessment`.
-- Active review: Phase 6 implementation is in progress; no pull request has been
-  opened yet.
+- Active review: draft pull request
+  [#6](https://github.com/jamil2018/aristotle/pull/6), targeting `main`.
 - Phase 4 merged through pull request
   [#3](https://github.com/jamil2018/aristotle/pull/3).
 - Current automated baseline: 11 unit-test files with 84 passing tests, 1
@@ -343,6 +343,9 @@ and assemble a traceable package for final human review.
 
 - Date: 2026-07-30
 - Branch: `codex/phase-6-failure-assessment`
+- Draft pull request: [#6](https://github.com/jamil2018/aristotle/pull/6),
+  targeting `main`.
+- Implementation commit: `bcc5502aa2abdd02946dc5d0a6edb39d723fee0f`.
 - Result: `npm run check` passed with 11 unit-test files and 84 unit tests;
   `npm run test:integration` passed with 1 integration-test file and 4
   integration tests.

@@ -1,15 +1,16 @@
-# Graph Report - .  (2026-07-30)
+# Graph Report - aristotle  (2026-07-30)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 82 files · ~33,873 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 916 nodes · 1130 edges · 90 communities (59 shown, 31 thin omitted)
+- 921 nodes · 1135 edges · 90 communities (59 shown, 31 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 14 edges (avg confidence: 0.91)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b74a0ab7`
+- Built from commit: `bcc5502a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -109,9 +110,9 @@
 5. `compilerOptions` - 17 edges
 6. `scripts` - 16 edges
 7. `devDependencies` - 13 edges
-8. `3. Agent and Human Roles` - 12 edges
-9. `Phase 6: Failure and assessment pipeline` - 12 edges
-10. `Phase 7: Memory and improvement` - 11 edges
+8. `Phase 7: Memory and improvement` - 13 edges
+9. `3. Agent and Human Roles` - 12 edges
+10. `Phase 6: Failure and assessment pipeline` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Graphify Navigation Rules` --semantically_similar_to--> `Cursor Graphify Rule`  [INFERRED] [semantically similar]
@@ -133,7 +134,7 @@ Nodes (50): analyzeRequirements(), AtomicRequirement, canonicalizePolarity(), Cl
 
 ### Community 1 - "Community 1"
 Cohesion: 0.05
-Nodes (50): acceptArtifact(), AcceptArtifactInput, assertNotCyclic(), canonicalJson(), createArtifactRevision(), invalidateDownstreamArtifacts(), JsonValue, normalizeArray() (+42 more)
+Nodes (49): acceptArtifact(), AcceptArtifactInput, assertNotCyclic(), canonicalJson(), createArtifactRevision(), invalidateDownstreamArtifacts(), JsonValue, normalizeArray() (+41 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.04
@@ -185,47 +186,47 @@ Nodes (20): semanticChecksum(), AutomationPlan, capabilityReviewReasons(), class
 
 ### Community 14 - "Community 14"
 Cohesion: 0.11
-Nodes (18): NormalizedRequirements, normalizeMarkdown(), projectScenarioMarkdown(), reviseScenarioSpecification(), validateScenarioProjection(), validateTraceability(), divergent, evaluation (+10 more)
-
-### Community 15 - "Community 15"
-Cohesion: 0.11
 Nodes (18): compilerOptions, esModuleInterop, exactOptionalPropertyTypes, forceConsistentCasingInFileNames, module, moduleResolution, noFallthroughCasesInSwitch, noImplicitOverride (+10 more)
 
+### Community 15 - "Community 15"
+Cohesion: 0.18
+Nodes (11): acquireRunLock(), assertIdentifier(), isErrorCode(), ReleaseLock, partial, store, temporaryDirectories, workflow (+3 more)
+
 ### Community 16 - "Community 16"
-Cohesion: 0.2
-Nodes (10): acquireRunLock(), assertIdentifier(), isErrorCode(), ReleaseLock, partial, store, temporaryDirectories, workflow (+2 more)
+Cohesion: 0.11
+Nodes (18): NormalizedRequirements, normalizeMarkdown(), projectScenarioMarkdown(), reviseScenarioSpecification(), validateScenarioProjection(), validateTraceability(), divergent, evaluation (+10 more)
 
 ### Community 17 - "Community 17"
-Cohesion: 0.33
-Nodes (14): Agent Roles Index, Factory Skills Index, Factory Workflows Index, Quality Agent Factory Phased Implementation Plan, Operating Principles, Quality Agent Factory, Failure Triage Analyst, Final Quality Assessor (+6 more)
+Cohesion: 0.27
+Nodes (16): Draft Pull Request 6: Phase 6 Failure and Assessment Pipeline, Agent Roles Index, Factory Skills Index, Factory Workflows Index, Quality Agent Factory Phased Implementation Plan, Quality Agent Factory Development Plan, Operating Principles, Quality Agent Factory (+8 more)
 
 ### Community 18 - "Community 18"
 Cohesion: 0.18
 Nodes (13): Intercepted Repository-Local HTML Sample, Failure Classification Before Repair, Ignored Authentication State, Phase 5 Implementation Commit 040d7953, Phase 5 COMPLETE, Phase 5 Draft Pull Request 5, Phase 5 Playwright Pipeline, Phase 5 Verification Record (+5 more)
 
 ### Community 19 - "Community 19"
-Cohesion: 0.17
-Nodes (11): ADR-001: Use policy-driven autonomy for routine factory decisions, Allow arbitrary Playwright source generation, Alternatives considered, Consequences, Context, Date, Decision, Existing human-decision audit (+3 more)
-
-### Community 20 - "Community 20"
-Cohesion: 0.17
-Nodes (12): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 6: Failure and assessment pipeline, Phase 6 verification record, Tasks (+4 more)
-
-### Community 21 - "Community 21"
 Cohesion: 0.2
 Nodes (8): environmentSchema, FactoryConfig, loadFactoryConfig(), rawConfigSchema, screenshotPolicySchema, config, tracePolicySchema, videoPolicySchema
 
+### Community 20 - "Community 20"
+Cohesion: 0.17
+Nodes (11): ADR-001: Use policy-driven autonomy for routine factory decisions, Allow arbitrary Playwright source generation, Alternatives considered, Consequences, Context, Date, Decision, Existing human-decision audit (+3 more)
+
+### Community 21 - "Community 21"
+Cohesion: 0.17
+Nodes (12): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 6: Failure and assessment pipeline, Phase 6 verification record, Tasks (+4 more)
+
 ### Community 22 - "Community 22"
-Cohesion: 0.18
-Nodes (10): compilerOptions, declaration, declarationMap, outDir, rootDir, sourceMap, types, exclude (+2 more)
+Cohesion: 0.15
+Nodes (13): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 7: Memory and improvement, Tasks (+5 more)
 
 ### Community 23 - "Community 23"
 Cohesion: 0.18
-Nodes (11): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 7: Memory and improvement, Tasks, Tasks (+3 more)
+Nodes (10): Current delivery snapshot, Decision log, Delivery principles, Open decisions, Progress summary, Purpose, Quality Agent Factory Phased Implementation Plan, Repository tooling record (+2 more)
 
 ### Community 24 - "Community 24"
 Cohesion: 0.18
-Nodes (10): Current delivery snapshot, Decision log, Delivery principles, Open decisions, Progress summary, Purpose, Quality Agent Factory Phased Implementation Plan, Repository tooling record (+2 more)
+Nodes (10): compilerOptions, declaration, declarationMap, outDir, rootDir, sourceMap, types, exclude (+2 more)
 
 ### Community 25 - "Community 25"
 Cohesion: 0.2
@@ -264,8 +265,8 @@ Cohesion: 0.29
 Nodes (7): Checkpoint, Phase 2: Contracts and orchestration, Phase 2 verification record, Tasks, Tasks, Tasks, Tasks
 
 ### Community 34 - "Community 34"
-Cohesion: 0.29
-Nodes (7): Final checkpoint, Phase 8: Provider hardening, Tasks, Tasks, Tasks, Tasks, Tasks
+Cohesion: 0.25
+Nodes (8): Final checkpoint, Phase 8: Provider hardening, Tasks, Tasks, Tasks, Tasks, Tasks, Tasks
 
 ### Community 35 - "Community 35"
 Cohesion: 0.33
@@ -273,15 +274,15 @@ Nodes (5): code:text (feat: enforce scenario approval before test generation), C
 
 ### Community 36 - "Community 36"
 Cohesion: 0.33
-Nodes (6): Acceptance criteria, code:bash (npm run format:check), Phase 1: Repository foundation, Phase 1 verification record, Tasks, Verification
+Nodes (6): Deterministic Fixtures and Reverse-Order Cleanup, Exact-Revision Human Scenario-Approval Gate, Human Exact-Revision Approval, Independent Evaluator PASS, Playwright Implementation Workflow, Semantic Checksum Validation
 
 ### Community 37 - "Community 37"
 Cohesion: 0.33
-Nodes (6): Deterministic Fixtures and Reverse-Order Cleanup, Exact-Revision Human Scenario-Approval Gate, Human Exact-Revision Approval, Independent Evaluator PASS, Playwright Implementation Workflow, Semantic Checksum Validation
+Nodes (6): Phase 5 COMPLETE, Phase 6 Failure and Assessment Pipeline, Phase 6 Next-Session Handoff, SCRIPT_ERROR Repair Authorization, Six Failure Classifications, Target Application Source Read-Only
 
 ### Community 38 - "Community 38"
 Cohesion: 0.33
-Nodes (6): Phase 5 COMPLETE, Phase 6 Failure and Assessment Pipeline, Phase 6 Next-Session Handoff, SCRIPT_ERROR Repair Authorization, Six Failure Classifications, Target Application Source Read-Only
+Nodes (6): Acceptance criteria, code:bash (npm run format:check), Phase 1: Repository foundation, Phase 1 verification record, Tasks, Verification
 
 ### Community 39 - "Community 39"
 Cohesion: 0.33
@@ -309,27 +310,27 @@ Nodes (6): escapeRegExp(), isInteractionAction(), renderAction(), renderAssertio
 
 ### Community 45 - "Community 45"
 Cohesion: 0.4
-Nodes (4): Authority, Outputs, Required inputs, Requirement Analyst
+Nodes (5): Accessible Locators and Web-First Assertions, Approval Verification Before Test Generation, Automate Approved Scenarios, Safe Test Generation Using Repository Conventions, Target Application Read-Only Boundary
 
 ### Community 46 - "Community 46"
 Cohesion: 0.4
-Nodes (4): Preconditions, Procedure, Stop conditions, Triage Test Failures
+Nodes (5): Accessible Locators and Web-First Assertions, Automate Approved Scenarios, Execution Summary Artifact, Safe Registered Evidence Paths, Typed Automation Plan
 
 ### Community 47 - "Community 47"
 Cohesion: 0.4
-Nodes (5): Accessible Locators and Web-First Assertions, Automate Approved Scenarios, Execution Summary Artifact, Safe Registered Evidence Paths, Typed Automation Plan
+Nodes (4): Authority, Outputs, Required inputs, Requirement Analyst
 
 ### Community 48 - "Community 48"
 Cohesion: 0.4
-Nodes (5): Accessible Locators and Web-First Assertions, Approval Verification Before Test Generation, Automate Approved Scenarios, Safe Test Generation Using Repository Conventions, Target Application Read-Only Boundary
+Nodes (4): Authority, Outputs, Required inputs, Test Scenario Designer
 
 ### Community 49 - "Community 49"
 Cohesion: 0.4
-Nodes (4): Authority, Outputs, Required inputs, Test Scenario Designer
+Nodes (4): Authority, Outputs, Required inputs, Scenario Quality Evaluator
 
 ### Community 50 - "Community 50"
 Cohesion: 0.4
-Nodes (4): Authority, Outputs, Required inputs, Scenario Quality Evaluator
+Nodes (4): Preconditions, Procedure, Stop conditions, Triage Test Failures
 
 ### Community 51 - "Community 51"
 Cohesion: 0.4
@@ -348,21 +349,21 @@ Cohesion: 0.5
 Nodes (4): Controlled Sample-Application End-to-End Tests, Intercepted Repository-Local HTML Application, Synthetic Non-Secret Authentication State, Task-Scoped Environment-Configured Real Target Authentication
 
 ## Knowledge Gaps
-- **499 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+494 more)
+- **504 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+499 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **31 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `semanticChecksum()` connect `Community 13` to `Community 1`, `Community 6`, `Community 7`, `Community 10`, `Community 14`?**
+- **Why does `semanticChecksum()` connect `Community 13` to `Community 1`, `Community 6`, `Community 7`, `Community 10`, `Community 16`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **Why does `Actor` connect `Community 1` to `Community 0`, `Community 10`, `Community 3`?**
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Why does `Quality Agent Factory Phased Implementation Plan` connect `Community 24` to `Community 33`, `Community 34`, `Community 36`, `Community 20`, `Community 23`, `Community 25`, `Community 26`, `Community 27`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **Why does `Quality Agent Factory Phased Implementation Plan` connect `Community 23` to `Community 33`, `Community 34`, `Community 38`, `Community 21`, `Community 22`, `Community 25`, `Community 26`, `Community 27`?**
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _540 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _545 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
