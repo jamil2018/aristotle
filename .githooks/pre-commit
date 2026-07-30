@@ -1,0 +1,22 @@
+#!/bin/sh
+set -eu
+
+repository_root=$(git rev-parse --show-toplevel)
+cd "$repository_root"
+
+npm run commit:check
+
+relevant_changes=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '\.(c|cc|cpp|css|go|h|hpp|html|java|js|json|jsonc|jsx|md|mdx|mjs|mts|py|rs|scss|ts|tsx|txt|yaml|yml)$' || true)
+staged_graph=$(git diff --cached --name-only -- graphify-out/graph.json graphify-out/GRAPH_REPORT.md graphify-out/graph.html)
+
+if [ -n "$relevant_changes" ] && [ -z "$staged_graph" ]; then
+  echo "Commit blocked: staged source or documentation changed without staged Graphify outputs." >&2
+  echo "Run the applicable Graphify refresh, review the outputs, and stage graphify-out/graph.json, GRAPH_REPORT.md, and graph.html." >&2
+  exit 1
+fi
+
+if ! git diff --quiet -- graphify-out/graph.json graphify-out/GRAPH_REPORT.md graphify-out/graph.html; then
+  echo "Commit blocked: Graphify refreshed tracked outputs after they were staged." >&2
+  echo "Review and stage the refreshed graph artifacts, then commit again." >&2
+  exit 1
+fi

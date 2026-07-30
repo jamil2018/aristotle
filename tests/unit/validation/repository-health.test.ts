@@ -9,6 +9,19 @@ import {
 } from "../../../src/validation/repository-health.js";
 
 describe("checkRepositoryHealth", () => {
+  it("requires the versioned commit gate and knowledge graph", () => {
+    expect(requiredRepositoryEntries).toEqual(
+      expect.arrayContaining([
+        ".githooks/pre-commit",
+        ".cursor/rules/graphify.mdc",
+        "agents/skills/use-knowledge-graph.md",
+        "graphify-out/GRAPH_REPORT.md",
+        "graphify-out/graph.html",
+        "graphify-out/graph.json",
+      ]),
+    );
+  });
+
   it("reports missing repository entries", async () => {
     const root = path.join(
       process.env["TMPDIR"] ?? "/tmp",

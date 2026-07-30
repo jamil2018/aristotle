@@ -352,14 +352,31 @@ complete production-quality documentation and examples.
 
 ## Decision log
 
-| Date       | Decision                                                                     | Rationale                                                                      |
-| ---------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| 2026-07-29 | Use the source plan's eight delivery phases                                  | Preserves author intent and dependency order                                   |
-| 2026-07-29 | Make Phase 1 tooling and health checks executable                            | A clone-ready foundation must be verifiable before workflow features are added |
-| 2026-07-29 | Keep runtime source under `src/` and repository instructions under `agents/` | Separates enforceable behavior from provider-facing guidance                   |
-| 2026-07-29 | Pin the supported runtime to Node 22                                         | Establishes one reproducible LTS target while later runtimes remain unverified |
-| 2026-07-29 | Use repository-local manifests and atomic filesystem persistence             | Delivers durable resumable state without requiring a database in v1            |
-| 2026-07-29 | Enforce Fallow as a full-codebase quality gate                               | Prevents dead code, duplication, and complexity regressions after cleanup      |
+| Date       | Decision                                                                     | Rationale                                                                                                                |
+| ---------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| 2026-07-29 | Use the source plan's eight delivery phases                                  | Preserves author intent and dependency order                                                                             |
+| 2026-07-29 | Make Phase 1 tooling and health checks executable                            | A clone-ready foundation must be verifiable before workflow features are added                                           |
+| 2026-07-29 | Keep runtime source under `src/` and repository instructions under `agents/` | Separates enforceable behavior from provider-facing guidance                                                             |
+| 2026-07-29 | Pin the supported runtime to Node 22                                         | Establishes one reproducible LTS target while later runtimes remain unverified                                           |
+| 2026-07-29 | Use repository-local manifests and atomic filesystem persistence             | Delivers durable resumable state without requiring a database in v1                                                      |
+| 2026-07-29 | Enforce Fallow as a full-codebase quality gate                               | Prevents dead code, duplication, and complexity regressions after cleanup                                                |
+| 2026-07-30 | Version the Graphify map and commit quality pipeline                         | Keeps architectural context current and enforces local lint, format, Fallow, TypeScript, and graph checks before commits |
+
+## Repository tooling record
+
+- Date: 2026-07-30
+- Branch: `codex/graphify-commit-quality-gates`
+- Scope: repository-wide tooling; no phase workflow or authorization state was
+  changed.
+- Commit pipeline: lint, formatting validation, Fallow static analysis,
+  TypeScript compilation, then Graphify refresh.
+- Agent rule: run the smallest relevant test selection immediately before each
+  commit; focused tests supplement rather than replace `npm run check`.
+- Versioned graph outputs: `graphify-out/graph.json`,
+  `graphify-out/GRAPH_REPORT.md`, and `graphify-out/graph.html`.
+- Generated graph outputs are excluded from Prettier; local Graphify caches,
+  manifests, interpreter pointers, cost history, and optional exports are
+  excluded from source control.
 
 ## Risks and mitigations
 
