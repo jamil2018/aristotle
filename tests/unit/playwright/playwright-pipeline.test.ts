@@ -8,9 +8,11 @@ import {
   generateScenarioSpecification,
 } from "../../../src/scenarios/pipeline.js";
 import {
+  classifyCapabilityExtension,
   createCleanupRegistry,
   createDeterministicTestId,
   createExecutionSummary,
+  createCapabilityExtensionRecord,
   generatePlaywrightTest,
 } from "../../../src/playwright/pipeline.js";
 import type { AutomationPlan } from "../../../src/playwright/contracts.js";
@@ -90,6 +92,68 @@ describe("Playwright generation authorization", () => {
     expect(generated.source).not.toContain("waitForTimeout");
   });
 
+  it("renders the pre-authorized scalable interaction and assertion primitives", () => {
+    const approved = approvedScenario();
+    const scenario = approved.specification.scenarios[0];
+    if (scenario === undefined) throw new Error("Expected scenario fixture");
+
+    const generated = generatePlaywrightTest({
+      ...approved,
+      requirements,
+      scenarioId: scenario.scenarioId,
+      plan: {
+        route: "/preferences",
+        actions: [
+          {
+            kind: "CHECK",
+            locator: { kind: "LABEL", value: "Email updates" },
+          },
+          {
+            kind: "UNCHECK",
+            locator: { kind: "LABEL", value: "SMS updates" },
+          },
+          {
+            kind: "SELECT_OPTION",
+            locator: { kind: "LABEL", value: "Timezone" },
+            value: "UTC",
+          },
+          {
+            kind: "PRESS_KEY",
+            locator: { kind: "LABEL", value: "Search" },
+            key: "Enter",
+          },
+          {
+            kind: "EXPECT_ENABLED",
+            locator: { kind: "ROLE", role: "button", name: "Save" },
+          },
+          {
+            kind: "EXPECT_CHECKED",
+            locator: { kind: "LABEL", value: "Email updates" },
+          },
+          {
+            kind: "EXPECT_VALUE",
+            locator: { kind: "LABEL", value: "Timezone" },
+            value: "UTC",
+          },
+          {
+            kind: "EXPECT_COUNT",
+            locator: { kind: "ROLE", role: "listitem", name: "Result" },
+            count: 3,
+          },
+        ],
+      },
+    });
+
+    expect(generated.source).toContain(".check()");
+    expect(generated.source).toContain(".uncheck()");
+    expect(generated.source).toContain('.selectOption("UTC")');
+    expect(generated.source).toContain('.press("Enter")');
+    expect(generated.source).toContain("toBeEnabled()");
+    expect(generated.source).toContain("toBeChecked()");
+    expect(generated.source).toContain('toHaveValue("UTC")');
+    expect(generated.source).toContain("toHaveCount(3)");
+  });
+
   it("rejects absent, stale, non-passing, and excluded approvals", () => {
     const approved = approvedScenario();
     const scenario = approved.specification.scenarios[0];
@@ -161,6 +225,105 @@ describe("Playwright generation authorization", () => {
         } as unknown as AutomationPlan,
       }),
     ).toThrow("environment variable");
+  });
+});
+
+describe("Playwright capability extension policy", () => {
+  const lowRiskProposal = {
+    capabilityId: "expect-editable",
+    actionKind: "EXPECT_EDITABLE",
+    category: "ASSERTION" as const,
+    playwrightApi: "expect.toBeEditable",
+    usesExistingLocator: true,
+    deterministicRenderer: true,
+    requiresArbitraryCode: false,
+    accessesExternalOrigin: false,
+    changesBrowserPermissions: false,
+    accessesFileSystem: false,
+    changesAuthenticationState: false,
+    performsDestructiveWrite: false,
+    addsDependency: false,
+  };
+
+  it("automatically authorizes a bounded deterministic locator capability", () => {
+    expect(classifyCapabilityExtension(lowRiskProposal)).toEqual({
+      disposition: "AUTO_APPROVED",
+      reasons: [
+        "Capability is a deterministic locator-based interaction or assertion within policy.",
+      ],
+      policyVersion: 1,
+    });
+  });
+
+  it.each([
+    ["arbitrary code", { requiresArbitraryCode: true }],
+    ["external origin", { accessesExternalOrigin: true }],
+    ["browser permission", { changesBrowserPermissions: true }],
+    ["filesystem", { accessesFileSystem: true }],
+    ["authentication", { changesAuthenticationState: true }],
+    ["destructive write", { performsDestructiveWrite: true }],
+    ["dependency", { addsDependency: true }],
+    ["network category", { category: "NETWORK" as const }],
+    ["arbitrary Playwright API", { playwrightApi: "locator.evaluate" }],
+  ])("requires human review for %s expansion", (_, unsafeChange) => {
+    expect(
+      classifyCapabilityExtension({ ...lowRiskProposal, ...unsafeChange })
+        .disposition,
+    ).toBe("HUMAN_REVIEW_REQUIRED");
+  });
+
+  it("creates an immutable audit record from policy output, not agent claims", () => {
+    const record = createCapabilityExtensionRecord({
+      runId: "run-001",
+      actorId: "playwright-test-engineer",
+      proposal: lowRiskProposal,
+      requestedDisposition: "HUMAN_REVIEW_REQUIRED",
+      existingRecords: [],
+    });
+
+    expect(record).toMatchObject({
+      schemaVersion: 1,
+      runId: "run-001",
+      actorId: "playwright-test-engineer",
+      disposition: "AUTO_APPROVED",
+      policyVersion: 1,
+    });
+    expect(record.proposalChecksum).toMatch(/^[a-f0-9]{64}$/);
+  });
+
+  it("limits automatic extension to one capability per run", () => {
+    const existing = createCapabilityExtensionRecord({
+      runId: "run-001",
+      actorId: "playwright-test-engineer",
+      proposal: lowRiskProposal,
+      existingRecords: [],
+    });
+    expect(() =>
+      createCapabilityExtensionRecord({
+        runId: "run-001",
+        actorId: "playwright-test-engineer",
+        proposal: lowRiskProposal,
+        existingRecords: [existing],
+      }),
+    ).toThrow("one automatic capability extension");
+  });
+
+  it("rejects tampered prior extension records", () => {
+    const existing = createCapabilityExtensionRecord({
+      runId: "run-001",
+      actorId: "playwright-test-engineer",
+      proposal: lowRiskProposal,
+      existingRecords: [],
+    });
+
+    expect(() =>
+      createCapabilityExtensionRecord({
+        runId: "run-002",
+        actorId: "playwright-test-engineer",
+        proposal: lowRiskProposal,
+        existingRecords: [{ ...existing, proposalChecksum: "f".repeat(64) }],
+      }),
+    ).toThrow("checksum");
   });
 });
 

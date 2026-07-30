@@ -11,3 +11,8 @@
 8. Bound exploration, revision, retry, and repair cycles.
 9. Make uncertainty and residual risk explicit.
 10. Stop at final human review.
+11. Reserve human decisions for intent, authority, material ambiguity, external
+    impact, and policy changes; execute routine decisions through versioned,
+    testable policy.
+12. Agents may apply an existing low-risk policy autonomously, but may not
+    expand, weaken, or self-approve that policy.

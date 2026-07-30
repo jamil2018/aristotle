@@ -49,12 +49,12 @@ tracker and should be updated in the same change that completes a task.
   [#5](https://github.com/jamil2018/aristotle/pull/5), targeting `main`.
 - Phase 4 merged through pull request
   [#3](https://github.com/jamil2018/aristotle/pull/3).
-- Current automated baseline: 10 unit-test files with 63 passing tests, 1
-  integration-test file with 4 passing tests, and 4 controlled Playwright tests
+- Current automated baseline: 10 unit-test files with 78 passing tests, 1
+  integration-test file with 4 passing tests, and 7 controlled Playwright tests
   passing across authentication setup, Chromium, Firefox, and WebKit.
 - Static-analysis baseline: Fallow 3.10.0 reports no dead code, duplication, or
-  complexity findings across 38 analyzed files and 327 functions; average
-  maintainability is 93.5.
+  complexity findings across 38 analyzed files and 347 functions; average
+  maintainability is 93.6.
 - Next implementation phase: Phase 6, failure and assessment pipeline.
 
 ## Phase 1: Repository foundation
@@ -284,13 +284,13 @@ authorized scenario revisions.
 - Draft pull request: [#5](https://github.com/jamil2018/aristotle/pull/5),
   targeting `main`.
 - Implementation commit: `040d7953e6c03f4c7c25bc2cb8fe76fc50effb44`.
-- Result: `npm run check` passed with 10 unit-test files and 63 unit tests;
+- Result: `npm run check` passed with 10 unit-test files and 78 unit tests;
   `npm run test:integration` passed with 1 integration-test file and 4
   integration tests; `npm run test:e2e` passed authentication setup and the
-  controlled sample on Chromium, Firefox, and WebKit with 4 tests total.
+  controlled sample on Chromium, Firefox, and WebKit with 7 tests total.
 - Static analysis: Fallow 3.10.0 reports 0 dead-code findings, 0 duplication
   groups, and 0 functions above configured complexity thresholds across 38 files
-  and 327 functions; average maintainability is 93.5.
+  and 347 functions; average maintainability is 93.6.
 - Authorization coverage: generation requires evaluator `PASS` and human
   approval for the exact scenario revision, evaluation checksum, and semantic
   checksum; exclusions, stale requirements, and non-candidate scenarios are
@@ -300,6 +300,11 @@ authorized scenario revisions.
   environment-only secret references, ignored authentication state,
   deterministic run-scoped data, reverse-order cleanup, HTML and JSON reports,
   safe evidence paths, and exact requirement/scenario metadata.
+- Scaled capability coverage: common check, uncheck, select, keyboard, enabled,
+  checked, value, and count primitives are supported. A versioned classifier
+  permits one deterministic low-risk locator capability extension per run and
+  records every proposal; sensitive or policy-changing extensions require human
+  review.
 - Controlled sample decision: use an intercepted repository-local HTML
   application and synthetic non-secret authentication state for deterministic
   cross-browser harness verification. Real target authentication remains
@@ -396,6 +401,7 @@ complete production-quality documentation and examples.
 | 2026-07-29 | Enforce Fallow as a full-codebase quality gate                               | Prevents dead code, duplication, and complexity regressions after cleanup                                                |
 | 2026-07-30 | Version the Graphify map and commit quality pipeline                         | Keeps architectural context current and enforces local lint, format, Fallow, TypeScript, and graph checks before commits |
 | 2026-07-30 | Use an intercepted local sample and synthetic ignored auth state for Phase 5 | Verifies the complete browser harness without external infrastructure, production data, or versioned credentials         |
+| 2026-07-30 | Reserve human gates for intent and authority; automate bounded mechanics     | Keeps the factory scalable while preventing agents from expanding or weakening their own executable-code policy          |
 
 ## Repository tooling record
 

@@ -28,6 +28,12 @@ approval.
   explicit cleanup. Never add arbitrary sleeps.
 - After a failed test, preserve evidence and wait for failure classification.
   Only `SCRIPT_ERROR` authorizes test-code repair.
+- When a required action is missing, classify the capability against the
+  versioned extension policy. Implement one policy-approved low-risk capability
+  per run with its contract, renderer, focused tests, and audit record.
+- Never classify authentication, files, permissions, external origins, arbitrary
+  execution, dependencies, or destructive writes as automatic.
+- Never modify the extension policy while operating under that same policy.
 
 ## Outputs
 
@@ -35,3 +41,5 @@ approval.
   revisions.
 - An `execution-summary` with browser project, status, duration, and registered
   evidence paths.
+- A permanent `capability-extension` record for each automatically approved or
+  review-required capability proposal.

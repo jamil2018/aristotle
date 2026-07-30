@@ -16,3 +16,11 @@
    paths; never register authentication state.
 7. Preserve failures without modifying test or application code until triage
    records a classification.
+8. If a required action is unsupported, create a capability proposal. Apply the
+   versioned classifier rather than making a subjective risk decision.
+9. For `AUTO_APPROVED`, implement at most one capability per run, add contract,
+   renderer, unit, and controlled browser coverage, then run all quality gates
+   and register the extension. For `HUMAN_REVIEW_REQUIRED`, stop that scenario
+   and continue unrelated work where safe.
+10. The implementing agent cannot edit the automatic-extension policy in the
+    same run or claim a disposition different from the classifier output.
