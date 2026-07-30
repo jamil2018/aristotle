@@ -124,6 +124,25 @@ export const artifactRegistry = {
     retentionPolicy: "PERMANENT",
     requiredReferences: ["execution-summary"],
   },
+  "script-repair": {
+    producingRole: "playwright-test-engineer",
+    workflowStage: "test-repair",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: ["playwright-test", "failure-triage"],
+  },
+  "defect-candidate": {
+    producingRole: "failure-triage-analyst",
+    workflowStage: "failure-triage",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: [
+      "normalized-requirements",
+      "scenario-specification",
+      "execution-summary",
+      "failure-triage",
+    ],
+  },
   "final-quality-assessment": {
     producingRole: "final-quality-assessor",
     workflowStage: "final-quality-assessment",

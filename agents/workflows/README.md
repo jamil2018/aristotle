@@ -7,3 +7,5 @@ Implemented workflow guidance:
 
 - [Requirement Clarification](./requirement-clarification.md)
 - [Scenario Review](./scenario-review.md)
+- [Playwright Implementation](./playwright-implementation.md)
+- [Failure Recovery](./failure-recovery.md)

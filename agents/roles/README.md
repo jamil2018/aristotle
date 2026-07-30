@@ -10,3 +10,6 @@ Implemented role contracts:
 - [Requirement Analyst](./requirement-analyst.md)
 - [Test Scenario Designer](./scenario-designer.md)
 - [Scenario Quality Evaluator](./scenario-quality-evaluator.md)
+- [Playwright Test Engineer](./playwright-test-engineer.md)
+- [Failure Triage Analyst](./failure-triage-analyst.md)
+- [Final Quality Assessor](./final-quality-assessor.md)

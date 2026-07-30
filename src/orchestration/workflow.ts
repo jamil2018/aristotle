@@ -74,7 +74,13 @@ export type TransitionGate =
       readonly subject: ArtifactReference;
     }
   | {
+      readonly kind: "EXECUTION_RESULT";
+      readonly subject: ArtifactReference;
+      readonly outcome: "PASSED" | "FAILED";
+    }
+  | {
       readonly kind: "TRIAGE";
+      readonly subject: ArtifactReference;
       readonly classification:
         | "SCRIPT_ERROR"
         | "PRODUCT_DEFECT"
@@ -85,6 +91,7 @@ export type TransitionGate =
     }
   | {
       readonly kind: "FINAL_ASSESSMENT";
+      readonly subject: ArtifactReference;
       readonly decision:
         "READY_FOR_HUMAN_REVIEW" | "REVISION_REQUIRED" | "BLOCKED";
     }
@@ -153,7 +160,10 @@ export function transitionWorkflow(
   const gateSubject =
     input.gate?.kind === "EVALUATOR_PASS" ||
     input.gate?.kind === "HUMAN_SCENARIO_APPROVAL" ||
-    input.gate?.kind === "PLAYWRIGHT_TEST_READY"
+    input.gate?.kind === "PLAYWRIGHT_TEST_READY" ||
+    input.gate?.kind === "EXECUTION_RESULT" ||
+    input.gate?.kind === "TRIAGE" ||
+    input.gate?.kind === "FINAL_ASSESSMENT"
       ? [input.gate.subject]
       : [];
   const inputReferences = [...(input.inputReferences ?? []), ...gateSubject];
@@ -191,6 +201,8 @@ function validateGate(
   validateRequirementGate(workflow, input);
   validateScenarioGate(workflow, input);
   validatePlaywrightGate(workflow, input);
+  validateExecutionGate(workflow, input);
+  validateTriageDispositionGate(workflow, input);
   validateRepairGate(input);
   validateFinalReviewGate(input);
 }
@@ -200,7 +212,9 @@ function validatePlaywrightGate(
   input: TransitionInput,
 ): void {
   if (
-    workflow.currentStage !== "playwright-implementation" ||
+    !["playwright-implementation", "test-repair"].includes(
+      workflow.currentStage,
+    ) ||
     input.to !== "test-execution"
   ) {
     return;
@@ -217,6 +231,76 @@ function validatePlaywrightGate(
   }
 }
 
+function validateExecutionGate(
+  workflow: WorkflowManifest,
+  input: TransitionInput,
+): void {
+  if (workflow.currentStage !== "test-execution") return;
+  if (
+    input.to !== "failure-triage" &&
+    input.to !== "final-quality-assessment"
+  ) {
+    return;
+  }
+  requireRole(input.actor, "playwright-test-engineer");
+  requireGate(input, "EXECUTION_RESULT");
+  if (
+    input.gate?.kind !== "EXECUTION_RESULT" ||
+    input.gate.subject.artifactType !== "execution-summary"
+  ) {
+    throw new Error("Execution disposition requires an execution-summary");
+  }
+  const requiredOutcome = input.to === "failure-triage" ? "FAILED" : "PASSED";
+  if (input.gate.outcome !== requiredOutcome) {
+    throw new Error(
+      `${input.to} requires a ${requiredOutcome} execution result`,
+    );
+  }
+}
+
+function validateTriageDispositionGate(
+  workflow: WorkflowManifest,
+  input: TransitionInput,
+): void {
+  if (
+    workflow.currentStage !== "failure-triage" ||
+    !["final-quality-assessment", "requirement-clarification"].includes(
+      input.to,
+    )
+  ) {
+    return;
+  }
+  requireRole(input.actor, "failure-triage-analyst");
+  requireGate(input, "TRIAGE");
+  if (
+    input.gate?.kind !== "TRIAGE" ||
+    input.gate.subject.artifactType !== "failure-triage"
+  ) {
+    throw new Error("Failure disposition requires a failure-triage artifact");
+  }
+  validateTriageRoute(input.to, input.gate.classification);
+}
+
+function validateTriageRoute(
+  destination: WorkflowStage,
+  classification: Extract<TransitionGate, { kind: "TRIAGE" }>["classification"],
+): void {
+  if (
+    destination === "requirement-clarification" &&
+    classification !== "REQUIREMENT_AMBIGUITY"
+  ) {
+    throw new Error(
+      "Requirement clarification requires REQUIREMENT_AMBIGUITY triage",
+    );
+  }
+  if (
+    destination === "final-quality-assessment" &&
+    classification === "SCRIPT_ERROR"
+  ) {
+    throw new Error("SCRIPT_ERROR must enter bounded test repair");
+  }
+}
+
 function validateRequirementGate(
   workflow: WorkflowManifest,
   input: TransitionInput,
@@ -227,7 +311,10 @@ function validateRequirementGate(
   ) {
     requireGate(input, "NO_BLOCKING_AMBIGUITY");
   }
-  if (input.to === "requirement-clarification") {
+  if (
+    input.to === "requirement-clarification" &&
+    workflow.currentStage !== "failure-triage"
+  ) {
     requireGate(input, "CLARIFICATION_REQUIRED");
   }
   if (
@@ -289,12 +376,16 @@ function validateExactScenarioApproval(
 
 function validateRepairGate(input: TransitionInput): void {
   if (input.to === "test-repair") {
+    requireRole(input.actor, "playwright-test-engineer");
     requireGate(input, "TRIAGE");
     if (
       input.gate?.kind !== "TRIAGE" ||
       input.gate.classification !== "SCRIPT_ERROR"
     ) {
       throw new Error("Only SCRIPT_ERROR authorizes automatic test repair");
+    }
+    if (input.gate.subject.artifactType !== "failure-triage") {
+      throw new Error("Test repair requires an exact failure-triage artifact");
     }
   }
 }
@@ -309,6 +400,11 @@ function validateFinalReviewGate(input: TransitionInput): void {
     ) {
       throw new Error(
         "Final human review requires READY_FOR_HUMAN_REVIEW assessment",
+      );
+    }
+    if (input.gate.subject.artifactType !== "final-quality-assessment") {
+      throw new Error(
+        "Final human review requires an exact final-quality-assessment artifact",
       );
     }
   }

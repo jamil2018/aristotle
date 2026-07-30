@@ -33,29 +33,30 @@ tracker and should be updated in the same change that completes a task.
 |     3 | Requirement pipeline            | COMPLETE    | Phase 2    | All supported inputs produce validated, source-linked requirements             |
 |     4 | Scenario pipeline               | COMPLETE    | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
 |     5 | Playwright pipeline             | COMPLETE    | Phase 4    | Only approved scenarios produce executable, linked tests                       |
-|     6 | Failure and assessment pipeline | NOT_STARTED | Phase 5    | Failures are classified before repair and final packages are assessable        |
+|     6 | Failure and assessment pipeline | COMPLETE    | Phase 5    | Failures are classified before repair and final packages are assessable        |
 |     7 | Memory and improvement          | NOT_STARTED | Phase 6    | Approved knowledge is retrievable and policy changes remain gated              |
 |     8 | Provider hardening              | NOT_STARTED | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                       |
 
 ## Current delivery snapshot
 
 - Last reconciled: 2026-07-30.
-- Completed implementation phases: Phase 2, Phase 3, Phase 4, and Phase 5.
+- Completed implementation phases: Phase 2, Phase 3, Phase 4, Phase 5, and
+  Phase 6.
 - Foundation status: all Phase 1 implementation tasks are complete, but Phase 1
   remains `IN_PROGRESS` until a fresh clone passes `npm ci` and the complete
   quality gate on the pinned Node 22 runtime.
-- Active delivery branch: `codex/phase-5-playwright-pipeline`.
-- Active review: draft pull request
-  [#5](https://github.com/jamil2018/aristotle/pull/5), targeting `main`.
+- Active delivery branch: `codex/phase-6-failure-assessment`.
+- Active review: Phase 6 implementation is in progress; no pull request has been
+  opened yet.
 - Phase 4 merged through pull request
   [#3](https://github.com/jamil2018/aristotle/pull/3).
-- Current automated baseline: 10 unit-test files with 78 passing tests, 1
+- Current automated baseline: 11 unit-test files with 84 passing tests, 1
   integration-test file with 4 passing tests, and 7 controlled Playwright tests
   passing across authentication setup, Chromium, Firefox, and WebKit.
 - Static-analysis baseline: Fallow 3.10.0 reports no dead code, duplication, or
-  complexity findings across 38 analyzed files and 347 functions; average
-  maintainability is 93.6.
-- Next implementation phase: Phase 6, failure and assessment pipeline.
+  complexity findings across 41 analyzed files and 372 functions; average
+  maintainability is 93.7.
+- Next implementation phase: Phase 7, memory and improvement.
 
 ## Phase 1: Repository foundation
 
@@ -321,22 +322,50 @@ and assemble a traceable package for final human review.
 
 ### Tasks
 
-- [ ] `P6-01` Define triage records and six failure classifications.
-- [ ] `P6-02` Collect reproduction, trace, console, network, environment, and
+- [x] `P6-01` Define triage records and six failure classifications.
+- [x] `P6-02` Collect reproduction, trace, console, network, environment, and
       data evidence.
-- [ ] `P6-03` Gate test-code repair on `SCRIPT_ERROR`.
-- [ ] `P6-04` Add bounded repair/rerun loops and preserve revision history.
-- [ ] `P6-05` Generate evidence-backed defect candidates without editing
+- [x] `P6-03` Gate test-code repair on `SCRIPT_ERROR`.
+- [x] `P6-04` Add bounded repair/rerun loops and preserve revision history.
+- [x] `P6-05` Generate evidence-backed defect candidates without editing
       application code.
-- [ ] `P6-06` Handle environment, data, ambiguity, and inconclusive blockers.
-- [ ] `P6-07` Implement final quality assessment and residual-risk reporting.
-- [ ] `P6-08` Stop at final human review and record the disposition.
+- [x] `P6-06` Handle environment, data, ambiguity, and inconclusive blockers.
+- [x] `P6-07` Implement final quality assessment and residual-risk reporting.
+- [x] `P6-08` Stop at final human review and record the disposition.
 
 ### Checkpoint
 
-- [ ] No failure is repaired before classification.
-- [ ] Product defects never authorize application changes.
-- [ ] Final packages provide requirement-to-result traceability.
+- [x] No failure is repaired before classification.
+- [x] Product defects never authorize application changes.
+- [x] Final packages provide requirement-to-result traceability.
+
+### Phase 6 verification record
+
+- Date: 2026-07-30
+- Branch: `codex/phase-6-failure-assessment`
+- Result: `npm run check` passed with 11 unit-test files and 84 unit tests;
+  `npm run test:integration` passed with 1 integration-test file and 4
+  integration tests.
+- Static analysis: Fallow 3.10.0 reports 0 dead-code findings, 0 duplication
+  groups, and 0 functions above configured complexity thresholds across 41 files
+  and 372 functions; average maintainability is 93.7.
+- Triage coverage: exact execution-summary evidence, six classifications,
+  confidence, contrary evidence, bounded reproduction, safe evidence paths, and
+  classification-specific workflow routes.
+- Repair and defect coverage: only an exact `SCRIPT_ERROR` triage revision
+  authorizes the next Playwright test revision, repairs are capped at three, and
+  product-defect candidates require reproduction, the intended condition,
+  approved expectations, and ruled-out script, environment, data, and
+  authentication causes. Application changes are always unauthorized.
+- Assessment coverage: exact requirement-to-scenario-to-test-to-result links,
+  missing artifacts, stale tests, unresolved failures, skipped coverage, and
+  residual risks determine `READY_FOR_HUMAN_REVIEW`, `REVISION_REQUIRED`, or
+  `BLOCKED`; the assessor cannot grant final approval.
+- Next-session handoff: start Phase 7 with immutable, sanitized run summaries
+  and scoped knowledge-proposal contracts. Keep historical patterns
+  non-authoritative until separate human promotion, disclose retrieved knowledge
+  influence, and preserve regression, shadow-evaluation, and rollback gates for
+  workflow improvements.
 
 ## Phase 7: Memory and improvement
 
