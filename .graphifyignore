@@ -1,0 +1,6 @@
+.graphify_*
+graphify-out/.graphify_*
+artifacts/
+playwright/.auth/
+playwright-report/
+test-results/
