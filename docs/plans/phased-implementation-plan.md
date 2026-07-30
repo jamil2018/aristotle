@@ -31,7 +31,7 @@ tracker and should be updated in the same change that completes a task.
 |     1 | Repository foundation           | IN_PROGRESS | None       | Fresh clone installs, validates, builds, and exposes a safe Playwright harness |
 |     2 | Contracts and orchestration     | COMPLETE    | Phase 1    | State transitions and authorization gates pass contract tests                  |
 |     3 | Requirement pipeline            | COMPLETE    | Phase 2    | All supported inputs produce validated, source-linked requirements             |
-|     4 | Scenario pipeline               | NOT_STARTED | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
+|     4 | Scenario pipeline               | COMPLETE    | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
 |     5 | Playwright pipeline             | NOT_STARTED | Phase 4    | Only approved scenarios produce executable, linked tests                       |
 |     6 | Failure and assessment pipeline | NOT_STARTED | Phase 5    | Failures are classified before repair and final packages are assessable        |
 |     7 | Memory and improvement          | NOT_STARTED | Phase 6    | Approved knowledge is retrievable and policy changes remain gated              |
@@ -39,21 +39,21 @@ tracker and should be updated in the same change that completes a task.
 
 ## Current delivery snapshot
 
-- Last reconciled: 2026-07-29.
-- Completed implementation phases: Phase 2 and Phase 3.
+- Last reconciled: 2026-07-30.
+- Completed implementation phases: Phase 2, Phase 3, and Phase 4.
 - Foundation status: all Phase 1 implementation tasks are complete, but Phase 1
   remains `IN_PROGRESS` until a fresh clone passes `npm ci` and the complete
   quality gate on the pinned Node 22 runtime.
-- Active delivery branch: `agent/phase-3-requirement-pipeline`.
+- Active delivery branch: `codex/phase-4-scenario-pipeline`.
 - Active review: draft pull request
-  [#2](https://github.com/jamil2018/aristotle/pull/2), targeting `main`.
-- Latest implementation commit: `fca80cfa4db8a0f4e9fa0ca387e48ca71ea336e1`.
-- Current automated baseline: 8 unit-test files with 45 passing tests and 1
+  [#3](https://github.com/jamil2018/aristotle/pull/3), targeting `main`.
+- Phase 4 implementation commit: `b0211851733bc0747bf90406cbdc048ebfcc074d`.
+- Current automated baseline: 9 unit-test files with 55 passing tests and 1
   integration-test file with 4 passing tests.
 - Static-analysis baseline: Fallow 3.10.0 reports no dead code, duplication, or
-  complexity findings across 28 analyzed files and 201 functions; average
-  maintainability is 93.8.
-- Next implementation phase: Phase 4, Scenario pipeline.
+  complexity findings across 31 analyzed files and 279 functions; average
+  maintainability is 93.4.
+- Next implementation phase: Phase 5, Playwright pipeline.
 
 ## Phase 1: Repository foundation
 
@@ -214,22 +214,42 @@ traceability.
 
 ### Tasks
 
-- [ ] `P4-01` Define Markdown scenario and JSON projection contracts.
-- [ ] `P4-02` Generate coverage across applicable functional and quality
+- [x] `P4-01` Define Markdown scenario and JSON projection contracts.
+- [x] `P4-02` Generate coverage across applicable functional and quality
       dimensions.
-- [ ] `P4-03` Validate projection parity and semantic checksums.
-- [ ] `P4-04` Implement independent evaluator `PASS`, `REVISE`, and `BLOCKED`
+- [x] `P4-03` Validate projection parity and semantic checksums.
+- [x] `P4-04` Implement independent evaluator `PASS`, `REVISE`, and `BLOCKED`
       results.
-- [ ] `P4-05` Implement bounded agent revision loops.
-- [ ] `P4-06` Implement exact-revision human review and explicit exclusions.
-- [ ] `P4-07` Return human-requested changes through independent evaluation.
-- [ ] `P4-08` Generate and validate bidirectional traceability.
+- [x] `P4-05` Implement bounded agent revision loops.
+- [x] `P4-06` Implement exact-revision human review and explicit exclusions.
+- [x] `P4-07` Return human-requested changes through independent evaluation.
+- [x] `P4-08` Generate and validate bidirectional traceability.
 
 ### Checkpoint
 
-- [ ] Human review is unreachable until evaluator `PASS`.
-- [ ] Material scenario changes invalidate evaluation and approval.
-- [ ] Markdown remains authoritative over the JSON projection.
+- [x] Human review is unreachable until evaluator `PASS`.
+- [x] Material scenario changes invalidate evaluation and approval.
+- [x] Markdown remains authoritative over the JSON projection.
+
+### Phase 4 verification record
+
+- Date: 2026-07-30
+- Branch: `codex/phase-4-scenario-pipeline`
+- Result: `npm run check` passed with 9 unit-test files and 55 unit tests;
+  `npm run test:integration` passed with 1 integration-test file and 4
+  integration tests.
+- Static analysis: Fallow 3.10.0 reports 0 dead-code findings, 0 duplication
+  groups, and 0 functions above the configured complexity thresholds across 31
+  files and 279 functions; average maintainability is 93.4.
+- Contract coverage: stable scenario IDs, applicable positive/negative/boundary
+  generation, authoritative Markdown rendering, JSON projection parity, semantic
+  checksums, independent `PASS`/`REVISE`/`BLOCKED` evaluation, three-cycle
+  material revision bounds, human-only exact-revision approval, explicit
+  exclusions, reevaluation after changes, and bidirectional traceability.
+- Security coverage: requirement and scenario content remains untrusted data,
+  Markdown table delimiters are escaped, sensitive test data is represented by
+  strategy and sensitivity classifications, and agents cannot manufacture human
+  scenario approval.
 
 ## Phase 5: Playwright pipeline
 

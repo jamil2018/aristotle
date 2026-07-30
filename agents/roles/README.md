@@ -8,3 +8,5 @@ implementation phases. Shared boundaries already apply.
 Implemented role contracts:
 
 - [Requirement Analyst](./requirement-analyst.md)
+- [Test Scenario Designer](./scenario-designer.md)
+- [Scenario Quality Evaluator](./scenario-quality-evaluator.md)
