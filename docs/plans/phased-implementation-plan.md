@@ -26,37 +26,37 @@ tracker and should be updated in the same change that completes a task.
 
 ## Progress summary
 
-| Phase | Name                            | Status      | Depends on | Exit checkpoint                                                                |
-| ----: | ------------------------------- | ----------- | ---------- | ------------------------------------------------------------------------------ |
-|     1 | Repository foundation           | IN_PROGRESS | None       | Fresh clone installs, validates, builds, and exposes a safe Playwright harness |
-|     2 | Contracts and orchestration     | COMPLETE    | Phase 1    | State transitions and authorization gates pass contract tests                  |
-|     3 | Requirement pipeline            | COMPLETE    | Phase 2    | All supported inputs produce validated, source-linked requirements             |
-|     4 | Scenario pipeline               | COMPLETE    | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
-|     5 | Playwright pipeline             | COMPLETE    | Phase 4    | Only approved scenarios produce executable, linked tests                       |
-|     6 | Failure and assessment pipeline | COMPLETE    | Phase 5    | Failures are classified before repair and final packages are assessable        |
-|     7 | Memory and improvement          | COMPLETE    | Phase 6    | Approved knowledge is retrievable and policy changes remain gated              |
-|     8 | Provider hardening              | NOT_STARTED | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                       |
+| Phase | Name                            | Status   | Depends on | Exit checkpoint                                                                |
+| ----: | ------------------------------- | -------- | ---------- | ------------------------------------------------------------------------------ |
+|     1 | Repository foundation           | COMPLETE | None       | Fresh clone installs, validates, builds, and exposes a safe Playwright harness |
+|     2 | Contracts and orchestration     | COMPLETE | Phase 1    | State transitions and authorization gates pass contract tests                  |
+|     3 | Requirement pipeline            | COMPLETE | Phase 2    | All supported inputs produce validated, source-linked requirements             |
+|     4 | Scenario pipeline               | COMPLETE | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
+|     5 | Playwright pipeline             | COMPLETE | Phase 4    | Only approved scenarios produce executable, linked tests                       |
+|     6 | Failure and assessment pipeline | COMPLETE | Phase 5    | Failures are classified before repair and final packages are assessable        |
+|     7 | Memory and improvement          | COMPLETE | Phase 6    | Approved knowledge is retrievable and policy changes remain gated              |
+|     8 | Provider hardening              | COMPLETE | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                       |
 
 ## Current delivery snapshot
 
 - Last reconciled: 2026-07-30.
-- Completed implementation phases: Phase 2, Phase 3, Phase 4, Phase 5, Phase 6,
-  and Phase 7.
-- Foundation status: all Phase 1 implementation tasks are complete, but Phase 1
-  remains `IN_PROGRESS` until a fresh clone passes `npm ci` and the complete
-  quality gate on the pinned Node 22 runtime.
-- Active delivery branch: `codex/phase-7-memory-improvement`.
+- Completed implementation phases: Phase 1 through Phase 8.
+- Foundation status: the GitHub Actions provider matrix passed `npm ci`, the
+  complete quality gate, integration tests, and provider contract tests on the
+  pinned Node 22 runtime.
+- Active delivery branch: `codex/phase-8-provider-hardening`.
 - Active review: draft pull request
-  [#7](https://github.com/jamil2018/aristotle/pull/7), targeting `main`.
+  [#8](https://github.com/jamil2018/aristotle/pull/8), targeting `main`.
 - Phase 4 merged through pull request
   [#3](https://github.com/jamil2018/aristotle/pull/3).
-- Current automated baseline: 12 unit-test files with 89 passing tests, 1
+- Current automated baseline: 13 unit-test files with 92 passing tests, 1
   integration-test file with 4 passing tests, and 7 controlled Playwright tests
   passing across authentication setup, Chromium, Firefox, and WebKit.
 - Static-analysis baseline: Fallow 3.10.0 reports no dead code, duplication, or
-  complexity findings across 44 analyzed files and 400 functions; average
+  complexity findings across 47 analyzed files and 414 functions; average
   maintainability is 93.6.
-- Next implementation phase: Phase 8, provider hardening.
+- Next development session: review and merge pull request #8, then select the
+  first task-scoped factory pilot; no implementation phase remains open.
 
 ## Phase 1: Repository foundation
 
@@ -85,7 +85,7 @@ foundation with deterministic commands and conservative security defaults.
 
 ### Acceptance criteria
 
-- [ ] `npm ci` succeeds on the pinned Node LTS line.
+- [x] `npm ci` succeeds on the pinned Node LTS line.
 - [x] `npm run check` passes from a clean working tree.
 - [x] `npm run health` reports all required files and directories.
 - [x] Playwright configuration refuses unsafe production writes by default.
@@ -101,8 +101,9 @@ foundation with deterministic commands and conservative security defaults.
 - Result: `npm run check` passed with 2 test files and 5 unit tests.
 - Dependency audit: 0 known vulnerabilities reported during installation.
 - Environment note: verification ran on Node 26.5.0 because Node 22 was not
-  installed on the workstation. Node 22 LTS remains pinned and fresh-clone
-  verification on that runtime is still required.
+  installed on the workstation. The Phase 8 GitHub Actions matrix subsequently
+  passed fresh checkout, `npm ci`, the complete quality gate, integration tests,
+  and provider contract tests on Node 22.
 
 ### Verification
 
@@ -441,22 +442,60 @@ complete production-quality documentation and examples.
 
 ### Tasks
 
-- [ ] `P8-01` Complete provider-specific adapters and instruction entry points.
-- [ ] `P8-02` Add contract tests for every role and skill on each provider.
-- [ ] `P8-03` Execute the permanent benchmark corpus across providers.
-- [ ] `P8-04` Add the authentication example and controlled sample application.
-- [ ] `P8-05` Complete architecture, workflow, security, triage, memory, and
+- [x] `P8-01` Complete provider-specific adapters and instruction entry points.
+- [x] `P8-02` Add contract tests for every role and skill on each provider.
+- [x] `P8-03` Execute the permanent benchmark corpus across providers.
+- [x] `P8-04` Add the authentication example and controlled sample application.
+- [x] `P8-05` Complete architecture, workflow, security, triage, memory, and
       troubleshooting docs.
-- [ ] `P8-06` Measure acceptance, correction, classification, leakage, and
+- [x] `P8-06` Measure acceptance, correction, classification, leakage, and
       traceability quality.
-- [ ] `P8-07` Verify fresh-clone setup and provider compatibility in CI.
-- [ ] `P8-08` Complete the final acceptance-criteria audit.
+- [x] `P8-07` Verify fresh-clone setup and provider compatibility in CI.
+- [x] `P8-08` Complete the final acceptance-criteria audit.
 
 ### Final checkpoint
 
-- [ ] All product acceptance criteria in the source plan are evidenced.
-- [ ] Provider differences do not weaken workflow gates.
-- [ ] The factory is clone-ready and stops at final human review.
+- [x] All product acceptance criteria in the source plan are evidenced.
+- [x] Provider differences do not weaken workflow gates.
+- [x] The factory is clone-ready and stops at final human review.
+
+### Phase 8 verification record
+
+- Date: 2026-07-30
+- Branch: `codex/phase-8-provider-hardening`
+- Draft pull request: [#8](https://github.com/jamil2018/aristotle/pull/8),
+  targeting `main`.
+- Implementation commit: `d22724609034ac71c64123255df8a928c3e518c6`.
+- Local result: `npm run check` passed with 13 unit-test files and 92 unit
+  tests; `npm run test:integration` passed with 1 integration-test file and 4
+  integration tests; `npm run test:e2e` passed authentication setup and the
+  controlled sample on Chromium, Firefox, and WebKit with 7 tests total.
+- Node 22 CI:
+  [quality run 30547448964](https://github.com/jamil2018/aristotle/actions/runs/30547448964)
+  passed fresh checkout, `npm ci`, the complete quality gate, integration tests,
+  and provider contract tests for Codex, Cursor, and Claude Code.
+- Provider coverage: executable adapter manifests bind every provider to all
+  implemented role and skill contracts, all shared security boundaries, and the
+  final human-review stop. Cursor and Claude Code now have repository entry
+  points that delegate to the same shared contracts as Codex.
+- Benchmark coverage: 18 permanent synthetic and sanitized categories cover
+  requirement quality, placement, scenario adequacy, human revision, selector
+  and assertion errors, six failure routes, flakiness, prompt injection, secret
+  leakage, requirement revision, and interrupted resumption. Reports measure
+  acceptance, classification accuracy, policy compliance, human correction,
+  leakage, and traceability.
+- Documentation and examples: architecture, workflow, security and privacy,
+  failure triage, memory, provider portability, evaluation, Playwright, and
+  troubleshooting guidance are versioned alongside authentication and
+  controlled-sample examples.
+- Static analysis: Fallow 3.10.0 reports 0 dead-code findings, 0 duplication
+  groups, and 0 functions above configured complexity thresholds across 47 files
+  and 414 functions; average maintainability is 93.6.
+- Graph note: the Graphify AST and semantic document graph was refreshed to
+  1,030 nodes and 1,292 edges.
+- Next-session handoff: review and merge pull request #8. After merge, begin a
+  task-scoped pilot using a sanitized real requirement set and preserve the
+  factory's final human-review stop; no phased implementation work remains.
 
 ## Decision log
 
@@ -490,18 +529,18 @@ complete production-quality documentation and examples.
 
 ## Risks and mitigations
 
-| Risk                                            | Impact   | Mitigation                                                                 |
-| ----------------------------------------------- | -------- | -------------------------------------------------------------------------- |
-| Provider instruction formats diverge            | High     | Keep shared contracts provider-neutral and test adapters separately        |
-| Agent-generated approvals bypass humans         | Critical | Store human decisions separately and reject agent actors in schemas        |
-| Untrusted content causes instruction injection  | Critical | Parse as data, label provenance, and enforce role/security boundaries      |
-| Scenario and JSON representations drift         | High     | Validate both against a semantic checksum with Markdown authoritative      |
-| Retries hide flaky behavior                     | High     | Treat retries as evidence and require an explicit disposition              |
-| Repository structure becomes placeholder-heavy  | Medium   | Add directories only when they have an owner, contract, or near-term phase |
-| Pinned-runtime verification remains outstanding | Medium   | Keep Phase 1 open until a fresh Node 22 clone passes all quality gates     |
-| Static-analysis findings regress                | Medium   | Run the full-codebase Fallow gate within `npm run check`                   |
+| Risk                                           | Impact   | Mitigation                                                                 |
+| ---------------------------------------------- | -------- | -------------------------------------------------------------------------- |
+| Provider instruction formats diverge           | High     | Keep shared contracts provider-neutral and test adapters separately        |
+| Agent-generated approvals bypass humans        | Critical | Store human decisions separately and reject agent actors in schemas        |
+| Untrusted content causes instruction injection | Critical | Parse as data, label provenance, and enforce role/security boundaries      |
+| Scenario and JSON representations drift        | High     | Validate both against a semantic checksum with Markdown authoritative      |
+| Retries hide flaky behavior                    | High     | Treat retries as evidence and require an explicit disposition              |
+| Repository structure becomes placeholder-heavy | Medium   | Add directories only when they have an owner, contract, or near-term phase |
+| Pinned-runtime regressions                     | Medium   | Keep the Node 22 provider matrix required on pull requests                 |
+| Static-analysis findings regress               | Medium   | Run the full-codebase Fallow gate within `npm run check`                   |
 
 ## Open decisions
 
-- Decide whether CI initially targets one provider or the complete provider
-  matrix.
+- Select the first task-scoped, sanitized factory pilot after pull request #8
+  merges.

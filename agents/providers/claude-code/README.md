@@ -1,5 +1,6 @@
 # Claude Code provider
 
-Claude Code instructions will adapt the shared repository instructions without
-weakening authorization, review, or security boundaries. The complete adapter is
-planned for Phase 8.
+Claude Code starts with [`CLAUDE.md`](../../../CLAUDE.md), then follows
+`AGENTS.md` and the exact stage contracts. Provider presentation cannot weaken
+authorization, review, or security boundaries. The executable adapter manifest
+is validated in `src/providers/contracts.ts`.
