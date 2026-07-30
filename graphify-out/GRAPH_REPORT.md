@@ -1,16 +1,16 @@
 # Graph Report - aristotle  (2026-07-30)
 
 ## Corpus Check
-- 89 files · ~35,936 words
+- 89 files · ~36,200 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 979 nodes · 1216 edges · 95 communities (62 shown, 33 thin omitted)
+- 981 nodes · 1218 edges · 95 communities (62 shown, 33 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 14 edges (avg confidence: 0.91)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `71177caf`
+- Built from commit: `a9d7a6f3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -114,8 +114,8 @@
 4. `Quality Agent Factory Phased Implementation Plan` - 18 edges
 5. `compilerOptions` - 17 edges
 6. `scripts` - 16 edges
-7. `devDependencies` - 13 edges
-8. `Phase 7: Memory and improvement` - 13 edges
+7. `Phase 7: Memory and improvement` - 14 edges
+8. `devDependencies` - 13 edges
 9. `3. Agent and Human Roles` - 12 edges
 10. `Phase 6: Failure and assessment pipeline` - 12 edges
 
@@ -222,8 +222,8 @@ Cohesion: 0.17
 Nodes (12): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 6: Failure and assessment pipeline, Phase 6 verification record, Tasks (+4 more)
 
 ### Community 22 - "Community 22"
-Cohesion: 0.15
-Nodes (13): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 7: Memory and improvement, Tasks (+5 more)
+Cohesion: 0.14
+Nodes (14): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 7: Memory and improvement, Phase 7 verification record (+6 more)
 
 ### Community 23 - "Community 23"
 Cohesion: 0.18
@@ -270,8 +270,8 @@ Cohesion: 0.29
 Nodes (7): Checkpoint, Phase 2: Contracts and orchestration, Phase 2 verification record, Tasks, Tasks, Tasks, Tasks
 
 ### Community 34 - "Community 34"
-Cohesion: 0.25
-Nodes (8): Final checkpoint, Phase 8: Provider hardening, Tasks, Tasks, Tasks, Tasks, Tasks, Tasks
+Cohesion: 0.22
+Nodes (9): Final checkpoint, Phase 8: Provider hardening, Tasks, Tasks, Tasks, Tasks, Tasks, Tasks (+1 more)
 
 ### Community 35 - "Community 35"
 Cohesion: 0.33
@@ -366,7 +366,7 @@ Cohesion: 0.33
 Nodes (5): Boundaries, Mission, Required proposal content, Trigger, Workflow Improvement Analyst
 
 ## Knowledge Gaps
-- **532 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+527 more)
+- **534 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+529 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **33 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -380,7 +380,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `Quality Agent Factory Phased Implementation Plan` connect `Community 23` to `Community 33`, `Community 34`, `Community 38`, `Community 21`, `Community 22`, `Community 25`, `Community 26`, `Community 27`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _573 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _575 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
