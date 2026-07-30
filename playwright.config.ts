@@ -21,8 +21,33 @@ export default defineConfig({
     video: factoryConfig.evidence.video,
   },
   projects: [
-    { name: "chromium", use: { ...devices["Desktop Chrome"] } },
-    { name: "firefox", use: { ...devices["Desktop Firefox"] } },
-    { name: "webkit", use: { ...devices["Desktop Safari"] } },
+    {
+      name: "authentication-setup",
+      testMatch: /auth\.setup\.ts/,
+    },
+    {
+      name: "chromium",
+      dependencies: ["authentication-setup"],
+      use: {
+        ...devices["Desktop Chrome"],
+        storageState: "playwright/.auth/authorized-user.json",
+      },
+    },
+    {
+      name: "firefox",
+      dependencies: ["authentication-setup"],
+      use: {
+        ...devices["Desktop Firefox"],
+        storageState: "playwright/.auth/authorized-user.json",
+      },
+    },
+    {
+      name: "webkit",
+      dependencies: ["authentication-setup"],
+      use: {
+        ...devices["Desktop Safari"],
+        storageState: "playwright/.auth/authorized-user.json",
+      },
+    },
   ],
 });

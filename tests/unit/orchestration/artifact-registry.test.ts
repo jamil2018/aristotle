@@ -33,6 +33,15 @@ describe("artifact registry", () => {
     );
   });
 
+  it("registers auditable Playwright capability extensions", () => {
+    expect(artifactRegistry["capability-extension"]).toMatchObject({
+      producingRole: "playwright-test-engineer",
+      workflowStage: "playwright-implementation",
+      retentionPolicy: "PERMANENT",
+      requiredReferences: ["scenario-specification", "human-scenario-review"],
+    });
+  });
+
   it("resolves a path below the configured artifact root", () => {
     expect(
       resolveArtifactPath("/repo/artifacts", {

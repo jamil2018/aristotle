@@ -32,7 +32,7 @@ tracker and should be updated in the same change that completes a task.
 |     2 | Contracts and orchestration     | COMPLETE    | Phase 1    | State transitions and authorization gates pass contract tests                  |
 |     3 | Requirement pipeline            | COMPLETE    | Phase 2    | All supported inputs produce validated, source-linked requirements             |
 |     4 | Scenario pipeline               | COMPLETE    | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
-|     5 | Playwright pipeline             | NOT_STARTED | Phase 4    | Only approved scenarios produce executable, linked tests                       |
+|     5 | Playwright pipeline             | COMPLETE    | Phase 4    | Only approved scenarios produce executable, linked tests                       |
 |     6 | Failure and assessment pipeline | NOT_STARTED | Phase 5    | Failures are classified before repair and final packages are assessable        |
 |     7 | Memory and improvement          | NOT_STARTED | Phase 6    | Approved knowledge is retrievable and policy changes remain gated              |
 |     8 | Provider hardening              | NOT_STARTED | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                       |
@@ -40,20 +40,22 @@ tracker and should be updated in the same change that completes a task.
 ## Current delivery snapshot
 
 - Last reconciled: 2026-07-30.
-- Completed implementation phases: Phase 2, Phase 3, and Phase 4.
+- Completed implementation phases: Phase 2, Phase 3, Phase 4, and Phase 5.
 - Foundation status: all Phase 1 implementation tasks are complete, but Phase 1
   remains `IN_PROGRESS` until a fresh clone passes `npm ci` and the complete
   quality gate on the pinned Node 22 runtime.
-- Active delivery branch: `codex/phase-4-scenario-pipeline`.
+- Active delivery branch: `codex/phase-5-playwright-pipeline`.
 - Active review: draft pull request
-  [#3](https://github.com/jamil2018/aristotle/pull/3), targeting `main`.
-- Phase 4 implementation commit: `b0211851733bc0747bf90406cbdc048ebfcc074d`.
-- Current automated baseline: 9 unit-test files with 55 passing tests and 1
-  integration-test file with 4 passing tests.
+  [#5](https://github.com/jamil2018/aristotle/pull/5), targeting `main`.
+- Phase 4 merged through pull request
+  [#3](https://github.com/jamil2018/aristotle/pull/3).
+- Current automated baseline: 10 unit-test files with 78 passing tests, 1
+  integration-test file with 4 passing tests, and 7 controlled Playwright tests
+  passing across authentication setup, Chromium, Firefox, and WebKit.
 - Static-analysis baseline: Fallow 3.10.0 reports no dead code, duplication, or
-  complexity findings across 31 analyzed files and 279 functions; average
-  maintainability is 93.4.
-- Next implementation phase: Phase 5, Playwright pipeline.
+  complexity findings across 38 analyzed files and 347 functions; average
+  maintainability is 93.6.
+- Next implementation phase: Phase 6, failure and assessment pipeline.
 
 ## Phase 1: Repository foundation
 
@@ -258,22 +260,59 @@ authorized scenario revisions.
 
 ### Tasks
 
-- [ ] `P5-01` Define requirement/scenario metadata conventions for tests.
-- [ ] `P5-02` Add authentication setup with ignored storage state.
-- [ ] `P5-03` Add fixtures, deterministic test-data utilities, and cleanup
+- [x] `P5-01` Define requirement/scenario metadata conventions for tests.
+- [x] `P5-02` Add authentication setup with ignored storage state.
+- [x] `P5-03` Add fixtures, deterministic test-data utilities, and cleanup
       patterns.
-- [ ] `P5-04` Implement approval verification before test generation.
-- [ ] `P5-05` Implement safe test generation using repository conventions.
-- [ ] `P5-06` Execute browser projects with HTML and machine-readable reporting.
-- [ ] `P5-07` Register traces, screenshots, videos, and result artifacts.
-- [ ] `P5-08` Add controlled sample-application end-to-end tests.
+- [x] `P5-04` Implement approval verification before test generation.
+- [x] `P5-05` Implement safe test generation using repository conventions.
+- [x] `P5-06` Execute browser projects with HTML and machine-readable reporting.
+- [x] `P5-07` Register traces, screenshots, videos, and result artifacts.
+- [x] `P5-08` Add controlled sample-application end-to-end tests.
 
 ### Checkpoint
 
-- [ ] Unapproved scenarios cannot generate test code.
-- [ ] Tests use accessible locators, web-first assertions, and no arbitrary
+- [x] Unapproved scenarios cannot generate test code.
+- [x] Tests use accessible locators, web-first assertions, and no arbitrary
       sleeps.
-- [ ] Every result traces to exact scenario and requirement revisions.
+- [x] Every result traces to exact scenario and requirement revisions.
+
+### Phase 5 verification record
+
+- Date: 2026-07-30
+- Branch: `codex/phase-5-playwright-pipeline`
+- Draft pull request: [#5](https://github.com/jamil2018/aristotle/pull/5),
+  targeting `main`.
+- Implementation commit: `040d7953e6c03f4c7c25bc2cb8fe76fc50effb44`.
+- Result: `npm run check` passed with 10 unit-test files and 78 unit tests;
+  `npm run test:integration` passed with 1 integration-test file and 4
+  integration tests; `npm run test:e2e` passed authentication setup and the
+  controlled sample on Chromium, Firefox, and WebKit with 7 tests total.
+- Static analysis: Fallow 3.10.0 reports 0 dead-code findings, 0 duplication
+  groups, and 0 functions above configured complexity thresholds across 38 files
+  and 347 functions; average maintainability is 93.6.
+- Authorization coverage: generation requires evaluator `PASS` and human
+  approval for the exact scenario revision, evaluation checksum, and semantic
+  checksum; exclusions, stale requirements, and non-candidate scenarios are
+  rejected. Test execution requires the Playwright test engineer and an exact
+  registered `playwright-test` artifact.
+- Harness coverage: accessible locators, web-first assertions, relative routes,
+  environment-only secret references, ignored authentication state,
+  deterministic run-scoped data, reverse-order cleanup, HTML and JSON reports,
+  safe evidence paths, and exact requirement/scenario metadata.
+- Scaled capability coverage: common check, uncheck, select, keyboard, enabled,
+  checked, value, and count primitives are supported. A versioned classifier
+  permits one deterministic low-risk locator capability extension per run and
+  records every proposal; sensitive or policy-changing extensions require human
+  review.
+- Controlled sample decision: use an intercepted repository-local HTML
+  application and synthetic non-secret authentication state for deterministic
+  cross-browser harness verification. Real target authentication remains
+  task-scoped and environment-configured.
+- Next-session handoff: start Phase 6 with triage records and the six failure
+  classifications. Preserve execution evidence before any repair, require
+  `SCRIPT_ERROR` for the existing test-repair transition, and keep target
+  application source read-only.
 
 ## Phase 6: Failure and assessment pipeline
 
@@ -361,6 +400,8 @@ complete production-quality documentation and examples.
 | 2026-07-29 | Use repository-local manifests and atomic filesystem persistence             | Delivers durable resumable state without requiring a database in v1                                                      |
 | 2026-07-29 | Enforce Fallow as a full-codebase quality gate                               | Prevents dead code, duplication, and complexity regressions after cleanup                                                |
 | 2026-07-30 | Version the Graphify map and commit quality pipeline                         | Keeps architectural context current and enforces local lint, format, Fallow, TypeScript, and graph checks before commits |
+| 2026-07-30 | Use an intercepted local sample and synthetic ignored auth state for Phase 5 | Verifies the complete browser harness without external infrastructure, production data, or versioned credentials         |
+| 2026-07-30 | Reserve human gates for intent and authority; automate bounded mechanics     | Keeps the factory scalable while preventing agents from expanding or weakening their own executable-code policy          |
 
 ## Repository tooling record
 
@@ -393,7 +434,5 @@ complete production-quality documentation and examples.
 
 ## Open decisions
 
-- Select the controlled sample application and authentication strategy in
-  Phase 5.
 - Decide whether CI initially targets one provider or the complete provider
   matrix.

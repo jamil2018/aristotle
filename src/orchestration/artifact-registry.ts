@@ -92,6 +92,13 @@ export const artifactRegistry = {
     retentionPolicy: "PERMANENT",
     requiredReferences: ["scenario-specification", "scenario-evaluation"],
   },
+  "capability-extension": {
+    producingRole: "playwright-test-engineer",
+    workflowStage: "playwright-implementation",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: ["scenario-specification", "human-scenario-review"],
+  },
   "playwright-test": {
     producingRole: "playwright-test-engineer",
     workflowStage: "playwright-implementation",
