@@ -42,6 +42,22 @@ describe("artifact registry", () => {
     });
   });
 
+  it("keeps knowledge and policy approval as separate permanent artifacts", () => {
+    expect(artifactRegistry["knowledge-proposal"]).toMatchObject({
+      producingRole: "knowledge-curator",
+      workflowStage: "completed",
+      requiredReferences: ["run-summary"],
+    });
+    expect(artifactRegistry["knowledge-approval"]).toMatchObject({
+      producingRole: "human-knowledge-reviewer",
+      requiredReferences: ["knowledge-proposal"],
+    });
+    expect(artifactRegistry["improvement-evaluation"]).toMatchObject({
+      producingRole: "human-policy-reviewer",
+      requiredReferences: ["improvement-proposal"],
+    });
+  });
+
   it("resolves a path below the configured artifact root", () => {
     expect(
       resolveArtifactPath("/repo/artifacts", {

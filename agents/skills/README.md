@@ -12,3 +12,4 @@ Implemented skills:
 - [Use the Knowledge Graph](./use-knowledge-graph.md)
 - [Automate Approved Scenarios](./automate-approved-scenarios.md)
 - [Triage Test Failures](./triage-test-failures.md)
+- [Curate Project Knowledge](./curate-project-knowledge.md)

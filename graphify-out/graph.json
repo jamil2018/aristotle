@@ -1390,6 +1390,87 @@
       "norm_label": "scripterrortriage()"
     },
     {
+      "label": "memory-pipeline.test.ts",
+      "file_type": "code",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L1",
+      "id": "tests_unit_memory_memory_pipeline_test_ts",
+      "community": 90,
+      "norm_label": "memory-pipeline.test.ts"
+    },
+    {
+      "label": "scope",
+      "file_type": "code",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L13",
+      "id": "memory_memory_pipeline_test_scope",
+      "community": 90,
+      "norm_label": "scope"
+    },
+    {
+      "label": "summary",
+      "file_type": "code",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L25",
+      "id": "memory_memory_pipeline_test_summary",
+      "community": 90,
+      "norm_label": "summary"
+    },
+    {
+      "label": "proposal",
+      "file_type": "code",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L57",
+      "id": "memory_memory_pipeline_test_proposal",
+      "community": 90,
+      "norm_label": "proposal"
+    },
+    {
+      "label": "approved",
+      "file_type": "code",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L85",
+      "id": "memory_memory_pipeline_test_approved",
+      "community": 90,
+      "norm_label": "approved"
+    },
+    {
+      "label": "retrieval",
+      "file_type": "code",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L120",
+      "id": "memory_memory_pipeline_test_retrieval",
+      "community": 90,
+      "norm_label": "retrieval"
+    },
+    {
+      "label": "feedback",
+      "file_type": "code",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L150",
+      "id": "memory_memory_pipeline_test_feedback",
+      "community": 90,
+      "norm_label": "feedback"
+    },
+    {
+      "label": "adopted",
+      "file_type": "code",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L187",
+      "id": "memory_memory_pipeline_test_adopted",
+      "community": 90,
+      "norm_label": "adopted"
+    },
+    {
+      "label": "feedbackEvent()",
+      "file_type": "code",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L203",
+      "id": "memory_memory_pipeline_test_feedbackevent",
+      "community": 90,
+      "norm_label": "feedbackevent()"
+    },
+    {
       "label": "factory-config.test.ts",
       "file_type": "code",
       "source_file": "tests/unit/config/factory-config.test.ts",
@@ -2059,7 +2140,7 @@
       "label": "root",
       "file_type": "code",
       "source_file": "tests/unit/validation/repository-health.test.ts",
-      "source_location": "L26",
+      "source_location": "L30",
       "id": "validation_repository_health_test_root",
       "community": 31,
       "norm_label": "root"
@@ -2068,7 +2149,7 @@
       "label": "entryPath",
       "file_type": "code",
       "source_file": "tests/unit/validation/repository-health.test.ts",
-      "source_location": "L45",
+      "source_location": "L49",
       "id": "validation_repository_health_test_entrypath",
       "community": 31,
       "norm_label": "entrypath"
@@ -2477,6 +2558,303 @@
       "id": "failures_pipeline_requireexacttriagechecksum",
       "community": 6,
       "norm_label": "requireexacttriagechecksum()"
+    },
+    {
+      "label": "contracts.ts",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L1",
+      "id": "src_memory_contracts_ts",
+      "community": 90,
+      "norm_label": "contracts.ts"
+    },
+    {
+      "label": "identifierSchema",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L3",
+      "id": "memory_contracts_identifierschema",
+      "community": 90,
+      "norm_label": "identifierschema"
+    },
+    {
+      "label": "checksumSchema",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L8",
+      "id": "memory_contracts_checksumschema",
+      "community": 90,
+      "norm_label": "checksumschema"
+    },
+    {
+      "label": "boundedTextSchema",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L9",
+      "id": "memory_contracts_boundedtextschema",
+      "community": 90,
+      "norm_label": "boundedtextschema"
+    },
+    {
+      "label": "memoryScopeSchema",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L11",
+      "id": "memory_contracts_memoryscopeschema",
+      "community": 90,
+      "norm_label": "memoryscopeschema"
+    },
+    {
+      "label": "feedbackCategorySchema",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L21",
+      "id": "memory_contracts_feedbackcategoryschema",
+      "community": 90,
+      "norm_label": "feedbackcategoryschema"
+    },
+    {
+      "label": "runSummarySchema",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L33",
+      "id": "memory_contracts_runsummaryschema",
+      "community": 90,
+      "norm_label": "runsummaryschema"
+    },
+    {
+      "label": "knowledgeProposalSchema",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L61",
+      "id": "memory_contracts_knowledgeproposalschema",
+      "community": 90,
+      "norm_label": "knowledgeproposalschema"
+    },
+    {
+      "label": "feedbackEventSchema",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L89",
+      "id": "memory_contracts_feedbackeventschema",
+      "community": 90,
+      "norm_label": "feedbackeventschema"
+    },
+    {
+      "label": "improvementProposalSchema",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L99",
+      "id": "memory_contracts_improvementproposalschema",
+      "community": 90,
+      "norm_label": "improvementproposalschema"
+    },
+    {
+      "label": "improvementEvaluationSchema",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L115",
+      "id": "memory_contracts_improvementevaluationschema",
+      "community": 90,
+      "norm_label": "improvementevaluationschema"
+    },
+    {
+      "label": "MemoryScope",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L125",
+      "id": "memory_contracts_memoryscope",
+      "community": 90,
+      "norm_label": "memoryscope"
+    },
+    {
+      "label": "RunSummary",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L126",
+      "id": "memory_contracts_runsummary",
+      "community": 90,
+      "norm_label": "runsummary"
+    },
+    {
+      "label": "KnowledgeProposal",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L127",
+      "id": "memory_contracts_knowledgeproposal",
+      "community": 90,
+      "norm_label": "knowledgeproposal"
+    },
+    {
+      "label": "FeedbackEvent",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L128",
+      "id": "memory_contracts_feedbackevent",
+      "community": 90,
+      "norm_label": "feedbackevent"
+    },
+    {
+      "label": "ImprovementProposal",
+      "file_type": "code",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L129",
+      "id": "memory_contracts_improvementproposal",
+      "community": 90,
+      "norm_label": "improvementproposal"
+    },
+    {
+      "label": "pipeline.ts",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L1",
+      "id": "src_memory_pipeline_ts",
+      "community": 90,
+      "norm_label": "pipeline.ts"
+    },
+    {
+      "label": "RunSummaryInput",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L16",
+      "id": "memory_pipeline_runsummaryinput",
+      "community": 90,
+      "norm_label": "runsummaryinput"
+    },
+    {
+      "label": "createRunSummary()",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L23",
+      "id": "memory_pipeline_createrunsummary",
+      "community": 90,
+      "norm_label": "createrunsummary()"
+    },
+    {
+      "label": "KnowledgeProposalInput",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L37",
+      "id": "memory_pipeline_knowledgeproposalinput",
+      "community": 90,
+      "norm_label": "knowledgeproposalinput"
+    },
+    {
+      "label": "createKnowledgeProposal()",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L42",
+      "id": "memory_pipeline_createknowledgeproposal",
+      "community": 90,
+      "norm_label": "createknowledgeproposal()"
+    },
+    {
+      "label": "KnowledgeApprovalInput",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L54",
+      "id": "memory_pipeline_knowledgeapprovalinput",
+      "community": 90,
+      "norm_label": "knowledgeapprovalinput"
+    },
+    {
+      "label": "approveKnowledgeProposal()",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L62",
+      "id": "memory_pipeline_approveknowledgeproposal",
+      "community": 90,
+      "norm_label": "approveknowledgeproposal()"
+    },
+    {
+      "label": "RetrievalInput",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L85",
+      "id": "memory_pipeline_retrievalinput",
+      "community": 90,
+      "norm_label": "retrievalinput"
+    },
+    {
+      "label": "retrieveApprovedKnowledge()",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L91",
+      "id": "memory_pipeline_retrieveapprovedknowledge",
+      "community": 90,
+      "norm_label": "retrieveapprovedknowledge()"
+    },
+    {
+      "label": "ImprovementProposalInput",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L115",
+      "id": "memory_pipeline_improvementproposalinput",
+      "community": 90,
+      "norm_label": "improvementproposalinput"
+    },
+    {
+      "label": "createImprovementProposal()",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L129",
+      "id": "memory_pipeline_createimprovementproposal",
+      "community": 90,
+      "norm_label": "createimprovementproposal()"
+    },
+    {
+      "label": "ImprovementEvaluationInput",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L170",
+      "id": "memory_pipeline_improvementevaluationinput",
+      "community": 90,
+      "norm_label": "improvementevaluationinput"
+    },
+    {
+      "label": "evaluateImprovement()",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L181",
+      "id": "memory_pipeline_evaluateimprovement",
+      "community": 90,
+      "norm_label": "evaluateimprovement()"
+    },
+    {
+      "label": "scopesMatch()",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L210",
+      "id": "memory_pipeline_scopesmatch",
+      "community": 90,
+      "norm_label": "scopesmatch()"
+    },
+    {
+      "label": "requireExactChecksum()",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L216",
+      "id": "memory_pipeline_requireexactchecksum",
+      "community": 90,
+      "norm_label": "requireexactchecksum()"
+    },
+    {
+      "label": "assertSanitized()",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L226",
+      "id": "memory_pipeline_assertsanitized",
+      "community": 90,
+      "norm_label": "assertsanitized()"
+    },
+    {
+      "label": "deepFreeze()",
+      "file_type": "code",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L235",
+      "id": "memory_pipeline_deepfreeze",
+      "community": 90,
+      "norm_label": "deepfreeze()"
     },
     {
       "label": "factory-config.ts",
@@ -3454,7 +3832,7 @@
       "label": "artifactTypeSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L34",
+      "source_location": "L36",
       "id": "schemas_contracts_artifacttypeschema",
       "community": 1,
       "norm_label": "artifacttypeschema"
@@ -3463,7 +3841,7 @@
       "label": "identifierSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L56",
+      "source_location": "L64",
       "id": "schemas_contracts_identifierschema",
       "community": 1,
       "norm_label": "identifierschema"
@@ -3472,7 +3850,7 @@
       "label": "checksumSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L61",
+      "source_location": "L69",
       "id": "schemas_contracts_checksumschema",
       "community": 1,
       "norm_label": "checksumschema"
@@ -3481,7 +3859,7 @@
       "label": "gitCommitSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L62",
+      "source_location": "L70",
       "id": "schemas_contracts_gitcommitschema",
       "community": 1,
       "norm_label": "gitcommitschema"
@@ -3490,7 +3868,7 @@
       "label": "relativeArtifactPathSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L63",
+      "source_location": "L71",
       "id": "schemas_contracts_relativeartifactpathschema",
       "community": 1,
       "norm_label": "relativeartifactpathschema"
@@ -3499,7 +3877,7 @@
       "label": "provenanceSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L73",
+      "source_location": "L81",
       "id": "schemas_contracts_provenanceschema",
       "community": 1,
       "norm_label": "provenanceschema"
@@ -3508,7 +3886,7 @@
       "label": "artifactReferenceSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L83",
+      "source_location": "L91",
       "id": "schemas_contracts_artifactreferenceschema",
       "community": 1,
       "norm_label": "artifactreferenceschema"
@@ -3517,7 +3895,7 @@
       "label": "manifestBase",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L90",
+      "source_location": "L98",
       "id": "schemas_contracts_manifestbase",
       "community": 1,
       "norm_label": "manifestbase"
@@ -3526,7 +3904,7 @@
       "label": "humanActorSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L99",
+      "source_location": "L107",
       "id": "schemas_contracts_humanactorschema",
       "community": 1,
       "norm_label": "humanactorschema"
@@ -3535,7 +3913,7 @@
       "label": "agentActorSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L104",
+      "source_location": "L112",
       "id": "schemas_contracts_agentactorschema",
       "community": 1,
       "norm_label": "agentactorschema"
@@ -3544,7 +3922,7 @@
       "label": "actorSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L109",
+      "source_location": "L117",
       "id": "schemas_contracts_actorschema",
       "community": 1,
       "norm_label": "actorschema"
@@ -3553,7 +3931,7 @@
       "label": "taskManifestSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L118",
+      "source_location": "L126",
       "id": "schemas_contracts_taskmanifestschema",
       "community": 1,
       "norm_label": "taskmanifestschema"
@@ -3562,7 +3940,7 @@
       "label": "exactSubjectSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L134",
+      "source_location": "L142",
       "id": "schemas_contracts_exactsubjectschema",
       "community": 1,
       "norm_label": "exactsubjectschema"
@@ -3571,7 +3949,7 @@
       "label": "decisionManifestSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L140",
+      "source_location": "L148",
       "id": "schemas_contracts_decisionmanifestschema",
       "community": 1,
       "norm_label": "decisionmanifestschema"
@@ -3580,16 +3958,16 @@
       "label": "workflowManifestSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L168",
+      "source_location": "L176",
       "id": "schemas_contracts_workflowmanifestschema",
-      "community": 15,
+      "community": 1,
       "norm_label": "workflowmanifestschema"
     },
     {
       "label": "artifactManifestSchema",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L194",
+      "source_location": "L202",
       "id": "schemas_contracts_artifactmanifestschema",
       "community": 1,
       "norm_label": "artifactmanifestschema"
@@ -3598,7 +3976,7 @@
       "label": "WorkflowStage",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L209",
+      "source_location": "L217",
       "id": "schemas_contracts_workflowstage",
       "community": 1,
       "norm_label": "workflowstage"
@@ -3607,7 +3985,7 @@
       "label": "ProducingRole",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L210",
+      "source_location": "L218",
       "id": "schemas_contracts_producingrole",
       "community": 1,
       "norm_label": "producingrole"
@@ -3616,7 +3994,7 @@
       "label": "ArtifactType",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L211",
+      "source_location": "L219",
       "id": "schemas_contracts_artifacttype",
       "community": 1,
       "norm_label": "artifacttype"
@@ -3625,7 +4003,7 @@
       "label": "ArtifactReference",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L212",
+      "source_location": "L220",
       "id": "schemas_contracts_artifactreference",
       "community": 3,
       "norm_label": "artifactreference"
@@ -3634,7 +4012,7 @@
       "label": "Actor",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L213",
+      "source_location": "L221",
       "id": "schemas_contracts_actor",
       "community": 1,
       "norm_label": "actor"
@@ -3643,7 +4021,7 @@
       "label": "ArtifactManifest",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L214",
+      "source_location": "L222",
       "id": "schemas_contracts_artifactmanifest",
       "community": 1,
       "norm_label": "artifactmanifest"
@@ -3652,7 +4030,7 @@
       "label": "WorkflowManifest",
       "file_type": "code",
       "source_file": "src/schemas/contracts.ts",
-      "source_location": "L215",
+      "source_location": "L223",
       "id": "schemas_contracts_workflowmanifest",
       "community": 15,
       "norm_label": "workflowmanifest"
@@ -4354,7 +4732,7 @@
       "label": "validateArtifactReferences()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L67",
+      "source_location": "L65",
       "id": "orchestration_artifact_lifecycle_validateartifactreferences",
       "community": 1,
       "norm_label": "validateartifactreferences()"
@@ -4363,7 +4741,7 @@
       "label": "createArtifactRevision()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L118",
+      "source_location": "L116",
       "id": "orchestration_artifact_lifecycle_createartifactrevision",
       "community": 1,
       "norm_label": "createartifactrevision()"
@@ -4372,7 +4750,7 @@
       "label": "invalidateDownstreamArtifacts()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L143",
+      "source_location": "L141",
       "id": "orchestration_artifact_lifecycle_invalidatedownstreamartifacts",
       "community": 1,
       "norm_label": "invalidatedownstreamartifacts()"
@@ -4381,7 +4759,7 @@
       "label": "canonicalJson()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L157",
+      "source_location": "L155",
       "id": "orchestration_artifact_lifecycle_canonicaljson",
       "community": 1,
       "norm_label": "canonicaljson()"
@@ -4390,7 +4768,7 @@
       "label": "JsonValue",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L161",
+      "source_location": "L159",
       "id": "orchestration_artifact_lifecycle_jsonvalue",
       "community": 1,
       "norm_label": "jsonvalue"
@@ -4399,7 +4777,7 @@
       "label": "normalizeJson()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L169",
+      "source_location": "L167",
       "id": "orchestration_artifact_lifecycle_normalizejson",
       "community": 1,
       "norm_label": "normalizejson()"
@@ -4408,7 +4786,7 @@
       "label": "normalizeArray()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L186",
+      "source_location": "L184",
       "id": "orchestration_artifact_lifecycle_normalizearray",
       "community": 1,
       "norm_label": "normalizearray()"
@@ -4417,7 +4795,7 @@
       "label": "normalizeObject()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L196",
+      "source_location": "L194",
       "id": "orchestration_artifact_lifecycle_normalizeobject",
       "community": 1,
       "norm_label": "normalizeobject()"
@@ -4426,7 +4804,7 @@
       "label": "assertNotCyclic()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L213",
+      "source_location": "L211",
       "id": "orchestration_artifact_lifecycle_assertnotcyclic",
       "community": 1,
       "norm_label": "assertnotcyclic()"
@@ -4453,7 +4831,7 @@
       "label": "ArtifactPathInput",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-registry.ts",
-      "source_location": "L164",
+      "source_location": "L206",
       "id": "orchestration_artifact_registry_artifactpathinput",
       "community": 1,
       "norm_label": "artifactpathinput"
@@ -4462,7 +4840,7 @@
       "label": "resolveArtifactPath()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-registry.ts",
-      "source_location": "L173",
+      "source_location": "L215",
       "id": "orchestration_artifact_registry_resolveartifactpath",
       "community": 1,
       "norm_label": "resolveartifactpath()"
@@ -4489,7 +4867,7 @@
       "label": "RepositoryHealth",
       "file_type": "code",
       "source_file": "src/validation/repository-health.ts",
-      "source_location": "L46",
+      "source_location": "L50",
       "id": "validation_repository_health_repositoryhealth",
       "community": 31,
       "norm_label": "repositoryhealth"
@@ -4498,7 +4876,7 @@
       "label": "checkRepositoryHealth()",
       "file_type": "code",
       "source_file": "src/validation/repository-health.ts",
-      "source_location": "L51",
+      "source_location": "L55",
       "id": "validation_repository_health_checkrepositoryhealth",
       "community": 31,
       "norm_label": "checkrepositoryhealth()"
@@ -4855,6 +5233,24 @@
       "norm_label": "factory workflows"
     },
     {
+      "label": "memory-and-improvement.md",
+      "file_type": "document",
+      "source_file": "agents/workflows/memory-and-improvement.md",
+      "source_location": "L1",
+      "id": "agents_workflows_memory_and_improvement_md",
+      "community": 94,
+      "norm_label": "memory-and-improvement.md"
+    },
+    {
+      "label": "Memory and Improvement Workflow",
+      "file_type": "document",
+      "source_file": "agents/workflows/memory-and-improvement.md",
+      "source_location": "L1",
+      "id": "workflows_memory_and_improvement_memory_and_improvement_workflow",
+      "community": 94,
+      "norm_label": "memory and improvement workflow"
+    },
+    {
       "label": "scenario-review.md",
       "file_type": "document",
       "source_file": "agents/workflows/scenario-review.md",
@@ -4871,6 +5267,60 @@
       "id": "workflows_scenario_review_scenario_review_workflow",
       "community": 65,
       "norm_label": "scenario review workflow"
+    },
+    {
+      "label": "knowledge-curator.md",
+      "file_type": "document",
+      "source_file": "agents/roles/knowledge-curator.md",
+      "source_location": "L1",
+      "id": "agents_roles_knowledge_curator_md",
+      "community": 91,
+      "norm_label": "knowledge-curator.md"
+    },
+    {
+      "label": "Knowledge Curator",
+      "file_type": "document",
+      "source_file": "agents/roles/knowledge-curator.md",
+      "source_location": "L1",
+      "id": "roles_knowledge_curator_knowledge_curator",
+      "community": 91,
+      "norm_label": "knowledge curator"
+    },
+    {
+      "label": "Mission",
+      "file_type": "document",
+      "source_file": "agents/roles/knowledge-curator.md",
+      "source_location": "L3",
+      "id": "roles_knowledge_curator_mission",
+      "community": 91,
+      "norm_label": "mission"
+    },
+    {
+      "label": "Required review",
+      "file_type": "document",
+      "source_file": "agents/roles/knowledge-curator.md",
+      "source_location": "L8",
+      "id": "roles_knowledge_curator_required_review",
+      "community": 91,
+      "norm_label": "required review"
+    },
+    {
+      "label": "Outputs",
+      "file_type": "document",
+      "source_file": "agents/roles/knowledge-curator.md",
+      "source_location": "L15",
+      "id": "roles_knowledge_curator_outputs",
+      "community": 91,
+      "norm_label": "outputs"
+    },
+    {
+      "label": "Boundaries",
+      "file_type": "document",
+      "source_file": "agents/roles/knowledge-curator.md",
+      "source_location": "L22",
+      "id": "roles_knowledge_curator_boundaries",
+      "community": 91,
+      "norm_label": "boundaries"
     },
     {
       "label": "scenario-quality-evaluator.md",
@@ -4916,6 +5366,60 @@
       "id": "roles_scenario_quality_evaluator_outputs",
       "community": 49,
       "norm_label": "outputs"
+    },
+    {
+      "label": "workflow-improvement-analyst.md",
+      "file_type": "document",
+      "source_file": "agents/roles/workflow-improvement-analyst.md",
+      "source_location": "L1",
+      "id": "agents_roles_workflow_improvement_analyst_md",
+      "community": 92,
+      "norm_label": "workflow-improvement-analyst.md"
+    },
+    {
+      "label": "Workflow Improvement Analyst",
+      "file_type": "document",
+      "source_file": "agents/roles/workflow-improvement-analyst.md",
+      "source_location": "L1",
+      "id": "roles_workflow_improvement_analyst_workflow_improvement_analyst",
+      "community": 92,
+      "norm_label": "workflow improvement analyst"
+    },
+    {
+      "label": "Mission",
+      "file_type": "document",
+      "source_file": "agents/roles/workflow-improvement-analyst.md",
+      "source_location": "L3",
+      "id": "roles_workflow_improvement_analyst_mission",
+      "community": 92,
+      "norm_label": "mission"
+    },
+    {
+      "label": "Trigger",
+      "file_type": "document",
+      "source_file": "agents/roles/workflow-improvement-analyst.md",
+      "source_location": "L8",
+      "id": "roles_workflow_improvement_analyst_trigger",
+      "community": 92,
+      "norm_label": "trigger"
+    },
+    {
+      "label": "Required proposal content",
+      "file_type": "document",
+      "source_file": "agents/roles/workflow-improvement-analyst.md",
+      "source_location": "L13",
+      "id": "roles_workflow_improvement_analyst_required_proposal_content",
+      "community": 92,
+      "norm_label": "required proposal content"
+    },
+    {
+      "label": "Boundaries",
+      "file_type": "document",
+      "source_file": "agents/roles/workflow-improvement-analyst.md",
+      "source_location": "L21",
+      "id": "roles_workflow_improvement_analyst_boundaries",
+      "community": 92,
+      "norm_label": "boundaries"
     },
     {
       "label": "README.md",
@@ -5393,6 +5897,24 @@
       "id": "skills_readme_factory_skills",
       "community": 63,
       "norm_label": "factory skills"
+    },
+    {
+      "label": "curate-project-knowledge.md",
+      "file_type": "document",
+      "source_file": "agents/skills/curate-project-knowledge.md",
+      "source_location": "L1",
+      "id": "agents_skills_curate_project_knowledge_md",
+      "community": 93,
+      "norm_label": "curate-project-knowledge.md"
+    },
+    {
+      "label": "Curate Project Knowledge",
+      "file_type": "document",
+      "source_file": "agents/skills/curate-project-knowledge.md",
+      "source_location": "L1",
+      "id": "skills_curate_project_knowledge_curate_project_knowledge",
+      "community": 93,
+      "norm_label": "curate project knowledge"
     },
     {
       "label": "analyze-requirements.md",
@@ -6196,10 +6718,19 @@
       "norm_label": "checkpoint"
     },
     {
-      "label": "Phase 8: Provider hardening",
+      "label": "Phase 7 verification record",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L400",
+      "id": "plans_phased_implementation_plan_phase_7_verification_record",
+      "community": 22,
+      "norm_label": "phase 7 verification record"
+    },
+    {
+      "label": "Phase 8: Provider hardening",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L437",
       "id": "plans_phased_implementation_plan_phase_8_provider_hardening",
       "community": 34,
       "norm_label": "phase 8: provider hardening"
@@ -6208,8 +6739,8 @@
       "label": "Tasks",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L405",
-      "id": "plans_phased_implementation_plan_tasks_405",
+      "source_location": "L442",
+      "id": "plans_phased_implementation_plan_tasks_442",
       "community": 34,
       "norm_label": "tasks"
     },
@@ -6217,7 +6748,7 @@
       "label": "Final checkpoint",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L418",
+      "source_location": "L455",
       "id": "plans_phased_implementation_plan_final_checkpoint",
       "community": 34,
       "norm_label": "final checkpoint"
@@ -6226,7 +6757,7 @@
       "label": "Decision log",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L424",
+      "source_location": "L461",
       "id": "plans_phased_implementation_plan_decision_log",
       "community": 23,
       "norm_label": "decision log"
@@ -6235,7 +6766,7 @@
       "label": "Repository tooling record",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L438",
+      "source_location": "L475",
       "id": "plans_phased_implementation_plan_repository_tooling_record",
       "community": 23,
       "norm_label": "repository tooling record"
@@ -6244,7 +6775,7 @@
       "label": "Risks and mitigations",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L454",
+      "source_location": "L491",
       "id": "plans_phased_implementation_plan_risks_and_mitigations",
       "community": 23,
       "norm_label": "risks and mitigations"
@@ -6253,7 +6784,7 @@
       "label": "Open decisions",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L467",
+      "source_location": "L504",
       "id": "plans_phased_implementation_plan_open_decisions",
       "community": 23,
       "norm_label": "open decisions"
@@ -6401,6 +6932,15 @@
       "id": "templates_readme_artifact_templates",
       "community": 74,
       "norm_label": "artifact templates"
+    },
+    {
+      "label": "Tasks",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L405",
+      "community": 34,
+      "norm_label": "tasks",
+      "id": "plans_phased_implementation_plan_tasks_405"
     },
     {
       "label": "Tasks",
@@ -10509,6 +11049,185 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "src_orchestration_artifact_lifecycle_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "orchestration_artifact_lifecycle_semanticchecksum"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "src_memory_pipeline_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_pipeline_approveknowledgeproposal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_pipeline_createimprovementproposal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_pipeline_createknowledgeproposal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_pipeline_createrunsummary"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_pipeline_evaluateimprovement"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_pipeline_retrieveapprovedknowledge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_memory_pipeline_test_scope"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_memory_pipeline_test_summary"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L155",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_memory_pipeline_test_proposal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_memory_pipeline_test_approved"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L120",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_memory_pipeline_test_retrieval"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L150",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_memory_pipeline_test_feedback"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L187",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_memory_pipeline_test_adopted"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/memory/memory-pipeline.test.ts",
+      "source_location": "L203",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_unit_memory_memory_pipeline_test_ts",
+      "target": "memory_memory_pipeline_test_feedbackevent"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/unit/config/factory-config.test.ts",
       "source_location": "L3",
       "weight": 1,
@@ -12611,6 +13330,547 @@
       "source_location": "L138",
       "weight": 1.0,
       "source": "failures_pipeline_requireexacttriagechecksum",
+      "target": "orchestration_artifact_lifecycle_semanticchecksum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_identifierschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_checksumschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_boundedtextschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_memoryscopeschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_feedbackcategoryschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_runsummaryschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_knowledgeproposalschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_feedbackeventschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_improvementproposalschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L115",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_improvementevaluationschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_memoryscope"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L126",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_runsummary"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L127",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_knowledgeproposal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L128",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_feedbackevent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/contracts.ts",
+      "source_location": "L129",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_contracts_ts",
+      "target": "memory_contracts_improvementproposal"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "src_memory_contracts_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_contracts_memoryscopeschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_contracts_runsummaryschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_contracts_knowledgeproposalschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_contracts_improvementproposalschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_contracts_improvementevaluationschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_contracts_memoryscope"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_contracts_runsummary"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_contracts_knowledgeproposal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_contracts_feedbackevent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_contracts_improvementproposal"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "src_orchestration_artifact_lifecycle_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "orchestration_artifact_lifecycle_semanticchecksum"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "src_schemas_contracts_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "schemas_contracts_actor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_runsummaryinput"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_createrunsummary"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_knowledgeproposalinput"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_createknowledgeproposal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_knowledgeapprovalinput"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_approveknowledgeproposal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_retrievalinput"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_retrieveapprovedknowledge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L115",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_improvementproposalinput"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L129",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_createimprovementproposal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_improvementevaluationinput"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L181",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_evaluateimprovement"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L210",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_scopesmatch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L216",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_requireexactchecksum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L226",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_assertsanitized"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L235",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_memory_pipeline_ts",
+      "target": "memory_pipeline_deepfreeze"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "memory_pipeline_createrunsummary",
+      "target": "memory_pipeline_assertsanitized"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "memory_pipeline_createrunsummary",
+      "target": "memory_pipeline_deepfreeze"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "memory_pipeline_createknowledgeproposal",
+      "target": "memory_pipeline_assertsanitized"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "memory_pipeline_approveknowledgeproposal",
+      "target": "memory_pipeline_requireexactchecksum"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L183",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "memory_pipeline_evaluateimprovement",
+      "target": "memory_pipeline_requireexactchecksum"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/memory/pipeline.ts",
+      "source_location": "L221",
+      "weight": 1.0,
+      "source": "memory_pipeline_requireexactchecksum",
       "target": "orchestration_artifact_lifecycle_semanticchecksum"
     },
     {
@@ -16912,12 +18172,72 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "agents/workflows/memory-and-improvement.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_workflows_memory_and_improvement_md",
+      "target": "workflows_memory_and_improvement_memory_and_improvement_workflow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "agents/workflows/scenario-review.md",
       "source_location": "L1",
       "weight": 1,
       "confidence_score": 1,
       "source": "agents_workflows_scenario_review_md",
       "target": "workflows_scenario_review_scenario_review_workflow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents/roles/knowledge-curator.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_roles_knowledge_curator_md",
+      "target": "roles_knowledge_curator_knowledge_curator"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents/roles/knowledge-curator.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roles_knowledge_curator_knowledge_curator",
+      "target": "roles_knowledge_curator_mission"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents/roles/knowledge-curator.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roles_knowledge_curator_knowledge_curator",
+      "target": "roles_knowledge_curator_required_review"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents/roles/knowledge-curator.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roles_knowledge_curator_knowledge_curator",
+      "target": "roles_knowledge_curator_outputs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents/roles/knowledge-curator.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roles_knowledge_curator_knowledge_curator",
+      "target": "roles_knowledge_curator_boundaries"
     },
     {
       "relation": "contains",
@@ -16958,6 +18278,56 @@
       "confidence_score": 1,
       "source": "roles_scenario_quality_evaluator_scenario_quality_evaluator",
       "target": "roles_scenario_quality_evaluator_outputs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents/roles/workflow-improvement-analyst.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_roles_workflow_improvement_analyst_md",
+      "target": "roles_workflow_improvement_analyst_workflow_improvement_analyst"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents/roles/workflow-improvement-analyst.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roles_workflow_improvement_analyst_workflow_improvement_analyst",
+      "target": "roles_workflow_improvement_analyst_mission"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents/roles/workflow-improvement-analyst.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roles_workflow_improvement_analyst_workflow_improvement_analyst",
+      "target": "roles_workflow_improvement_analyst_trigger"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents/roles/workflow-improvement-analyst.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roles_workflow_improvement_analyst_workflow_improvement_analyst",
+      "target": "roles_workflow_improvement_analyst_required_proposal_content"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents/roles/workflow-improvement-analyst.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roles_workflow_improvement_analyst_workflow_improvement_analyst",
+      "target": "roles_workflow_improvement_analyst_boundaries"
     },
     {
       "relation": "contains",
@@ -17348,6 +18718,16 @@
       "confidence_score": 1,
       "source": "agents_skills_readme_md",
       "target": "skills_readme_factory_skills"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents/skills/curate-project-knowledge.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_skills_curate_project_knowledge_md",
+      "target": "skills_curate_project_knowledge_curate_project_knowledge"
     },
     {
       "relation": "contains",
@@ -18525,9 +19905,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L378",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
-      "target": "plans_phased_implementation_plan_tasks_378",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_tasks_378"
     },
     {
       "relation": "contains",
@@ -18535,8 +19915,18 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L394",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
-      "target": "plans_phased_implementation_plan_checkpoint_394",
+      "target": "plans_phased_implementation_plan_checkpoint_394"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L400",
+      "weight": 1.0,
+      "source": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
+      "target": "plans_phased_implementation_plan_phase_7_verification_record",
       "confidence_score": 1.0
     },
     {
@@ -18643,10 +20033,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L405",
+      "source_location": "L442",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_8_provider_hardening",
-      "target": "plans_phased_implementation_plan_tasks_405",
+      "target": "plans_phased_implementation_plan_tasks_442",
       "confidence_score": 1.0
     },
     {
@@ -18658,6 +20048,16 @@
       "confidence_score": 1,
       "source": "plans_phased_implementation_plan_phase_8_provider_hardening",
       "target": "plans_phased_implementation_plan_final_checkpoint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L405",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "plans_phased_implementation_plan_phase_8_provider_hardening",
+      "target": "plans_phased_implementation_plan_tasks_405"
     },
     {
       "relation": "contains",
@@ -20591,5 +21991,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "bcc5502aa2abdd02946dc5d0a6edb39d723fee0f"
+  "built_at_commit": "a9d7a6f39e88f9ed4a3bf6f7bbcb8f8f47b175eb"
 }

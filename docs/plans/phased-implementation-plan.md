@@ -34,29 +34,29 @@ tracker and should be updated in the same change that completes a task.
 |     4 | Scenario pipeline               | COMPLETE    | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
 |     5 | Playwright pipeline             | COMPLETE    | Phase 4    | Only approved scenarios produce executable, linked tests                       |
 |     6 | Failure and assessment pipeline | COMPLETE    | Phase 5    | Failures are classified before repair and final packages are assessable        |
-|     7 | Memory and improvement          | NOT_STARTED | Phase 6    | Approved knowledge is retrievable and policy changes remain gated              |
+|     7 | Memory and improvement          | COMPLETE    | Phase 6    | Approved knowledge is retrievable and policy changes remain gated              |
 |     8 | Provider hardening              | NOT_STARTED | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                       |
 
 ## Current delivery snapshot
 
 - Last reconciled: 2026-07-30.
-- Completed implementation phases: Phase 2, Phase 3, Phase 4, Phase 5, and
-  Phase 6.
+- Completed implementation phases: Phase 2, Phase 3, Phase 4, Phase 5, Phase 6,
+  and Phase 7.
 - Foundation status: all Phase 1 implementation tasks are complete, but Phase 1
   remains `IN_PROGRESS` until a fresh clone passes `npm ci` and the complete
   quality gate on the pinned Node 22 runtime.
-- Active delivery branch: `codex/phase-6-failure-assessment`.
+- Active delivery branch: `codex/phase-7-memory-improvement`.
 - Active review: draft pull request
-  [#6](https://github.com/jamil2018/aristotle/pull/6), targeting `main`.
+  [#7](https://github.com/jamil2018/aristotle/pull/7), targeting `main`.
 - Phase 4 merged through pull request
   [#3](https://github.com/jamil2018/aristotle/pull/3).
-- Current automated baseline: 11 unit-test files with 84 passing tests, 1
+- Current automated baseline: 12 unit-test files with 89 passing tests, 1
   integration-test file with 4 passing tests, and 7 controlled Playwright tests
   passing across authentication setup, Chromium, Firefox, and WebKit.
 - Static-analysis baseline: Fallow 3.10.0 reports no dead code, duplication, or
-  complexity findings across 41 analyzed files and 372 functions; average
-  maintainability is 93.7.
-- Next implementation phase: Phase 7, memory and improvement.
+  complexity findings across 44 analyzed files and 400 functions; average
+  maintainability is 93.6.
+- Next implementation phase: Phase 8, provider hardening.
 
 ## Phase 1: Repository foundation
 
@@ -377,25 +377,62 @@ silently changing active policy.
 
 ### Tasks
 
-- [ ] `P7-01` Store immutable structured run summaries without raw transcripts.
-- [ ] `P7-02` Define scoped knowledge proposals with evidence and invalidation
+- [x] `P7-01` Store immutable structured run summaries without raw transcripts.
+- [x] `P7-02` Define scoped knowledge proposals with evidence and invalidation
       conditions.
-- [ ] `P7-03` Add human approval and promotion gates for authoritative
+- [x] `P7-03` Add human approval and promotion gates for authoritative
       knowledge.
-- [ ] `P7-04` Retrieve narrowly relevant approved knowledge and disclose its
+- [x] `P7-04` Retrieve narrowly relevant approved knowledge and disclose its
       influence.
-- [ ] `P7-05` Capture correction, triage, repair, coverage, and flakiness
+- [x] `P7-05` Capture correction, triage, repair, coverage, and flakiness
       feedback.
-- [ ] `P7-06` Detect improvement thresholds and generate evidence-backed
+- [x] `P7-06` Detect improvement thresholds and generate evidence-backed
       proposals.
-- [ ] `P7-07` Add regression, shadow-evaluation, and rollback workflows.
-- [ ] `P7-08` Test stale, rejected, sensitive, and cross-scope memory behavior.
+- [x] `P7-07` Add regression, shadow-evaluation, and rollback workflows.
+- [x] `P7-08` Test stale, rejected, sensitive, and cross-scope memory behavior.
 
 ### Checkpoint
 
-- [ ] Historical patterns never override current approved requirements.
-- [ ] Knowledge and policy changes require distinct human approvals.
-- [ ] Improvements pass regression and shadow evaluation before adoption.
+- [x] Historical patterns never override current approved requirements.
+- [x] Knowledge and policy changes require distinct human approvals.
+- [x] Improvements pass regression and shadow evaluation before adoption.
+
+### Phase 7 verification record
+
+- Date: 2026-07-30
+- Branch: `codex/phase-7-memory-improvement`
+- Draft pull request: [#7](https://github.com/jamil2018/aristotle/pull/7),
+  targeting `main`.
+- Implementation commit: `a9d7a6f39e88f9ed4a3bf6f7bbcb8f8f47b175eb`.
+- Result: `npm run check` passed with 12 unit-test files and 89 unit tests;
+  `npm run test:integration` passed with 1 integration-test file and 4
+  integration tests.
+- Static analysis: Fallow 3.10.0 reports 0 dead-code findings, 0 duplication
+  groups, and 0 functions above configured complexity thresholds across 44 files
+  and 400 functions; average maintainability is 93.6.
+- Memory coverage: immutable sanitized summaries exclude raw transcripts;
+  proposals carry exact scope, evidence, confidence, and invalidation
+  conditions; retrieval accepts only approved, non-stale, exact-scope entries
+  and discloses advisory influence while current requirements remain
+  authoritative.
+- Improvement coverage: feedback captures human corrections, evaluator and
+  final-review findings, triage changes, repairs, missing coverage, flakiness,
+  stale artifacts, and placement questions. Proposals require three matching
+  findings across separate tasks, one severe failure, or an explicit human
+  request.
+- Authorization coverage: knowledge approval and policy approval are distinct
+  permanent human-produced artifacts. Improvement adoption requires the exact
+  proposal checksum, human policy approval, regression success, shadow
+  evaluation success, and a recorded rollback plan.
+- Graph note: the deterministic Graphify code graph was refreshed to 981 nodes
+  and 1,218 edges. Full semantic document extraction was unavailable because no
+  supported LLM API key was configured; source plans and contracts remain
+  authoritative.
+- Next-session handoff: start Phase 8 with provider-neutral adapter contracts
+  and role/skill contract tests across Codex, Cursor, and Claude Code. Build the
+  permanent sanitized benchmark corpus before measuring provider quality, keep
+  provider presentation from weakening shared gates, and close Phase 1 only
+  after a fresh Node 22 clone passes `npm ci` and the complete quality gate.
 
 ## Phase 8: Provider hardening
 

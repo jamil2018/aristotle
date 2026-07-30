@@ -157,6 +157,48 @@ export const artifactRegistry = {
     retentionPolicy: "PERMANENT",
     requiredReferences: ["final-quality-assessment"],
   },
+  "run-summary": {
+    producingRole: "knowledge-curator",
+    workflowStage: "completed",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: ["final-human-review"],
+  },
+  "knowledge-proposal": {
+    producingRole: "knowledge-curator",
+    workflowStage: "completed",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: ["run-summary"],
+  },
+  "knowledge-approval": {
+    producingRole: "human-knowledge-reviewer",
+    workflowStage: "completed",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: ["knowledge-proposal"],
+  },
+  "feedback-event": {
+    producingRole: "knowledge-curator",
+    workflowStage: "completed",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: ["run-summary"],
+  },
+  "improvement-proposal": {
+    producingRole: "workflow-improvement-analyst",
+    workflowStage: "completed",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: ["feedback-event"],
+  },
+  "improvement-evaluation": {
+    producingRole: "human-policy-reviewer",
+    workflowStage: "completed",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: ["improvement-proposal"],
+  },
 } as const satisfies Record<ArtifactType, ArtifactDefinition>;
 
 const safeSegment = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
