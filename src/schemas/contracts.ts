@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const workflowStageSchema = z.enum([
+const workflowStageSchema = z.enum([
   "requirement-intake",
   "requirement-analysis",
   "requirement-clarification",
@@ -17,7 +17,7 @@ export const workflowStageSchema = z.enum([
   "cancelled",
 ]);
 
-export const producingRoleSchema = z.enum([
+const producingRoleSchema = z.enum([
   "workflow-coordinator",
   "requirement-analyst",
   "scenario-designer",
@@ -31,12 +31,15 @@ export const producingRoleSchema = z.enum([
   "workflow-improvement-analyst",
 ]);
 
-export const artifactTypeSchema = z.enum([
+const artifactTypeSchema = z.enum([
   "task-manifest",
   "decision-manifest",
   "workflow-manifest",
   "artifact-manifest",
+  "requirement-source",
   "normalized-requirements",
+  "requirement-analysis",
+  "requirement-exploration",
   "scenario-specification",
   "scenario-evaluation",
   "human-scenario-review",
@@ -74,7 +77,7 @@ export const provenanceSchema = z.object({
   configurationChecksum: checksumSchema,
 });
 
-export const artifactReferenceSchema = z.object({
+const artifactReferenceSchema = z.object({
   artifactId: identifierSchema,
   artifactType: artifactTypeSchema,
   revision: z.number().int().positive(),
@@ -95,12 +98,12 @@ export const humanActorSchema = z.object({
   actorId: identifierSchema,
 });
 
-export const agentActorSchema = z.object({
+const agentActorSchema = z.object({
   actorType: z.literal("AGENT"),
   actorId: producingRoleSchema,
 });
 
-export const actorSchema = z.discriminatedUnion("actorType", [
+const actorSchema = z.discriminatedUnion("actorType", [
   humanActorSchema,
   agentActorSchema,
   z.object({
@@ -125,7 +128,7 @@ export const taskManifestSchema = z.object({
   ]),
 });
 
-export const exactSubjectSchema = z.object({
+const exactSubjectSchema = z.object({
   artifactId: identifierSchema,
   revision: z.number().int().positive(),
   semanticChecksum: checksumSchema,

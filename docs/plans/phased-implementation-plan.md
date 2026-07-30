@@ -30,12 +30,30 @@ tracker and should be updated in the same change that completes a task.
 | ----: | ------------------------------- | ----------- | ---------- | ------------------------------------------------------------------------------ |
 |     1 | Repository foundation           | IN_PROGRESS | None       | Fresh clone installs, validates, builds, and exposes a safe Playwright harness |
 |     2 | Contracts and orchestration     | COMPLETE    | Phase 1    | State transitions and authorization gates pass contract tests                  |
-|     3 | Requirement pipeline            | NOT_STARTED | Phase 2    | All supported inputs produce validated, source-linked requirements             |
+|     3 | Requirement pipeline            | COMPLETE    | Phase 2    | All supported inputs produce validated, source-linked requirements             |
 |     4 | Scenario pipeline               | NOT_STARTED | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
 |     5 | Playwright pipeline             | NOT_STARTED | Phase 4    | Only approved scenarios produce executable, linked tests                       |
 |     6 | Failure and assessment pipeline | NOT_STARTED | Phase 5    | Failures are classified before repair and final packages are assessable        |
 |     7 | Memory and improvement          | NOT_STARTED | Phase 6    | Approved knowledge is retrievable and policy changes remain gated              |
 |     8 | Provider hardening              | NOT_STARTED | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                       |
+
+## Current delivery snapshot
+
+- Last reconciled: 2026-07-29.
+- Completed implementation phases: Phase 2 and Phase 3.
+- Foundation status: all Phase 1 implementation tasks are complete, but Phase 1
+  remains `IN_PROGRESS` until a fresh clone passes `npm ci` and the complete
+  quality gate on the pinned Node 22 runtime.
+- Active delivery branch: `agent/phase-3-requirement-pipeline`.
+- Active review: draft pull request
+  [#2](https://github.com/jamil2018/aristotle/pull/2), targeting `main`.
+- Latest implementation commit: `fca80cfa4db8a0f4e9fa0ca387e48ca71ea336e1`.
+- Current automated baseline: 8 unit-test files with 45 passing tests and 1
+  integration-test file with 4 passing tests.
+- Static-analysis baseline: Fallow 3.10.0 reports no dead code, duplication, or
+  complexity findings across 28 analyzed files and 201 functions; average
+  maintainability is 93.8.
+- Next implementation phase: Phase 4, Scenario pipeline.
 
 ## Phase 1: Repository foundation
 
@@ -89,7 +107,9 @@ foundation with deterministic commands and conservative security defaults.
 npm run format:check
 npm run lint
 npm run typecheck
+npm run static:analysis
 npm run test:unit
+npm run test:integration
 npm run build
 npm run health
 ```
@@ -145,25 +165,46 @@ and stop when material ambiguity remains.
 
 ### Tasks
 
-- [ ] `P3-01` Preserve and ingest direct text and Markdown sources.
-- [ ] `P3-02` Extract PDF text with `pdfjs-dist` without executing embedded
+- [x] `P3-01` Preserve and ingest direct text and Markdown sources.
+- [x] `P3-02` Extract PDF text with `pdfjs-dist` without executing embedded
       content.
-- [ ] `P3-03` Extract DOCX text with `mammoth` without executing macros.
-- [ ] `P3-04` Normalize atomic requirements with stable IDs and source
+- [x] `P3-03` Extract DOCX text with `mammoth` without executing macros.
+- [x] `P3-04` Normalize atomic requirements with stable IDs and source
       references.
-- [ ] `P3-05` Detect contradictions, omissions, assumptions, and blocking
+- [x] `P3-05` Detect contradictions, omissions, assumptions, and blocking
       ambiguity.
-- [ ] `P3-06` Inspect taxonomy and implement placement proposals and
+- [x] `P3-06` Inspect taxonomy and implement placement proposals and
       clarification.
-- [ ] `P3-07` Add bounded, allowlisted browser exploration as optional evidence.
-- [ ] `P3-08` Reconcile human answers into a new revision and run impact
+- [x] `P3-07` Add bounded, allowlisted browser exploration as optional evidence.
+- [x] `P3-08` Reconcile human answers into a new revision and run impact
       analysis.
 
 ### Checkpoint
 
-- [ ] Every supported format passes the sanitized corpus.
-- [ ] Blocking ambiguity always pauses progression.
-- [ ] Observed behavior is never silently promoted to intended behavior.
+- [x] Every supported format passes the sanitized corpus.
+- [x] Blocking ambiguity always pauses progression.
+- [x] Observed behavior is never silently promoted to intended behavior.
+
+### Phase 3 verification record
+
+- Date: 2026-07-29
+- Branch: `agent/phase-3-requirement-pipeline`
+- Draft pull request: [#2](https://github.com/jamil2018/aristotle/pull/2),
+  targeting `main`.
+- Latest implementation commit: `fca80cfa4db8a0f4e9fa0ca387e48ca71ea336e1`.
+- Result: `npm run check` passed with 8 unit-test files and 45 unit tests;
+  `npm run test:integration` passed with 1 integration-test file and 4
+  integration tests.
+- Static analysis: Fallow 3.10.0 is part of `npm run check` as a full-codebase
+  gate. The verified baseline has 0 dead-code findings, 0 duplication groups,
+  and 0 functions above the complexity thresholds across 28 files and 201
+  functions; average maintainability is 93.8.
+- Corpus coverage: direct text, Markdown with frontmatter, generated PDF, and
+  macro-free DOCX extraction; empty and oversized inputs; ambiguous,
+  contradictory, observational, and taxonomy-placement cases.
+- Security coverage: inert document parsing, source checksums, schema
+  validation, exact source links, human-only clarification reconciliation,
+  bounded page counts, HTTP(S)-only URLs, and exact origin allowlists.
 
 ## Phase 4: Scenario pipeline
 
@@ -296,22 +337,25 @@ complete production-quality documentation and examples.
 | 2026-07-29 | Use the source plan's eight delivery phases                                  | Preserves author intent and dependency order                                   |
 | 2026-07-29 | Make Phase 1 tooling and health checks executable                            | A clone-ready foundation must be verifiable before workflow features are added |
 | 2026-07-29 | Keep runtime source under `src/` and repository instructions under `agents/` | Separates enforceable behavior from provider-facing guidance                   |
+| 2026-07-29 | Pin the supported runtime to Node 22                                         | Establishes one reproducible LTS target while later runtimes remain unverified |
+| 2026-07-29 | Use repository-local manifests and atomic filesystem persistence             | Delivers durable resumable state without requiring a database in v1            |
+| 2026-07-29 | Enforce Fallow as a full-codebase quality gate                               | Prevents dead code, duplication, and complexity regressions after cleanup      |
 
 ## Risks and mitigations
 
-| Risk                                           | Impact   | Mitigation                                                                 |
-| ---------------------------------------------- | -------- | -------------------------------------------------------------------------- |
-| Provider instruction formats diverge           | High     | Keep shared contracts provider-neutral and test adapters separately        |
-| Agent-generated approvals bypass humans        | Critical | Store human decisions separately and reject agent actors in schemas        |
-| Untrusted content causes instruction injection | Critical | Parse as data, label provenance, and enforce role/security boundaries      |
-| Scenario and JSON representations drift        | High     | Validate both against a semantic checksum with Markdown authoritative      |
-| Retries hide flaky behavior                    | High     | Treat retries as evidence and require an explicit disposition              |
-| Repository structure becomes placeholder-heavy | Medium   | Add directories only when they have an owner, contract, or near-term phase |
+| Risk                                            | Impact   | Mitigation                                                                 |
+| ----------------------------------------------- | -------- | -------------------------------------------------------------------------- |
+| Provider instruction formats diverge            | High     | Keep shared contracts provider-neutral and test adapters separately        |
+| Agent-generated approvals bypass humans         | Critical | Store human decisions separately and reject agent actors in schemas        |
+| Untrusted content causes instruction injection  | Critical | Parse as data, label provenance, and enforce role/security boundaries      |
+| Scenario and JSON representations drift         | High     | Validate both against a semantic checksum with Markdown authoritative      |
+| Retries hide flaky behavior                     | High     | Treat retries as evidence and require an explicit disposition              |
+| Repository structure becomes placeholder-heavy  | Medium   | Add directories only when they have an owner, contract, or near-term phase |
+| Pinned-runtime verification remains outstanding | Medium   | Keep Phase 1 open until a fresh Node 22 clone passes all quality gates     |
+| Static-analysis findings regress                | Medium   | Run the full-codebase Fallow gate within `npm run check`                   |
 
 ## Open decisions
 
-- Choose the supported Node LTS major after dependency compatibility validation.
-- Define the first durable task-manifest storage schema in Phase 2.
 - Select the controlled sample application and authentication strategy in
   Phase 5.
 - Decide whether CI initially targets one provider or the complete provider

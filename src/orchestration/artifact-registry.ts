@@ -6,7 +6,7 @@ import type {
   WorkflowStage,
 } from "../schemas/contracts.js";
 
-export interface ArtifactDefinition {
+interface ArtifactDefinition {
   readonly producingRole: ProducingRole;
   readonly workflowStage: WorkflowStage;
   readonly schemaVersion: 1;
@@ -43,12 +43,33 @@ export const artifactRegistry = {
     retentionPolicy: "PERMANENT",
     requiredReferences: [],
   },
+  "requirement-source": {
+    producingRole: "workflow-coordinator",
+    workflowStage: "requirement-intake",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: [],
+  },
   "normalized-requirements": {
     producingRole: "requirement-analyst",
     workflowStage: "requirement-analysis",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
-    requiredReferences: [],
+    requiredReferences: ["requirement-source"],
+  },
+  "requirement-analysis": {
+    producingRole: "requirement-analyst",
+    workflowStage: "requirement-analysis",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: ["normalized-requirements"],
+  },
+  "requirement-exploration": {
+    producingRole: "requirement-analyst",
+    workflowStage: "requirement-analysis",
+    schemaVersion: 1,
+    retentionPolicy: "RUN",
+    requiredReferences: ["requirement-source"],
   },
   "scenario-specification": {
     producingRole: "scenario-designer",

@@ -37,6 +37,8 @@ versioned plans, contracts, and human authorization gates.
   before state transitions.
 - Preserve accepted artifacts; create a new revision for material changes.
 - Record decisions, inputs, outputs, provenance, and timestamps.
+- Run `npm run static:analysis` alongside the applicable review skills. Treat
+  Fallow findings as evidence to verify, not authorization to delete code.
 - Run `npm run check` before committing.
 
 Provider-specific files may adapt presentation but cannot weaken these rules.
