@@ -45,7 +45,9 @@ tracker and should be updated in the same change that completes a task.
   remains `IN_PROGRESS` until a fresh clone passes `npm ci` and the complete
   quality gate on the pinned Node 22 runtime.
 - Active delivery branch: `codex/phase-4-scenario-pipeline`.
-- Active review: Phase 4 pull request targeting `main`.
+- Active review: draft pull request
+  [#3](https://github.com/jamil2018/aristotle/pull/3), targeting `main`.
+- Phase 4 implementation commit: `b0211851733bc0747bf90406cbdc048ebfcc074d`.
 - Current automated baseline: 9 unit-test files with 55 passing tests and 1
   integration-test file with 4 passing tests.
 - Static-analysis baseline: Fallow 3.10.0 reports no dead code, duplication, or
