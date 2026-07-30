@@ -23,11 +23,13 @@ for the complete source plan.
 - Node.js 22 LTS
 - npm 10 or later
 - Git
+- Graphify CLI (`graphify`; distributed as the Python package `graphifyy`)
 
 ## Setup
 
 ```bash
 npm ci
+npm run hooks:install
 npx playwright install
 cp .env.example .env
 npm run check
@@ -41,6 +43,7 @@ environment before running browser tests.
 | Command                    | Purpose                          |
 | -------------------------- | -------------------------------- |
 | `npm run health`           | Verify the clone-ready structure |
+| `npm run hooks:install`    | Enable versioned commit checks   |
 | `npm run typecheck`        | Check strict TypeScript          |
 | `npm run lint`             | Check source and tests           |
 | `npm run test:unit`        | Run unit tests                   |
@@ -48,7 +51,19 @@ environment before running browser tests.
 | `npm run test:e2e`         | Run Playwright browser tests     |
 | `npm run static:analysis`  | Audit the codebase with Fallow   |
 | `npm run build`            | Compile runtime TypeScript       |
+| `npm run graph:refresh`    | Refresh code relationships       |
+| `npm run commit:check`     | Run commit-time quality gates    |
 | `npm run check`            | Run all required quality gates   |
+
+## Commit quality pipeline
+
+Run `npm run hooks:install` once per clone. The versioned pre-commit hook runs
+lint, formatting validation, Fallow static analysis, TypeScript compilation, and
+a Graphify refresh in that order. It rejects a commit when relevant source or
+documentation changes are staged without the refreshed graph artifacts.
+
+Agents must also run the smallest relevant test selection immediately before
+committing. This focused test does not replace the full `npm run check` gate.
 
 ## Safety defaults
 

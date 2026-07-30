@@ -1,5 +1,7 @@
 node_modules/
 .fallow/
+.graphify_*.json
+.graphify_*.txt
 dist/
 coverage/
 .env
@@ -15,3 +17,11 @@ playwright/.auth/
 *.key
 .DS_Store
 *.log
+
+# Graphify keeps its durable, reviewable graph, report, and HTML in source
+# control. Caches, manifests, cost history, runtime pointers, and optional
+# exports are local rebuild artifacts.
+graphify-out/*
+!graphify-out/GRAPH_REPORT.md
+!graphify-out/graph.html
+!graphify-out/graph.json

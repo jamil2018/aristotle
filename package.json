@@ -10,9 +10,12 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "check": "npm run format:check && npm run lint && npm run typecheck && npm run static:analysis && npm run test:unit && npm run build && npm run health",
+    "commit:check": "npm run lint && npm run format:check && npm run static:analysis && npm run build && npm run graph:refresh",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "graph:refresh": "graphify update .",
     "health": "node --import tsx src/validation/repository-health.cli.ts",
+    "hooks:install": "git config core.hooksPath .githooks",
     "lint": "eslint .",
     "static:analysis": "fallow --summary --fail-on-issues",
     "test": "vitest run",

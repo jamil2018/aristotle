@@ -12,9 +12,13 @@ export const requiredRepositoryEntries = [
   "factory.config.ts",
   ".env.example",
   ".gitignore",
+  ".prettierignore",
+  ".githooks/pre-commit",
+  ".cursor/rules/graphify.mdc",
   "agents/shared",
   "agents/roles",
   "agents/skills",
+  "agents/skills/use-knowledge-graph.md",
   "agents/workflows",
   "agents/providers/codex",
   "agents/providers/cursor",
@@ -34,6 +38,9 @@ export const requiredRepositoryEntries = [
   "templates",
   "examples",
   "docs-factory",
+  "graphify-out/GRAPH_REPORT.md",
+  "graphify-out/graph.html",
+  "graphify-out/graph.json",
 ] as const;
 
 export interface RepositoryHealth {

@@ -9,3 +9,4 @@ Implemented skills:
 - [Analyze Requirements](./analyze-requirements.md)
 - [Design Test Scenarios](./design-test-scenarios.md)
 - [Evaluate Test Scenarios](./evaluate-test-scenarios.md)
+- [Use the Knowledge Graph](./use-knowledge-graph.md)

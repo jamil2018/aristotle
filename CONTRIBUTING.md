@@ -7,8 +7,11 @@
 3. Select one unchecked task whose dependencies are complete.
 4. Write or update tests before behavior.
 5. Keep the change scoped and update the tracker with evidence.
-6. Run `npm run check`, including the full-codebase Fallow static analysis gate.
-7. Commit atomically using Conventional Commit style.
+6. Run the focused tests for the changed behavior immediately before commit.
+7. Run `npm run check`, including the full-codebase Fallow static analysis gate.
+8. Install the versioned commit pipeline once per clone with
+   `npm run hooks:install`.
+9. Commit atomically using Conventional Commit style.
 
 Do not combine workflow-policy changes with feature implementation. Policy,
 schema, template, and provider changes require focused review because they can
