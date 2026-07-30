@@ -74,6 +74,49 @@
         "confidence": "EXTRACTED",
         "confidence_score": 1,
         "source_file": "docs/plans/phased-implementation-plan.md"
+      },
+      {
+        "id": "phase_5_publication_state",
+        "label": "Phase 5 Completion and Publication State",
+        "nodes": [
+          "phase_5_complete",
+          "phase_5_verification_record",
+          "phase_5_draft_pr_5",
+          "phase_5_commit_040d7953"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1,
+        "source_file": "docs/plans/phased-implementation-plan.md"
+      },
+      {
+        "id": "exact_authorization_flow",
+        "label": "Exact-Revision Authorization Flow",
+        "nodes": [
+          "evaluator_pass",
+          "human_approval",
+          "semantic_checksum",
+          "exact_revision_authorization",
+          "playwright_test_artifact"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1,
+        "source_file": "agents/skills/automate-approved-scenarios.md"
+      },
+      {
+        "id": "phase_6_safety_handoff",
+        "label": "Phase 6 Safety Handoff",
+        "nodes": [
+          "phase_6_handoff",
+          "failure_classification_gate",
+          "script_error_authorization",
+          "target_app_read_only"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1,
+        "source_file": "docs/plans/phased-implementation-plan.md"
       }
     ]
   },
@@ -84,7 +127,7 @@
       "source_file": "prettier.config.js",
       "source_location": "L1",
       "id": "prettier_config_js",
-      "community": 57,
+      "community": 68,
       "norm_label": "prettier.config.js"
     },
     {
@@ -471,7 +514,7 @@
       "source_file": "tsconfig.build.json",
       "source_location": "L1",
       "id": "tsconfig_build_json",
-      "community": 18,
+      "community": 17,
       "norm_label": "tsconfig.build.json"
     },
     {
@@ -480,7 +523,7 @@
       "source_file": "tsconfig.build.json",
       "source_location": "L2",
       "id": "aristotle_tsconfig_build_extends",
-      "community": 18,
+      "community": 17,
       "norm_label": "extends"
     },
     {
@@ -489,7 +532,7 @@
       "source_file": "tsconfig.build.json",
       "source_location": "L3",
       "id": "aristotle_tsconfig_build_compileroptions",
-      "community": 18,
+      "community": 17,
       "norm_label": "compileroptions"
     },
     {
@@ -498,7 +541,7 @@
       "source_file": "tsconfig.build.json",
       "source_location": "L4",
       "id": "aristotle_tsconfig_build_compileroptions_rootdir",
-      "community": 18,
+      "community": 17,
       "norm_label": "rootdir"
     },
     {
@@ -507,7 +550,7 @@
       "source_file": "tsconfig.build.json",
       "source_location": "L5",
       "id": "aristotle_tsconfig_build_compileroptions_outdir",
-      "community": 18,
+      "community": 17,
       "norm_label": "outdir"
     },
     {
@@ -516,7 +559,7 @@
       "source_file": "tsconfig.build.json",
       "source_location": "L6",
       "id": "aristotle_tsconfig_build_compileroptions_declaration",
-      "community": 18,
+      "community": 17,
       "norm_label": "declaration"
     },
     {
@@ -525,7 +568,7 @@
       "source_file": "tsconfig.build.json",
       "source_location": "L7",
       "id": "aristotle_tsconfig_build_compileroptions_declarationmap",
-      "community": 18,
+      "community": 17,
       "norm_label": "declarationmap"
     },
     {
@@ -534,7 +577,7 @@
       "source_file": "tsconfig.build.json",
       "source_location": "L8",
       "id": "aristotle_tsconfig_build_compileroptions_sourcemap",
-      "community": 18,
+      "community": 17,
       "norm_label": "sourcemap"
     },
     {
@@ -543,7 +586,7 @@
       "source_file": "tsconfig.build.json",
       "source_location": "L9",
       "id": "aristotle_tsconfig_build_compileroptions_types",
-      "community": 18,
+      "community": 17,
       "norm_label": "types"
     },
     {
@@ -552,7 +595,7 @@
       "source_file": "tsconfig.build.json",
       "source_location": "L11",
       "id": "aristotle_tsconfig_build_include",
-      "community": 18,
+      "community": 17,
       "norm_label": "include"
     },
     {
@@ -561,7 +604,7 @@
       "source_file": "tsconfig.build.json",
       "source_location": "L12",
       "id": "aristotle_tsconfig_build_exclude",
-      "community": 18,
+      "community": 17,
       "norm_label": "exclude"
     },
     {
@@ -741,7 +784,7 @@
       "source_file": "playwright.config.ts",
       "source_location": "L1",
       "id": "playwright_config_ts",
-      "community": 17,
+      "community": 15,
       "norm_label": "playwright.config.ts"
     },
     {
@@ -750,7 +793,7 @@
       "source_file": "eslint.config.js",
       "source_location": "L1",
       "id": "eslint_config_js",
-      "community": 58,
+      "community": 69,
       "norm_label": "eslint.config.js"
     },
     {
@@ -759,7 +802,7 @@
       "source_file": "vitest.config.ts",
       "source_location": "L1",
       "id": "vitest_config_ts",
-      "community": 59,
+      "community": 70,
       "norm_label": "vitest.config.ts"
     },
     {
@@ -768,7 +811,7 @@
       "source_file": "factory.config.ts",
       "source_location": "L1",
       "id": "factory_config_ts",
-      "community": 17,
+      "community": 15,
       "norm_label": "factory.config.ts"
     },
     {
@@ -777,7 +820,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L1",
       "id": "artifacts_playwright_results_json",
-      "community": 5,
+      "community": 4,
       "norm_label": "playwright-results.json"
     },
     {
@@ -786,7 +829,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L2",
       "id": "artifacts_playwright_results_config",
-      "community": 5,
+      "community": 4,
       "norm_label": "config"
     },
     {
@@ -795,7 +838,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L3",
       "id": "artifacts_playwright_results_config_argv",
-      "community": 5,
+      "community": 4,
       "norm_label": "argv"
     },
     {
@@ -804,7 +847,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L8",
       "id": "artifacts_playwright_results_config_configfile",
-      "community": 5,
+      "community": 4,
       "norm_label": "configfile"
     },
     {
@@ -813,7 +856,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L9",
       "id": "artifacts_playwright_results_config_rootdir",
-      "community": 5,
+      "community": 4,
       "norm_label": "rootdir"
     },
     {
@@ -822,7 +865,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L10",
       "id": "artifacts_playwright_results_config_failonflakytests",
-      "community": 5,
+      "community": 4,
       "norm_label": "failonflakytests"
     },
     {
@@ -831,7 +874,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L11",
       "id": "artifacts_playwright_results_config_forbidonly",
-      "community": 5,
+      "community": 4,
       "norm_label": "forbidonly"
     },
     {
@@ -840,7 +883,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L12",
       "id": "artifacts_playwright_results_config_fullyparallel",
-      "community": 5,
+      "community": 4,
       "norm_label": "fullyparallel"
     },
     {
@@ -849,7 +892,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L13",
       "id": "artifacts_playwright_results_config_globalsetup",
-      "community": 5,
+      "community": 4,
       "norm_label": "globalsetup"
     },
     {
@@ -858,7 +901,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L14",
       "id": "artifacts_playwright_results_config_globalteardown",
-      "community": 5,
+      "community": 4,
       "norm_label": "globalteardown"
     },
     {
@@ -867,7 +910,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L15",
       "id": "artifacts_playwright_results_config_globaltimeout",
-      "community": 5,
+      "community": 4,
       "norm_label": "globaltimeout"
     },
     {
@@ -876,7 +919,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L16",
       "id": "artifacts_playwright_results_config_grep",
-      "community": 5,
+      "community": 4,
       "norm_label": "grep"
     },
     {
@@ -885,7 +928,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L17",
       "id": "artifacts_playwright_results_config_grepinvert",
-      "community": 5,
+      "community": 4,
       "norm_label": "grepinvert"
     },
     {
@@ -894,7 +937,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L18",
       "id": "artifacts_playwright_results_config_maxfailures",
-      "community": 5,
+      "community": 4,
       "norm_label": "maxfailures"
     },
     {
@@ -903,7 +946,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L19",
       "id": "artifacts_playwright_results_config_metadata",
-      "community": 5,
+      "community": 4,
       "norm_label": "metadata"
     },
     {
@@ -912,7 +955,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L20",
       "id": "artifacts_playwright_results_metadata_actualworkers",
-      "community": 5,
+      "community": 4,
       "norm_label": "actualworkers"
     },
     {
@@ -921,7 +964,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L22",
       "id": "artifacts_playwright_results_config_preserveoutput",
-      "community": 5,
+      "community": 4,
       "norm_label": "preserveoutput"
     },
     {
@@ -930,7 +973,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L23",
       "id": "artifacts_playwright_results_config_projects",
-      "community": 5,
+      "community": 4,
       "norm_label": "projects"
     },
     {
@@ -939,7 +982,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L89",
       "id": "artifacts_playwright_results_config_quiet",
-      "community": 5,
+      "community": 4,
       "norm_label": "quiet"
     },
     {
@@ -948,7 +991,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L90",
       "id": "artifacts_playwright_results_config_reporter",
-      "community": 5,
+      "community": 4,
       "norm_label": "reporter"
     },
     {
@@ -957,7 +1000,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L109",
       "id": "artifacts_playwright_results_config_reportslowtests",
-      "community": 5,
+      "community": 4,
       "norm_label": "reportslowtests"
     },
     {
@@ -966,7 +1009,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L110",
       "id": "artifacts_playwright_results_reportslowtests_max",
-      "community": 5,
+      "community": 4,
       "norm_label": "max"
     },
     {
@@ -975,7 +1018,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L111",
       "id": "artifacts_playwright_results_reportslowtests_threshold",
-      "community": 5,
+      "community": 4,
       "norm_label": "threshold"
     },
     {
@@ -984,7 +1027,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L113",
       "id": "artifacts_playwright_results_config_shard",
-      "community": 5,
+      "community": 4,
       "norm_label": "shard"
     },
     {
@@ -993,7 +1036,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L114",
       "id": "artifacts_playwright_results_config_tags",
-      "community": 5,
+      "community": 4,
       "norm_label": "tags"
     },
     {
@@ -1002,7 +1045,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L115",
       "id": "artifacts_playwright_results_config_updatesnapshots",
-      "community": 5,
+      "community": 4,
       "norm_label": "updatesnapshots"
     },
     {
@@ -1011,7 +1054,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L116",
       "id": "artifacts_playwright_results_config_updatesourcemethod",
-      "community": 5,
+      "community": 4,
       "norm_label": "updatesourcemethod"
     },
     {
@@ -1020,7 +1063,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L117",
       "id": "artifacts_playwright_results_config_version",
-      "community": 5,
+      "community": 4,
       "norm_label": "version"
     },
     {
@@ -1029,7 +1072,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L118",
       "id": "artifacts_playwright_results_config_workers",
-      "community": 5,
+      "community": 4,
       "norm_label": "workers"
     },
     {
@@ -1038,7 +1081,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L119",
       "id": "artifacts_playwright_results_config_webserver",
-      "community": 5,
+      "community": 4,
       "norm_label": "webserver"
     },
     {
@@ -1047,7 +1090,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L121",
       "id": "artifacts_playwright_results_suites",
-      "community": 5,
+      "community": 4,
       "norm_label": "suites"
     },
     {
@@ -1056,7 +1099,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L275",
       "id": "artifacts_playwright_results_errors",
-      "community": 5,
+      "community": 4,
       "norm_label": "errors"
     },
     {
@@ -1065,7 +1108,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L276",
       "id": "artifacts_playwright_results_stats",
-      "community": 5,
+      "community": 4,
       "norm_label": "stats"
     },
     {
@@ -1074,7 +1117,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L277",
       "id": "artifacts_playwright_results_stats_starttime",
-      "community": 5,
+      "community": 4,
       "norm_label": "starttime"
     },
     {
@@ -1083,7 +1126,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L278",
       "id": "artifacts_playwright_results_stats_duration",
-      "community": 5,
+      "community": 4,
       "norm_label": "duration"
     },
     {
@@ -1092,7 +1135,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L279",
       "id": "artifacts_playwright_results_stats_expected",
-      "community": 5,
+      "community": 4,
       "norm_label": "expected"
     },
     {
@@ -1101,7 +1144,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L280",
       "id": "artifacts_playwright_results_stats_skipped",
-      "community": 5,
+      "community": 4,
       "norm_label": "skipped"
     },
     {
@@ -1110,7 +1153,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L281",
       "id": "artifacts_playwright_results_stats_unexpected",
-      "community": 5,
+      "community": 4,
       "norm_label": "unexpected"
     },
     {
@@ -1119,7 +1162,7 @@
       "source_file": "artifacts/playwright-results.json",
       "source_location": "L282",
       "id": "artifacts_playwright_results_stats_flaky",
-      "community": 5,
+      "community": 4,
       "norm_label": "flaky"
     },
     {
@@ -1128,7 +1171,7 @@
       "source_file": "tests/unit/config/factory-config.test.ts",
       "source_location": "L1",
       "id": "tests_unit_config_factory_config_test_ts",
-      "community": 17,
+      "community": 15,
       "norm_label": "factory-config.test.ts"
     },
     {
@@ -1137,7 +1180,7 @@
       "source_file": "tests/unit/config/factory-config.test.ts",
       "source_location": "L7",
       "id": "config_factory_config_test_config",
-      "community": 17,
+      "community": 15,
       "norm_label": "config"
     },
     {
@@ -1245,7 +1288,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L1",
       "id": "tests_unit_playwright_playwright_pipeline_test_ts",
-      "community": 16,
+      "community": 13,
       "norm_label": "playwright-pipeline.test.ts"
     },
     {
@@ -1254,7 +1297,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L18",
       "id": "playwright_playwright_pipeline_test_requirements",
-      "community": 16,
+      "community": 13,
       "norm_label": "requirements"
     },
     {
@@ -1272,7 +1315,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L52",
       "id": "playwright_playwright_pipeline_test_approved",
-      "community": 16,
+      "community": 13,
       "norm_label": "approved"
     },
     {
@@ -1281,7 +1324,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L56",
       "id": "playwright_playwright_pipeline_test_generated",
-      "community": 16,
+      "community": 13,
       "norm_label": "generated"
     },
     {
@@ -1290,7 +1333,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L97",
       "id": "playwright_playwright_pipeline_test_base",
-      "community": 16,
+      "community": 13,
       "norm_label": "base"
     },
     {
@@ -1299,7 +1342,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L178",
       "id": "playwright_playwright_pipeline_test_events",
-      "community": 16,
+      "community": 13,
       "norm_label": "events"
     },
     {
@@ -1308,7 +1351,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L179",
       "id": "playwright_playwright_pipeline_test_cleanup",
-      "community": 16,
+      "community": 13,
       "norm_label": "cleanup"
     },
     {
@@ -1317,7 +1360,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L193",
       "id": "playwright_playwright_pipeline_test_summary",
-      "community": 16,
+      "community": 13,
       "norm_label": "summary"
     },
     {
@@ -1353,7 +1396,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L1",
       "id": "tests_unit_scenarios_scenario_pipeline_test_ts",
-      "community": 13,
+      "community": 12,
       "norm_label": "scenario-pipeline.test.ts"
     },
     {
@@ -1362,7 +1405,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L15",
       "id": "scenarios_scenario_pipeline_test_requirements",
-      "community": 13,
+      "community": 12,
       "norm_label": "requirements"
     },
     {
@@ -1371,7 +1414,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L48",
       "id": "scenarios_scenario_pipeline_test_specification",
-      "community": 13,
+      "community": 12,
       "norm_label": "specification"
     },
     {
@@ -1380,7 +1423,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L64",
       "id": "scenarios_scenario_pipeline_test_first",
-      "community": 13,
+      "community": 12,
       "norm_label": "first"
     },
     {
@@ -1389,7 +1432,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L65",
       "id": "scenarios_scenario_pipeline_test_second",
-      "community": 13,
+      "community": 12,
       "norm_label": "second"
     },
     {
@@ -1398,7 +1441,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L74",
       "id": "scenarios_scenario_pipeline_test_markdown",
-      "community": 13,
+      "community": 12,
       "norm_label": "markdown"
     },
     {
@@ -1407,7 +1450,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L81",
       "id": "scenarios_scenario_pipeline_test_divergent",
-      "community": 13,
+      "community": 12,
       "norm_label": "divergent"
     },
     {
@@ -1416,7 +1459,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L112",
       "id": "scenarios_scenario_pipeline_test_evaluation",
-      "community": 13,
+      "community": 12,
       "norm_label": "evaluation"
     },
     {
@@ -1425,7 +1468,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L121",
       "id": "scenarios_scenario_pipeline_test_missingcoverage",
-      "community": 13,
+      "community": 12,
       "norm_label": "missingcoverage"
     },
     {
@@ -1434,7 +1477,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L127",
       "id": "scenarios_scenario_pipeline_test_unknownrequirement",
-      "community": 13,
+      "community": 12,
       "norm_label": "unknownrequirement"
     },
     {
@@ -1443,7 +1486,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L167",
       "id": "scenarios_scenario_pipeline_test_review",
-      "community": 13,
+      "community": 12,
       "norm_label": "review"
     },
     {
@@ -1452,7 +1495,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L210",
       "id": "scenarios_scenario_pipeline_test_traceability",
-      "community": 13,
+      "community": 12,
       "norm_label": "traceability"
     },
     {
@@ -1461,7 +1504,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L218",
       "id": "scenarios_scenario_pipeline_test_orphaned",
-      "community": 13,
+      "community": 12,
       "norm_label": "orphaned"
     },
     {
@@ -1470,7 +1513,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L1",
       "id": "tests_unit_orchestration_artifact_lifecycle_test_ts",
-      "community": 1,
+      "community": 10,
       "norm_label": "artifact-lifecycle.test.ts"
     },
     {
@@ -1479,7 +1522,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L14",
       "id": "orchestration_artifact_lifecycle_test_provenance",
-      "community": 1,
+      "community": 10,
       "norm_label": "provenance"
     },
     {
@@ -1488,7 +1531,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L23",
       "id": "orchestration_artifact_lifecycle_test_designer",
-      "community": 1,
+      "community": 10,
       "norm_label": "designer"
     },
     {
@@ -1497,7 +1540,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L36",
       "id": "orchestration_artifact_lifecycle_test_accepted",
-      "community": 1,
+      "community": 10,
       "norm_label": "accepted"
     },
     {
@@ -1506,7 +1549,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L60",
       "id": "orchestration_artifact_lifecycle_test_review",
-      "community": 1,
+      "community": 10,
       "norm_label": "review"
     },
     {
@@ -1515,7 +1558,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L100",
       "id": "orchestration_artifact_lifecycle_test_revision",
-      "community": 1,
+      "community": 10,
       "norm_label": "revision"
     },
     {
@@ -1524,7 +1567,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L116",
       "id": "orchestration_artifact_lifecycle_test_oldchecksum",
-      "community": 1,
+      "community": 10,
       "norm_label": "oldchecksum"
     },
     {
@@ -1533,7 +1576,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L117",
       "id": "orchestration_artifact_lifecycle_test_dependent",
-      "community": 1,
+      "community": 10,
       "norm_label": "dependent"
     },
     {
@@ -1542,7 +1585,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L137",
       "id": "orchestration_artifact_lifecycle_test_invalidated",
-      "community": 1,
+      "community": 10,
       "norm_label": "[invalidated]"
     },
     {
@@ -1551,7 +1594,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L151",
       "id": "orchestration_artifact_lifecycle_test_draftscenario",
-      "community": 1,
+      "community": 10,
       "norm_label": "draftscenario()"
     },
     {
@@ -1560,7 +1603,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L174",
       "id": "orchestration_artifact_lifecycle_test_acceptedrequirement",
-      "community": 1,
+      "community": 10,
       "norm_label": "acceptedrequirement()"
     },
     {
@@ -1569,7 +1612,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L1",
       "id": "tests_unit_orchestration_workflow_test_ts",
-      "community": 6,
+      "community": 5,
       "norm_label": "workflow.test.ts"
     },
     {
@@ -1578,7 +1621,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L12",
       "id": "orchestration_workflow_test_coordinator",
-      "community": 6,
+      "community": 5,
       "norm_label": "coordinator"
     },
     {
@@ -1587,7 +1630,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L16",
       "id": "orchestration_workflow_test_evaluator",
-      "community": 6,
+      "community": 5,
       "norm_label": "evaluator"
     },
     {
@@ -1596,7 +1639,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L20",
       "id": "orchestration_workflow_test_human",
-      "community": 6,
+      "community": 5,
       "norm_label": "human"
     },
     {
@@ -1605,7 +1648,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L21",
       "id": "orchestration_workflow_test_scenario",
-      "community": 6,
+      "community": 5,
       "norm_label": "scenario"
     },
     {
@@ -1614,7 +1657,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L27",
       "id": "orchestration_workflow_test_playwrighttest",
-      "community": 6,
+      "community": 5,
       "norm_label": "playwrighttest"
     },
     {
@@ -1623,7 +1666,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L36",
       "id": "orchestration_workflow_test_workflow",
-      "community": 6,
+      "community": 5,
       "norm_label": "workflow"
     },
     {
@@ -1632,7 +1675,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L140",
       "id": "orchestration_workflow_test_executing",
-      "community": 6,
+      "community": 5,
       "norm_label": "executing"
     },
     {
@@ -1641,7 +1684,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L223",
       "id": "orchestration_workflow_test_createworkflowat",
-      "community": 6,
+      "community": 5,
       "norm_label": "createworkflowat()"
     },
     {
@@ -1650,7 +1693,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L244",
       "id": "orchestration_workflow_test_workflowatscenarioevaluation",
-      "community": 6,
+      "community": 5,
       "norm_label": "workflowatscenarioevaluation()"
     },
     {
@@ -1713,7 +1756,7 @@
       "source_file": "tests/integration/orchestration/workflow-store.test.ts",
       "source_location": "L1",
       "id": "tests_integration_orchestration_workflow_store_test_ts",
-      "community": 12,
+      "community": 1,
       "norm_label": "workflow-store.test.ts"
     },
     {
@@ -1722,7 +1765,7 @@
       "source_file": "tests/integration/orchestration/workflow-store.test.ts",
       "source_location": "L13",
       "id": "orchestration_workflow_store_test_temporarydirectories",
-      "community": 12,
+      "community": 1,
       "norm_label": "temporarydirectories"
     },
     {
@@ -1731,7 +1774,7 @@
       "source_file": "tests/integration/orchestration/workflow-store.test.ts",
       "source_location": "L26",
       "id": "orchestration_workflow_store_test_store",
-      "community": 12,
+      "community": 1,
       "norm_label": "store"
     },
     {
@@ -1740,7 +1783,7 @@
       "source_file": "tests/integration/orchestration/workflow-store.test.ts",
       "source_location": "L27",
       "id": "orchestration_workflow_store_test_workflow",
-      "community": 12,
+      "community": 1,
       "norm_label": "workflow"
     },
     {
@@ -1749,7 +1792,7 @@
       "source_file": "tests/integration/orchestration/workflow-store.test.ts",
       "source_location": "L52",
       "id": "orchestration_workflow_store_test_partial",
-      "community": 12,
+      "community": 1,
       "norm_label": "partial"
     },
     {
@@ -1758,7 +1801,7 @@
       "source_file": "tests/integration/orchestration/workflow-store.test.ts",
       "source_location": "L82",
       "id": "orchestration_workflow_store_test_temporarydirectory",
-      "community": 12,
+      "community": 1,
       "norm_label": "temporarydirectory()"
     },
     {
@@ -1767,7 +1810,7 @@
       "source_file": "tests/integration/orchestration/workflow-store.test.ts",
       "source_location": "L88",
       "id": "orchestration_workflow_store_test_sampleworkflow",
-      "community": 6,
+      "community": 5,
       "norm_label": "sampleworkflow()"
     },
     {
@@ -1776,7 +1819,7 @@
       "source_file": "tests/e2e/auth.setup.ts",
       "source_location": "L1",
       "id": "tests_e2e_auth_setup_ts",
-      "community": 60,
+      "community": 71,
       "norm_label": "auth.setup.ts"
     },
     {
@@ -1785,7 +1828,7 @@
       "source_file": "tests/e2e/controlled-sample.spec.ts",
       "source_location": "L1",
       "id": "tests_e2e_controlled_sample_spec_ts",
-      "community": 16,
+      "community": 20,
       "norm_label": "controlled-sample.spec.ts"
     },
     {
@@ -1794,7 +1837,7 @@
       "source_file": "tests/e2e/controlled-sample.spec.ts",
       "source_location": "L8",
       "id": "e2e_controlled_sample_spec_username",
-      "community": 16,
+      "community": 20,
       "norm_label": "username"
     },
     {
@@ -1803,7 +1846,7 @@
       "source_file": "tests/e2e/controlled-sample.spec.ts",
       "source_location": "L9",
       "id": "e2e_controlled_sample_spec_createdusers",
-      "community": 16,
+      "community": 20,
       "norm_label": "createdusers"
     },
     {
@@ -1812,7 +1855,7 @@
       "source_file": "tests/e2e/support/quality-test.ts",
       "source_location": "L1",
       "id": "tests_e2e_support_quality_test_ts",
-      "community": 16,
+      "community": 20,
       "norm_label": "quality-test.ts"
     },
     {
@@ -1821,7 +1864,7 @@
       "source_file": "tests/e2e/support/quality-test.ts",
       "source_location": "L8",
       "id": "support_quality_test_qualityfixtures",
-      "community": 16,
+      "community": 20,
       "norm_label": "qualityfixtures"
     },
     {
@@ -1830,7 +1873,7 @@
       "source_file": "tests/e2e/support/quality-test.ts",
       "source_location": "L13",
       "id": "support_quality_test_test",
-      "community": 16,
+      "community": 20,
       "norm_label": "test"
     },
     {
@@ -1839,7 +1882,7 @@
       "source_file": "playwright/.auth/authorized-user.json",
       "source_location": "L1",
       "id": "playwright_auth_authorized_user_json",
-      "community": 35,
+      "community": 46,
       "norm_label": "authorized-user.json"
     },
     {
@@ -1848,7 +1891,7 @@
       "source_file": "playwright/.auth/authorized-user.json",
       "source_location": "L2",
       "id": "auth_authorized_user_cookies",
-      "community": 35,
+      "community": 46,
       "norm_label": "cookies"
     },
     {
@@ -1857,7 +1900,7 @@
       "source_file": "playwright/.auth/authorized-user.json",
       "source_location": "L3",
       "id": "auth_authorized_user_origins",
-      "community": 35,
+      "community": 46,
       "norm_label": "origins"
     },
     {
@@ -1866,7 +1909,7 @@
       "source_file": "test-results/.last-run.json",
       "source_location": "L1",
       "id": "test_results_last_run_json",
-      "community": 36,
+      "community": 47,
       "norm_label": ".last-run.json"
     },
     {
@@ -1875,7 +1918,7 @@
       "source_file": "test-results/.last-run.json",
       "source_location": "L2",
       "id": "test_results_last_run_status",
-      "community": 36,
+      "community": 47,
       "norm_label": "status"
     },
     {
@@ -1884,7 +1927,7 @@
       "source_file": "test-results/.last-run.json",
       "source_location": "L3",
       "id": "test_results_last_run_failedtests",
-      "community": 36,
+      "community": 47,
       "norm_label": "failedtests"
     },
     {
@@ -1893,7 +1936,7 @@
       "source_file": "src/config/factory-config.ts",
       "source_location": "L1",
       "id": "src_config_factory_config_ts",
-      "community": 17,
+      "community": 15,
       "norm_label": "factory-config.ts"
     },
     {
@@ -1902,7 +1945,7 @@
       "source_file": "src/config/factory-config.ts",
       "source_location": "L3",
       "id": "config_factory_config_environmentschema",
-      "community": 17,
+      "community": 15,
       "norm_label": "environmentschema"
     },
     {
@@ -1911,7 +1954,7 @@
       "source_file": "src/config/factory-config.ts",
       "source_location": "L11",
       "id": "config_factory_config_screenshotpolicyschema",
-      "community": 17,
+      "community": 15,
       "norm_label": "screenshotpolicyschema"
     },
     {
@@ -1920,7 +1963,7 @@
       "source_file": "src/config/factory-config.ts",
       "source_location": "L12",
       "id": "config_factory_config_tracepolicyschema",
-      "community": 17,
+      "community": 15,
       "norm_label": "tracepolicyschema"
     },
     {
@@ -1929,7 +1972,7 @@
       "source_file": "src/config/factory-config.ts",
       "source_location": "L19",
       "id": "config_factory_config_videopolicyschema",
-      "community": 17,
+      "community": 15,
       "norm_label": "videopolicyschema"
     },
     {
@@ -1938,7 +1981,7 @@
       "source_file": "src/config/factory-config.ts",
       "source_location": "L26",
       "id": "config_factory_config_rawconfigschema",
-      "community": 17,
+      "community": 15,
       "norm_label": "rawconfigschema"
     },
     {
@@ -1947,7 +1990,7 @@
       "source_file": "src/config/factory-config.ts",
       "source_location": "L39",
       "id": "config_factory_config_factoryconfig",
-      "community": 17,
+      "community": 15,
       "norm_label": "factoryconfig"
     },
     {
@@ -1956,7 +1999,7 @@
       "source_file": "src/config/factory-config.ts",
       "source_location": "L51",
       "id": "config_factory_config_loadfactoryconfig",
-      "community": 17,
+      "community": 15,
       "norm_label": "loadfactoryconfig()"
     },
     {
@@ -2010,7 +2053,7 @@
       "source_file": "src/requirements/contracts.ts",
       "source_location": "L36",
       "id": "requirements_contracts_normalizedrequirementsschema",
-      "community": 0,
+      "community": 6,
       "norm_label": "normalizedrequirementsschema"
     },
     {
@@ -2145,7 +2188,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L27",
       "id": "requirements_analysis_normalizedrequirements",
-      "community": 16,
+      "community": 13,
       "norm_label": "normalizedrequirements"
     },
     {
@@ -2433,7 +2476,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L1",
       "id": "src_playwright_contracts_ts",
-      "community": 16,
+      "community": 7,
       "norm_label": "contracts.ts"
     },
     {
@@ -2442,7 +2485,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L3",
       "id": "playwright_contracts_checksumschema",
-      "community": 16,
+      "community": 7,
       "norm_label": "checksumschema"
     },
     {
@@ -2451,7 +2494,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L4",
       "id": "playwright_contracts_identifierschema",
-      "community": 16,
+      "community": 7,
       "norm_label": "identifierschema"
     },
     {
@@ -2460,7 +2503,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L9",
       "id": "playwright_contracts_scenarioidschema",
-      "community": 16,
+      "community": 7,
       "norm_label": "scenarioidschema"
     },
     {
@@ -2469,7 +2512,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L10",
       "id": "playwright_contracts_requirementidschema",
-      "community": 16,
+      "community": 7,
       "norm_label": "requirementidschema"
     },
     {
@@ -2478,7 +2521,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L12",
       "id": "playwright_contracts_playwrighttestmetadataschema",
-      "community": 16,
+      "community": 7,
       "norm_label": "playwrighttestmetadataschema"
     },
     {
@@ -2487,7 +2530,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L23",
       "id": "playwright_contracts_locatorschema",
-      "community": 16,
+      "community": 7,
       "norm_label": "locatorschema"
     },
     {
@@ -2496,7 +2539,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L41",
       "id": "playwright_contracts_actionschema",
-      "community": 16,
+      "community": 7,
       "norm_label": "actionschema"
     },
     {
@@ -2505,7 +2548,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L65",
       "id": "playwright_contracts_automationplanschema",
-      "community": 16,
+      "community": 7,
       "norm_label": "automationplanschema"
     },
     {
@@ -2514,7 +2557,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L76",
       "id": "playwright_contracts_evidenceschema",
-      "community": 16,
+      "community": 7,
       "norm_label": "evidenceschema"
     },
     {
@@ -2523,7 +2566,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L90",
       "id": "playwright_contracts_executionsummaryschema",
-      "community": 16,
+      "community": 7,
       "norm_label": "executionsummaryschema"
     },
     {
@@ -2532,7 +2575,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L107",
       "id": "playwright_contracts_automationplan",
-      "community": 16,
+      "community": 13,
       "norm_label": "automationplan"
     },
     {
@@ -2541,7 +2584,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L108",
       "id": "playwright_contracts_automationlocator",
-      "community": 16,
+      "community": 7,
       "norm_label": "automationlocator"
     },
     {
@@ -2550,7 +2593,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L109",
       "id": "playwright_contracts_playwrighttestmetadata",
-      "community": 16,
+      "community": 7,
       "norm_label": "playwrighttestmetadata"
     },
     {
@@ -2559,7 +2602,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L112",
       "id": "playwright_contracts_executionsummary",
-      "community": 16,
+      "community": 7,
       "norm_label": "executionsummary"
     },
     {
@@ -2568,7 +2611,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L1",
       "id": "src_playwright_pipeline_ts",
-      "community": 16,
+      "community": 80,
       "norm_label": "pipeline.ts"
     },
     {
@@ -2577,7 +2620,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L24",
       "id": "playwright_pipeline_generateplaywrighttestinput",
-      "community": 16,
+      "community": 80,
       "norm_label": "generateplaywrighttestinput"
     },
     {
@@ -2586,7 +2629,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L33",
       "id": "playwright_pipeline_generatedplaywrighttest",
-      "community": 16,
+      "community": 80,
       "norm_label": "generatedplaywrighttest"
     },
     {
@@ -2595,7 +2638,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L38",
       "id": "playwright_pipeline_generateplaywrighttest",
-      "community": 16,
+      "community": 80,
       "norm_label": "generateplaywrighttest()"
     },
     {
@@ -2604,7 +2647,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L111",
       "id": "playwright_pipeline_rendertestsource",
-      "community": 16,
+      "community": 80,
       "norm_label": "rendertestsource()"
     },
     {
@@ -2613,7 +2656,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L137",
       "id": "playwright_pipeline_renderaction",
-      "community": 16,
+      "community": 80,
       "norm_label": "renderaction()"
     },
     {
@@ -2622,7 +2665,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L156",
       "id": "playwright_pipeline_renderlocator",
-      "community": 16,
+      "community": 80,
       "norm_label": "renderlocator()"
     },
     {
@@ -2631,7 +2674,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L170",
       "id": "playwright_pipeline_escaperegexp",
-      "community": 16,
+      "community": 80,
       "norm_label": "escaperegexp()"
     },
     {
@@ -2640,7 +2683,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L174",
       "id": "playwright_pipeline_createtestid",
-      "community": 16,
+      "community": 80,
       "norm_label": "createtestid()"
     },
     {
@@ -2649,7 +2692,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L178",
       "id": "playwright_pipeline_createdeterministictestid",
-      "community": 16,
+      "community": 20,
       "norm_label": "createdeterministictestid()"
     },
     {
@@ -2658,7 +2701,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L195",
       "id": "playwright_pipeline_cleanupregistry",
-      "community": 16,
+      "community": 80,
       "norm_label": "cleanupregistry"
     },
     {
@@ -2667,7 +2710,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L200",
       "id": "playwright_pipeline_createcleanupregistry",
-      "community": 16,
+      "community": 20,
       "norm_label": "createcleanupregistry()"
     },
     {
@@ -2676,7 +2719,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L230",
       "id": "playwright_pipeline_createexecutionsummary",
-      "community": 16,
+      "community": 13,
       "norm_label": "createexecutionsummary()"
     },
     {
@@ -2838,7 +2881,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L165",
       "id": "schemas_contracts_workflowmanifestschema",
-      "community": 12,
+      "community": 1,
       "norm_label": "workflowmanifestschema"
     },
     {
@@ -2883,7 +2926,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L209",
       "id": "schemas_contracts_artifactreference",
-      "community": 6,
+      "community": 5,
       "norm_label": "artifactreference"
     },
     {
@@ -2892,7 +2935,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L210",
       "id": "schemas_contracts_actor",
-      "community": 1,
+      "community": 5,
       "norm_label": "actor"
     },
     {
@@ -2901,7 +2944,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L211",
       "id": "schemas_contracts_artifactmanifest",
-      "community": 1,
+      "community": 10,
       "norm_label": "artifactmanifest"
     },
     {
@@ -2910,7 +2953,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L212",
       "id": "schemas_contracts_workflowmanifest",
-      "community": 12,
+      "community": 1,
       "norm_label": "workflowmanifest"
     },
     {
@@ -2919,7 +2962,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L1",
       "id": "src_scenarios_contracts_ts",
-      "community": 13,
+      "community": 80,
       "norm_label": "contracts.ts"
     },
     {
@@ -2928,7 +2971,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L3",
       "id": "scenarios_contracts_requirementidschema",
-      "community": 13,
+      "community": 80,
       "norm_label": "requirementidschema"
     },
     {
@@ -2937,7 +2980,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L7",
       "id": "scenarios_contracts_scenarioidschema",
-      "community": 13,
+      "community": 80,
       "norm_label": "scenarioidschema"
     },
     {
@@ -2946,7 +2989,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L11",
       "id": "scenarios_contracts_checksumschema",
-      "community": 13,
+      "community": 80,
       "norm_label": "checksumschema"
     },
     {
@@ -2955,7 +2998,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L13",
       "id": "scenarios_contracts_scenariostepschema",
-      "community": 13,
+      "community": 80,
       "norm_label": "scenariostepschema"
     },
     {
@@ -2964,7 +3007,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L19",
       "id": "scenarios_contracts_scenarioschema",
-      "community": 13,
+      "community": 80,
       "norm_label": "scenarioschema"
     },
     {
@@ -2973,7 +3016,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L58",
       "id": "scenarios_contracts_scenariospecificationschema",
-      "community": 13,
+      "community": 80,
       "norm_label": "scenariospecificationschema"
     },
     {
@@ -2982,7 +3025,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L81",
       "id": "scenarios_contracts_scenarioevaluationschema",
-      "community": 13,
+      "community": 80,
       "norm_label": "scenarioevaluationschema"
     },
     {
@@ -2991,7 +3034,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L102",
       "id": "scenarios_contracts_humanscenarioreviewschema",
-      "community": 13,
+      "community": 80,
       "norm_label": "humanscenarioreviewschema"
     },
     {
@@ -3000,7 +3043,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L112",
       "id": "scenarios_contracts_scenario",
-      "community": 13,
+      "community": 6,
       "norm_label": "scenario"
     },
     {
@@ -3009,7 +3052,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L113",
       "id": "scenarios_contracts_scenariospecification",
-      "community": 13,
+      "community": 80,
       "norm_label": "scenariospecification"
     },
     {
@@ -3018,7 +3061,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L114",
       "id": "scenarios_contracts_scenarioevaluation",
-      "community": 13,
+      "community": 80,
       "norm_label": "scenarioevaluation"
     },
     {
@@ -3027,7 +3070,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L115",
       "id": "scenarios_contracts_humanscenarioreview",
-      "community": 13,
+      "community": 80,
       "norm_label": "humanscenarioreview"
     },
     {
@@ -3036,7 +3079,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L1",
       "id": "src_scenarios_pipeline_ts",
-      "community": 13,
+      "community": 6,
       "norm_label": "pipeline.ts"
     },
     {
@@ -3054,7 +3097,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L44",
       "id": "scenarios_pipeline_projectscenariomarkdown",
-      "community": 13,
+      "community": 6,
       "norm_label": "projectscenariomarkdown()"
     },
     {
@@ -3063,7 +3106,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L61",
       "id": "scenarios_pipeline_validatescenarioprojection",
-      "community": 13,
+      "community": 6,
       "norm_label": "validatescenarioprojection()"
     },
     {
@@ -3072,7 +3115,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L77",
       "id": "scenarios_pipeline_evaluatescenarios",
-      "community": 13,
+      "community": 6,
       "norm_label": "evaluatescenarios()"
     },
     {
@@ -3081,7 +3124,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L113",
       "id": "scenarios_pipeline_findscenariofindings",
-      "community": 13,
+      "community": 6,
       "norm_label": "findscenariofindings()"
     },
     {
@@ -3090,7 +3133,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L147",
       "id": "scenarios_pipeline_findcoveragefindings",
-      "community": 13,
+      "community": 6,
       "norm_label": "findcoveragefindings()"
     },
     {
@@ -3099,7 +3142,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L186",
       "id": "scenarios_pipeline_findduplicatescenarios",
-      "community": 13,
+      "community": 6,
       "norm_label": "findduplicatescenarios()"
     },
     {
@@ -3108,7 +3151,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L207",
       "id": "scenarios_pipeline_revisioninput",
-      "community": 13,
+      "community": 6,
       "norm_label": "revisioninput"
     },
     {
@@ -3117,7 +3160,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L216",
       "id": "scenarios_pipeline_revisescenariospecification",
-      "community": 13,
+      "community": 12,
       "norm_label": "revisescenariospecification()"
     },
     {
@@ -3126,7 +3169,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L243",
       "id": "scenarios_pipeline_humanreviewinput",
-      "community": 13,
+      "community": 6,
       "norm_label": "humanreviewinput"
     },
     {
@@ -3144,7 +3187,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L302",
       "id": "scenarios_pipeline_traceabilitymatrix",
-      "community": 13,
+      "community": 6,
       "norm_label": "traceabilitymatrix"
     },
     {
@@ -3153,7 +3196,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L315",
       "id": "scenarios_pipeline_validatetraceability",
-      "community": 13,
+      "community": 12,
       "norm_label": "validatetraceability()"
     },
     {
@@ -3162,7 +3205,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L358",
       "id": "scenarios_pipeline_scenariosfor",
-      "community": 13,
+      "community": 6,
       "norm_label": "scenariosfor()"
     },
     {
@@ -3171,7 +3214,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L366",
       "id": "scenarios_pipeline_applicablecoverage",
-      "community": 13,
+      "community": 6,
       "norm_label": "applicablecoverage()"
     },
     {
@@ -3180,7 +3223,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L377",
       "id": "scenarios_pipeline_createscenario",
-      "community": 13,
+      "community": 6,
       "norm_label": "createscenario()"
     },
     {
@@ -3189,7 +3232,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L432",
       "id": "scenarios_pipeline_renderscenario",
-      "community": 13,
+      "community": 6,
       "norm_label": "renderscenario()"
     },
     {
@@ -3198,7 +3241,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L480",
       "id": "scenarios_pipeline_normalizemarkdown",
-      "community": 13,
+      "community": 6,
       "norm_label": "normalizemarkdown()"
     },
     {
@@ -3207,7 +3250,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L484",
       "id": "scenarios_pipeline_markdowntext",
-      "community": 13,
+      "community": 6,
       "norm_label": "markdowntext()"
     },
     {
@@ -3216,7 +3259,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L488",
       "id": "scenarios_pipeline_markdowncell",
-      "community": 13,
+      "community": 6,
       "norm_label": "markdowncell()"
     },
     {
@@ -3252,7 +3295,7 @@
       "source_file": "src/orchestration/workflow-store.ts",
       "source_location": "L1",
       "id": "src_orchestration_workflow_store_ts",
-      "community": 12,
+      "community": 1,
       "norm_label": "workflow-store.ts"
     },
     {
@@ -3261,7 +3304,7 @@
       "source_file": "src/orchestration/workflow-store.ts",
       "source_location": "L17",
       "id": "orchestration_workflow_store_releaselock",
-      "community": 12,
+      "community": 1,
       "norm_label": "releaselock"
     },
     {
@@ -3270,7 +3313,7 @@
       "source_file": "src/orchestration/workflow-store.ts",
       "source_location": "L19",
       "id": "orchestration_workflow_store_workflowstore",
-      "community": 12,
+      "community": 1,
       "norm_label": "workflowstore"
     },
     {
@@ -3279,7 +3322,7 @@
       "source_file": "src/orchestration/workflow-store.ts",
       "source_location": "L20",
       "id": "orchestration_workflow_store_workflowstore_constructor",
-      "community": 12,
+      "community": 1,
       "norm_label": ".constructor()"
     },
     {
@@ -3288,7 +3331,7 @@
       "source_file": "src/orchestration/workflow-store.ts",
       "source_location": "L22",
       "id": "orchestration_workflow_store_workflowstore_save",
-      "community": 12,
+      "community": 1,
       "norm_label": ".save()"
     },
     {
@@ -3297,7 +3340,7 @@
       "source_file": "src/orchestration/workflow-store.ts",
       "source_location": "L63",
       "id": "orchestration_workflow_store_workflowstore_load",
-      "community": 12,
+      "community": 1,
       "norm_label": ".load()"
     },
     {
@@ -3306,7 +3349,7 @@
       "source_file": "src/orchestration/workflow-store.ts",
       "source_location": "L78",
       "id": "orchestration_workflow_store_workflowstore_recover",
-      "community": 12,
+      "community": 1,
       "norm_label": ".recover()"
     },
     {
@@ -3315,7 +3358,7 @@
       "source_file": "src/orchestration/workflow-store.ts",
       "source_location": "L122",
       "id": "orchestration_workflow_store_workflowstore_workflowpath",
-      "community": 12,
+      "community": 1,
       "norm_label": ".workflowpath()"
     },
     {
@@ -3324,7 +3367,7 @@
       "source_file": "src/orchestration/workflow-store.ts",
       "source_location": "L129",
       "id": "orchestration_workflow_store_acquirerunlock",
-      "community": 12,
+      "community": 1,
       "norm_label": "acquirerunlock()"
     },
     {
@@ -3333,7 +3376,7 @@
       "source_file": "src/orchestration/workflow-store.ts",
       "source_location": "L167",
       "id": "orchestration_workflow_store_assertidentifier",
-      "community": 12,
+      "community": 1,
       "norm_label": "assertidentifier()"
     },
     {
@@ -3342,7 +3385,7 @@
       "source_file": "src/orchestration/workflow-store.ts",
       "source_location": "L173",
       "id": "orchestration_workflow_store_iserrorcode",
-      "community": 12,
+      "community": 1,
       "norm_label": "iserrorcode()"
     },
     {
@@ -3351,7 +3394,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L1",
       "id": "src_orchestration_workflow_ts",
-      "community": 6,
+      "community": 5,
       "norm_label": "workflow.ts"
     },
     {
@@ -3360,7 +3403,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L12",
       "id": "orchestration_workflow_legaltransitions",
-      "community": 6,
+      "community": 5,
       "norm_label": "legaltransitions"
     },
     {
@@ -3369,7 +3412,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L57",
       "id": "orchestration_workflow_transitiongate",
-      "community": 6,
+      "community": 5,
       "norm_label": "transitiongate"
     },
     {
@@ -3378,7 +3421,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L94",
       "id": "orchestration_workflow_createworkflowinput",
-      "community": 6,
+      "community": 5,
       "norm_label": "createworkflowinput"
     },
     {
@@ -3387,7 +3430,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L100",
       "id": "orchestration_workflow_transitioninput",
-      "community": 6,
+      "community": 5,
       "norm_label": "transitioninput"
     },
     {
@@ -3396,7 +3439,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L109",
       "id": "orchestration_workflow_createworkflow",
-      "community": 6,
+      "community": 5,
       "norm_label": "createworkflow()"
     },
     {
@@ -3405,7 +3448,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L127",
       "id": "orchestration_workflow_transitionworkflow",
-      "community": 6,
+      "community": 5,
       "norm_label": "transitionworkflow()"
     },
     {
@@ -3414,7 +3457,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L183",
       "id": "orchestration_workflow_validategate",
-      "community": 6,
+      "community": 5,
       "norm_label": "validategate()"
     },
     {
@@ -3423,7 +3466,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L198",
       "id": "orchestration_workflow_validateplaywrightgate",
-      "community": 6,
+      "community": 5,
       "norm_label": "validateplaywrightgate()"
     },
     {
@@ -3432,7 +3475,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L220",
       "id": "orchestration_workflow_validaterequirementgate",
-      "community": 6,
+      "community": 5,
       "norm_label": "validaterequirementgate()"
     },
     {
@@ -3441,7 +3484,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L242",
       "id": "orchestration_workflow_validatescenariogate",
-      "community": 6,
+      "community": 5,
       "norm_label": "validatescenariogate()"
     },
     {
@@ -3450,7 +3493,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L274",
       "id": "orchestration_workflow_validateexactscenarioapproval",
-      "community": 6,
+      "community": 5,
       "norm_label": "validateexactscenarioapproval()"
     },
     {
@@ -3459,7 +3502,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L290",
       "id": "orchestration_workflow_validaterepairgate",
-      "community": 6,
+      "community": 5,
       "norm_label": "validaterepairgate()"
     },
     {
@@ -3468,7 +3511,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L302",
       "id": "orchestration_workflow_validatefinalreviewgate",
-      "community": 6,
+      "community": 5,
       "norm_label": "validatefinalreviewgate()"
     },
     {
@@ -3477,7 +3520,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L321",
       "id": "orchestration_workflow_requiregate",
-      "community": 6,
+      "community": 5,
       "norm_label": "requiregate()"
     },
     {
@@ -3486,7 +3529,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L327",
       "id": "orchestration_workflow_requirehuman",
-      "community": 6,
+      "community": 5,
       "norm_label": "requirehuman()"
     },
     {
@@ -3495,7 +3538,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L333",
       "id": "orchestration_workflow_requirerole",
-      "community": 6,
+      "community": 5,
       "norm_label": "requirerole()"
     },
     {
@@ -3504,7 +3547,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L342",
       "id": "orchestration_workflow_incrementretry",
-      "community": 6,
+      "community": 5,
       "norm_label": "incrementretry()"
     },
     {
@@ -3513,7 +3556,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L355",
       "id": "orchestration_workflow_statusfor",
-      "community": 6,
+      "community": 5,
       "norm_label": "statusfor()"
     },
     {
@@ -3522,7 +3565,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L368",
       "id": "orchestration_workflow_uniquereferences",
-      "community": 6,
+      "community": 5,
       "norm_label": "uniquereferences()"
     },
     {
@@ -3531,7 +3574,7 @@
       "source_file": "src/orchestration/artifact-reference.ts",
       "source_location": "L1",
       "id": "src_orchestration_artifact_reference_ts",
-      "community": 6,
+      "community": 5,
       "norm_label": "artifact-reference.ts"
     },
     {
@@ -3540,7 +3583,7 @@
       "source_file": "src/orchestration/artifact-reference.ts",
       "source_location": "L3",
       "id": "orchestration_artifact_reference_sameartifactreference",
-      "community": 6,
+      "community": 5,
       "norm_label": "sameartifactreference()"
     },
     {
@@ -3549,7 +3592,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L1",
       "id": "src_orchestration_artifact_lifecycle_ts",
-      "community": 1,
+      "community": 10,
       "norm_label": "artifact-lifecycle.ts"
     },
     {
@@ -3558,7 +3601,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L12",
       "id": "orchestration_artifact_lifecycle_semanticchecksum",
-      "community": 1,
+      "community": 13,
       "norm_label": "semanticchecksum()"
     },
     {
@@ -3567,7 +3610,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L16",
       "id": "orchestration_artifact_lifecycle_acceptartifactinput",
-      "community": 1,
+      "community": 10,
       "norm_label": "acceptartifactinput"
     },
     {
@@ -3576,7 +3619,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L23",
       "id": "orchestration_artifact_lifecycle_acceptartifact",
-      "community": 1,
+      "community": 10,
       "norm_label": "acceptartifact()"
     },
     {
@@ -3585,7 +3628,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L67",
       "id": "orchestration_artifact_lifecycle_validateartifactreferences",
-      "community": 1,
+      "community": 10,
       "norm_label": "validateartifactreferences()"
     },
     {
@@ -3594,7 +3637,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L118",
       "id": "orchestration_artifact_lifecycle_createartifactrevision",
-      "community": 1,
+      "community": 10,
       "norm_label": "createartifactrevision()"
     },
     {
@@ -3603,7 +3646,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L143",
       "id": "orchestration_artifact_lifecycle_invalidatedownstreamartifacts",
-      "community": 1,
+      "community": 10,
       "norm_label": "invalidatedownstreamartifacts()"
     },
     {
@@ -3612,7 +3655,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L157",
       "id": "orchestration_artifact_lifecycle_canonicaljson",
-      "community": 1,
+      "community": 10,
       "norm_label": "canonicaljson()"
     },
     {
@@ -3621,7 +3664,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L161",
       "id": "orchestration_artifact_lifecycle_jsonvalue",
-      "community": 1,
+      "community": 10,
       "norm_label": "jsonvalue"
     },
     {
@@ -3630,7 +3673,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L169",
       "id": "orchestration_artifact_lifecycle_normalizejson",
-      "community": 1,
+      "community": 10,
       "norm_label": "normalizejson()"
     },
     {
@@ -3639,7 +3682,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L186",
       "id": "orchestration_artifact_lifecycle_normalizearray",
-      "community": 1,
+      "community": 10,
       "norm_label": "normalizearray()"
     },
     {
@@ -3648,7 +3691,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L196",
       "id": "orchestration_artifact_lifecycle_normalizeobject",
-      "community": 1,
+      "community": 10,
       "norm_label": "normalizeobject()"
     },
     {
@@ -3657,7 +3700,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L213",
       "id": "orchestration_artifact_lifecycle_assertnotcyclic",
-      "community": 1,
+      "community": 10,
       "norm_label": "assertnotcyclic()"
     },
     {
@@ -3747,7 +3790,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 19,
+      "community": 18,
       "norm_label": "readme.md"
     },
     {
@@ -3756,7 +3799,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "aristotle_readme_quality_agent_factory",
-      "community": 19,
+      "community": 18,
       "norm_label": "quality agent factory"
     },
     {
@@ -3765,7 +3808,7 @@
       "source_file": "README.md",
       "source_location": "L13",
       "id": "aristotle_readme_current_status",
-      "community": 19,
+      "community": 18,
       "norm_label": "current status"
     },
     {
@@ -3774,7 +3817,7 @@
       "source_file": "README.md",
       "source_location": "L21",
       "id": "aristotle_readme_prerequisites",
-      "community": 19,
+      "community": 18,
       "norm_label": "prerequisites"
     },
     {
@@ -3783,7 +3826,7 @@
       "source_file": "README.md",
       "source_location": "L28",
       "id": "aristotle_readme_setup",
-      "community": 19,
+      "community": 18,
       "norm_label": "setup"
     },
     {
@@ -3792,7 +3835,7 @@
       "source_file": "README.md",
       "source_location": "L30",
       "id": "aristotle_readme_codeblock_1",
-      "community": 19,
+      "community": 18,
       "norm_label": "code:bash (npm ci)"
     },
     {
@@ -3801,7 +3844,7 @@
       "source_file": "README.md",
       "source_location": "L41",
       "id": "aristotle_readme_commands",
-      "community": 19,
+      "community": 18,
       "norm_label": "commands"
     },
     {
@@ -3810,7 +3853,7 @@
       "source_file": "README.md",
       "source_location": "L58",
       "id": "aristotle_readme_commit_quality_pipeline",
-      "community": 19,
+      "community": 18,
       "norm_label": "commit quality pipeline"
     },
     {
@@ -3819,7 +3862,7 @@
       "source_file": "README.md",
       "source_location": "L68",
       "id": "aristotle_readme_safety_defaults",
-      "community": 19,
+      "community": 18,
       "norm_label": "safety defaults"
     },
     {
@@ -3828,7 +3871,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L1",
       "id": "contributing_md",
-      "community": 25,
+      "community": 23,
       "norm_label": "contributing.md"
     },
     {
@@ -3837,7 +3880,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L1",
       "id": "aristotle_contributing_contributing",
-      "community": 25,
+      "community": 23,
       "norm_label": "contributing"
     },
     {
@@ -3846,7 +3889,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L3",
       "id": "aristotle_contributing_workflow",
-      "community": 25,
+      "community": 23,
       "norm_label": "workflow"
     },
     {
@@ -3855,7 +3898,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L20",
       "id": "aristotle_contributing_commit_examples",
-      "community": 25,
+      "community": 23,
       "norm_label": "commit examples"
     },
     {
@@ -3864,7 +3907,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L22",
       "id": "aristotle_contributing_codeblock_1",
-      "community": 25,
+      "community": 23,
       "norm_label": "code:text (feat: enforce scenario approval before test generation)"
     },
     {
@@ -3873,7 +3916,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L28",
       "id": "aristotle_contributing_pull_request_expectations",
-      "community": 25,
+      "community": 23,
       "norm_label": "pull request expectations"
     },
     {
@@ -3945,7 +3988,7 @@
       "source_file": "docs-factory/README.md",
       "source_location": "L1",
       "id": "docs_factory_readme_md",
-      "community": 45,
+      "community": 56,
       "norm_label": "readme.md"
     },
     {
@@ -3954,7 +3997,7 @@
       "source_file": "docs-factory/README.md",
       "source_location": "L1",
       "id": "docs_factory_readme_factory_documentation",
-      "community": 45,
+      "community": 56,
       "norm_label": "factory documentation"
     },
     {
@@ -3963,7 +4006,7 @@
       "source_file": "agents/providers/claude-code/README.md",
       "source_location": "L1",
       "id": "agents_providers_claude_code_readme_md",
-      "community": 37,
+      "community": 48,
       "norm_label": "readme.md"
     },
     {
@@ -3972,7 +4015,7 @@
       "source_file": "agents/providers/claude-code/README.md",
       "source_location": "L1",
       "id": "claude_code_readme_claude_code_provider",
-      "community": 37,
+      "community": 48,
       "norm_label": "claude code provider"
     },
     {
@@ -3981,7 +4024,7 @@
       "source_file": "agents/providers/cursor/README.md",
       "source_location": "L1",
       "id": "agents_providers_cursor_readme_md",
-      "community": 44,
+      "community": 55,
       "norm_label": "readme.md"
     },
     {
@@ -3990,7 +4033,7 @@
       "source_file": "agents/providers/cursor/README.md",
       "source_location": "L1",
       "id": "cursor_readme_cursor_provider",
-      "community": 44,
+      "community": 55,
       "norm_label": "cursor provider"
     },
     {
@@ -3999,7 +4042,7 @@
       "source_file": "agents/providers/codex/README.md",
       "source_location": "L1",
       "id": "agents_providers_codex_readme_md",
-      "community": 38,
+      "community": 54,
       "norm_label": "readme.md"
     },
     {
@@ -4008,7 +4051,7 @@
       "source_file": "agents/providers/codex/README.md",
       "source_location": "L1",
       "id": "codex_readme_codex_provider",
-      "community": 38,
+      "community": 54,
       "norm_label": "codex provider"
     },
     {
@@ -4017,7 +4060,7 @@
       "source_file": "agents/workflows/requirement-clarification.md",
       "source_location": "L1",
       "id": "agents_workflows_requirement_clarification_md",
-      "community": 42,
+      "community": 52,
       "norm_label": "requirement-clarification.md"
     },
     {
@@ -4026,7 +4069,7 @@
       "source_file": "agents/workflows/requirement-clarification.md",
       "source_location": "L1",
       "id": "workflows_requirement_clarification_requirement_clarification_workflow",
-      "community": 42,
+      "community": 52,
       "norm_label": "requirement clarification workflow"
     },
     {
@@ -4035,7 +4078,7 @@
       "source_file": "agents/workflows/playwright-implementation.md",
       "source_location": "L1",
       "id": "agents_workflows_playwright_implementation_md",
-      "community": 41,
+      "community": 51,
       "norm_label": "playwright-implementation.md"
     },
     {
@@ -4044,7 +4087,7 @@
       "source_file": "agents/workflows/playwright-implementation.md",
       "source_location": "L1",
       "id": "workflows_playwright_implementation_playwright_implementation_workflow",
-      "community": 41,
+      "community": 51,
       "norm_label": "playwright implementation workflow"
     },
     {
@@ -4053,7 +4096,7 @@
       "source_file": "agents/workflows/README.md",
       "source_location": "L1",
       "id": "agents_workflows_readme_md",
-      "community": 55,
+      "community": 66,
       "norm_label": "readme.md"
     },
     {
@@ -4062,7 +4105,7 @@
       "source_file": "agents/workflows/README.md",
       "source_location": "L1",
       "id": "workflows_readme_factory_workflows",
-      "community": 55,
+      "community": 66,
       "norm_label": "factory workflows"
     },
     {
@@ -4071,7 +4114,7 @@
       "source_file": "agents/workflows/scenario-review.md",
       "source_location": "L1",
       "id": "agents_workflows_scenario_review_md",
-      "community": 56,
+      "community": 67,
       "norm_label": "scenario-review.md"
     },
     {
@@ -4080,7 +4123,7 @@
       "source_file": "agents/workflows/scenario-review.md",
       "source_location": "L1",
       "id": "workflows_scenario_review_scenario_review_workflow",
-      "community": 56,
+      "community": 67,
       "norm_label": "scenario review workflow"
     },
     {
@@ -4089,7 +4132,7 @@
       "source_file": "agents/roles/scenario-quality-evaluator.md",
       "source_location": "L1",
       "id": "agents_roles_scenario_quality_evaluator_md",
-      "community": 28,
+      "community": 39,
       "norm_label": "scenario-quality-evaluator.md"
     },
     {
@@ -4098,7 +4141,7 @@
       "source_file": "agents/roles/scenario-quality-evaluator.md",
       "source_location": "L1",
       "id": "roles_scenario_quality_evaluator_scenario_quality_evaluator",
-      "community": 28,
+      "community": 39,
       "norm_label": "scenario quality evaluator"
     },
     {
@@ -4107,7 +4150,7 @@
       "source_file": "agents/roles/scenario-quality-evaluator.md",
       "source_location": "L3",
       "id": "roles_scenario_quality_evaluator_authority",
-      "community": 28,
+      "community": 39,
       "norm_label": "authority"
     },
     {
@@ -4116,7 +4159,7 @@
       "source_file": "agents/roles/scenario-quality-evaluator.md",
       "source_location": "L9",
       "id": "roles_scenario_quality_evaluator_required_inputs",
-      "community": 28,
+      "community": 39,
       "norm_label": "required inputs"
     },
     {
@@ -4125,7 +4168,7 @@
       "source_file": "agents/roles/scenario-quality-evaluator.md",
       "source_location": "L15",
       "id": "roles_scenario_quality_evaluator_outputs",
-      "community": 28,
+      "community": 39,
       "norm_label": "outputs"
     },
     {
@@ -4134,7 +4177,7 @@
       "source_file": "agents/roles/README.md",
       "source_location": "L1",
       "id": "agents_roles_readme_md",
-      "community": 39,
+      "community": 59,
       "norm_label": "readme.md"
     },
     {
@@ -4143,7 +4186,7 @@
       "source_file": "agents/roles/README.md",
       "source_location": "L1",
       "id": "roles_readme_agent_roles",
-      "community": 39,
+      "community": 59,
       "norm_label": "agent roles"
     },
     {
@@ -4152,7 +4195,7 @@
       "source_file": "agents/roles/requirement-analyst.md",
       "source_location": "L1",
       "id": "agents_roles_requirement_analyst_md",
-      "community": 29,
+      "community": 37,
       "norm_label": "requirement-analyst.md"
     },
     {
@@ -4161,7 +4204,7 @@
       "source_file": "agents/roles/requirement-analyst.md",
       "source_location": "L1",
       "id": "roles_requirement_analyst_requirement_analyst",
-      "community": 29,
+      "community": 37,
       "norm_label": "requirement analyst"
     },
     {
@@ -4170,7 +4213,7 @@
       "source_file": "agents/roles/requirement-analyst.md",
       "source_location": "L3",
       "id": "roles_requirement_analyst_authority",
-      "community": 29,
+      "community": 37,
       "norm_label": "authority"
     },
     {
@@ -4179,7 +4222,7 @@
       "source_file": "agents/roles/requirement-analyst.md",
       "source_location": "L13",
       "id": "roles_requirement_analyst_required_inputs",
-      "community": 29,
+      "community": 37,
       "norm_label": "required inputs"
     },
     {
@@ -4188,7 +4231,7 @@
       "source_file": "agents/roles/requirement-analyst.md",
       "source_location": "L22",
       "id": "roles_requirement_analyst_outputs",
-      "community": 29,
+      "community": 37,
       "norm_label": "outputs"
     },
     {
@@ -4197,7 +4240,7 @@
       "source_file": "agents/roles/playwright-test-engineer.md",
       "source_location": "L1",
       "id": "agents_roles_playwright_test_engineer_md",
-      "community": 27,
+      "community": 30,
       "norm_label": "playwright-test-engineer.md"
     },
     {
@@ -4206,7 +4249,7 @@
       "source_file": "agents/roles/playwright-test-engineer.md",
       "source_location": "L1",
       "id": "roles_playwright_test_engineer_playwright_test_engineer",
-      "community": 27,
+      "community": 30,
       "norm_label": "playwright test engineer"
     },
     {
@@ -4215,7 +4258,7 @@
       "source_file": "agents/roles/playwright-test-engineer.md",
       "source_location": "L3",
       "id": "roles_playwright_test_engineer_mission",
-      "community": 27,
+      "community": 30,
       "norm_label": "mission"
     },
     {
@@ -4224,7 +4267,7 @@
       "source_file": "agents/roles/playwright-test-engineer.md",
       "source_location": "L9",
       "id": "roles_playwright_test_engineer_required_inputs",
-      "community": 27,
+      "community": 30,
       "norm_label": "required inputs"
     },
     {
@@ -4233,7 +4276,7 @@
       "source_file": "agents/roles/playwright-test-engineer.md",
       "source_location": "L19",
       "id": "roles_playwright_test_engineer_boundaries",
-      "community": 27,
+      "community": 30,
       "norm_label": "boundaries"
     },
     {
@@ -4242,7 +4285,7 @@
       "source_file": "agents/roles/playwright-test-engineer.md",
       "source_location": "L32",
       "id": "roles_playwright_test_engineer_outputs",
-      "community": 27,
+      "community": 30,
       "norm_label": "outputs"
     },
     {
@@ -4251,7 +4294,7 @@
       "source_file": "agents/roles/scenario-designer.md",
       "source_location": "L1",
       "id": "agents_roles_scenario_designer_md",
-      "community": 30,
+      "community": 38,
       "norm_label": "scenario-designer.md"
     },
     {
@@ -4260,7 +4303,7 @@
       "source_file": "agents/roles/scenario-designer.md",
       "source_location": "L1",
       "id": "roles_scenario_designer_test_scenario_designer",
-      "community": 30,
+      "community": 38,
       "norm_label": "test scenario designer"
     },
     {
@@ -4269,7 +4312,7 @@
       "source_file": "agents/roles/scenario-designer.md",
       "source_location": "L3",
       "id": "roles_scenario_designer_authority",
-      "community": 30,
+      "community": 38,
       "norm_label": "authority"
     },
     {
@@ -4278,7 +4321,7 @@
       "source_file": "agents/roles/scenario-designer.md",
       "source_location": "L9",
       "id": "roles_scenario_designer_required_inputs",
-      "community": 30,
+      "community": 38,
       "norm_label": "required inputs"
     },
     {
@@ -4287,7 +4330,7 @@
       "source_file": "agents/roles/scenario-designer.md",
       "source_location": "L16",
       "id": "roles_scenario_designer_outputs",
-      "community": 30,
+      "community": 38,
       "norm_label": "outputs"
     },
     {
@@ -4296,7 +4339,7 @@
       "source_file": "agents/shared/operating-principles.md",
       "source_location": "L1",
       "id": "agents_shared_operating_principles_md",
-      "community": 48,
+      "community": 49,
       "norm_label": "operating-principles.md"
     },
     {
@@ -4305,7 +4348,7 @@
       "source_file": "agents/shared/operating-principles.md",
       "source_location": "L1",
       "id": "shared_operating_principles_operating_principles",
-      "community": 48,
+      "community": 49,
       "norm_label": "operating principles"
     },
     {
@@ -4314,7 +4357,7 @@
       "source_file": "agents/shared/security-boundaries.md",
       "source_location": "L1",
       "id": "agents_shared_security_boundaries_md",
-      "community": 24,
+      "community": 32,
       "norm_label": "security-boundaries.md"
     },
     {
@@ -4323,7 +4366,7 @@
       "source_file": "agents/shared/security-boundaries.md",
       "source_location": "L1",
       "id": "shared_security_boundaries_security_boundaries",
-      "community": 24,
+      "community": 32,
       "norm_label": "security boundaries"
     },
     {
@@ -4332,7 +4375,7 @@
       "source_file": "agents/shared/security-boundaries.md",
       "source_location": "L3",
       "id": "shared_security_boundaries_untrusted_inputs",
-      "community": 24,
+      "community": 32,
       "norm_label": "untrusted inputs"
     },
     {
@@ -4341,7 +4384,7 @@
       "source_file": "agents/shared/security-boundaries.md",
       "source_location": "L9",
       "id": "shared_security_boundaries_target_environment",
-      "community": 24,
+      "community": 32,
       "norm_label": "target environment"
     },
     {
@@ -4350,7 +4393,7 @@
       "source_file": "agents/shared/security-boundaries.md",
       "source_location": "L17",
       "id": "shared_security_boundaries_sensitive_material",
-      "community": 24,
+      "community": 32,
       "norm_label": "sensitive material"
     },
     {
@@ -4359,7 +4402,7 @@
       "source_file": "agents/shared/security-boundaries.md",
       "source_location": "L24",
       "id": "shared_security_boundaries_dependencies_and_integrations",
-      "community": 24,
+      "community": 32,
       "norm_label": "dependencies and integrations"
     },
     {
@@ -4368,7 +4411,7 @@
       "source_file": "agents/shared/artifact-contracts.md",
       "source_location": "L1",
       "id": "agents_shared_artifact_contracts_md",
-      "community": 40,
+      "community": 60,
       "norm_label": "artifact-contracts.md"
     },
     {
@@ -4377,7 +4420,7 @@
       "source_file": "agents/shared/artifact-contracts.md",
       "source_location": "L1",
       "id": "shared_artifact_contracts_artifact_contract_principles",
-      "community": 40,
+      "community": 60,
       "norm_label": "artifact contract principles"
     },
     {
@@ -4386,7 +4429,7 @@
       "source_file": "agents/skills/design-test-scenarios.md",
       "source_location": "L1",
       "id": "agents_skills_design_test_scenarios_md",
-      "community": 51,
+      "community": 50,
       "norm_label": "design-test-scenarios.md"
     },
     {
@@ -4395,7 +4438,7 @@
       "source_file": "agents/skills/design-test-scenarios.md",
       "source_location": "L1",
       "id": "skills_design_test_scenarios_design_test_scenarios",
-      "community": 51,
+      "community": 50,
       "norm_label": "design test scenarios"
     },
     {
@@ -4404,7 +4447,7 @@
       "source_file": "agents/skills/use-knowledge-graph.md",
       "source_location": "L1",
       "id": "agents_skills_use_knowledge_graph_md",
-      "community": 31,
+      "community": 41,
       "norm_label": "use-knowledge-graph.md"
     },
     {
@@ -4413,7 +4456,7 @@
       "source_file": "agents/skills/use-knowledge-graph.md",
       "source_location": "L1",
       "id": "skills_use_knowledge_graph_use_the_knowledge_graph",
-      "community": 31,
+      "community": 41,
       "norm_label": "use the knowledge graph"
     },
     {
@@ -4422,7 +4465,7 @@
       "source_file": "agents/skills/use-knowledge-graph.md",
       "source_location": "L6",
       "id": "skills_use_knowledge_graph_boundaries",
-      "community": 31,
+      "community": 41,
       "norm_label": "boundaries"
     },
     {
@@ -4431,7 +4474,7 @@
       "source_file": "agents/skills/use-knowledge-graph.md",
       "source_location": "L13",
       "id": "skills_use_knowledge_graph_query",
-      "community": 31,
+      "community": 41,
       "norm_label": "query"
     },
     {
@@ -4440,7 +4483,7 @@
       "source_file": "agents/skills/use-knowledge-graph.md",
       "source_location": "L21",
       "id": "skills_use_knowledge_graph_refresh",
-      "community": 31,
+      "community": 41,
       "norm_label": "refresh"
     },
     {
@@ -4449,7 +4492,7 @@
       "source_file": "agents/skills/automate-approved-scenarios.md",
       "source_location": "L1",
       "id": "agents_skills_automate_approved_scenarios_md",
-      "community": 50,
+      "community": 62,
       "norm_label": "automate-approved-scenarios.md"
     },
     {
@@ -4458,7 +4501,7 @@
       "source_file": "agents/skills/automate-approved-scenarios.md",
       "source_location": "L1",
       "id": "skills_automate_approved_scenarios_automate_approved_scenarios",
-      "community": 50,
+      "community": 62,
       "norm_label": "automate approved scenarios"
     },
     {
@@ -4467,7 +4510,7 @@
       "source_file": "agents/skills/evaluate-test-scenarios.md",
       "source_location": "L1",
       "id": "agents_skills_evaluate_test_scenarios_md",
-      "community": 52,
+      "community": 63,
       "norm_label": "evaluate-test-scenarios.md"
     },
     {
@@ -4476,7 +4519,7 @@
       "source_file": "agents/skills/evaluate-test-scenarios.md",
       "source_location": "L1",
       "id": "skills_evaluate_test_scenarios_evaluate_test_scenarios",
-      "community": 52,
+      "community": 63,
       "norm_label": "evaluate test scenarios"
     },
     {
@@ -4485,7 +4528,7 @@
       "source_file": "agents/skills/README.md",
       "source_location": "L1",
       "id": "agents_skills_readme_md",
-      "community": 53,
+      "community": 64,
       "norm_label": "readme.md"
     },
     {
@@ -4494,7 +4537,7 @@
       "source_file": "agents/skills/README.md",
       "source_location": "L1",
       "id": "skills_readme_factory_skills",
-      "community": 53,
+      "community": 64,
       "norm_label": "factory skills"
     },
     {
@@ -4503,7 +4546,7 @@
       "source_file": "agents/skills/analyze-requirements.md",
       "source_location": "L1",
       "id": "agents_skills_analyze_requirements_md",
-      "community": 49,
+      "community": 61,
       "norm_label": "analyze-requirements.md"
     },
     {
@@ -4512,7 +4555,7 @@
       "source_file": "agents/skills/analyze-requirements.md",
       "source_location": "L1",
       "id": "skills_analyze_requirements_analyze_requirements",
-      "community": 49,
+      "community": 61,
       "norm_label": "analyze requirements"
     },
     {
@@ -4935,7 +4978,7 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L1",
       "id": "docs_plans_phased_implementation_plan_md",
-      "community": 4,
+      "community": 16,
       "norm_label": "phased-implementation-plan.md"
     },
     {
@@ -4944,7 +4987,7 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L1",
       "id": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "community": 4,
+      "community": 16,
       "norm_label": "quality agent factory phased implementation plan"
     },
     {
@@ -4953,7 +4996,7 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L3",
       "id": "plans_phased_implementation_plan_purpose",
-      "community": 4,
+      "community": 16,
       "norm_label": "purpose"
     },
     {
@@ -4962,7 +5005,7 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L10",
       "id": "plans_phased_implementation_plan_status_legend",
-      "community": 4,
+      "community": 16,
       "norm_label": "status legend"
     },
     {
@@ -4971,7 +5014,7 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L17",
       "id": "plans_phased_implementation_plan_delivery_principles",
-      "community": 4,
+      "community": 16,
       "norm_label": "delivery principles"
     },
     {
@@ -4980,7 +5023,7 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L27",
       "id": "plans_phased_implementation_plan_progress_summary",
-      "community": 4,
+      "community": 16,
       "norm_label": "progress summary"
     },
     {
@@ -4989,322 +5032,322 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L40",
       "id": "plans_phased_implementation_plan_current_delivery_snapshot",
-      "community": 4,
+      "community": 16,
       "norm_label": "current delivery snapshot"
     },
     {
       "label": "Phase 1: Repository foundation",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L59",
+      "source_location": "L60",
       "id": "plans_phased_implementation_plan_phase_1_repository_foundation",
-      "community": 10,
+      "community": 27,
       "norm_label": "phase 1: repository foundation"
     },
     {
       "label": "Tasks",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L64",
+      "source_location": "L65",
       "id": "plans_phased_implementation_plan_tasks",
-      "community": 10,
+      "community": 27,
       "norm_label": "tasks"
     },
     {
       "label": "Acceptance criteria",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L84",
+      "source_location": "L85",
       "id": "plans_phased_implementation_plan_acceptance_criteria",
-      "community": 10,
+      "community": 27,
       "norm_label": "acceptance criteria"
     },
     {
       "label": "Phase 1 verification record",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L94",
+      "source_location": "L95",
       "id": "plans_phased_implementation_plan_phase_1_verification_record",
-      "community": 10,
+      "community": 27,
       "norm_label": "phase 1 verification record"
     },
     {
       "label": "Verification",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L105",
+      "source_location": "L106",
       "id": "plans_phased_implementation_plan_verification",
-      "community": 10,
+      "community": 27,
       "norm_label": "verification"
     },
     {
       "label": "code:bash (npm run format:check)",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L107",
+      "source_location": "L108",
       "id": "plans_phased_implementation_plan_codeblock_1",
-      "community": 10,
+      "community": 27,
       "norm_label": "code:bash (npm run format:check)"
     },
     {
       "label": "Phase 2: Contracts and orchestration",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L118",
+      "source_location": "L119",
       "id": "plans_phased_implementation_plan_phase_2_contracts_and_orchestration",
-      "community": 67,
+      "community": 34,
       "norm_label": "phase 2: contracts and orchestration"
     },
     {
       "label": "Tasks",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L123",
-      "id": "plans_phased_implementation_plan_tasks_123",
-      "community": 67,
+      "source_location": "L124",
+      "id": "plans_phased_implementation_plan_tasks_124",
+      "community": 34,
       "norm_label": "tasks"
     },
     {
       "label": "Checkpoint",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L141",
+      "source_location": "L142",
       "id": "plans_phased_implementation_plan_checkpoint",
-      "community": 67,
+      "community": 34,
       "norm_label": "checkpoint"
     },
     {
       "label": "Phase 2 verification record",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L147",
+      "source_location": "L148",
       "id": "plans_phased_implementation_plan_phase_2_verification_record",
-      "community": 67,
+      "community": 34,
       "norm_label": "phase 2 verification record"
     },
     {
       "label": "Phase 3: Requirement pipeline",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L162",
+      "source_location": "L163",
       "id": "plans_phased_implementation_plan_phase_3_requirement_pipeline",
-      "community": 14,
+      "community": 25,
       "norm_label": "phase 3: requirement pipeline"
     },
     {
       "label": "Tasks",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L167",
-      "id": "plans_phased_implementation_plan_tasks_167",
-      "community": 14,
+      "source_location": "L168",
+      "id": "plans_phased_implementation_plan_tasks_168",
+      "community": 25,
       "norm_label": "tasks"
     },
     {
       "label": "Checkpoint",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L183",
-      "id": "plans_phased_implementation_plan_checkpoint_183",
-      "community": 14,
+      "source_location": "L184",
+      "id": "plans_phased_implementation_plan_checkpoint_184",
+      "community": 25,
       "norm_label": "checkpoint"
     },
     {
       "label": "Phase 3 verification record",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L189",
+      "source_location": "L190",
       "id": "plans_phased_implementation_plan_phase_3_verification_record",
-      "community": 14,
+      "community": 25,
       "norm_label": "phase 3 verification record"
     },
     {
       "label": "Phase 4: Scenario pipeline",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L210",
+      "source_location": "L211",
       "id": "plans_phased_implementation_plan_phase_4_scenario_pipeline",
-      "community": 15,
+      "community": 26,
       "norm_label": "phase 4: scenario pipeline"
     },
     {
       "label": "Tasks",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L216",
-      "id": "plans_phased_implementation_plan_tasks_216",
-      "community": 15,
+      "source_location": "L217",
+      "id": "plans_phased_implementation_plan_tasks_217",
+      "community": 26,
       "norm_label": "tasks"
     },
     {
       "label": "Checkpoint",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L229",
-      "id": "plans_phased_implementation_plan_checkpoint_229",
-      "community": 15,
+      "source_location": "L230",
+      "id": "plans_phased_implementation_plan_checkpoint_230",
+      "community": 26,
       "norm_label": "checkpoint"
     },
     {
       "label": "Phase 4 verification record",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L235",
+      "source_location": "L236",
       "id": "plans_phased_implementation_plan_phase_4_verification_record",
-      "community": 15,
+      "community": 26,
       "norm_label": "phase 4 verification record"
     },
     {
       "label": "Phase 5: Playwright pipeline",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L255",
+      "source_location": "L256",
       "id": "plans_phased_implementation_plan_phase_5_playwright_pipeline",
-      "community": 20,
+      "community": 28,
       "norm_label": "phase 5: playwright pipeline"
     },
     {
       "label": "Tasks",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L260",
-      "id": "plans_phased_implementation_plan_tasks_260",
-      "community": 20,
+      "source_location": "L261",
+      "id": "plans_phased_implementation_plan_tasks_261",
+      "community": 28,
       "norm_label": "tasks"
     },
     {
       "label": "Checkpoint",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L272",
-      "id": "plans_phased_implementation_plan_checkpoint_272",
-      "community": 20,
+      "source_location": "L273",
+      "id": "plans_phased_implementation_plan_checkpoint_273",
+      "community": 28,
       "norm_label": "checkpoint"
     },
     {
       "label": "Phase 5 verification record",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L279",
+      "source_location": "L280",
       "id": "plans_phased_implementation_plan_phase_5_verification_record",
-      "community": 20,
+      "community": 28,
       "norm_label": "phase 5 verification record"
     },
     {
       "label": "Phase 6: Failure and assessment pipeline",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L308",
+      "source_location": "L312",
       "id": "plans_phased_implementation_plan_phase_6_failure_and_assessment_pipeline",
-      "community": 68,
+      "community": 36,
       "norm_label": "phase 6: failure and assessment pipeline"
     },
     {
       "label": "Tasks",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L313",
-      "id": "plans_phased_implementation_plan_tasks_313",
-      "community": 68,
+      "source_location": "L317",
+      "id": "plans_phased_implementation_plan_tasks_317",
+      "community": 36,
       "norm_label": "tasks"
     },
     {
       "label": "Checkpoint",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L326",
-      "id": "plans_phased_implementation_plan_checkpoint_326",
-      "community": 68,
+      "source_location": "L330",
+      "id": "plans_phased_implementation_plan_checkpoint_330",
+      "community": 36,
       "norm_label": "checkpoint"
     },
     {
       "label": "Phase 7: Memory and improvement",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L332",
+      "source_location": "L336",
       "id": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
-      "community": 69,
+      "community": 35,
       "norm_label": "phase 7: memory and improvement"
     },
     {
       "label": "Tasks",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L337",
-      "id": "plans_phased_implementation_plan_tasks_337",
-      "community": 69,
+      "source_location": "L341",
+      "id": "plans_phased_implementation_plan_tasks_341",
+      "community": 35,
       "norm_label": "tasks"
     },
     {
       "label": "Checkpoint",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L353",
-      "id": "plans_phased_implementation_plan_checkpoint_353",
-      "community": 69,
+      "source_location": "L357",
+      "id": "plans_phased_implementation_plan_checkpoint_357",
+      "community": 35,
       "norm_label": "checkpoint"
     },
     {
       "label": "Phase 8: Provider hardening",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L359",
+      "source_location": "L363",
       "id": "plans_phased_implementation_plan_phase_8_provider_hardening",
-      "community": 70,
+      "community": 44,
       "norm_label": "phase 8: provider hardening"
     },
     {
       "label": "Tasks",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L364",
-      "id": "plans_phased_implementation_plan_tasks_364",
-      "community": 70,
+      "source_location": "L368",
+      "id": "plans_phased_implementation_plan_tasks_368",
+      "community": 44,
       "norm_label": "tasks"
     },
     {
       "label": "Final checkpoint",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L377",
+      "source_location": "L381",
       "id": "plans_phased_implementation_plan_final_checkpoint",
-      "community": 70,
+      "community": 44,
       "norm_label": "final checkpoint"
     },
     {
       "label": "Decision log",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L383",
+      "source_location": "L387",
       "id": "plans_phased_implementation_plan_decision_log",
-      "community": 4,
+      "community": 16,
       "norm_label": "decision log"
     },
     {
       "label": "Repository tooling record",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L396",
+      "source_location": "L400",
       "id": "plans_phased_implementation_plan_repository_tooling_record",
-      "community": 4,
+      "community": 16,
       "norm_label": "repository tooling record"
     },
     {
       "label": "Risks and mitigations",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L412",
+      "source_location": "L416",
       "id": "plans_phased_implementation_plan_risks_and_mitigations",
-      "community": 4,
+      "community": 16,
       "norm_label": "risks and mitigations"
     },
     {
       "label": "Open decisions",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L425",
+      "source_location": "L429",
       "id": "plans_phased_implementation_plan_open_decisions",
-      "community": 4,
+      "community": 16,
       "norm_label": "open decisions"
     },
     {
@@ -5313,7 +5356,7 @@
       "source_file": "examples/README.md",
       "source_location": "L1",
       "id": "examples_readme_md",
-      "community": 46,
+      "community": 57,
       "norm_label": "readme.md"
     },
     {
@@ -5322,7 +5365,7 @@
       "source_file": "examples/README.md",
       "source_location": "L1",
       "id": "examples_readme_examples",
-      "community": 46,
+      "community": 57,
       "norm_label": "examples"
     },
     {
@@ -5331,7 +5374,7 @@
       "source_file": "templates/README.md",
       "source_location": "L1",
       "id": "templates_readme_md",
-      "community": 54,
+      "community": 65,
       "norm_label": "readme.md"
     },
     {
@@ -5340,15 +5383,123 @@
       "source_file": "templates/README.md",
       "source_location": "L1",
       "id": "templates_readme_artifact_templates",
-      "community": 54,
+      "community": 65,
       "norm_label": "artifact templates"
     },
     {
       "label": "Tasks",
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L123",
+      "community": 34,
+      "norm_label": "tasks",
+      "id": "plans_phased_implementation_plan_tasks_123"
+    },
+    {
+      "label": "Tasks",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L167",
+      "community": 25,
+      "norm_label": "tasks",
+      "id": "plans_phased_implementation_plan_tasks_167"
+    },
+    {
+      "label": "Checkpoint",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L183",
+      "community": 25,
+      "norm_label": "checkpoint",
+      "id": "plans_phased_implementation_plan_checkpoint_183"
+    },
+    {
+      "label": "Tasks",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L216",
+      "community": 26,
+      "norm_label": "tasks",
+      "id": "plans_phased_implementation_plan_tasks_216"
+    },
+    {
+      "label": "Checkpoint",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L229",
+      "community": 26,
+      "norm_label": "checkpoint",
+      "id": "plans_phased_implementation_plan_checkpoint_229"
+    },
+    {
+      "label": "Tasks",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L260",
+      "community": 28,
+      "norm_label": "tasks",
+      "id": "plans_phased_implementation_plan_tasks_260"
+    },
+    {
+      "label": "Checkpoint",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L272",
+      "community": 28,
+      "norm_label": "checkpoint",
+      "id": "plans_phased_implementation_plan_checkpoint_272"
+    },
+    {
+      "label": "Tasks",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L313",
+      "community": 36,
+      "norm_label": "tasks",
+      "id": "plans_phased_implementation_plan_tasks_313"
+    },
+    {
+      "label": "Checkpoint",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L326",
+      "community": 36,
+      "norm_label": "checkpoint",
+      "id": "plans_phased_implementation_plan_checkpoint_326"
+    },
+    {
+      "label": "Tasks",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L337",
+      "community": 35,
+      "norm_label": "tasks",
+      "id": "plans_phased_implementation_plan_tasks_337"
+    },
+    {
+      "label": "Checkpoint",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L353",
+      "community": 35,
+      "norm_label": "checkpoint",
+      "id": "plans_phased_implementation_plan_checkpoint_353"
+    },
+    {
+      "label": "Tasks",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L364",
+      "community": 44,
+      "norm_label": "tasks",
+      "id": "plans_phased_implementation_plan_tasks_364"
+    },
+    {
+      "label": "Tasks",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L122",
-      "community": 67,
+      "community": 34,
       "norm_label": "tasks",
       "id": "plans_phased_implementation_plan_tasks_122"
     },
@@ -5357,7 +5508,7 @@
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L166",
-      "community": 14,
+      "community": 25,
       "norm_label": "tasks",
       "id": "plans_phased_implementation_plan_tasks_166"
     },
@@ -5366,7 +5517,7 @@
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L182",
-      "community": 14,
+      "community": 25,
       "norm_label": "checkpoint",
       "id": "plans_phased_implementation_plan_checkpoint_182"
     },
@@ -5375,7 +5526,7 @@
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L215",
-      "community": 15,
+      "community": 26,
       "norm_label": "tasks",
       "id": "plans_phased_implementation_plan_tasks_215"
     },
@@ -5384,7 +5535,7 @@
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L228",
-      "community": 15,
+      "community": 26,
       "norm_label": "checkpoint",
       "id": "plans_phased_implementation_plan_checkpoint_228"
     },
@@ -5393,7 +5544,7 @@
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L259",
-      "community": 20,
+      "community": 28,
       "norm_label": "tasks",
       "id": "plans_phased_implementation_plan_tasks_259"
     },
@@ -5402,7 +5553,7 @@
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L271",
-      "community": 20,
+      "community": 28,
       "norm_label": "checkpoint",
       "id": "plans_phased_implementation_plan_checkpoint_271"
     },
@@ -5411,7 +5562,7 @@
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L283",
-      "community": 68,
+      "community": 36,
       "norm_label": "tasks",
       "id": "plans_phased_implementation_plan_tasks_283"
     },
@@ -5420,7 +5571,7 @@
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L296",
-      "community": 68,
+      "community": 36,
       "norm_label": "checkpoint",
       "id": "plans_phased_implementation_plan_checkpoint_296"
     },
@@ -5429,7 +5580,7 @@
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L307",
-      "community": 69,
+      "community": 35,
       "norm_label": "tasks",
       "id": "plans_phased_implementation_plan_tasks_307"
     },
@@ -5438,7 +5589,7 @@
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L323",
-      "community": 69,
+      "community": 35,
       "norm_label": "checkpoint",
       "id": "plans_phased_implementation_plan_checkpoint_323"
     },
@@ -5447,7 +5598,7 @@
       "file_type": "document",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L334",
-      "community": 70,
+      "community": 44,
       "norm_label": "tasks",
       "id": "plans_phased_implementation_plan_tasks_334"
     },
@@ -5456,7 +5607,7 @@
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L224",
-      "community": 16,
+      "community": 80,
       "norm_label": "requireenvironmentvariable()",
       "id": "playwright_pipeline_requireenvironmentvariable"
     },
@@ -5469,7 +5620,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 29,
       "norm_label": "quality agent factory",
       "id": "quality_agent_factory"
     },
@@ -5482,7 +5633,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 29,
       "norm_label": "phased implementation plan",
       "id": "phased_implementation_plan"
     },
@@ -5495,7 +5646,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 29,
       "norm_label": "quality agent factory development plan",
       "id": "development_plan"
     },
@@ -5508,7 +5659,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "human authorization gates",
       "id": "human_authorization_gates"
     },
@@ -5521,7 +5672,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "exact-revision human approval",
       "id": "exact_revision_approval"
     },
@@ -5534,22 +5685,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "artifact contract principles",
       "id": "artifact_contracts"
-    },
-    {
-      "label": "Semantic Checksum",
-      "file_type": "rationale",
-      "source_file": "agents/shared/artifact-contracts.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "semantic checksum",
-      "id": "semantic_checksum"
     },
     {
       "label": "Immutable Artifact Revision",
@@ -5560,7 +5698,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "immutable artifact revision",
       "id": "immutable_artifact_revision"
     },
@@ -5573,7 +5711,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 72,
       "norm_label": "operating principles",
       "id": "operating_principles"
     },
@@ -5586,7 +5724,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "security boundaries",
       "id": "security_boundaries"
     },
@@ -5599,7 +5737,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "untrusted input model",
       "id": "untrusted_input_model"
     },
@@ -5612,7 +5750,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "production read-only default",
       "id": "production_read_only"
     },
@@ -5625,7 +5763,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "requirement analyst",
       "id": "requirement_analyst"
     },
@@ -5638,7 +5776,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "test scenario designer",
       "id": "test_scenario_designer"
     },
@@ -5651,7 +5789,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "scenario quality evaluator",
       "id": "scenario_quality_evaluator"
     },
@@ -5664,7 +5802,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "workflow coordinator",
       "id": "workflow_coordinator"
     },
@@ -5677,7 +5815,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "human scenario reviewer",
       "id": "human_scenario_reviewer"
     },
@@ -5690,7 +5828,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 42,
       "norm_label": "failure triage analyst",
       "id": "failure_triage_analyst"
     },
@@ -5703,7 +5841,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 42,
       "norm_label": "final quality assessor",
       "id": "final_quality_assessor"
     },
@@ -5716,7 +5854,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 42,
       "norm_label": "final human reviewer",
       "id": "final_human_reviewer"
     },
@@ -5729,7 +5867,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "requirement clarification workflow",
       "id": "requirement_clarification_workflow"
     },
@@ -5742,7 +5880,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "scenario review workflow",
       "id": "scenario_review_workflow"
     },
@@ -5755,7 +5893,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "analyze requirements",
       "id": "analyze_requirements_skill"
     },
@@ -5768,7 +5906,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "design test scenarios",
       "id": "design_test_scenarios_skill"
     },
@@ -5781,7 +5919,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "evaluate test scenarios",
       "id": "evaluate_test_scenarios_skill"
     },
@@ -5794,7 +5932,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "normalized requirements revision",
       "id": "normalized_requirements"
     },
@@ -5807,7 +5945,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "requirement analysis",
       "id": "requirement_analysis"
     },
@@ -5820,7 +5958,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "scenario specification",
       "id": "scenario_specification"
     },
@@ -5833,7 +5971,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "markdown-to-json projection parity",
       "id": "json_projection_parity"
     },
@@ -5846,7 +5984,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "bidirectional traceability",
       "id": "bidirectional_traceability"
     },
@@ -5859,7 +5997,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "independent scenario evaluation",
       "id": "independent_scenario_evaluation"
     },
@@ -5872,7 +6010,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "bounded scenario revision loop",
       "id": "bounded_revision_loop"
     },
@@ -5885,7 +6023,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 42,
       "norm_label": "script_error repair gate",
       "id": "script_error_repair_gate"
     },
@@ -5898,7 +6036,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 58,
       "norm_label": "fallow static analysis gate",
       "id": "fallow_static_analysis"
     },
@@ -5911,7 +6049,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 58,
       "norm_label": "npm run check quality gate",
       "id": "npm_check_quality_gate"
     },
@@ -5924,7 +6062,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 29,
       "norm_label": "codex provider",
       "id": "provider_codex"
     },
@@ -5937,7 +6075,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 29,
       "norm_label": "cursor provider",
       "id": "provider_cursor"
     },
@@ -5950,7 +6088,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 29,
       "norm_label": "claude code provider",
       "id": "provider_claude_code"
     },
@@ -5963,7 +6101,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "phase 4 scenario pipeline",
       "id": "phase_4_scenario_pipeline"
     },
@@ -6288,7 +6426,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 33,
+      "community": 45,
       "norm_label": "repository prerequisites",
       "id": "readme_repository_prerequisites"
     },
@@ -6301,7 +6439,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 33,
+      "community": 45,
       "norm_label": "graphify cli prerequisite",
       "id": "readme_graphify_cli_prerequisite"
     },
@@ -6314,7 +6452,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 33,
+      "community": 45,
       "norm_label": "repository setup",
       "id": "readme_repository_setup"
     },
@@ -6327,7 +6465,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 33,
+      "community": 45,
       "norm_label": "commit quality pipeline graphify refresh",
       "id": "readme_commit_quality_pipeline_graph_refresh"
     },
@@ -6340,7 +6478,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 73,
       "norm_label": "human approved or approved_with_exclusions decision",
       "id": "human_approval_decision"
     },
@@ -6353,7 +6491,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 33,
       "norm_label": "approval verification before test generation",
       "id": "approval_verification"
     },
@@ -6366,7 +6504,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 33,
       "norm_label": "automate approved scenarios",
       "id": "automate_approved_scenarios_skill"
     },
@@ -6379,7 +6517,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 33,
       "norm_label": "safe test generation using repository conventions",
       "id": "safe_test_generation"
     },
@@ -6392,7 +6530,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 63,
+      "community": 74,
       "norm_label": "exact requirement and scenario revision metadata",
       "id": "exact_revision_metadata"
     },
@@ -6405,7 +6543,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 64,
+      "community": 75,
       "norm_label": "deterministic fixtures, test data, and cleanup",
       "id": "deterministic_fixtures_and_cleanup"
     },
@@ -6418,7 +6556,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 33,
       "norm_label": "accessible locators and web-first assertions",
       "id": "accessible_locator_and_assertion_policy"
     },
@@ -6431,22 +6569,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 76,
       "norm_label": "configured browser projects",
       "id": "configured_browser_projects"
-    },
-    {
-      "label": "Safe Registered Evidence Paths",
-      "file_type": "rationale",
-      "source_file": "agents/skills/automate-approved-scenarios.md",
-      "source_location": "Step 6",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 23,
-      "norm_label": "safe registered evidence paths",
-      "id": "safe_evidence_paths"
     },
     {
       "label": "Final Quality Assessment",
@@ -6457,7 +6582,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 66,
+      "community": 77,
       "norm_label": "final quality assessment",
       "id": "final_quality_assessment"
     },
@@ -6470,22 +6595,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 33,
       "norm_label": "target application read-only boundary",
       "id": "target_application_read_only_boundary"
-    },
-    {
-      "label": "Phase 5 Playwright Pipeline",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "Phase 5: Playwright pipeline",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "phase 5 playwright pipeline",
-      "id": "phase_5_playwright_pipeline"
     },
     {
       "label": "Phase 5 COMPLETE",
@@ -6496,22 +6608,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 24,
       "norm_label": "phase 5 complete",
       "id": "phase_5_complete_status"
-    },
-    {
-      "label": "Phase 5 Verification Record",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "Phase 5 verification record",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "phase 5 verification record",
-      "id": "phase_5_verification_record"
     },
     {
       "label": "Phase 6 Failure and Assessment Pipeline",
@@ -6522,7 +6621,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 24,
       "norm_label": "phase 6 failure and assessment pipeline",
       "id": "phase_6_failure_assessment_pipeline"
     },
@@ -6535,7 +6634,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 24,
       "norm_label": "phase 6 next-session handoff",
       "id": "phase_6_next_session_handoff"
     },
@@ -6548,22 +6647,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 24,
       "norm_label": "six failure classifications",
       "id": "six_failure_classifications"
-    },
-    {
-      "label": "Playwright Test Engineer",
-      "file_type": "document",
-      "source_file": "agents/roles/playwright-test-engineer.md",
-      "source_location": "Playwright Test Engineer",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "playwright test engineer",
-      "id": "playwright_test_engineer"
     },
     {
       "label": "Authorized Scenario Revision",
@@ -6574,7 +6660,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 78,
       "norm_label": "authorized scenario revision",
       "id": "authorized_scenario_revision"
     },
@@ -6587,7 +6673,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 31,
       "norm_label": "independent evaluator pass",
       "id": "independent_evaluator_pass"
     },
@@ -6600,7 +6686,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 31,
       "norm_label": "human exact-revision approval",
       "id": "human_exact_revision_approval"
     },
@@ -6613,7 +6699,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 31,
       "norm_label": "exact-revision human scenario-approval gate",
       "id": "exact_revision_approval_gate"
     },
@@ -6626,7 +6712,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 31,
       "norm_label": "semantic checksum validation",
       "id": "semantic_checksum_validation"
     },
@@ -6639,7 +6725,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 40,
       "norm_label": "automate approved scenarios",
       "id": "automate_approved_scenarios"
     },
@@ -6652,7 +6738,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 31,
       "norm_label": "playwright implementation workflow",
       "id": "playwright_implementation_workflow"
     },
@@ -6665,22 +6751,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 40,
       "norm_label": "typed automation plan",
       "id": "typed_automation_plan"
-    },
-    {
-      "label": "Playwright Test Artifact",
-      "file_type": "document",
-      "source_file": "agents/roles/playwright-test-engineer.md",
-      "source_location": "Outputs",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "playwright test artifact",
-      "id": "playwright_test_artifact"
     },
     {
       "label": "Exact Requirement and Scenario Metadata",
@@ -6691,7 +6764,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 79,
       "norm_label": "exact requirement and scenario metadata",
       "id": "exact_requirement_scenario_metadata"
     },
@@ -6704,7 +6777,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 53,
       "norm_label": "authentication setup project",
       "id": "authentication_setup_project"
     },
@@ -6717,7 +6790,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 53,
       "norm_label": "ignored authentication state",
       "id": "ignored_authentication_state"
     },
@@ -6730,7 +6803,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 31,
       "norm_label": "deterministic fixtures and reverse-order cleanup",
       "id": "deterministic_fixtures_cleanup"
     },
@@ -6743,7 +6816,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 40,
       "norm_label": "accessible locators and web-first assertions",
       "id": "accessible_locators_web_first_assertions"
     },
@@ -6756,7 +6829,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 40,
       "norm_label": "execution summary artifact",
       "id": "execution_summary_artifact"
     },
@@ -6769,22 +6842,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 40,
       "norm_label": "safe registered evidence paths",
       "id": "safe_registered_evidence_paths"
-    },
-    {
-      "label": "Failure Classification Before Repair",
-      "file_type": "rationale",
-      "source_file": "agents/roles/playwright-test-engineer.md",
-      "source_location": "Boundaries",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "failure classification before repair",
-      "id": "failure_classification_gate"
     },
     {
       "label": "SCRIPT_ERROR Repair Authorization",
@@ -6795,7 +6855,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 24,
       "norm_label": "script_error repair authorization",
       "id": "script_error_repair_authorization"
     },
@@ -6808,7 +6868,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 24,
       "norm_label": "target application source read-only",
       "id": "target_application_read_only"
     },
@@ -6821,7 +6881,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 43,
       "norm_label": "controlled sample-application end-to-end tests",
       "id": "controlled_sample_application_tests"
     },
@@ -6834,7 +6894,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 43,
       "norm_label": "intercepted repository-local html application",
       "id": "intercepted_repository_local_html_app"
     },
@@ -6847,7 +6907,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 43,
       "norm_label": "synthetic non-secret authentication state",
       "id": "synthetic_non_secret_auth_state"
     },
@@ -6860,9 +6920,282 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 43,
       "norm_label": "task-scoped environment-configured real target authentication",
       "id": "task_scoped_real_target_auth"
+    },
+    {
+      "label": "Phase 5 Playwright Pipeline",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Phase 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "phase 5 playwright pipeline",
+      "id": "phase_5_playwright_pipeline"
+    },
+    {
+      "label": "Phase 5 COMPLETE",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Progress summary",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "phase 5 complete",
+      "id": "phase_5_complete"
+    },
+    {
+      "label": "Phase 5 Verification Record",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Phase 5 verification record",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "phase 5 verification record",
+      "id": "phase_5_verification_record"
+    },
+    {
+      "label": "Phase 5 Draft Pull Request 5",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Current delivery snapshot and Phase 5 verification record",
+      "source_url": "https://github.com/jamil2018/aristotle/pull/5",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "phase 5 draft pull request 5",
+      "id": "phase_5_draft_pr_5"
+    },
+    {
+      "label": "Phase 5 Implementation Commit 040d7953",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Phase 5 verification record",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "phase 5 implementation commit 040d7953",
+      "id": "phase_5_commit_040d7953"
+    },
+    {
+      "label": "Phase 6 Next-Session Handoff",
+      "file_type": "rationale",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Phase 5 verification record, Next-session handoff",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "phase 6 next-session handoff",
+      "id": "phase_6_handoff"
+    },
+    {
+      "label": "Phase 6 Failure and Assessment Pipeline",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Phase 6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "phase 6 failure and assessment pipeline",
+      "id": "phase_6_failure_assessment"
+    },
+    {
+      "label": "Playwright Test Engineer",
+      "file_type": "document",
+      "source_file": "agents/roles/playwright-test-engineer.md",
+      "source_location": "Mission",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 19,
+      "norm_label": "playwright test engineer",
+      "id": "playwright_test_engineer"
+    },
+    {
+      "label": "Exact-Revision Authorization",
+      "file_type": "rationale",
+      "source_file": "agents/workflows/playwright-implementation.md",
+      "source_location": "Steps 1-2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 19,
+      "norm_label": "exact-revision authorization",
+      "id": "exact_revision_authorization"
+    },
+    {
+      "label": "Evaluator PASS",
+      "file_type": "rationale",
+      "source_file": "agents/roles/playwright-test-engineer.md",
+      "source_location": "Required inputs",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 19,
+      "norm_label": "evaluator pass",
+      "id": "evaluator_pass"
+    },
+    {
+      "label": "Human APPROVED or APPROVED_WITH_EXCLUSIONS",
+      "file_type": "rationale",
+      "source_file": "agents/roles/playwright-test-engineer.md",
+      "source_location": "Required inputs",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 19,
+      "norm_label": "human approved or approved_with_exclusions",
+      "id": "human_approval"
+    },
+    {
+      "label": "Exact Semantic Checksum",
+      "file_type": "rationale",
+      "source_file": "agents/skills/automate-approved-scenarios.md",
+      "source_location": "Steps 1 and 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 19,
+      "norm_label": "exact semantic checksum",
+      "id": "semantic_checksum"
+    },
+    {
+      "label": "Linked Playwright Test Artifact",
+      "file_type": "document",
+      "source_file": "agents/roles/playwright-test-engineer.md",
+      "source_location": "Outputs",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 19,
+      "norm_label": "linked playwright test artifact",
+      "id": "playwright_test_artifact"
+    },
+    {
+      "label": "Execution Summary Artifact",
+      "file_type": "document",
+      "source_file": "agents/roles/playwright-test-engineer.md",
+      "source_location": "Outputs",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 19,
+      "norm_label": "execution summary artifact",
+      "id": "execution_summary"
+    },
+    {
+      "label": "Safe Registered Evidence Paths",
+      "file_type": "rationale",
+      "source_file": "agents/skills/automate-approved-scenarios.md",
+      "source_location": "Step 6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 19,
+      "norm_label": "safe registered evidence paths",
+      "id": "safe_evidence_paths"
+    },
+    {
+      "label": "Ignored Authentication State",
+      "file_type": "rationale",
+      "source_file": "agents/workflows/playwright-implementation.md",
+      "source_location": "Step 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "ignored authentication state",
+      "id": "ignored_auth_state"
+    },
+    {
+      "label": "Intercepted Repository-Local HTML Sample",
+      "file_type": "rationale",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Controlled sample decision",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "intercepted repository-local html sample",
+      "id": "controlled_local_sample"
+    },
+    {
+      "label": "Synthetic Non-Secret Authentication State",
+      "file_type": "rationale",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Controlled sample decision",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "synthetic non-secret authentication state",
+      "id": "synthetic_auth_state"
+    },
+    {
+      "label": "Failure Classification Before Repair",
+      "file_type": "rationale",
+      "source_file": "agents/roles/playwright-test-engineer.md",
+      "source_location": "Boundaries",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "failure classification before repair",
+      "id": "failure_classification_gate"
+    },
+    {
+      "label": "SCRIPT_ERROR Repair Authorization",
+      "file_type": "rationale",
+      "source_file": "agents/workflows/playwright-implementation.md",
+      "source_location": "Step 7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "script_error repair authorization",
+      "id": "script_error_authorization"
+    },
+    {
+      "label": "Target Application Source Read-Only",
+      "file_type": "rationale",
+      "source_file": "agents/roles/playwright-test-engineer.md",
+      "source_location": "Boundaries",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "target application source read-only",
+      "id": "target_app_read_only"
     }
   ],
   "links": [
@@ -14461,10 +14794,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L123",
+      "source_location": "L124",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_2_contracts_and_orchestration",
-      "target": "plans_phased_implementation_plan_tasks_123",
+      "target": "plans_phased_implementation_plan_tasks_124",
       "confidence_score": 1.0
     },
     {
@@ -14491,6 +14824,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L123",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_2_contracts_and_orchestration",
+      "target": "plans_phased_implementation_plan_tasks_123"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L122",
       "weight": 1,
       "confidence_score": 1,
@@ -14501,20 +14844,20 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L167",
+      "source_location": "L168",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_3_requirement_pipeline",
-      "target": "plans_phased_implementation_plan_tasks_167",
+      "target": "plans_phased_implementation_plan_tasks_168",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L183",
+      "source_location": "L184",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_3_requirement_pipeline",
-      "target": "plans_phased_implementation_plan_checkpoint_183",
+      "target": "plans_phased_implementation_plan_checkpoint_184",
       "confidence_score": 1.0
     },
     {
@@ -14526,6 +14869,26 @@
       "confidence_score": 1,
       "source": "plans_phased_implementation_plan_phase_3_requirement_pipeline",
       "target": "plans_phased_implementation_plan_phase_3_verification_record"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L167",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_3_requirement_pipeline",
+      "target": "plans_phased_implementation_plan_tasks_167"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L183",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_3_requirement_pipeline",
+      "target": "plans_phased_implementation_plan_checkpoint_183"
     },
     {
       "relation": "contains",
@@ -14551,20 +14914,20 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L216",
+      "source_location": "L217",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_4_scenario_pipeline",
-      "target": "plans_phased_implementation_plan_tasks_216",
+      "target": "plans_phased_implementation_plan_tasks_217",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L229",
+      "source_location": "L230",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_4_scenario_pipeline",
-      "target": "plans_phased_implementation_plan_checkpoint_229",
+      "target": "plans_phased_implementation_plan_checkpoint_230",
       "confidence_score": 1.0
     },
     {
@@ -14576,6 +14939,26 @@
       "confidence_score": 1,
       "source": "plans_phased_implementation_plan_phase_4_scenario_pipeline",
       "target": "plans_phased_implementation_plan_phase_4_verification_record"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L216",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_4_scenario_pipeline",
+      "target": "plans_phased_implementation_plan_tasks_216"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L229",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_4_scenario_pipeline",
+      "target": "plans_phased_implementation_plan_checkpoint_229"
     },
     {
       "relation": "contains",
@@ -14601,20 +14984,20 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L260",
+      "source_location": "L261",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_5_playwright_pipeline",
-      "target": "plans_phased_implementation_plan_tasks_260",
+      "target": "plans_phased_implementation_plan_tasks_261",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L272",
+      "source_location": "L273",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_5_playwright_pipeline",
-      "target": "plans_phased_implementation_plan_checkpoint_272",
+      "target": "plans_phased_implementation_plan_checkpoint_273",
       "confidence_score": 1.0
     },
     {
@@ -14622,10 +15005,30 @@
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L279",
-      "weight": 1.0,
+      "weight": 1,
+      "confidence_score": 1,
       "source": "plans_phased_implementation_plan_phase_5_playwright_pipeline",
-      "target": "plans_phased_implementation_plan_phase_5_verification_record",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_5_verification_record"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L260",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_5_playwright_pipeline",
+      "target": "plans_phased_implementation_plan_tasks_260"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L272",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_5_playwright_pipeline",
+      "target": "plans_phased_implementation_plan_checkpoint_272"
     },
     {
       "relation": "contains",
@@ -14651,21 +15054,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L313",
+      "source_location": "L317",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_6_failure_and_assessment_pipeline",
-      "target": "plans_phased_implementation_plan_tasks_313",
+      "target": "plans_phased_implementation_plan_tasks_317",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L326",
+      "source_location": "L330",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_6_failure_and_assessment_pipeline",
-      "target": "plans_phased_implementation_plan_checkpoint_326",
+      "target": "plans_phased_implementation_plan_checkpoint_330",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L313",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_6_failure_and_assessment_pipeline",
+      "target": "plans_phased_implementation_plan_tasks_313"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L326",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_6_failure_and_assessment_pipeline",
+      "target": "plans_phased_implementation_plan_checkpoint_326"
     },
     {
       "relation": "contains",
@@ -14691,21 +15114,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L337",
+      "source_location": "L341",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
-      "target": "plans_phased_implementation_plan_tasks_337",
+      "target": "plans_phased_implementation_plan_tasks_341",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L353",
+      "source_location": "L357",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
-      "target": "plans_phased_implementation_plan_checkpoint_353",
+      "target": "plans_phased_implementation_plan_checkpoint_357",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L337",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
+      "target": "plans_phased_implementation_plan_tasks_337"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L353",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
+      "target": "plans_phased_implementation_plan_checkpoint_353"
     },
     {
       "relation": "contains",
@@ -14731,10 +15174,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "L364",
+      "source_location": "L368",
       "weight": 1.0,
       "source": "plans_phased_implementation_plan_phase_8_provider_hardening",
-      "target": "plans_phased_implementation_plan_tasks_364",
+      "target": "plans_phased_implementation_plan_tasks_368",
       "confidence_score": 1.0
     },
     {
@@ -14746,6 +15189,16 @@
       "confidence_score": 1,
       "source": "plans_phased_implementation_plan_phase_8_provider_hardening",
       "target": "plans_phased_implementation_plan_final_checkpoint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "L364",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "plans_phased_implementation_plan_phase_8_provider_hardening",
+      "target": "plans_phased_implementation_plan_tasks_364"
     },
     {
       "relation": "contains",
@@ -14838,16 +15291,6 @@
       "target": "exact_revision_approval"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "agents/shared/artifact-contracts.md",
-      "source_location": null,
-      "weight": 1,
-      "source": "exact_revision_approval",
-      "target": "semantic_checksum"
-    },
-    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
@@ -14875,37 +15318,7 @@
       "source_location": null,
       "weight": 1,
       "source": "artifact_contracts",
-      "target": "semantic_checksum"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "agents/shared/artifact-contracts.md",
-      "source_location": null,
-      "weight": 1,
-      "source": "artifact_contracts",
       "target": "immutable_artifact_revision"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "agents/roles/scenario-designer.md",
-      "source_location": null,
-      "weight": 1,
-      "source": "semantic_checksum",
-      "target": "scenario_specification"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.68,
-      "source_file": "agents/skills/evaluate-test-scenarios.md",
-      "source_location": null,
-      "weight": 1,
-      "source": "semantic_checksum",
-      "target": "bidirectional_traceability"
     },
     {
       "relation": "semantically_similar_to",
@@ -15578,16 +15991,6 @@
       "target": "approval_verification"
     },
     {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "agents/skills/automate-approved-scenarios.md",
-      "source_location": "Step 6",
-      "weight": 1,
-      "source": "automate_approved_scenarios_skill",
-      "target": "safe_evidence_paths"
-    },
-    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
@@ -15606,36 +16009,6 @@
       "weight": 1,
       "source": "target_application_read_only_boundary",
       "target": "safe_test_generation"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "Progress summary",
-      "weight": 1,
-      "source": "phase_5_playwright_pipeline",
-      "target": "phase_5_complete_status"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "Phase 5 goal",
-      "weight": 1,
-      "source": "phase_5_playwright_pipeline",
-      "target": "authorized_scenario_revision"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "Phase 5 verification record",
-      "weight": 1,
-      "source": "phase_5_verification_record",
-      "target": "phase_5_complete_status"
     },
     {
       "relation": "references",
@@ -15675,16 +16048,6 @@
       "source_location": "Phase 5 verification record, Next-session handoff",
       "weight": 1,
       "source": "phase_6_next_session_handoff",
-      "target": "failure_classification_gate"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": "Phase 5 verification record, Next-session handoff",
-      "weight": 1,
-      "source": "phase_6_next_session_handoff",
       "target": "script_error_repair_authorization"
     },
     {
@@ -15696,16 +16059,6 @@
       "weight": 1,
       "source": "phase_6_next_session_handoff",
       "target": "target_application_read_only"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "agents/roles/playwright-test-engineer.md",
-      "source_location": "Mission",
-      "weight": 1,
-      "source": "playwright_test_engineer",
-      "target": "authorized_scenario_revision"
     },
     {
       "relation": "conceptually_related_to",
@@ -15782,50 +16135,10 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "source_file": "agents/workflows/playwright-implementation.md",
-      "source_location": "Step 3",
-      "weight": 1,
-      "source": "playwright_implementation_workflow",
-      "target": "playwright_test_artifact"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "agents/workflows/playwright-implementation.md",
       "source_location": "Step 5",
       "weight": 1,
       "source": "playwright_implementation_workflow",
       "target": "deterministic_fixtures_cleanup"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "agents/skills/automate-approved-scenarios.md",
-      "source_location": "Steps 3-5",
-      "weight": 1,
-      "source": "typed_automation_plan",
-      "target": "playwright_test_artifact"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "agents/roles/playwright-test-engineer.md",
-      "source_location": "Outputs",
-      "weight": 1,
-      "source": "playwright_test_artifact",
-      "target": "exact_requirement_scenario_metadata"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "agents/roles/playwright-test-engineer.md",
-      "source_location": "Boundaries",
-      "weight": 1,
-      "source": "target_application_read_only",
-      "target": "playwright_test_artifact"
     },
     {
       "relation": "shares_data_with",
@@ -15846,16 +16159,6 @@
       "weight": 1,
       "source": "execution_summary_artifact",
       "target": "safe_registered_evidence_paths"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "source_file": "agents/roles/playwright-test-engineer.md",
-      "source_location": "Boundaries",
-      "weight": 1,
-      "source": "failure_classification_gate",
-      "target": "script_error_repair_authorization"
     },
     {
       "relation": "rationale_for",
@@ -15886,6 +16189,216 @@
       "weight": 1,
       "source": "task_scoped_real_target_auth",
       "target": "synthetic_non_secret_auth_state"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Progress summary",
+      "weight": 1,
+      "source": "phase_5_playwright_pipeline",
+      "target": "phase_5_complete"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Controlled sample decision",
+      "weight": 1,
+      "source": "controlled_local_sample",
+      "target": "phase_5_playwright_pipeline"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Phase 5 verification record",
+      "weight": 1,
+      "source": "phase_5_verification_record",
+      "target": "phase_5_complete"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Current delivery snapshot",
+      "weight": 1,
+      "source": "phase_5_complete",
+      "target": "phase_6_failure_assessment"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Phase 5 verification record",
+      "weight": 1,
+      "source": "phase_5_verification_record",
+      "target": "phase_5_draft_pr_5"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Phase 5 verification record",
+      "weight": 1,
+      "source": "phase_5_verification_record",
+      "target": "phase_5_commit_040d7953"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Phase 5 verification record",
+      "weight": 1,
+      "source": "phase_5_commit_040d7953",
+      "target": "phase_5_draft_pr_5"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Next-session handoff",
+      "weight": 1,
+      "source": "phase_6_handoff",
+      "target": "phase_6_failure_assessment"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Next-session handoff",
+      "weight": 1,
+      "source": "phase_6_handoff",
+      "target": "failure_classification_gate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Next-session handoff",
+      "weight": 1,
+      "source": "phase_6_handoff",
+      "target": "script_error_authorization"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Next-session handoff",
+      "weight": 1,
+      "source": "phase_6_handoff",
+      "target": "target_app_read_only"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "agents/roles/playwright-test-engineer.md",
+      "source_location": "Mission and Required inputs",
+      "weight": 1,
+      "source": "playwright_test_engineer",
+      "target": "exact_revision_authorization"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "agents/roles/playwright-test-engineer.md",
+      "source_location": "Required inputs",
+      "weight": 1,
+      "source": "evaluator_pass",
+      "target": "exact_revision_authorization"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "agents/roles/playwright-test-engineer.md",
+      "source_location": "Required inputs",
+      "weight": 1,
+      "source": "human_approval",
+      "target": "exact_revision_authorization"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "agents/skills/automate-approved-scenarios.md",
+      "source_location": "Steps 1-2",
+      "weight": 1,
+      "source": "semantic_checksum",
+      "target": "exact_revision_authorization"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "agents/workflows/playwright-implementation.md",
+      "source_location": "Steps 1-3",
+      "weight": 1,
+      "source": "exact_revision_authorization",
+      "target": "playwright_test_artifact"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "agents/workflows/playwright-implementation.md",
+      "source_location": "Steps 3-6",
+      "weight": 1,
+      "source": "playwright_test_artifact",
+      "target": "execution_summary"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "agents/workflows/playwright-implementation.md",
+      "source_location": "Step 6",
+      "weight": 1,
+      "source": "execution_summary",
+      "target": "safe_evidence_paths"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Harness coverage",
+      "weight": 1,
+      "source": "ignored_auth_state",
+      "target": "synthetic_auth_state"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": "Controlled sample decision",
+      "weight": 1,
+      "source": "synthetic_auth_state",
+      "target": "controlled_local_sample"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "agents/roles/playwright-test-engineer.md",
+      "source_location": "Boundaries",
+      "weight": 1,
+      "source": "failure_classification_gate",
+      "target": "script_error_authorization"
     }
   ],
   "hyperedges": [
@@ -15960,7 +16473,50 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "source_file": "docs/plans/phased-implementation-plan.md"
+    },
+    {
+      "id": "phase_5_publication_state",
+      "label": "Phase 5 Completion and Publication State",
+      "nodes": [
+        "phase_5_complete",
+        "phase_5_verification_record",
+        "phase_5_draft_pr_5",
+        "phase_5_commit_040d7953"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md"
+    },
+    {
+      "id": "exact_authorization_flow",
+      "label": "Exact-Revision Authorization Flow",
+      "nodes": [
+        "evaluator_pass",
+        "human_approval",
+        "semantic_checksum",
+        "exact_revision_authorization",
+        "playwright_test_artifact"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "agents/skills/automate-approved-scenarios.md"
+    },
+    {
+      "id": "phase_6_safety_handoff",
+      "label": "Phase 6 Safety Handoff",
+      "nodes": [
+        "phase_6_handoff",
+        "failure_classification_gate",
+        "script_error_authorization",
+        "target_app_read_only"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/plans/phased-implementation-plan.md"
     }
   ],
-  "built_at_commit": "88c27661ee57b8b9b924ca2bfc8c49c5a62d5bfb"
+  "built_at_commit": "040d7953e6c03f4c7c25bc2cb8fe76fc50effb44"
 }

@@ -45,7 +45,8 @@ tracker and should be updated in the same change that completes a task.
   remains `IN_PROGRESS` until a fresh clone passes `npm ci` and the complete
   quality gate on the pinned Node 22 runtime.
 - Active delivery branch: `codex/phase-5-playwright-pipeline`.
-- Active review: not yet published.
+- Active review: draft pull request
+  [#5](https://github.com/jamil2018/aristotle/pull/5), targeting `main`.
 - Phase 4 merged through pull request
   [#3](https://github.com/jamil2018/aristotle/pull/3).
 - Current automated baseline: 10 unit-test files with 63 passing tests, 1
@@ -280,6 +281,9 @@ authorized scenario revisions.
 
 - Date: 2026-07-30
 - Branch: `codex/phase-5-playwright-pipeline`
+- Draft pull request: [#5](https://github.com/jamil2018/aristotle/pull/5),
+  targeting `main`.
+- Implementation commit: `040d7953e6c03f4c7c25bc2cb8fe76fc50effb44`.
 - Result: `npm run check` passed with 10 unit-test files and 63 unit tests;
   `npm run test:integration` passed with 1 integration-test file and 4
   integration tests; `npm run test:e2e` passed authentication setup and the
