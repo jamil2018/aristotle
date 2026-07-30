@@ -1,16 +1,16 @@
 # Graph Report - aristotle  (2026-07-30)
 
 ## Corpus Check
-- 82 files · ~33,873 words
+- 89 files · ~35,936 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 921 nodes · 1135 edges · 90 communities (59 shown, 31 thin omitted)
+- 979 nodes · 1216 edges · 95 communities (62 shown, 33 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 14 edges (avg confidence: 0.91)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bcc5502a`
+- Built from commit: `71177caf`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -101,10 +101,15 @@
 - [[_COMMUNITY_Community 87|Community 87]]
 - [[_COMMUNITY_Community 88|Community 88]]
 - [[_COMMUNITY_Community 89|Community 89]]
+- [[_COMMUNITY_Community 90|Community 90]]
+- [[_COMMUNITY_Community 91|Community 91]]
+- [[_COMMUNITY_Community 92|Community 92]]
+- [[_COMMUNITY_Community 93|Community 93]]
+- [[_COMMUNITY_Community 94|Community 94]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `config` - 26 edges
-2. `semanticChecksum()` - 20 edges
+2. `semanticChecksum()` - 23 edges
 3. `Quality Agent Factory Development Plan` - 19 edges
 4. `Quality Agent Factory Phased Implementation Plan` - 18 edges
 5. `compilerOptions` - 17 edges
@@ -126,7 +131,7 @@
 - `sampleWorkflow()` --calls--> `createWorkflow()`  [EXTRACTED]
   tests/integration/orchestration/workflow-store.test.ts → src/orchestration/workflow.ts
 
-## Communities (90 total, 31 thin omitted)
+## Communities (95 total, 33 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
@@ -134,7 +139,7 @@ Nodes (50): analyzeRequirements(), AtomicRequirement, canonicalizePolarity(), Cl
 
 ### Community 1 - "Community 1"
 Cohesion: 0.05
-Nodes (49): acceptArtifact(), AcceptArtifactInput, assertNotCyclic(), canonicalJson(), createArtifactRevision(), invalidateDownstreamArtifacts(), JsonValue, normalizeArray() (+41 more)
+Nodes (50): acceptArtifact(), AcceptArtifactInput, assertNotCyclic(), canonicalJson(), createArtifactRevision(), invalidateDownstreamArtifacts(), JsonValue, normalizeArray() (+42 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.04
@@ -189,8 +194,8 @@ Cohesion: 0.11
 Nodes (18): compilerOptions, esModuleInterop, exactOptionalPropertyTypes, forceConsistentCasingInFileNames, module, moduleResolution, noFallthroughCasesInSwitch, noImplicitOverride (+10 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.18
-Nodes (11): acquireRunLock(), assertIdentifier(), isErrorCode(), ReleaseLock, partial, store, temporaryDirectories, workflow (+3 more)
+Cohesion: 0.2
+Nodes (10): acquireRunLock(), assertIdentifier(), isErrorCode(), ReleaseLock, partial, store, temporaryDirectories, workflow (+2 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.11
@@ -348,22 +353,34 @@ Nodes (4): Commit Quality Pipeline Graphify Refresh, Graphify CLI Prerequisite, 
 Cohesion: 0.5
 Nodes (4): Controlled Sample-Application End-to-End Tests, Intercepted Repository-Local HTML Application, Synthetic Non-Secret Authentication State, Task-Scoped Environment-Configured Real Target Authentication
 
+### Community 90 - "Community 90"
+Cohesion: 0.07
+Nodes (37): boundedTextSchema, checksumSchema, feedbackCategorySchema, FeedbackEvent, feedbackEventSchema, identifierSchema, improvementEvaluationSchema, ImprovementProposal (+29 more)
+
+### Community 91 - "Community 91"
+Cohesion: 0.33
+Nodes (5): Boundaries, Knowledge Curator, Mission, Outputs, Required review
+
+### Community 92 - "Community 92"
+Cohesion: 0.33
+Nodes (5): Boundaries, Mission, Required proposal content, Trigger, Workflow Improvement Analyst
+
 ## Knowledge Gaps
-- **504 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+499 more)
+- **532 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+527 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **31 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **33 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `semanticChecksum()` connect `Community 13` to `Community 1`, `Community 6`, `Community 7`, `Community 10`, `Community 16`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `Actor` connect `Community 1` to `Community 0`, `Community 10`, `Community 3`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `semanticChecksum()` connect `Community 13` to `Community 1`, `Community 6`, `Community 7`, `Community 10`, `Community 16`, `Community 90`?**
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+- **Why does `Actor` connect `Community 1` to `Community 0`, `Community 10`, `Community 90`, `Community 3`?**
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **Why does `Quality Agent Factory Phased Implementation Plan` connect `Community 23` to `Community 33`, `Community 34`, `Community 38`, `Community 21`, `Community 22`, `Community 25`, `Community 26`, `Community 27`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _545 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _573 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

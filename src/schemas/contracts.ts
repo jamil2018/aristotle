@@ -29,6 +29,8 @@ const producingRoleSchema = z.enum([
   "final-human-reviewer",
   "knowledge-curator",
   "workflow-improvement-analyst",
+  "human-knowledge-reviewer",
+  "human-policy-reviewer",
 ]);
 
 const artifactTypeSchema = z.enum([
@@ -51,6 +53,12 @@ const artifactTypeSchema = z.enum([
   "defect-candidate",
   "final-quality-assessment",
   "final-human-review",
+  "run-summary",
+  "knowledge-proposal",
+  "knowledge-approval",
+  "feedback-event",
+  "improvement-proposal",
+  "improvement-evaluation",
 ]);
 
 const identifierSchema = z

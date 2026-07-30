@@ -37,9 +37,7 @@ export function acceptArtifact(
     throw new Error("Artifact does not match its registered contract");
   }
 
-  const humanProduced =
-    definition.producingRole === "human-scenario-reviewer" ||
-    definition.producingRole === "final-human-reviewer";
+  const humanProduced = definition.producingRole.startsWith("human-");
   if (humanProduced) {
     if (input.actor.actorType !== "HUMAN") {
       throw new Error("Human review artifacts require a human actor");

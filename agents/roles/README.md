@@ -13,3 +13,5 @@ Implemented role contracts:
 - [Playwright Test Engineer](./playwright-test-engineer.md)
 - [Failure Triage Analyst](./failure-triage-analyst.md)
 - [Final Quality Assessor](./final-quality-assessor.md)
+- [Knowledge Curator](./knowledge-curator.md)
+- [Workflow Improvement Analyst](./workflow-improvement-analyst.md)
