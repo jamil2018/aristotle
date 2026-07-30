@@ -1,15 +1,16 @@
-# Graph Report - .  (2026-07-30)
+# Graph Report - aristotle  (2026-07-30)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 100 files · ~30,313 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1030 nodes · 1292 edges · 105 communities (62 shown, 43 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.89)
+- 1064 nodes · 1333 edges · 106 communities (63 shown, 43 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.89)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `86bebf13`
+- Built from commit: `d2272460`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -107,7 +108,7 @@
 - [[_COMMUNITY_Community 90|Community 90]]
 - [[_COMMUNITY_Community 91|Community 91]]
 - [[_COMMUNITY_Community 92|Community 92]]
-- [[_COMMUNITY_Community 97|Community 97]]
+- [[_COMMUNITY_Community 93|Community 93]]
 - [[_COMMUNITY_Community 98|Community 98]]
 - [[_COMMUNITY_Community 99|Community 99]]
 - [[_COMMUNITY_Community 100|Community 100]]
@@ -115,18 +116,19 @@
 - [[_COMMUNITY_Community 102|Community 102]]
 - [[_COMMUNITY_Community 103|Community 103]]
 - [[_COMMUNITY_Community 104|Community 104]]
+- [[_COMMUNITY_Community 105|Community 105]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `semanticChecksum()` - 23 edges
 2. `Quality Agent Factory Development Plan` - 19 edges
 3. `Quality Agent Factory Phased Implementation Plan` - 18 edges
-4. `compilerOptions` - 17 edges
-5. `scripts` - 16 edges
-6. `Phase 7: Memory and improvement` - 16 edges
-7. `devDependencies` - 13 edges
-8. `3. Agent and Human Roles` - 12 edges
-9. `Phase 6: Failure and assessment pipeline` - 12 edges
-10. `validateGate()` - 10 edges
+4. `Phase 7: Memory and improvement` - 18 edges
+5. `compilerOptions` - 17 edges
+6. `scripts` - 16 edges
+7. `Phase 6: Failure and assessment pipeline` - 14 edges
+8. `devDependencies` - 13 edges
+9. `3. Agent and Human Roles` - 12 edges
+10. `Phase 3: Requirement pipeline` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Graphify Navigation Rules` --semantically_similar_to--> `Cursor Graphify Rule`  [INFERRED] [semantically similar]
@@ -140,11 +142,11 @@
 - `Quality Agent Factory Phased Implementation Plan` --references--> `Graphify Semantic Document Workflow`  [INFERRED]
   docs/plans/phased-implementation-plan.md → AGENTS.md
 
-## Communities (105 total, 43 thin omitted)
+## Communities (106 total, 43 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
-Nodes (53): sameArtifactReference(), createWorkflow(), CreateWorkflowInput, incrementRetry(), legalTransitions, requireGate(), requireHuman(), requireRole() (+45 more)
+Nodes (52): sameArtifactReference(), createWorkflow(), CreateWorkflowInput, incrementRetry(), legalTransitions, requireGate(), requireHuman(), requireRole() (+44 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.05
@@ -152,23 +154,23 @@ Nodes (50): analyzeRequirements(), AtomicRequirement, canonicalizePolarity(), Cl
 
 ### Community 2 - "Community 2"
 Cohesion: 0.05
-Nodes (49): acceptArtifact(), AcceptArtifactInput, assertNotCyclic(), canonicalJson(), createArtifactRevision(), invalidateDownstreamArtifacts(), JsonValue, normalizeArray() (+41 more)
+Nodes (50): acceptArtifact(), AcceptArtifactInput, assertNotCyclic(), canonicalJson(), createArtifactRevision(), invalidateDownstreamArtifacts(), JsonValue, normalizeArray() (+42 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.04
 Nodes (45): 10. Requirement and Scenario Revision Management, 11. Memory and Learning, 12. Feedback and Workflow Improvement, 13. Rules and Guardrails, 14. Environment, Security, and Privacy, 15. Resource and Reliability Controls, 16. Evaluation and Testing, 17. Delivery Phases (+37 more)
 
 ### Community 4 - "Community 4"
+Cohesion: 0.06
+Nodes (46): Claude Code Entry Point, Claude Code Provider, Claude Code Provider Contract, Clone-Ready Quality Agent Factory, Codex Provider, Codex Provider Contract, Complete Eight-Phase Delivery, Controlled Sample Application (+38 more)
+
+### Community 5 - "Community 5"
 Cohesion: 0.05
 Nodes (41): dependencies, gray-matter, mammoth, pdfjs-dist, zod, description, devDependencies, eslint (+33 more)
 
-### Community 5 - "Community 5"
+### Community 6 - "Community 6"
 Cohesion: 0.07
 Nodes (37): boundedTextSchema, checksumSchema, feedbackCategorySchema, FeedbackEvent, feedbackEventSchema, identifierSchema, improvementEvaluationSchema, ImprovementProposal (+29 more)
-
-### Community 6 - "Community 6"
-Cohesion: 0.06
-Nodes (40): Allowlisted Origin Policy, Claude Code Entry Point, Claude Code Provider, Codex Provider, Controlled Sample Application, Cursor Provider, Deterministic Evaluation Baseline, Exact Approved Scenario Revision (+32 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.07
@@ -191,12 +193,12 @@ Cohesion: 0.11
 Nodes (24): checksumSchema, HumanScenarioReview, humanScenarioReviewSchema, requirementIdSchema, Scenario, ScenarioEvaluation, scenarioEvaluationSchema, scenarioIdSchema (+16 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.13
-Nodes (24): Analyze Requirements, Artifact Contract Principles, Bidirectional Traceability, Bounded Scenario Revision Loop, Design Test Scenarios, Evaluate Test Scenarios, Exact-Revision Human Approval, Human Authorization Gates (+16 more)
-
-### Community 13 - "Community 13"
 Cohesion: 0.09
 Nodes (24): Code-only Graph Refresh, Graph Evidence Authorization Boundary, Graphify Navigation Rules, Scoped Graph Query Path Explain Commands, Full Semantic Graphify Refresh, Contribution Change Workflow, Focused Tests Immediately Before Commit, Cursor Graphify Rule (+16 more)
+
+### Community 13 - "Community 13"
+Cohesion: 0.13
+Nodes (24): Analyze Requirements, Artifact Contract Principles, Bidirectional Traceability, Bounded Scenario Revision Loop, Design Test Scenarios, Evaluate Test Scenarios, Exact-Revision Human Approval, Human Authorization Gates (+16 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.12
@@ -208,87 +210,87 @@ Nodes (17): BenchmarkCase, BenchmarkCaseSchema, benchmarkCategories, benchmarkCo
 
 ### Community 16 - "Community 16"
 Cohesion: 0.11
-Nodes (18): NormalizedRequirements, normalizeMarkdown(), projectScenarioMarkdown(), reviseScenarioSpecification(), validateScenarioProjection(), validateTraceability(), divergent, evaluation (+10 more)
+Nodes (18): compilerOptions, esModuleInterop, exactOptionalPropertyTypes, forceConsistentCasingInFileNames, module, moduleResolution, noFallthroughCasesInSwitch, noImplicitOverride (+10 more)
 
 ### Community 17 - "Community 17"
 Cohesion: 0.11
-Nodes (18): compilerOptions, esModuleInterop, exactOptionalPropertyTypes, forceConsistentCasingInFileNames, module, moduleResolution, noFallthroughCasesInSwitch, noImplicitOverride (+10 more)
+Nodes (18): NormalizedRequirements, normalizeMarkdown(), projectScenarioMarkdown(), reviseScenarioSpecification(), validateScenarioProjection(), validateTraceability(), divergent, evaluation (+10 more)
 
 ### Community 18 - "Community 18"
 Cohesion: 0.27
 Nodes (16): Draft Pull Request 6: Phase 6 Failure and Assessment Pipeline, Agent Roles Index, Factory Skills Index, Factory Workflows Index, Quality Agent Factory Phased Implementation Plan, Quality Agent Factory Development Plan, Operating Principles, Quality Agent Factory (+8 more)
 
 ### Community 19 - "Community 19"
-Cohesion: 0.12
-Nodes (16): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 7: Memory and improvement (+8 more)
+Cohesion: 0.11
+Nodes (18): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint (+10 more)
 
 ### Community 20 - "Community 20"
+Cohesion: 0.13
+Nodes (15): Allowlisted Origin Policy, Failure Triage, Failure Triage Analyst, Final Human Reviewer, Final Quality Assessor, Phase 5 COMPLETE, Phase 6 Failure and Assessment Pipeline, Phase 6 Next-Session Handoff (+7 more)
+
+### Community 21 - "Community 21"
 Cohesion: 0.18
 Nodes (13): Intercepted Repository-Local HTML Sample, Failure Classification Before Repair, Ignored Authentication State, Phase 5 Implementation Commit 040d7953, Phase 5 COMPLETE, Phase 5 Draft Pull Request 5, Phase 5 Playwright Pipeline, Phase 5 Verification Record (+5 more)
 
-### Community 21 - "Community 21"
+### Community 22 - "Community 22"
 Cohesion: 0.2
 Nodes (8): environmentSchema, FactoryConfig, loadFactoryConfig(), rawConfigSchema, screenshotPolicySchema, config, tracePolicySchema, videoPolicySchema
 
-### Community 22 - "Community 22"
+### Community 23 - "Community 23"
 Cohesion: 0.17
 Nodes (11): ADR-001: Use policy-driven autonomy for routine factory decisions, Allow arbitrary Playwright source generation, Alternatives considered, Consequences, Context, Date, Decision, Existing human-decision audit (+3 more)
 
-### Community 23 - "Community 23"
-Cohesion: 0.17
-Nodes (12): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 6: Failure and assessment pipeline, Phase 6 verification record, Tasks (+4 more)
-
 ### Community 24 - "Community 24"
-Cohesion: 0.18
-Nodes (10): Current delivery snapshot, Decision log, Delivery principles, Open decisions, Progress summary, Purpose, Quality Agent Factory Phased Implementation Plan, Repository tooling record (+2 more)
+Cohesion: 0.14
+Nodes (14): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 6: Failure and assessment pipeline, Phase 6 verification record (+6 more)
 
 ### Community 25 - "Community 25"
 Cohesion: 0.18
-Nodes (10): compilerOptions, declaration, declarationMap, outDir, rootDir, sourceMap, types, exclude (+2 more)
+Nodes (10): Current delivery snapshot, Decision log, Delivery principles, Open decisions, Progress summary, Purpose, Quality Agent Factory Phased Implementation Plan, Repository tooling record (+2 more)
 
 ### Community 26 - "Community 26"
-Cohesion: 0.2
-Nodes (10): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 3: Requirement pipeline, Phase 3 verification record, Tasks, Tasks (+2 more)
+Cohesion: 0.18
+Nodes (10): compilerOptions, declaration, declarationMap, outDir, rootDir, sourceMap, types, exclude (+2 more)
 
 ### Community 27 - "Community 27"
-Cohesion: 0.2
-Nodes (10): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 4: Scenario pipeline, Phase 4 verification record, Tasks, Tasks (+2 more)
+Cohesion: 0.17
+Nodes (12): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 3: Requirement pipeline, Phase 3 verification record, Tasks (+4 more)
 
 ### Community 28 - "Community 28"
-Cohesion: 0.2
-Nodes (10): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 5: Playwright pipeline, Phase 5 verification record, Tasks, Tasks (+2 more)
+Cohesion: 0.17
+Nodes (12): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 4: Scenario pipeline, Phase 4 verification record, Tasks (+4 more)
 
 ### Community 29 - "Community 29"
-Cohesion: 0.2
-Nodes (10): Final checkpoint, Phase 8: Provider hardening, Tasks, Tasks, Tasks, Tasks, Tasks, Tasks (+2 more)
+Cohesion: 0.17
+Nodes (12): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 5: Playwright pipeline, Phase 5 verification record, Tasks (+4 more)
 
 ### Community 30 - "Community 30"
+Cohesion: 0.17
+Nodes (12): Final checkpoint, Phase 8: Provider hardening, Phase 8 verification record, Tasks, Tasks, Tasks, Tasks, Tasks (+4 more)
+
+### Community 31 - "Community 31"
 Cohesion: 0.22
 Nodes (8): code:bash (npm ci), Commands, Commit quality pipeline, Current status, Prerequisites, Quality Agent Factory, Safety defaults, Setup
 
-### Community 31 - "Community 31"
+### Community 32 - "Community 32"
 Cohesion: 0.25
 Nodes (8): Evaluator PASS, Exact-Revision Authorization, Execution Summary Artifact, Human APPROVED or APPROVED_WITH_EXCLUSIONS, Linked Playwright Test Artifact, Playwright Test Engineer, Safe Registered Evidence Paths, Exact Semantic Checksum
 
-### Community 32 - "Community 32"
+### Community 33 - "Community 33"
 Cohesion: 0.29
 Nodes (6): createdUsers, username, createCleanupRegistry(), createDeterministicTestId(), QualityFixtures, test
 
-### Community 33 - "Community 33"
+### Community 34 - "Community 34"
 Cohesion: 0.36
 Nodes (5): checkRepositoryHealth(), RepositoryHealth, requiredRepositoryEntries, entryPath, root
 
-### Community 34 - "Community 34"
+### Community 35 - "Community 35"
 Cohesion: 0.29
 Nodes (6): Development rules, graphify, Mission, Non-negotiable boundaries, Quality Agent Factory Agent Instructions, Required reading order
 
-### Community 35 - "Community 35"
-Cohesion: 0.29
-Nodes (7): Checkpoint, Phase 2: Contracts and orchestration, Phase 2 verification record, Tasks, Tasks, Tasks, Tasks
-
 ### Community 36 - "Community 36"
-Cohesion: 0.33
-Nodes (5): Boundaries, Mission, Outputs, Playwright Test Engineer, Required inputs
+Cohesion: 0.25
+Nodes (8): Checkpoint, Phase 2: Contracts and orchestration, Phase 2 verification record, Tasks, Tasks, Tasks, Tasks, Tasks
 
 ### Community 37 - "Community 37"
 Cohesion: 0.33
@@ -320,76 +322,80 @@ Nodes (5): Boundaries, Knowledge Curator, Mission, Outputs, Required review
 
 ### Community 44 - "Community 44"
 Cohesion: 0.33
-Nodes (5): Boundaries, Mission, Required proposal content, Trigger, Workflow Improvement Analyst
+Nodes (5): Boundaries, Mission, Outputs, Playwright Test Engineer, Required inputs
 
 ### Community 45 - "Community 45"
 Cohesion: 0.33
-Nodes (5): Dependencies and integrations, Security Boundaries, Sensitive material, Target environment, Untrusted inputs
+Nodes (5): Boundaries, Mission, Required proposal content, Trigger, Workflow Improvement Analyst
 
 ### Community 46 - "Community 46"
+Cohesion: 0.33
+Nodes (5): Dependencies and integrations, Security Boundaries, Sensitive material, Target environment, Untrusted inputs
+
+### Community 47 - "Community 47"
 Cohesion: 0.53
 Nodes (6): escapeRegExp(), isInteractionAction(), renderAction(), renderAssertion(), renderInteraction(), renderLocator()
 
-### Community 47 - "Community 47"
+### Community 48 - "Community 48"
 Cohesion: 0.4
 Nodes (5): Accessible Locators and Web-First Assertions, Automate Approved Scenarios, Execution Summary Artifact, Safe Registered Evidence Paths, Typed Automation Plan
 
-### Community 48 - "Community 48"
-Cohesion: 0.4
-Nodes (4): Authority, Outputs, Required inputs, Scenario Quality Evaluator
-
 ### Community 49 - "Community 49"
-Cohesion: 0.4
-Nodes (4): Preconditions, Procedure, Stop conditions, Triage Test Failures
-
-### Community 50 - "Community 50"
 Cohesion: 0.4
 Nodes (5): Accessible Locators and Web-First Assertions, Approval Verification Before Test Generation, Automate Approved Scenarios, Safe Test Generation Using Repository Conventions, Target Application Read-Only Boundary
 
-### Community 51 - "Community 51"
+### Community 50 - "Community 50"
 Cohesion: 0.4
 Nodes (4): Authority, Outputs, Required inputs, Requirement Analyst
 
-### Community 52 - "Community 52"
+### Community 51 - "Community 51"
 Cohesion: 0.4
 Nodes (4): Authority, Outputs, Required inputs, Test Scenario Designer
 
+### Community 52 - "Community 52"
+Cohesion: 0.4
+Nodes (4): Authority, Outputs, Required inputs, Scenario Quality Evaluator
+
 ### Community 53 - "Community 53"
+Cohesion: 0.4
+Nodes (4): Preconditions, Procedure, Stop conditions, Triage Test Failures
+
+### Community 54 - "Community 54"
 Cohesion: 0.4
 Nodes (4): Boundaries, Query, Refresh, Use the Knowledge Graph
 
-### Community 54 - "Community 54"
-Cohesion: 0.5
-Nodes (4): Accepted Artifact Immutability, Quality Factory Pipeline, Repository-Resident Quality Agent Factory, Typed Artifact Contracts
-
 ### Community 55 - "Community 55"
 Cohesion: 0.5
-Nodes (4): Commit Quality Pipeline Graphify Refresh, Graphify CLI Prerequisite, Repository Prerequisites, Repository Setup
+Nodes (4): Accepted Artifact Immutability, Quality Factory Pipeline, Repository-Resident Quality Agent Factory, Typed Artifact Contracts
 
 ### Community 56 - "Community 56"
 Cohesion: 0.5
 Nodes (4): Controlled Sample-Application End-to-End Tests, Intercepted Repository-Local HTML Application, Synthetic Non-Secret Authentication State, Task-Scoped Environment-Configured Real Target Authentication
 
 ### Community 57 - "Community 57"
+Cohesion: 0.5
+Nodes (4): Commit Quality Pipeline Graphify Refresh, Graphify CLI Prerequisite, Repository Prerequisites, Repository Setup
+
+### Community 58 - "Community 58"
 Cohesion: 0.67
 Nodes (3): Approved Knowledge Memory, Gated Policy Adoption, Immutable Sanitized Run Summary
 
 ## Knowledge Gaps
-- **499 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+494 more)
+- **518 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+513 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **43 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `semanticChecksum()` connect `Community 14` to `Community 2`, `Community 5`, `Community 8`, `Community 9`, `Community 11`, `Community 16`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Why does `Actor` connect `Community 2` to `Community 0`, `Community 1`, `Community 11`, `Community 5`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **Why does `Quality Agent Factory Phased Implementation Plan` connect `Community 24` to `Community 35`, `Community 39`, `Community 19`, `Community 23`, `Community 26`, `Community 27`, `Community 28`, `Community 29`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **Why does `semanticChecksum()` connect `Community 14` to `Community 2`, `Community 6`, `Community 8`, `Community 9`, `Community 11`, `Community 17`?**
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+- **Why does `Actor` connect `Community 2` to `Community 0`, `Community 1`, `Community 11`, `Community 6`?**
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+- **Why does `Quality Agent Factory Phased Implementation Plan` connect `Community 25` to `Community 36`, `Community 39`, `Community 19`, `Community 24`, `Community 27`, `Community 28`, `Community 29`, `Community 30`?**
+  _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _549 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _568 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
