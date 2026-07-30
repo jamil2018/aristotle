@@ -35,7 +35,7 @@ tracker and should be updated in the same change that completes a task.
 |     5 | Playwright pipeline             | COMPLETE    | Phase 4    | Only approved scenarios produce executable, linked tests                       |
 |     6 | Failure and assessment pipeline | COMPLETE    | Phase 5    | Failures are classified before repair and final packages are assessable        |
 |     7 | Memory and improvement          | COMPLETE    | Phase 6    | Approved knowledge is retrievable and policy changes remain gated              |
-|     8 | Provider hardening              | NOT_STARTED | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                       |
+|     8 | Provider hardening              | IN_PROGRESS | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                       |
 
 ## Current delivery snapshot
 
@@ -45,9 +45,8 @@ tracker and should be updated in the same change that completes a task.
 - Foundation status: all Phase 1 implementation tasks are complete, but Phase 1
   remains `IN_PROGRESS` until a fresh clone passes `npm ci` and the complete
   quality gate on the pinned Node 22 runtime.
-- Active delivery branch: `codex/phase-7-memory-improvement`.
-- Active review: draft pull request
-  [#7](https://github.com/jamil2018/aristotle/pull/7), targeting `main`.
+- Active delivery branch: `codex/phase-8-provider-hardening`.
+- Active review: not yet opened.
 - Phase 4 merged through pull request
   [#3](https://github.com/jamil2018/aristotle/pull/3).
 - Current automated baseline: 12 unit-test files with 89 passing tests, 1

@@ -1,0 +1,26 @@
+name: quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  node-22:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        provider: [codex, cursor, claude-code]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run test:integration
+      - run: npx vitest run tests/unit/providers/provider-hardening.test.ts
+        env:
+          FACTORY_PROVIDER: ${{ matrix.provider }}
