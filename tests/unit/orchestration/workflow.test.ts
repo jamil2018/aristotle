@@ -30,6 +30,24 @@ const playwrightTest: ArtifactReference = {
   revision: 1,
   semanticChecksum: "d".repeat(64),
 };
+const triage: ArtifactReference = {
+  artifactId: "triage-001",
+  artifactType: "failure-triage",
+  revision: 1,
+  semanticChecksum: "e".repeat(64),
+};
+const assessment: ArtifactReference = {
+  artifactId: "assessment-001",
+  artifactType: "final-quality-assessment",
+  revision: 1,
+  semanticChecksum: "f".repeat(64),
+};
+const executionSummary: ArtifactReference = {
+  artifactId: "execution-001",
+  artifactType: "execution-summary",
+  revision: 1,
+  semanticChecksum: "1".repeat(64),
+};
 
 describe("workflow transitions", () => {
   it("permits the legal happy path while recording transition evidence", () => {
@@ -158,11 +176,123 @@ describe("workflow transitions", () => {
     expect(() =>
       transitionWorkflow(workflow, {
         to: "test-repair",
-        actor: coordinator,
+        actor: { actorType: "AGENT", actorId: "playwright-test-engineer" },
         occurredAt: "2026-07-29T10:04:00.000Z",
-        gate: { kind: "TRIAGE", classification: "PRODUCT_DEFECT" },
+        gate: {
+          kind: "TRIAGE",
+          classification: "PRODUCT_DEFECT",
+          subject: triage,
+        },
       }),
     ).toThrow(/SCRIPT_ERROR/);
+
+    const repairing = transitionWorkflow(workflow, {
+      to: "test-repair",
+      actor: { actorType: "AGENT", actorId: "playwright-test-engineer" },
+      occurredAt: "2026-07-29T10:05:00.000Z",
+      gate: { kind: "TRIAGE", classification: "SCRIPT_ERROR", subject: triage },
+    });
+
+    expect(repairing.transitionHistory.at(-1)?.inputReferences).toEqual([
+      triage,
+    ]);
+  });
+
+  it("routes exact execution and triage evidence through the failure policy", () => {
+    const failed = transitionWorkflow(createWorkflowAt("test-execution"), {
+      to: "failure-triage",
+      actor: { actorType: "AGENT", actorId: "playwright-test-engineer" },
+      occurredAt: "2026-07-29T10:04:00.000Z",
+      gate: {
+        kind: "EXECUTION_RESULT",
+        outcome: "FAILED",
+        subject: executionSummary,
+      },
+    });
+    expect(failed.transitionHistory.at(-1)?.inputReferences).toEqual([
+      executionSummary,
+    ]);
+
+    const assessing = transitionWorkflow(failed, {
+      to: "final-quality-assessment",
+      actor: { actorType: "AGENT", actorId: "failure-triage-analyst" },
+      occurredAt: "2026-07-29T10:05:00.000Z",
+      gate: {
+        kind: "TRIAGE",
+        classification: "PRODUCT_DEFECT",
+        subject: triage,
+      },
+    });
+    expect(assessing.transitionHistory.at(-1)?.inputReferences).toEqual([
+      triage,
+    ]);
+
+    expect(() =>
+      transitionWorkflow(failed, {
+        to: "final-quality-assessment",
+        actor: { actorType: "AGENT", actorId: "failure-triage-analyst" },
+        occurredAt: "2026-07-29T10:05:00.000Z",
+        gate: {
+          kind: "TRIAGE",
+          classification: "SCRIPT_ERROR",
+          subject: triage,
+        },
+      }),
+    ).toThrow(/bounded test repair/);
+
+    expect(() =>
+      transitionWorkflow(failed, {
+        to: "requirement-clarification",
+        actor: { actorType: "AGENT", actorId: "failure-triage-analyst" },
+        occurredAt: "2026-07-29T10:06:00.000Z",
+        gate: {
+          kind: "TRIAGE",
+          classification: "TEST_DATA_FAILURE",
+          subject: triage,
+        },
+      }),
+    ).toThrow(/REQUIREMENT_AMBIGUITY/);
+
+    const clarifying = transitionWorkflow(failed, {
+      to: "requirement-clarification",
+      actor: { actorType: "AGENT", actorId: "failure-triage-analyst" },
+      occurredAt: "2026-07-29T10:07:00.000Z",
+      gate: {
+        kind: "TRIAGE",
+        classification: "REQUIREMENT_AMBIGUITY",
+        subject: triage,
+      },
+    });
+    expect(clarifying.currentStage).toBe("requirement-clarification");
+  });
+
+  it("sends only passed execution evidence directly to final assessment", () => {
+    const workflow = createWorkflowAt("test-execution");
+
+    expect(() =>
+      transitionWorkflow(workflow, {
+        to: "final-quality-assessment",
+        actor: { actorType: "AGENT", actorId: "playwright-test-engineer" },
+        occurredAt: "2026-07-29T10:04:00.000Z",
+        gate: {
+          kind: "EXECUTION_RESULT",
+          outcome: "FAILED",
+          subject: executionSummary,
+        },
+      }),
+    ).toThrow(/PASSED/);
+
+    const assessing = transitionWorkflow(workflow, {
+      to: "final-quality-assessment",
+      actor: { actorType: "AGENT", actorId: "playwright-test-engineer" },
+      occurredAt: "2026-07-29T10:05:00.000Z",
+      gate: {
+        kind: "EXECUTION_RESULT",
+        outcome: "PASSED",
+        subject: executionSummary,
+      },
+    });
+    expect(assessing.currentStage).toBe("final-quality-assessment");
   });
 
   it("requires a recorded human answer to leave clarification", () => {
@@ -188,9 +318,25 @@ describe("workflow transitions", () => {
         gate: {
           kind: "FINAL_ASSESSMENT",
           decision: "READY_FOR_HUMAN_REVIEW",
+          subject: assessment,
         },
       }),
     ).toThrow(/final-quality-assessor/);
+
+    const review = transitionWorkflow(workflow, {
+      to: "final-human-review",
+      actor: { actorType: "AGENT", actorId: "final-quality-assessor" },
+      occurredAt: "2026-07-29T10:05:00.000Z",
+      gate: {
+        kind: "FINAL_ASSESSMENT",
+        decision: "READY_FOR_HUMAN_REVIEW",
+        subject: assessment,
+      },
+    });
+
+    expect(review.transitionHistory.at(-1)?.inputReferences).toEqual([
+      assessment,
+    ]);
   });
 
   it("enforces bounded scenario revision retries", () => {

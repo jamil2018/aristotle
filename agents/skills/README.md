@@ -10,3 +10,5 @@ Implemented skills:
 - [Design Test Scenarios](./design-test-scenarios.md)
 - [Evaluate Test Scenarios](./evaluate-test-scenarios.md)
 - [Use the Knowledge Graph](./use-knowledge-graph.md)
+- [Automate Approved Scenarios](./automate-approved-scenarios.md)
+- [Triage Test Failures](./triage-test-failures.md)
