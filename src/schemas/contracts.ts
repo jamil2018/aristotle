@@ -54,6 +54,7 @@ const artifactTypeSchema = z.enum([
   "authentication-intake-profile",
   "package-manifest",
   "execution-summary",
+  "manual-result",
   "failure-triage",
   "script-repair",
   "defect-candidate",

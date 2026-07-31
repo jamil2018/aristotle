@@ -114,34 +114,119 @@ function findScenarioFindings(
   scenarios: readonly Scenario[],
   knownRequirementIds: ReadonlySet<string>,
 ): ScenarioEvaluation["findings"] {
-  return scenarios.flatMap((scenario) => {
-    const findings: ScenarioEvaluation["findings"][number][] = [];
-    const unknown = scenario.requirementIds.filter(
-      (requirementId) => !knownRequirementIds.has(requirementId),
-    );
-    if (unknown.length > 0) {
-      findings.push({
-        kind: "UNKNOWN_REQUIREMENT",
-        message:
-          "Scenario references requirements outside the approved revision.",
-        requirementIds: unknown,
-        scenarioIds: [scenario.scenarioId],
-      });
-    }
-    if (
-      scenario.steps.some((step) =>
-        /works|appropriate|correctly/i.test(step.expectedResult),
-      )
-    ) {
-      findings.push({
-        kind: "UNOBSERVABLE_RESULT",
-        message: "Scenario contains a vague or unobservable expected result.",
-        requirementIds: scenario.requirementIds,
-        scenarioIds: [scenario.scenarioId],
-      });
-    }
-    return findings;
-  });
+  return scenarios.flatMap((scenario) => [
+    ...referenceFindings(scenario, knownRequirementIds),
+    ...qualityFindings(scenario),
+  ]);
+}
+
+function referenceFindings(
+  scenario: Scenario,
+  knownRequirementIds: ReadonlySet<string>,
+): ScenarioEvaluation["findings"] {
+  const unknown = scenario.requirementIds.filter(
+    (requirementId) => !knownRequirementIds.has(requirementId),
+  );
+  return unknown.length === 0
+    ? []
+    : [
+        {
+          kind: "UNKNOWN_REQUIREMENT",
+          message:
+            "Scenario references requirements outside the approved revision.",
+          requirementIds: unknown,
+          scenarioIds: [scenario.scenarioId],
+        },
+      ];
+}
+
+function qualityFindings(scenario: Scenario): ScenarioEvaluation["findings"] {
+  return [
+    ...setupFindings(scenario),
+    ...outcomeFindings(scenario),
+    ...feasibilityFindings(scenario),
+  ];
+}
+
+function setupFindings(scenario: Scenario): ScenarioEvaluation["findings"] {
+  const findings: ScenarioEvaluation["findings"][number][] = [];
+  if (
+    scenario.preconditions.length === 0 ||
+    scenario.testData.length === 0 ||
+    scenario.cleanup.length === 0
+  ) {
+    findings.push({
+      kind: "MISSING_STATE_SETUP",
+      message: "Scenario must define state setup, concrete data, and cleanup.",
+      requirementIds: scenario.requirementIds,
+      scenarioIds: [scenario.scenarioId],
+    });
+  }
+  return findings;
+}
+
+function outcomeFindings(scenario: Scenario): ScenarioEvaluation["findings"] {
+  const findings: ScenarioEvaluation["findings"][number][] = [];
+  if (
+    scenario.steps.some((step) =>
+      /works|appropriate|correctly/i.test(step.expectedResult),
+    )
+  ) {
+    findings.push({
+      kind: "UNOBSERVABLE_RESULT",
+      message: "Scenario contains a vague or unobservable expected result.",
+      requirementIds: scenario.requirementIds,
+      scenarioIds: [scenario.scenarioId],
+    });
+  }
+  if (
+    scenario.steps.some(
+      (step) =>
+        semanticText(step.action) === semanticText(step.expectedResult) ||
+        semanticText(step.expectedResult) === semanticText(scenario.objective),
+    )
+  ) {
+    findings.push({
+      kind: "CIRCULAR_OUTCOME",
+      message: "Expected outcome restates the action or objective.",
+      requirementIds: scenario.requirementIds,
+      scenarioIds: [scenario.scenarioId],
+    });
+  }
+  return findings;
+}
+
+function feasibilityFindings(
+  scenario: Scenario,
+): ScenarioEvaluation["findings"] {
+  const findings: ScenarioEvaluation["findings"][number][] = [];
+  if (
+    scenario.steps.some(
+      (step) =>
+        !/\b(visible|hidden|absent|url|value|valid|invalid|rejected|recorded|state|count|message)\b/i.test(
+          step.expectedResult,
+        ),
+    )
+  ) {
+    findings.push({
+      kind: "INSUFFICIENT_ASSERTION",
+      message: "Expected outcome does not identify an observable assertion.",
+      requirementIds: scenario.requirementIds,
+      scenarioIds: [scenario.scenarioId],
+    });
+  }
+  if (
+    (scenario.feasibility === "MANUAL" && scenario.automation !== "MANUAL") ||
+    (scenario.feasibility === "BLOCKED" && scenario.automation !== "UNSUITABLE")
+  ) {
+    findings.push({
+      kind: "UNSUPPORTED_COVERAGE",
+      message: "Automation classification conflicts with feasibility.",
+      requirementIds: scenario.requirementIds,
+      scenarioIds: [scenario.scenarioId],
+    });
+  }
+  return findings;
 }
 
 function findCoverageFindings(
@@ -188,14 +273,20 @@ function findDuplicateScenarios(
 ): ScenarioEvaluation["findings"] {
   const keys = new Map<string, string>();
   return scenarios.flatMap((scenario) => {
-    const key = `${scenario.requirementIds.join(",")}:${scenario.coverage}:${scenario.title}`;
+    const key = [
+      [...scenario.requirementIds].sort().join(","),
+      scenario.semanticDomain,
+      scenario.coverage,
+      semanticText(scenario.objective),
+      scenario.steps.map((step) => semanticText(step.action)).join("|"),
+    ].join(":");
     const existing = keys.get(key);
     keys.set(key, scenario.scenarioId);
     return existing === undefined
       ? []
       : [
           {
-            kind: "DUPLICATE_SCENARIO" as const,
+            kind: "SEMANTIC_DUPLICATE" as const,
             message: "Scenarios duplicate the same intent.",
             requirementIds: scenario.requirementIds,
             scenarioIds: [existing, scenario.scenarioId],
@@ -368,7 +459,11 @@ function applicableCoverage(text: string): Scenario["coverage"][] {
   if (/\b(sign[ -]?in|credential|password|email|input|form)\b/i.test(text)) {
     coverage.push("NEGATIVE");
   }
-  if (/\b\d+\b|\b(after|before|between|maximum|minimum|limit)\b/i.test(text)) {
+  if (
+    /\b(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten)\b|\b(maximum|minimum|limit|range|threshold)\b/i.test(
+      text,
+    )
+  ) {
     coverage.push("BOUNDARY");
   }
   return coverage;
@@ -384,6 +479,7 @@ function createScenario(
     .slice(0, 10)
     .toUpperCase();
   const subject = requirement.text.replace(/[.!?]+$/, "");
+  const feasibility = classifyScenarioFeasibility(requirement.text);
   const action =
     coverage === "POSITIVE"
       ? `Exercise the supported behavior: ${subject}.`
@@ -396,9 +492,16 @@ function createScenario(
     requirementIds: [requirement.requirementId],
     objective: `Verify ${coverage.toLowerCase().replace("_", " ")} coverage for the linked requirement.`,
     coverage,
+    semanticDomain: semanticDomain(requirement.text),
     priority: "HIGH",
     testType: "FUNCTIONAL",
-    automation: "CANDIDATE",
+    automation:
+      feasibility === "MANUAL"
+        ? "MANUAL"
+        : feasibility === "BLOCKED"
+          ? "UNSUITABLE"
+          : "CANDIDATE",
+    feasibility,
     actor: "Authorized user",
     preconditions: ["The configured test environment is available."],
     testData: [
@@ -416,8 +519,8 @@ function createScenario(
           coverage === "NEGATIVE"
             ? "The operation is rejected and a visible validation response identifies the invalid input."
             : coverage === "BOUNDARY"
-              ? "Each boundary value produces the outcome explicitly stated by the linked requirement."
-              : "The visible application state satisfies the linked requirement.",
+              ? "Each boundary value produces a visible state or validation message that proves the linked requirement."
+              : `The visible application state records the required outcome: ${subject}.`,
       },
     ],
     postconditions: ["The observed outcome is recorded."],
@@ -427,6 +530,63 @@ function createScenario(
     risks: [],
     notes: [],
   };
+}
+
+function classifyScenarioFeasibility(
+  requirementText: string,
+): Scenario["feasibility"] {
+  if (
+    /\b(unknown|not specified|to be decided|unsupported dependency)\b/i.test(
+      requirementText,
+    )
+  ) {
+    return "BLOCKED";
+  }
+  if (
+    /\b(physical device|paper document|telephone call|visual inspection)\b/i.test(
+      requirementText,
+    )
+  ) {
+    return "MANUAL";
+  }
+  if (
+    /\b(file upload|download|geolocation|camera|new browser capability)\b/i.test(
+      requirementText,
+    )
+  ) {
+    return "CAPABILITY_EXTENSION_REQUIRED";
+  }
+  return "AUTOMATABLE";
+}
+
+function semanticDomain(text: string): Scenario["semanticDomain"] {
+  if (/\b(permission|role|access|authorize|forbid|security)\b/i.test(text)) {
+    return "SECURITY_ACCESS_CONTROL";
+  }
+  if (/\b(sign[ -]?in|sign[ -]?out|session|authenticated)\b/i.test(text)) {
+    return "AUTHENTICATION_STATE";
+  }
+  if (
+    /\b(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten)\b|\b(maximum|minimum|limit|range|threshold)\b/i.test(
+      text,
+    )
+  ) {
+    return "NUMERIC_BOUNDARY";
+  }
+  if (/\b(policy|retention|approval|operation|procedure)\b/i.test(text)) {
+    return "OPERATIONAL_POLICY";
+  }
+  if (/\b(valid|invalid|required|input|form|format)\b/i.test(text)) {
+    return "VALIDATION";
+  }
+  return "GENERAL_FUNCTIONAL";
+}
+
+function semanticText(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim();
 }
 
 function renderScenario(scenario: Scenario): string[] {

@@ -145,6 +145,13 @@ export const artifactRegistry = {
     retentionPolicy: "RUN",
     requiredReferences: ["playwright-test"],
   },
+  "manual-result": {
+    producingRole: "human-scenario-reviewer",
+    workflowStage: "test-execution",
+    schemaVersion: 1,
+    retentionPolicy: "PERMANENT",
+    requiredReferences: ["scenario-specification"],
+  },
   "failure-triage": {
     producingRole: "failure-triage-analyst",
     workflowStage: "failure-triage",
@@ -176,7 +183,7 @@ export const artifactRegistry = {
     workflowStage: "final-quality-assessment",
     schemaVersion: 1,
     retentionPolicy: "PERMANENT",
-    requiredReferences: ["execution-summary"],
+    requiredReferences: ["execution-summary", "manual-result"],
   },
   "final-human-review": {
     producingRole: "final-human-reviewer",

@@ -1,5 +1,9 @@
-import { access } from "node:fs/promises";
+import { execFile } from "node:child_process";
+import { access, readFile } from "node:fs/promises";
 import path from "node:path";
+import { promisify } from "node:util";
+
+const execFileAsync = promisify(execFile);
 
 export const requiredRepositoryEntries = [
   "AGENTS.md",
@@ -68,6 +72,7 @@ export const requiredRepositoryEntries = [
 export interface RepositoryHealth {
   readonly healthy: boolean;
   readonly missing: readonly string[];
+  readonly hygieneViolations: readonly string[];
 }
 
 export async function checkRepositoryHealth(
@@ -86,6 +91,63 @@ export async function checkRepositoryHealth(
   const missing = checks.filter(
     (entry): entry is NonNullable<typeof entry> => entry !== null,
   );
+  const hygieneViolations =
+    await findRepositoryHygieneViolations(repositoryRoot);
 
-  return { healthy: missing.length === 0, missing };
+  return {
+    healthy: missing.length === 0 && hygieneViolations.length === 0,
+    missing,
+    hygieneViolations,
+  };
+}
+
+async function findRepositoryHygieneViolations(
+  repositoryRoot: string,
+): Promise<readonly string[]> {
+  const violations: string[] = [];
+  try {
+    const ignore = await readFile(
+      path.join(repositoryRoot, ".gitignore"),
+      "utf8",
+    );
+    for (const rule of [
+      "artifacts/**",
+      "tests/e2e/generated/",
+      "tests/e2e/pilot/",
+      "src/generated/",
+      "src/pilot/",
+    ]) {
+      if (!ignore.split(/\r?\n/).includes(rule)) {
+        violations.push(`Missing runtime ignore rule: ${rule}`);
+      }
+    }
+  } catch {
+    return violations;
+  }
+
+  try {
+    const { stdout } = await execFileAsync("git", ["ls-files", "-z"], {
+      cwd: repositoryRoot,
+      encoding: "utf8",
+    });
+    const unsafe = stdout
+      .split("\0")
+      .filter(Boolean)
+      .filter((file) =>
+        /^(?:artifacts\/runs\/|src\/(?:generated|pilot)\/|tests\/e2e\/(?:generated|pilot)\/)/.test(
+          file,
+        ),
+      );
+    violations.push(
+      ...unsafe.map((file) => `Tracked runtime artifact: ${file}`),
+    );
+  } catch {
+    try {
+      await access(path.join(repositoryRoot, ".git"));
+      violations.push("Unable to verify tracked runtime artifacts with Git");
+    } catch {
+      // A synthetic health fixture may intentionally not be a Git checkout.
+    }
+  }
+  return violations;
 }

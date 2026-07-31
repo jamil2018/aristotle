@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { z } from "zod";
 
 import {
   acceptArtifact,
@@ -26,6 +27,7 @@ const designer: Actor = {
 };
 
 describe("artifact lifecycle", () => {
+  const contentSchema = z.record(z.string(), z.unknown());
   it("produces a stable checksum independent of object key order", () => {
     expect(semanticChecksum({ title: "Login", id: "scenario-1" })).toBe(
       semanticChecksum({ id: "scenario-1", title: "Login" }),
@@ -34,6 +36,7 @@ describe("artifact lifecycle", () => {
 
   it("accepts only artifacts produced by the registered actor at the right stage", () => {
     const accepted = acceptArtifact(draftScenario(), {
+      contentSchema,
       actor: designer,
       content: { id: "scenario-1", title: "Login" },
       acceptedAt: "2026-07-29T10:01:00.000Z",
@@ -45,6 +48,7 @@ describe("artifact lifecycle", () => {
 
     expect(() =>
       acceptArtifact(draftScenario(), {
+        contentSchema,
         actor: {
           actorType: "AGENT",
           actorId: "workflow-coordinator",
@@ -68,6 +72,7 @@ describe("artifact lifecycle", () => {
 
     expect(() =>
       acceptArtifact(review, {
+        contentSchema,
         actor: {
           actorType: "AGENT",
           actorId: "workflow-coordinator",
@@ -81,6 +86,7 @@ describe("artifact lifecycle", () => {
   it("rejects missing, stale, or checksum-mismatched references", () => {
     expect(() =>
       acceptArtifact(draftScenario(), {
+        contentSchema,
         actor: designer,
         content: { id: "scenario-1" },
         acceptedAt: "2026-07-29T10:01:00.000Z",
@@ -91,6 +97,7 @@ describe("artifact lifecycle", () => {
 
   it("creates a new draft revision without mutating the accepted artifact", () => {
     const accepted = acceptArtifact(draftScenario(), {
+      contentSchema,
       actor: designer,
       content: { id: "scenario-1" },
       acceptedAt: "2026-07-29T10:01:00.000Z",

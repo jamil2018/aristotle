@@ -12,6 +12,10 @@ test-results/
 blob-report/
 artifacts/**
 !artifacts/.gitkeep
+tests/e2e/generated/
+tests/e2e/pilot/
+src/generated/
+src/pilot/
 playwright/.auth/
 *.pem
 *.key

@@ -40,24 +40,67 @@ tracker and should be updated in the same change that completes a task.
 
 ## Current delivery snapshot
 
-- Last reconciled: 2026-07-30.
-- Completed implementation phases: Phase 1 through Phase 8.
+- Last reconciled: 2026-07-31.
+- Completed implementation phases: Phase 1 through Phase 9 and all three
+  harness-remediation phases.
 - Foundation status: the GitHub Actions provider matrix passed `npm ci`, the
   complete quality gate, integration tests, and provider contract tests on the
   pinned Node 22 runtime.
-- Active delivery branch: `codex/phase-9-pilot-workflow-optimization`.
+- Active delivery branch: `codex/harness-remediation`.
 - Active review: draft pull request
-  [#9](https://github.com/jamil2018/aristotle/pull/9), targeting `main`.
+  [#10](https://github.com/jamil2018/aristotle/pull/10), targeting `main`.
 - Phase 4 merged through pull request
   [#3](https://github.com/jamil2018/aristotle/pull/3).
-- Current automated baseline: 13 unit-test files with 92 passing tests, 1
-  integration-test file with 4 passing tests, and 7 controlled Playwright tests
+- Current automated baseline: 17 unit-test files with 113 passing tests, 1
+  integration-test file with 4 passing tests, and 9 controlled Playwright tests
   passing across authentication setup, Chromium, Firefox, and WebKit.
 - Static-analysis baseline: Fallow 3.10.0 reports no dead code, duplication, or
-  complexity findings across 47 analyzed files and 414 functions; average
-  maintainability is 93.6.
-- Next development session: review pull request #9 and its CI evidence. Any
-  active policy adoption remains at the genuine human-policy gate.
+  complexity findings across 64 analyzed files and 584 functions; average
+  maintainability is 93.7.
+- Next development session: review pull request #10 and its CI evidence, then
+  request human acceptance of the remediated harness. Any active policy adoption
+  remains at the genuine human-policy gate.
+
+## Harness remediation program
+
+The first task-scoped pilot exposed harness weaknesses without authorizing any
+target-application change. The pilot outputs were permanently removed and are
+not part of this repository. Remediation preserves the original eight-phase
+source plan and records the bounded follow-up work here.
+
+| Remediation phase | Scope                                     | Status   | Exit checkpoint                                                                  |
+| ----------------: | ----------------------------------------- | -------- | -------------------------------------------------------------------------------- |
+|                 1 | Artifact integrity and repository hygiene | COMPLETE | Canonical checksums, exact approvals, isolated run output, manual results        |
+|                 2 | Requirement and scenario quality          | COMPLETE | Structured questions, semantic domains, feasibility, deterministic benchmark     |
+|                 3 | Safe Playwright capabilities and evidence | COMPLETE | Preflight, bounded actions/assertions, Chromium smoke, complete browser evidence |
+
+### Remediation verification record
+
+- Date: 2026-07-31.
+- Branch: `codex/harness-remediation`.
+- Phase 1: schema parse, canonical serialization, and semantic checksum are one
+  pipeline; reconciliation impact is separate; generated tests default to
+  ignored run storage; browser results use run/revision/browser paths; manual
+  results require exact human-reviewed scenario references; repository health
+  fails closed for tracked runtime output.
+- Phase 2: clarifications are contextual structured records; scenarios carry
+  typed semantic domains and feasibility; evaluator checks include circular
+  outcomes, unsupported coverage, semantic duplicates, missing state setup, and
+  insufficient assertions.
+- Benchmark: 20 provider-neutral deterministic cases, zero unsafe false `PASS`,
+  100% built-in/independent disposition agreement, and 100% agreement with
+  expected dispositions.
+- Phase 3: stable configurable `data-*` test IDs, same-origin relative
+  navigation, deterministic clearing, bounded visibility/absence/URL/value and
+  native-validity assertions, preflight validation, and a Chromium smoke
+  dependency before Chromium, Firefox, and WebKit.
+- Human and security gates remain unchanged: scenario approval is exact-revision
+  and human-only, only recorded `SCRIPT_ERROR` authorizes test repair, final
+  assessment cannot grant approval, and target application code remains
+  read-only.
+- Continuation point: human review of the draft remediation pull request. A new
+  task-scoped pilot requires separate authority and fresh environment-only
+  configuration; deleted pilot material must not be restored.
 
 ## Phase 1: Repository foundation
 

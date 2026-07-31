@@ -1,5 +1,7 @@
 import { createHash } from "node:crypto";
 
+import type { z } from "zod";
+
 import { sameArtifactReference } from "./artifact-reference.js";
 import { artifactRegistry } from "./artifact-registry.js";
 import {
@@ -10,12 +12,13 @@ import {
 } from "../schemas/contracts.js";
 
 export function semanticChecksum(content: unknown): string {
-  return createHash("sha256").update(canonicalJson(content)).digest("hex");
+  return createHash("sha256").update(canonicalSerialize(content)).digest("hex");
 }
 
 export interface AcceptArtifactInput {
   readonly actor: Actor;
   readonly content: unknown;
+  readonly contentSchema: z.ZodType;
   readonly acceptedAt: string;
   readonly availableArtifacts?: readonly ArtifactManifest[];
 }
@@ -53,11 +56,12 @@ export function acceptArtifact(
     input.availableArtifacts ?? [],
     definition.requiredReferences,
   );
+  const canonicalContent = input.contentSchema.parse(input.content);
 
   return artifactManifestSchema.parse({
     ...manifest,
     status: "ACCEPTED",
-    semanticChecksum: semanticChecksum(input.content),
+    semanticChecksum: semanticChecksum(canonicalContent),
     acceptedAt: input.acceptedAt,
   });
 }
@@ -152,7 +156,7 @@ export function invalidateDownstreamArtifacts(
   });
 }
 
-function canonicalJson(value: unknown): string {
+export function canonicalSerialize(value: unknown): string {
   return JSON.stringify(normalizeJson(value, new WeakSet()));
 }
 

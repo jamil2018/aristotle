@@ -1,5 +1,9 @@
 import { semanticChecksum } from "../orchestration/artifact-lifecycle.js";
 import {
+  manualResultSchema,
+  type ManualResult,
+} from "../remediation/artifact-integrity.js";
+import {
   defectCandidateSchema,
   failureTriageSchema,
   finalQualityAssessmentSchema,
@@ -105,18 +109,63 @@ export function createDefectCandidate(input: CreateDefectCandidateInput) {
 
 type FinalQualityAssessmentInput = Omit<
   FinalQualityAssessment,
-  "schemaVersion" | "decision" | "finalApprovalGranted"
->;
+  | "schemaVersion"
+  | "decision"
+  | "finalApprovalGranted"
+  | "manualResultChecksums"
+  | "requiredManualScenarioIds"
+  | "completedManualScenarioIds"
+> & {
+  readonly requiredManualScenarios?: readonly {
+    readonly scenarioId: string;
+    readonly scenarioRevision: number;
+    readonly scenarioChecksum: string;
+  }[];
+  readonly manualResults?: readonly ManualResult[];
+};
 
 export function createFinalQualityAssessment(
   input: FinalQualityAssessmentInput,
 ): FinalQualityAssessment {
+  const requiredManualScenarios = input.requiredManualScenarios ?? [];
+  const manualResults = (input.manualResults ?? []).map((result) =>
+    manualResultSchema.parse(result),
+  );
+  const completedManualScenarioIds = requiredManualScenarios.flatMap(
+    (required) => {
+      const result = manualResults.find(
+        (candidate) =>
+          candidate.runId === input.runId &&
+          candidate.scenarioId === required.scenarioId &&
+          candidate.scenarioRevision === required.scenarioRevision &&
+          candidate.scenarioChecksum === required.scenarioChecksum &&
+          candidate.outcome === "PASSED" &&
+          semanticChecksum({
+            schemaVersion: candidate.schemaVersion,
+            manualResultId: candidate.manualResultId,
+            runId: candidate.runId,
+            scenarioId: candidate.scenarioId,
+            scenarioRevision: candidate.scenarioRevision,
+            scenarioChecksum: candidate.scenarioChecksum,
+            reviewer: candidate.reviewer,
+            procedure: candidate.procedure,
+            evidence: candidate.evidence,
+            outcome: candidate.outcome,
+            completedAt: candidate.completedAt,
+          }) === candidate.semanticChecksum,
+      );
+      return result === undefined ? [] : [required.scenarioId];
+    },
+  );
   const hasBlocker = input.unresolvedFailureIds.length > 0;
   const needsRevision =
     input.traceability.length === 0 ||
     input.missingArtifacts.length > 0 ||
     input.staleTestIds.length > 0 ||
     input.skippedCoverage.length > 0 ||
+    requiredManualScenarios.some(
+      ({ scenarioId }) => !completedManualScenarioIds.includes(scenarioId),
+    ) ||
     input.traceability.some((link) => link.result !== "PASSED");
   const decision = hasBlocker
     ? "BLOCKED"
@@ -126,6 +175,13 @@ export function createFinalQualityAssessment(
   return finalQualityAssessmentSchema.parse({
     schemaVersion: 1,
     ...input,
+    requiredManualScenarioIds: requiredManualScenarios.map(
+      ({ scenarioId }) => scenarioId,
+    ),
+    completedManualScenarioIds,
+    manualResultChecksums: manualResults.map(
+      ({ semanticChecksum: checksum }) => checksum,
+    ),
     decision,
     finalApprovalGranted: false,
   });

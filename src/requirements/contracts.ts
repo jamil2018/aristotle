@@ -50,6 +50,15 @@ export const requirementAnalysisSchema = z.object({
       blocking: z.boolean(),
     }),
   ),
-  clarificationQuestions: z.array(z.string().min(1)),
+  clarificationQuestions: z.array(
+    z.object({
+      requirementId: identifierSchema.optional(),
+      requirementText: z.string().min(1),
+      ambiguity: z.string().min(1),
+      evidence: z.array(z.string().min(1)).min(1),
+      impact: z.string().min(1),
+      decisionOptions: z.array(z.string().min(1)).min(2),
+    }),
+  ),
   hasBlockingAmbiguity: z.boolean(),
 });

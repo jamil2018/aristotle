@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import { semanticChecksum } from "../orchestration/artifact-lifecycle.js";
 import { normalizedRequirementsSchema } from "../requirements/contracts.js";
 import type { NormalizedRequirements } from "../requirements/analysis.js";
+import { assertGeneratedTestPath } from "../remediation/artifact-integrity.js";
 import {
   humanScenarioReviewSchema,
   scenarioEvaluationSchema,
@@ -16,6 +17,7 @@ import {
   capabilityExtensionProposalSchema,
   capabilityExtensionRecordSchema,
   executionSummarySchema,
+  playwrightPreflightSchema,
   playwrightTestMetadataSchema,
   type AutomationPlan,
   type AutomationLocator,
@@ -23,20 +25,24 @@ import {
   type CapabilityExtensionRecord,
   type ExecutionSummary,
   type PlaywrightTestMetadata,
+  type PlaywrightPreflight,
 } from "./contracts.js";
 
 interface GeneratePlaywrightTestInput {
+  readonly runId: string;
   readonly requirements: NormalizedRequirements;
   readonly specification: ScenarioSpecification;
   readonly evaluation: ScenarioEvaluation;
   readonly review: HumanScenarioReview;
   readonly scenarioId: string;
   readonly plan: AutomationPlan;
+  readonly preflight: Omit<PlaywrightPreflight, "plan">;
 }
 
 export interface GeneratedPlaywrightTest {
   readonly metadata: PlaywrightTestMetadata;
   readonly source: string;
+  readonly outputPath: string;
 }
 
 export function generatePlaywrightTest(
@@ -94,6 +100,7 @@ export function generatePlaywrightTest(
       "Scenario requirements do not match the exact normalized requirement revision",
     );
   }
+  runPlaywrightPreflight({ ...input.preflight, plan });
 
   const testId = createTestId(scenario.scenarioId);
   const metadata = playwrightTestMetadataSchema.parse({
@@ -109,6 +116,9 @@ export function generatePlaywrightTest(
   return {
     metadata,
     source: renderTestSource(metadata, scenario.title, plan),
+    outputPath: assertGeneratedTestPath(
+      `artifacts/runs/${input.runId}/generated/${testId}.spec.ts`,
+    ),
   };
 }
 
@@ -143,13 +153,22 @@ type InteractionAction = Extract<
   AutomationAction,
   {
     kind:
-      "FILL" | "CLICK" | "CHECK" | "UNCHECK" | "SELECT_OPTION" | "PRESS_KEY";
+      | "FILL"
+      | "CLICK"
+      | "CLEAR"
+      | "NAVIGATE"
+      | "CHECK"
+      | "UNCHECK"
+      | "SELECT_OPTION"
+      | "PRESS_KEY";
   }
 >;
 
 const interactionKinds = new Set<AutomationAction["kind"]>([
   "FILL",
   "CLICK",
+  "CLEAR",
+  "NAVIGATE",
   "CHECK",
   "UNCHECK",
   "SELECT_OPTION",
@@ -178,6 +197,10 @@ function renderInteraction(action: InteractionAction): string {
       ].join("");
     case "CLICK":
       return `await ${renderLocator(action.locator)}.click();`;
+    case "CLEAR":
+      return `await ${renderLocator(action.locator)}.clear();`;
+    case "NAVIGATE":
+      return `await page.goto(${JSON.stringify(action.path)});`;
     case "CHECK":
       return `await ${renderLocator(action.locator)}.check();`;
     case "UNCHECK":
@@ -192,9 +215,25 @@ function renderInteraction(action: InteractionAction): string {
 function renderAssertion(
   action: Exclude<AutomationAction, InteractionAction>,
 ): string {
+  if (visibilityAssertionKinds.has(action.kind)) {
+    return renderVisibilityAssertion(
+      action as Extract<
+        AutomationAction,
+        { kind: "EXPECT_VISIBLE" | "EXPECT_HIDDEN" | "EXPECT_ABSENT" }
+      >,
+    );
+  }
+  if (nativeAssertionKinds.has(action.kind)) {
+    return renderNativeAssertion(
+      action as Extract<
+        AutomationAction,
+        {
+          kind: "EXPECT_NATIVE_VALIDITY" | "EXPECT_NATIVE_VALIDATION_MESSAGE";
+        }
+      >,
+    );
+  }
   switch (action.kind) {
-    case "EXPECT_VISIBLE":
-      return `await expect(${renderLocator(action.locator)}).toBeVisible();`;
     case "EXPECT_ENABLED":
       return `await expect(${renderLocator(action.locator)}).toBeEnabled();`;
     case "EXPECT_CHECKED":
@@ -208,6 +247,44 @@ function renderAssertion(
     case "EXPECT_URL":
       return `await expect(page).toHaveURL(new RegExp(${JSON.stringify(`${escapeRegExp(action.path)}$`)}));`;
   }
+  throw new Error("Unsupported assertion");
+}
+
+const visibilityAssertionKinds = new Set<AutomationAction["kind"]>([
+  "EXPECT_VISIBLE",
+  "EXPECT_HIDDEN",
+  "EXPECT_ABSENT",
+]);
+const nativeAssertionKinds = new Set<AutomationAction["kind"]>([
+  "EXPECT_NATIVE_VALIDITY",
+  "EXPECT_NATIVE_VALIDATION_MESSAGE",
+]);
+
+function renderVisibilityAssertion(
+  action: Extract<
+    AutomationAction,
+    { kind: "EXPECT_VISIBLE" | "EXPECT_HIDDEN" | "EXPECT_ABSENT" }
+  >,
+): string {
+  if (action.kind === "EXPECT_VISIBLE") {
+    return `await expect(${renderLocator(action.locator)}).toBeVisible();`;
+  }
+  return action.kind === "EXPECT_HIDDEN"
+    ? `await expect(${renderLocator(action.locator)}).toBeHidden();`
+    : `await expect(${renderLocator(action.locator)}).toHaveCount(0);`;
+}
+
+function renderNativeAssertion(
+  action: Extract<
+    AutomationAction,
+    {
+      kind: "EXPECT_NATIVE_VALIDITY" | "EXPECT_NATIVE_VALIDATION_MESSAGE";
+    }
+  >,
+): string {
+  return action.kind === "EXPECT_NATIVE_VALIDITY"
+    ? `await expect(${renderLocator(action.locator)}).toHaveJSProperty("validity", expect.objectContaining({ valid: ${String(action.valid)} }));`
+    : `await expect(${renderLocator(action.locator)}).toHaveJSProperty("validationMessage", ${JSON.stringify(action.message)});`;
 }
 
 function renderLocator(locator: AutomationLocator): string {
@@ -219,7 +296,9 @@ function renderLocator(locator: AutomationLocator): string {
     case "PLACEHOLDER":
       return `page.getByPlaceholder(${JSON.stringify(locator.value)})`;
     case "TEST_ID":
-      return `page.getByTestId(${JSON.stringify(locator.value)})`;
+      return (locator.attribute ?? "data-testid") === "data-testid"
+        ? `page.getByTestId(${JSON.stringify(locator.value)})`
+        : `page.locator(${JSON.stringify(`[${locator.attribute ?? "data-testid"}="${locator.value}"]`)})`;
   }
   throw new Error("Unsupported locator");
 }
@@ -288,6 +367,106 @@ export function createExecutionSummary(
   input: Omit<ExecutionSummary, "schemaVersion">,
 ) {
   return executionSummarySchema.parse({ schemaVersion: 1, ...input });
+}
+
+export function registerBrowserMatrix(
+  summariesInput: readonly ExecutionSummary[],
+  expectedTestIds: readonly string[],
+): readonly ExecutionSummary[] {
+  const summaries = summariesInput.map((summary) =>
+    executionSummarySchema.parse(summary),
+  );
+  const required = ["chromium-smoke", "chromium", "firefox", "webkit"];
+  if (expectedTestIds.length === 0) {
+    throw new Error("Browser matrix requires at least one expected candidate");
+  }
+  if (new Set(summaries.map((summary) => summary.runId)).size !== 1) {
+    throw new Error("Browser matrix summaries must belong to the same run");
+  }
+  for (const project of required) {
+    const summary = summaries.find(
+      (candidate) => candidate.project === project,
+    );
+    if (summary === undefined) {
+      throw new Error(
+        `Browser matrix is missing registered ${project} evidence`,
+      );
+    }
+    requireProjectEvidence(summary, expectedTestIds);
+  }
+  const smoke = summaries.find(
+    (summary) => summary.project === "chromium-smoke",
+  );
+  if (
+    smoke?.tests.some(
+      (test) =>
+        expectedTestIds.includes(test.testId) && test.status !== "PASSED",
+    ) !== false
+  ) {
+    throw new Error(
+      "Chromium smoke must pass before registering the browser matrix",
+    );
+  }
+  return summaries;
+}
+
+function requireProjectEvidence(
+  summary: ExecutionSummary,
+  expectedTestIds: readonly string[],
+): void {
+  for (const testId of expectedTestIds) {
+    const result = summary.tests.find((test) => test.testId === testId);
+    if (result === undefined || result.evidence.length === 0) {
+      throw new Error(`${summary.project} is missing evidence for ${testId}`);
+    }
+    if (result.status === "SKIPPED" || result.status === "TIMED_OUT") {
+      throw new Error(
+        `${summary.project} did not execute or classify ${testId}`,
+      );
+    }
+  }
+}
+
+export function runPlaywrightPreflight(input: unknown) {
+  const preflight = playwrightPreflightSchema.parse(input);
+  if (preflight.baseOrigin !== preflight.allowedOrigin) {
+    throw new Error("Preflight origin is outside the task-scoped allowlist");
+  }
+  const requiredEnvironment = preflight.plan.actions.flatMap((action) =>
+    action.kind === "FILL" ? [action.valueEnvironmentVariable] : [],
+  );
+  const missingEnvironment = requiredEnvironment.filter(
+    (name) => !preflight.configuredEnvironmentVariables.includes(name),
+  );
+  if (missingEnvironment.length > 0) {
+    throw new Error(
+      `Preflight missing environment variables: ${missingEnvironment.join(", ")}`,
+    );
+  }
+  const incompatible = preflight.plan.actions
+    .map((action) => action.kind)
+    .filter((kind) => !preflight.rendererActionKinds.includes(kind));
+  if (incompatible.length > 0) {
+    throw new Error(
+      `Preflight renderer does not support: ${[...new Set(incompatible)].join(", ")}`,
+    );
+  }
+  for (const action of preflight.plan.actions) {
+    if (
+      "locator" in action &&
+      action.locator.kind === "TEST_ID" &&
+      (action.locator.attribute ?? "data-testid") !== preflight.testIdAttribute
+    ) {
+      throw new Error(
+        "Preflight test-ID attribute does not match locator configuration",
+      );
+    }
+  }
+  return {
+    ready: true as const,
+    smokeProject: "chromium-smoke" as const,
+    fullProjects: ["chromium", "firefox", "webkit"] as const,
+  };
 }
 
 export interface CapabilityExtensionClassification {

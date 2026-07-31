@@ -44,8 +44,17 @@ export interface RequirementIssue {
 
 export interface RequirementAnalysis {
   readonly issues: readonly RequirementIssue[];
-  readonly clarificationQuestions: readonly string[];
+  readonly clarificationQuestions: readonly ClarificationQuestion[];
   readonly hasBlockingAmbiguity: boolean;
+}
+
+export interface ClarificationQuestion {
+  readonly requirementId?: string | undefined;
+  readonly requirementText: string;
+  readonly ambiguity: string;
+  readonly evidence: readonly string[];
+  readonly impact: string;
+  readonly decisionOptions: readonly string[];
 }
 
 export function normalizeRequirements(
@@ -138,11 +147,50 @@ export function analyzeRequirements(
   }
 
   const blockingIssues = issues.filter((issue) => issue.blocking);
+  const byId = new Map(
+    normalized.requirements.map((requirement) => [
+      requirement.requirementId,
+      requirement,
+    ]),
+  );
+  const clarificationQuestions = [
+    ...new Map(
+      blockingIssues.map((issue) => {
+        const requirement = byId.get(issue.requirementIds[0] ?? "");
+        const question: ClarificationQuestion = {
+          ...(requirement === undefined
+            ? {}
+            : { requirementId: requirement.requirementId }),
+          requirementText: requirement?.text ?? "Requirement set",
+          ambiguity: issue.message,
+          evidence: [
+            requirement === undefined
+              ? "No atomic requirement resolves the issue."
+              : `Source ${requirement.source.sourceId}, line ${String(requirement.source.startLine)}.`,
+          ],
+          impact:
+            "Scenario coverage and approval must pause until the intended behavior is explicit.",
+          decisionOptions:
+            issue.kind === "OMISSION"
+              ? [
+                  "Provide the missing requirement.",
+                  "Confirm the scope is intentionally empty.",
+                ]
+              : [
+                  "Replace the text with measurable intended behavior.",
+                  "Remove the behavior from the approved scope.",
+                ],
+        };
+        return [
+          `${question.requirementId ?? "set"}:${question.ambiguity.toLowerCase()}`,
+          question,
+        ] as const;
+      }),
+    ).values(),
+  ];
   return requirementAnalysisSchema.parse({
     issues,
-    clarificationQuestions: blockingIssues.map(
-      (issue) => `Please clarify: ${issue.message}`,
-    ),
+    clarificationQuestions,
     hasBlockingAmbiguity: blockingIssues.length > 0,
   });
 }
@@ -168,7 +216,8 @@ export interface RequirementImpact {
   readonly removed: readonly string[];
 }
 
-export interface ReconciledRequirements extends NormalizedRequirements {
+export interface ReconciledRequirements {
+  readonly canonical: NormalizedRequirements;
   readonly impact: RequirementImpact;
 }
 
@@ -222,10 +271,13 @@ export function reconcileClarifications(
       source: addition.source,
     };
   });
-  return {
+  const canonical = normalizedRequirementsSchema.parse({
     ...current,
     revision: current.revision + 1,
     requirements: [...requirements, ...additions],
+  });
+  return {
+    canonical,
     impact: {
       added: additions.map((requirement) => requirement.requirementId),
       modified,
