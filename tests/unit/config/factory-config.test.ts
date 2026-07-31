@@ -10,6 +10,11 @@ describe("loadFactoryConfig", () => {
     expect(config.baseUrl.toString()).toBe("http://127.0.0.1:3000/");
     expect(config.allowProductionWrites).toBe(false);
     expect(config.allowedOrigins).toEqual(["http://127.0.0.1:3000"]);
+    expect(config.evidence).toEqual({
+      screenshot: "off",
+      trace: "off",
+      video: "off",
+    });
   });
 
   it("rejects a target outside the configured origin allowlist", () => {

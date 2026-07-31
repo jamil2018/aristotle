@@ -8,6 +8,7 @@ const workflowStageSchema = z.enum([
   "scenario-evaluation",
   "human-scenario-review",
   "playwright-implementation",
+  "test-quality-evaluation",
   "test-execution",
   "failure-triage",
   "test-repair",
@@ -24,6 +25,7 @@ const producingRoleSchema = z.enum([
   "scenario-quality-evaluator",
   "human-scenario-reviewer",
   "playwright-test-engineer",
+  "playwright-quality-evaluator",
   "failure-triage-analyst",
   "final-quality-assessor",
   "final-human-reviewer",
@@ -47,6 +49,10 @@ const artifactTypeSchema = z.enum([
   "human-scenario-review",
   "capability-extension",
   "playwright-test",
+  "stage-handoff",
+  "generated-test-quality",
+  "authentication-intake-profile",
+  "package-manifest",
   "execution-summary",
   "failure-triage",
   "script-repair",
@@ -68,7 +74,7 @@ const identifierSchema = z
   .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 const checksumSchema = z.string().regex(/^[a-f0-9]{64}$/);
 const gitCommitSchema = z.string().regex(/^[a-f0-9]{40}$/);
-const relativeArtifactPathSchema = z
+export const relativeArtifactPathSchema = z
   .string()
   .min(1)
   .refine(
@@ -123,7 +129,7 @@ const actorSchema = z.discriminatedUnion("actorType", [
   }),
 ]);
 
-export const taskManifestSchema = z.object({
+const taskManifestV1Schema = z.object({
   artifactType: z.literal("task-manifest"),
   ...manifestBase,
   taskId: identifierSchema,
@@ -138,6 +144,29 @@ export const taskManifestSchema = z.object({
     "CANCELLED",
   ]),
 });
+
+const artifactDispositionSchema = z.enum([
+  "VERSIONED",
+  "EPHEMERAL_SOURCE_VALIDATION",
+  "LOCAL_AUDIT_ONLY",
+]);
+
+const taskManifestV2Schema = taskManifestV1Schema.extend({
+  schemaVersion: z.literal(2),
+  artifactDisposition: artifactDispositionSchema,
+});
+
+export const taskManifestSchema = z
+  .union([taskManifestV1Schema, taskManifestV2Schema])
+  .transform((task) =>
+    task.schemaVersion === 1
+      ? {
+          ...task,
+          schemaVersion: 2 as const,
+          artifactDisposition: "VERSIONED" as const,
+        }
+      : task,
+  );
 
 const exactSubjectSchema = z.object({
   artifactId: identifierSchema,
