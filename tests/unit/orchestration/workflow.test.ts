@@ -30,6 +30,12 @@ const playwrightTest: ArtifactReference = {
   revision: 1,
   semanticChecksum: "d".repeat(64),
 };
+const generatedTestQuality: ArtifactReference = {
+  artifactId: "quality-001",
+  artifactType: "generated-test-quality",
+  revision: 1,
+  semanticChecksum: "4".repeat(64),
+};
 const triage: ArtifactReference = {
   artifactId: "triage-001",
   artifactType: "failure-triage",
@@ -144,19 +150,19 @@ describe("workflow transitions", () => {
     ).toThrow(/exact evaluated scenario/);
   });
 
-  it("executes only a registered Playwright test from the test engineer", () => {
+  it("routes a registered Playwright test to independent quality evaluation", () => {
     const workflow = createWorkflowAt("playwright-implementation");
 
     expect(() =>
       transitionWorkflow(workflow, {
-        to: "test-execution",
+        to: "test-quality-evaluation",
         actor: coordinator,
         occurredAt: "2026-07-29T10:06:00.000Z",
       }),
     ).toThrow(/playwright-test-engineer/);
 
     const executing = transitionWorkflow(workflow, {
-      to: "test-execution",
+      to: "test-quality-evaluation",
       actor: {
         actorType: "AGENT",
         actorId: "playwright-test-engineer",
@@ -168,6 +174,64 @@ describe("workflow transitions", () => {
     expect(executing.transitionHistory.at(-1)?.inputReferences).toEqual([
       playwrightTest,
     ]);
+  });
+
+  it("requires exact-checksum quality PASS before browser execution", () => {
+    const workflow = createWorkflowAt("test-quality-evaluation");
+
+    expect(() =>
+      transitionWorkflow(workflow, {
+        to: "test-execution",
+        actor: {
+          actorType: "AGENT",
+          actorId: "playwright-quality-evaluator",
+        },
+        occurredAt: "2026-07-31T10:06:00.000Z",
+        gate: {
+          kind: "TEST_QUALITY",
+          subject: generatedTestQuality,
+          testSubject: playwrightTest,
+          evaluatedTestChecksum: playwrightTest.semanticChecksum,
+          decision: "REVISE",
+        },
+      }),
+    ).toThrow(/quality PASS/);
+
+    expect(() =>
+      transitionWorkflow(workflow, {
+        to: "test-execution",
+        actor: {
+          actorType: "AGENT",
+          actorId: "playwright-quality-evaluator",
+        },
+        occurredAt: "2026-07-31T10:06:00.000Z",
+        gate: {
+          kind: "TEST_QUALITY",
+          subject: generatedTestQuality,
+          testSubject: playwrightTest,
+          evaluatedTestChecksum: "5".repeat(64),
+          decision: "PASS",
+        },
+      }),
+    ).toThrow(/exact Playwright checksum/);
+
+    expect(
+      transitionWorkflow(workflow, {
+        to: "test-execution",
+        actor: {
+          actorType: "AGENT",
+          actorId: "playwright-quality-evaluator",
+        },
+        occurredAt: "2026-07-31T10:06:00.000Z",
+        gate: {
+          kind: "TEST_QUALITY",
+          subject: generatedTestQuality,
+          testSubject: playwrightTest,
+          evaluatedTestChecksum: playwrightTest.semanticChecksum,
+          decision: "PASS",
+        },
+      }).currentStage,
+    ).toBe("test-execution");
   });
 
   it("allows test repair only after SCRIPT_ERROR classification", () => {

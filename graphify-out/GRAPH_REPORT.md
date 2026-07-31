@@ -1,134 +1,125 @@
-# Graph Report - aristotle  (2026-07-30)
+# Graph Report - .  (2026-07-31)
 
 ## Corpus Check
-- 100 files · ~30,313 words
-- Verdict: corpus is large enough that graph structure adds value.
+- Corpus is ~34,103 words - fits in a single context window. You may not need a graph.
 
 ## Summary
-- 1064 nodes · 1333 edges · 106 communities (63 shown, 43 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.89)
+- 1066 nodes · 1405 edges · 104 communities (55 shown, 49 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 48 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
-## Graph Freshness
-- Built from commit: `d2272460`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
-
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Community 0|Community 0]]
-- [[_COMMUNITY_Community 1|Community 1]]
-- [[_COMMUNITY_Community 2|Community 2]]
-- [[_COMMUNITY_Community 3|Community 3]]
-- [[_COMMUNITY_Community 4|Community 4]]
-- [[_COMMUNITY_Community 5|Community 5]]
-- [[_COMMUNITY_Community 6|Community 6]]
-- [[_COMMUNITY_Community 7|Community 7]]
-- [[_COMMUNITY_Community 8|Community 8]]
-- [[_COMMUNITY_Community 9|Community 9]]
-- [[_COMMUNITY_Community 10|Community 10]]
-- [[_COMMUNITY_Community 11|Community 11]]
-- [[_COMMUNITY_Community 12|Community 12]]
-- [[_COMMUNITY_Community 13|Community 13]]
-- [[_COMMUNITY_Community 14|Community 14]]
-- [[_COMMUNITY_Community 15|Community 15]]
-- [[_COMMUNITY_Community 16|Community 16]]
-- [[_COMMUNITY_Community 17|Community 17]]
-- [[_COMMUNITY_Community 18|Community 18]]
-- [[_COMMUNITY_Community 19|Community 19]]
-- [[_COMMUNITY_Community 20|Community 20]]
-- [[_COMMUNITY_Community 21|Community 21]]
-- [[_COMMUNITY_Community 22|Community 22]]
-- [[_COMMUNITY_Community 23|Community 23]]
-- [[_COMMUNITY_Community 24|Community 24]]
-- [[_COMMUNITY_Community 25|Community 25]]
-- [[_COMMUNITY_Community 26|Community 26]]
-- [[_COMMUNITY_Community 27|Community 27]]
-- [[_COMMUNITY_Community 28|Community 28]]
-- [[_COMMUNITY_Community 29|Community 29]]
-- [[_COMMUNITY_Community 30|Community 30]]
-- [[_COMMUNITY_Community 31|Community 31]]
-- [[_COMMUNITY_Community 32|Community 32]]
-- [[_COMMUNITY_Community 33|Community 33]]
-- [[_COMMUNITY_Community 34|Community 34]]
-- [[_COMMUNITY_Community 35|Community 35]]
-- [[_COMMUNITY_Community 36|Community 36]]
-- [[_COMMUNITY_Community 37|Community 37]]
-- [[_COMMUNITY_Community 38|Community 38]]
-- [[_COMMUNITY_Community 39|Community 39]]
-- [[_COMMUNITY_Community 40|Community 40]]
-- [[_COMMUNITY_Community 41|Community 41]]
-- [[_COMMUNITY_Community 42|Community 42]]
-- [[_COMMUNITY_Community 43|Community 43]]
-- [[_COMMUNITY_Community 44|Community 44]]
-- [[_COMMUNITY_Community 45|Community 45]]
-- [[_COMMUNITY_Community 46|Community 46]]
-- [[_COMMUNITY_Community 47|Community 47]]
-- [[_COMMUNITY_Community 48|Community 48]]
-- [[_COMMUNITY_Community 49|Community 49]]
-- [[_COMMUNITY_Community 50|Community 50]]
-- [[_COMMUNITY_Community 51|Community 51]]
-- [[_COMMUNITY_Community 52|Community 52]]
-- [[_COMMUNITY_Community 53|Community 53]]
-- [[_COMMUNITY_Community 54|Community 54]]
-- [[_COMMUNITY_Community 55|Community 55]]
-- [[_COMMUNITY_Community 56|Community 56]]
-- [[_COMMUNITY_Community 57|Community 57]]
-- [[_COMMUNITY_Community 58|Community 58]]
-- [[_COMMUNITY_Community 59|Community 59]]
-- [[_COMMUNITY_Community 60|Community 60]]
-- [[_COMMUNITY_Community 61|Community 61]]
-- [[_COMMUNITY_Community 62|Community 62]]
-- [[_COMMUNITY_Community 63|Community 63]]
-- [[_COMMUNITY_Community 64|Community 64]]
-- [[_COMMUNITY_Community 65|Community 65]]
-- [[_COMMUNITY_Community 66|Community 66]]
-- [[_COMMUNITY_Community 67|Community 67]]
-- [[_COMMUNITY_Community 68|Community 68]]
-- [[_COMMUNITY_Community 69|Community 69]]
-- [[_COMMUNITY_Community 70|Community 70]]
-- [[_COMMUNITY_Community 71|Community 71]]
-- [[_COMMUNITY_Community 72|Community 72]]
-- [[_COMMUNITY_Community 73|Community 73]]
-- [[_COMMUNITY_Community 74|Community 74]]
-- [[_COMMUNITY_Community 75|Community 75]]
-- [[_COMMUNITY_Community 76|Community 76]]
-- [[_COMMUNITY_Community 77|Community 77]]
-- [[_COMMUNITY_Community 78|Community 78]]
-- [[_COMMUNITY_Community 79|Community 79]]
-- [[_COMMUNITY_Community 80|Community 80]]
-- [[_COMMUNITY_Community 81|Community 81]]
-- [[_COMMUNITY_Community 82|Community 82]]
-- [[_COMMUNITY_Community 83|Community 83]]
-- [[_COMMUNITY_Community 84|Community 84]]
-- [[_COMMUNITY_Community 85|Community 85]]
-- [[_COMMUNITY_Community 86|Community 86]]
-- [[_COMMUNITY_Community 87|Community 87]]
-- [[_COMMUNITY_Community 88|Community 88]]
-- [[_COMMUNITY_Community 89|Community 89]]
-- [[_COMMUNITY_Community 90|Community 90]]
-- [[_COMMUNITY_Community 91|Community 91]]
-- [[_COMMUNITY_Community 92|Community 92]]
-- [[_COMMUNITY_Community 93|Community 93]]
-- [[_COMMUNITY_Community 98|Community 98]]
-- [[_COMMUNITY_Community 99|Community 99]]
-- [[_COMMUNITY_Community 100|Community 100]]
-- [[_COMMUNITY_Community 101|Community 101]]
-- [[_COMMUNITY_Community 102|Community 102]]
-- [[_COMMUNITY_Community 103|Community 103]]
-- [[_COMMUNITY_Community 104|Community 104]]
-- [[_COMMUNITY_Community 105|Community 105]]
+- [[_COMMUNITY_Agent Roles Catalog|Agent Roles Catalog]]
+- [[_COMMUNITY_acceptArtifact|acceptArtifact]]
+- [[_COMMUNITY_analyzeRequirements|analyzeRequirements]]
+- [[_COMMUNITY_sameArtifactReference|sameArtifactReference]]
+- [[_COMMUNITY_artifactDispositionSchema|artifactDispositionSchema]]
+- [[_COMMUNITY_Accepted Artifact Immutability|Accepted Artifact Immutability]]
+- [[_COMMUNITY_quality agent factory development plan|quality agent factory development plan]]
+- [[_COMMUNITY_dependencies|dependencies]]
+- [[_COMMUNITY_boundedTextSchema|boundedTextSchema]]
+- [[_COMMUNITY_actionSchema|actionSchema]]
+- [[_COMMUNITY_checksumSchema|checksumSchema]]
+- [[_COMMUNITY_Deterministic Capability Classifier|Deterministic Capability Classifier]]
+- [[_COMMUNITY_checksumSchema|checksumSchema]]
+- [[_COMMUNITY_ControlledAccountPage|ControlledAccountPage]]
+- [[_COMMUNITY_Authentication Example|Authentication Example]]
+- [[_COMMUNITY_Arbitrary Execution and Destructive Writes|Arbitrary Execution and Destructive Writes]]
+- [[_COMMUNITY_BenchmarkCase|BenchmarkCase]]
+- [[_COMMUNITY_Task Schema V2 Artifact Disposition|Task Schema V2 Artifact Disposition]]
+- [[_COMMUNITY_semanticChecksum|semanticChecksum]]
+- [[_COMMUNITY_NormalizedRequirements|NormalizedRequirements]]
+- [[_COMMUNITY_compilerOptions|compilerOptions]]
+- [[_COMMUNITY_acquireRunLock|acquireRunLock]]
+- [[_COMMUNITY_Code only Graph Refresh|Code only Graph Refresh]]
+- [[_COMMUNITY_Agent Roles Index|Agent Roles Index]]
+- [[_COMMUNITY_ADR 001 Use policy driven|ADR 001 Use policy driven]]
+- [[_COMMUNITY_environmentSchema|environmentSchema]]
+- [[_COMMUNITY_compilerOptions|compilerOptions]]
+- [[_COMMUNITY_code bash npm ci|code bash npm ci]]
+- [[_COMMUNITY_repository health cli ts|repository health cli ts]]
+- [[_COMMUNITY_Bounded Reversible Agent Mechanics|Bounded Reversible Agent Mechanics]]
+- [[_COMMUNITY_AGENTS md|AGENTS md]]
+- [[_COMMUNITY_final quality assessor md|final quality assessor md]]
+- [[_COMMUNITY_code text feat enforce scenario|code text feat enforce scenario]]
+- [[_COMMUNITY_failure triage analyst md|failure triage analyst md]]
+- [[_COMMUNITY_knowledge curator md|knowledge curator md]]
+- [[_COMMUNITY_playwright test engineer md|playwright test engineer md]]
+- [[_COMMUNITY_workflow improvement analyst md|workflow improvement analyst md]]
+- [[_COMMUNITY_security boundaries md|security boundaries md]]
+- [[_COMMUNITY_requirement analyst md|requirement analyst md]]
+- [[_COMMUNITY_scenario quality evaluator md|scenario quality evaluator md]]
+- [[_COMMUNITY_Accessible Locators and Web First|Accessible Locators and Web First]]
+- [[_COMMUNITY_scenario designer md|scenario designer md]]
+- [[_COMMUNITY_triage test failures md|triage test failures md]]
+- [[_COMMUNITY_use knowledge graph md|use knowledge graph md]]
+- [[_COMMUNITY_Lint Format Fallow TypeScript Graph|Lint Format Fallow TypeScript Graph]]
+- [[_COMMUNITY_Contribution Change Workflow|Contribution Change Workflow]]
+- [[_COMMUNITY_Commit Quality Pipeline Graphify Refresh|Commit Quality Pipeline Graphify Refresh]]
+- [[_COMMUNITY_Approved Knowledge Memory|Approved Knowledge Memory]]
+- [[_COMMUNITY_Deterministic Evaluation Baseline|Deterministic Evaluation Baseline]]
+- [[_COMMUNITY_Versioned Artifact Templates|Versioned Artifact Templates]]
+- [[_COMMUNITY_invalidUsernames|invalidUsernames]]
+- [[_COMMUNITY_README md|README md]]
+- [[_COMMUNITY_operating principles md|operating principles md]]
+- [[_COMMUNITY_analyze requirements md|analyze requirements md]]
+- [[_COMMUNITY_design test scenarios md|design test scenarios md]]
+- [[_COMMUNITY_evaluate test scenarios md|evaluate test scenarios md]]
+- [[_COMMUNITY_README md|README md]]
+- [[_COMMUNITY_memory and improvement md|memory and improvement md]]
+- [[_COMMUNITY_playwright implementation md|playwright implementation md]]
+- [[_COMMUNITY_requirement clarification md|requirement clarification md]]
+- [[_COMMUNITY_scenario review md|scenario review md]]
+- [[_COMMUNITY_Claude Code instructions|Claude Code instructions]]
+- [[_COMMUNITY_Authentication example|Authentication example]]
+- [[_COMMUNITY_README md|README md]]
+- [[_COMMUNITY_README md|README md]]
+- [[_COMMUNITY_Knowledge Curator|Knowledge Curator]]
+- [[_COMMUNITY_Architecture|Architecture]]
+- [[_COMMUNITY_Evaluation methodology|Evaluation methodology]]
+- [[_COMMUNITY_Failure triage|Failure triage]]
+- [[_COMMUNITY_memory model md|memory model md]]
+- [[_COMMUNITY_playwright conventions md|playwright conventions md]]
+- [[_COMMUNITY_provider portability md|provider portability md]]
+- [[_COMMUNITY_Factory documentation|Factory documentation]]
+- [[_COMMUNITY_security and privacy md|security and privacy md]]
+- [[_COMMUNITY_troubleshooting md|troubleshooting md]]
+- [[_COMMUNITY_workflow md|workflow md]]
+- [[_COMMUNITY_Examples|Examples]]
+- [[_COMMUNITY_README md|README md]]
+- [[_COMMUNITY_Fallow Static Analysis Gate|Fallow Static Analysis Gate]]
+- [[_COMMUNITY_README md|README md]]
+- [[_COMMUNITY_Failure Classification Before Repair|Failure Classification Before Repair]]
+- [[_COMMUNITY_artifact contracts md|artifact contracts md]]
+- [[_COMMUNITY_automate approved scenarios md|automate approved scenarios md]]
+- [[_COMMUNITY_curate project knowledge md|curate project knowledge md]]
+- [[_COMMUNITY_Artifact templates|Artifact templates]]
+- [[_COMMUNITY_failure recovery md|failure recovery md]]
+- [[_COMMUNITY_README md|README md]]
+- [[_COMMUNITY_Synthetic Sanitized Benchmark Corpus|Synthetic Sanitized Benchmark Corpus]]
+- [[_COMMUNITY_Human APPROVED or APPROVED WITH|Human APPROVED or APPROVED WITH]]
+- [[_COMMUNITY_Accessible Locators and Web First|Accessible Locators and Web First]]
+- [[_COMMUNITY_Final Quality Assessment|Final Quality Assessment]]
+- [[_COMMUNITY_Target Application Read Only Boundary|Target Application Read Only Boundary]]
+- [[_COMMUNITY_Authentication Setup Project|Authentication Setup Project]]
+- [[_COMMUNITY_SCRIPT ERROR Repair Authorization|SCRIPT ERROR Repair Authorization]]
+- [[_COMMUNITY_Target Application Source Read Only|Target Application Source Read Only]]
+- [[_COMMUNITY_Ignored Authentication State|Ignored Authentication State]]
+- [[_COMMUNITY_Target Application Source Read Only|Target Application Source Read Only]]
+- [[_COMMUNITY_Quality Agent Factory Development Plan|Quality Agent Factory Development Plan]]
+- [[_COMMUNITY_Graphify Semantic Document Workflow|Graphify Semantic Document Workflow]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `semanticChecksum()` - 23 edges
 2. `Quality Agent Factory Development Plan` - 19 edges
-3. `Quality Agent Factory Phased Implementation Plan` - 18 edges
-4. `Phase 7: Memory and improvement` - 18 edges
-5. `compilerOptions` - 17 edges
-6. `scripts` - 16 edges
-7. `Phase 6: Failure and assessment pipeline` - 14 edges
-8. `devDependencies` - 13 edges
-9. `3. Agent and Human Roles` - 12 edges
-10. `Phase 3: Requirement pipeline` - 12 edges
+3. `scripts` - 17 edges
+4. `compilerOptions` - 17 edges
+5. `devDependencies` - 13 edges
+6. `3. Agent and Human Roles` - 12 edges
+7. `validateGate()` - 10 edges
+8. `requireGate()` - 10 edges
+9. `Phase 9 Local Verification Complete` - 10 edges
+10. `Agent Roles Catalog` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Graphify Navigation Rules` --semantically_similar_to--> `Cursor Graphify Rule`  [INFERRED] [semantically similar]
@@ -137,268 +128,232 @@
   README.md → CONTRIBUTING.md
 - `Graph Evidence Authorization Boundary` --semantically_similar_to--> `Consequential Claim Source Confirmation`  [INFERRED] [semantically similar]
   AGENTS.md → agents/skills/use-knowledge-graph.md
-- `Scenario Quality Evaluator` --conceptually_related_to--> `Independent Scenario Evaluation`  [EXTRACTED]
-  agents/roles/scenario-quality-evaluator.md → docs-factory/workflow.md
-- `Quality Agent Factory Phased Implementation Plan` --references--> `Graphify Semantic Document Workflow`  [INFERRED]
-  docs/plans/phased-implementation-plan.md → AGENTS.md
+- `Quality Agent Factory` --references--> `Quality Agent Factory Phased Implementation Plan`  [EXTRACTED]
+  README.md → docs/plans/phased-implementation-plan.md
+- `Contribution Workflow` --conceptually_related_to--> `Human Authorization Gates`  [INFERRED]
+  CONTRIBUTING.md → AGENTS.md
 
-## Communities (106 total, 43 thin omitted)
+## Communities (104 total, 49 thin omitted)
 
-### Community 0 - "Community 0"
-Cohesion: 0.06
-Nodes (52): sameArtifactReference(), createWorkflow(), CreateWorkflowInput, incrementRetry(), legalTransitions, requireGate(), requireHuman(), requireRole() (+44 more)
+### Community 0 - "Agent Roles Catalog"
+Cohesion: 0.05
+Nodes (63): Agent Roles Catalog, Analyze Requirements, Artifact Contract Principles, Artifact Contract Principles, Automate Approved Scenarios, Bidirectional Traceability, Bounded Scenario Revision Loop, Claude Code Entry Point (+55 more)
 
-### Community 1 - "Community 1"
+### Community 1 - "acceptArtifact"
+Cohesion: 0.05
+Nodes (52): acceptArtifact(), AcceptArtifactInput, assertNotCyclic(), canonicalJson(), createArtifactRevision(), invalidateDownstreamArtifacts(), JsonValue, normalizeArray() (+44 more)
+
+### Community 2 - "analyzeRequirements"
 Cohesion: 0.05
 Nodes (50): analyzeRequirements(), AtomicRequirement, canonicalizePolarity(), ClarificationAnswer, ClarificationInput, isContradiction(), normalizeRequirements(), reconcileClarifications() (+42 more)
 
-### Community 2 - "Community 2"
-Cohesion: 0.05
-Nodes (50): acceptArtifact(), AcceptArtifactInput, assertNotCyclic(), canonicalJson(), createArtifactRevision(), invalidateDownstreamArtifacts(), JsonValue, normalizeArray() (+42 more)
+### Community 3 - "sameArtifactReference"
+Cohesion: 0.07
+Nodes (48): sameArtifactReference(), createWorkflow(), CreateWorkflowInput, gateSubjectReference(), incrementRetry(), legalTransitions, requireGate(), requireHuman() (+40 more)
 
-### Community 3 - "Community 3"
+### Community 4 - "artifactDispositionSchema"
+Cohesion: 0.07
+Nodes (43): artifactDispositionSchema, AuthenticationIntakeProfile, authenticationIntakeProfileSchema, checksum, GeneratedTestQuality, generatedTestQualitySchema, identifier, StageHandoff (+35 more)
+
+### Community 5 - "Accepted Artifact Immutability"
+Cohesion: 0.06
+Nodes (47): Accepted Artifact Immutability, Agent Operating Instructions, Allowlisted Origin Policy, Approved Advisory Knowledge, Claude Code Provider Entrypoint, Clone-ready Repository Workflow, Commit Quality Pipeline, Contribution Workflow (+39 more)
+
+### Community 6 - "quality agent factory development plan"
 Cohesion: 0.04
 Nodes (45): 10. Requirement and Scenario Revision Management, 11. Memory and Learning, 12. Feedback and Workflow Improvement, 13. Rules and Guardrails, 14. Environment, Security, and Privacy, 15. Resource and Reliability Controls, 16. Evaluation and Testing, 17. Delivery Phases (+37 more)
 
-### Community 4 - "Community 4"
-Cohesion: 0.06
-Nodes (46): Claude Code Entry Point, Claude Code Provider, Claude Code Provider Contract, Clone-Ready Quality Agent Factory, Codex Provider, Codex Provider Contract, Complete Eight-Phase Delivery, Controlled Sample Application (+38 more)
-
-### Community 5 - "Community 5"
+### Community 7 - "dependencies"
 Cohesion: 0.05
-Nodes (41): dependencies, gray-matter, mammoth, pdfjs-dist, zod, description, devDependencies, eslint (+33 more)
+Nodes (42): dependencies, gray-matter, mammoth, pdfjs-dist, zod, description, devDependencies, eslint (+34 more)
 
-### Community 6 - "Community 6"
+### Community 8 - "boundedTextSchema"
 Cohesion: 0.07
 Nodes (37): boundedTextSchema, checksumSchema, feedbackCategorySchema, FeedbackEvent, feedbackEventSchema, identifierSchema, improvementEvaluationSchema, ImprovementProposal (+29 more)
 
-### Community 7 - "Community 7"
-Cohesion: 0.07
-Nodes (39): Deterministic Capability Classifier, Intent Versus Mechanics Boundary, Policy-Driven Autonomy for Routine Factory Decisions, Graphify Semantic Document Workflow, Human Authorization Gates, Operating Principles, Versioned Policy Autonomy, READY_FOR_HUMAN_REVIEW (+31 more)
+### Community 9 - "actionSchema"
+Cohesion: 0.08
+Nodes (35): actionSchema, AutomationLocator, automationPlanSchema, CapabilityExtensionProposal, capabilityExtensionProposalSchema, CapabilityExtensionRecord, capabilityExtensionRecordSchema, checksumSchema (+27 more)
 
-### Community 8 - "Community 8"
+### Community 10 - "checksumSchema"
 Cohesion: 0.08
 Nodes (32): checksumSchema, defectCandidateSchema, failureClassificationSchema, failureEvidenceSchema, FailureTriage, failureTriageSchema, FinalQualityAssessment, finalQualityAssessmentSchema (+24 more)
 
-### Community 9 - "Community 9"
-Cohesion: 0.09
-Nodes (29): actionSchema, AutomationLocator, automationPlanSchema, CapabilityExtensionProposal, capabilityExtensionProposalSchema, CapabilityExtensionRecord, capabilityExtensionRecordSchema, checksumSchema (+21 more)
-
-### Community 10 - "Community 10"
+### Community 11 - "Deterministic Capability Classifier"
 Cohesion: 0.07
-Nodes (27): Arbitrary Execution and Destructive Writes, Authentication, Browser Permissions, and Filesystem Access, AUTO_APPROVED Disposition, Automatic Missing Low-Risk Primitive Handling, Permanent Capability Extension Audit Record, Complete Repository Quality Gates, Continue Unrelated Authorized Work, Deterministic Renderer (+19 more)
+Nodes (32): Deterministic Capability Classifier, Intent Versus Mechanics Boundary, Policy-Driven Autonomy for Routine Factory Decisions, Human Authorization Gates, Operating Principles, Versioned Policy Autonomy, READY_FOR_HUMAN_REVIEW, Advisory Knowledge Retrieval (+24 more)
 
-### Community 11 - "Community 11"
+### Community 12 - "checksumSchema"
 Cohesion: 0.11
 Nodes (24): checksumSchema, HumanScenarioReview, humanScenarioReviewSchema, requirementIdSchema, Scenario, ScenarioEvaluation, scenarioEvaluationSchema, scenarioIdSchema (+16 more)
 
-### Community 12 - "Community 12"
-Cohesion: 0.09
-Nodes (24): Code-only Graph Refresh, Graph Evidence Authorization Boundary, Graphify Navigation Rules, Scoped Graph Query Path Explain Commands, Full Semantic Graphify Refresh, Contribution Change Workflow, Focused Tests Immediately Before Commit, Cursor Graphify Rule (+16 more)
+### Community 13 - "ControlledAccountPage"
+Cohesion: 0.11
+Nodes (11): ControlledAccountPage, openControlledHtml(), createdUsers, metadata, username, QualityFixtures, test, scenarioMetadata() (+3 more)
 
-### Community 13 - "Community 13"
-Cohesion: 0.13
-Nodes (24): Analyze Requirements, Artifact Contract Principles, Bidirectional Traceability, Bounded Scenario Revision Loop, Design Test Scenarios, Evaluate Test Scenarios, Exact-Revision Human Approval, Human Authorization Gates (+16 more)
+### Community 14 - "Authentication Example"
+Cohesion: 0.1
+Nodes (24): Authentication Example, Synthetic Ignored Authentication Storage State, Controlled Sample Application, Repository-Local Intercepted HTML Harness, Clone-Ready Repository-Resident Factory, Complete Quality Agent Workflow, Failure Classification Policy, Failure Triage Analyst (+16 more)
 
-### Community 14 - "Community 14"
+### Community 15 - "Arbitrary Execution and Destructive Writes"
+Cohesion: 0.08
+Nodes (24): Arbitrary Execution and Destructive Writes, Authentication, Browser Permissions, and Filesystem Access, AUTO_APPROVED Disposition, Automatic Missing Low-Risk Primitive Handling, Permanent Capability Extension Audit Record, Complete Repository Quality Gates, Continue Unrelated Authorized Work, Deterministic Renderer (+16 more)
+
+### Community 16 - "BenchmarkCase"
+Cohesion: 0.16
+Nodes (17): BenchmarkCase, BenchmarkCaseSchema, benchmarkCategories, benchmarkCorpus, commonAdapter, ProviderAdapter, providerAdapters, ProviderAdapterSchema (+9 more)
+
+### Community 17 - "Task Schema V2 Artifact Disposition"
+Cohesion: 0.12
+Nodes (21): Task Schema V2 Artifact Disposition, Single-Chromium Credential-Smoke Sequence, Cross-Browser End-to-End Verification Result, Skill-Directed Durable Semantic Graph Refresh, Fallow Static Analysis Result, Generated-Test Architecture and Secret Check, Independent Playwright Generated-Test Quality Gate, Integration Verification Result (+13 more)
+
+### Community 18 - "semanticChecksum"
 Cohesion: 0.12
 Nodes (20): semanticChecksum(), AutomationPlan, capabilityReviewReasons(), classifyCapabilityExtension(), createCapabilityExtensionRecord(), createExecutionSummary(), validateCapabilityExtensionRecord(), approved (+12 more)
 
-### Community 15 - "Community 15"
-Cohesion: 0.18
-Nodes (17): BenchmarkCase, BenchmarkCaseSchema, benchmarkCategories, benchmarkCorpus, commonAdapter, ProviderAdapter, providerAdapters, ProviderAdapterSchema (+9 more)
-
-### Community 16 - "Community 16"
-Cohesion: 0.11
-Nodes (18): compilerOptions, esModuleInterop, exactOptionalPropertyTypes, forceConsistentCasingInFileNames, module, moduleResolution, noFallthroughCasesInSwitch, noImplicitOverride (+10 more)
-
-### Community 17 - "Community 17"
+### Community 19 - "NormalizedRequirements"
 Cohesion: 0.11
 Nodes (18): NormalizedRequirements, normalizeMarkdown(), projectScenarioMarkdown(), reviseScenarioSpecification(), validateScenarioProjection(), validateTraceability(), divergent, evaluation (+10 more)
 
-### Community 18 - "Community 18"
-Cohesion: 0.27
-Nodes (16): Draft Pull Request 6: Phase 6 Failure and Assessment Pipeline, Agent Roles Index, Factory Skills Index, Factory Workflows Index, Quality Agent Factory Phased Implementation Plan, Quality Agent Factory Development Plan, Operating Principles, Quality Agent Factory (+8 more)
-
-### Community 19 - "Community 19"
+### Community 20 - "compilerOptions"
 Cohesion: 0.11
-Nodes (18): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint (+10 more)
+Nodes (18): compilerOptions, esModuleInterop, exactOptionalPropertyTypes, forceConsistentCasingInFileNames, module, moduleResolution, noFallthroughCasesInSwitch, noImplicitOverride (+10 more)
 
-### Community 20 - "Community 20"
-Cohesion: 0.13
-Nodes (15): Allowlisted Origin Policy, Failure Triage, Failure Triage Analyst, Final Human Reviewer, Final Quality Assessor, Phase 5 COMPLETE, Phase 6 Failure and Assessment Pipeline, Phase 6 Next-Session Handoff (+7 more)
-
-### Community 21 - "Community 21"
-Cohesion: 0.18
-Nodes (13): Intercepted Repository-Local HTML Sample, Failure Classification Before Repair, Ignored Authentication State, Phase 5 Implementation Commit 040d7953, Phase 5 COMPLETE, Phase 5 Draft Pull Request 5, Phase 5 Playwright Pipeline, Phase 5 Verification Record (+5 more)
-
-### Community 22 - "Community 22"
+### Community 21 - "acquireRunLock"
 Cohesion: 0.2
-Nodes (8): environmentSchema, FactoryConfig, loadFactoryConfig(), rawConfigSchema, screenshotPolicySchema, config, tracePolicySchema, videoPolicySchema
+Nodes (10): acquireRunLock(), assertIdentifier(), isErrorCode(), ReleaseLock, partial, store, temporaryDirectories, workflow (+2 more)
 
-### Community 23 - "Community 23"
+### Community 22 - "Code only Graph Refresh"
+Cohesion: 0.18
+Nodes (13): Code-only Graph Refresh, Graph Evidence Authorization Boundary, Graphify Navigation Rules, Scoped Graph Query Path Explain Commands, Full Semantic Graphify Refresh, Cursor Graphify Rule, graphify-out graph.html, graphify-out graph.json (+5 more)
+
+### Community 23 - "Agent Roles Index"
+Cohesion: 0.31
+Nodes (13): Agent Roles Index, Factory Skills Index, Factory Workflows Index, Operating Principles, Quality Agent Factory, Failure Triage Analyst, Final Quality Assessor, Playwright Test Engineer (+5 more)
+
+### Community 24 - "ADR 001 Use policy driven"
 Cohesion: 0.17
 Nodes (11): ADR-001: Use policy-driven autonomy for routine factory decisions, Allow arbitrary Playwright source generation, Alternatives considered, Consequences, Context, Date, Decision, Existing human-decision audit (+3 more)
 
-### Community 24 - "Community 24"
-Cohesion: 0.14
-Nodes (14): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 6: Failure and assessment pipeline, Phase 6 verification record (+6 more)
+### Community 25 - "environmentSchema"
+Cohesion: 0.2
+Nodes (8): environmentSchema, FactoryConfig, loadFactoryConfig(), rawConfigSchema, screenshotPolicySchema, config, tracePolicySchema, videoPolicySchema
 
-### Community 25 - "Community 25"
-Cohesion: 0.18
-Nodes (10): Current delivery snapshot, Decision log, Delivery principles, Open decisions, Progress summary, Purpose, Quality Agent Factory Phased Implementation Plan, Repository tooling record (+2 more)
-
-### Community 26 - "Community 26"
+### Community 26 - "compilerOptions"
 Cohesion: 0.18
 Nodes (10): compilerOptions, declaration, declarationMap, outDir, rootDir, sourceMap, types, exclude (+2 more)
 
-### Community 27 - "Community 27"
-Cohesion: 0.17
-Nodes (12): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 3: Requirement pipeline, Phase 3 verification record, Tasks (+4 more)
-
-### Community 28 - "Community 28"
-Cohesion: 0.17
-Nodes (12): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 4: Scenario pipeline, Phase 4 verification record, Tasks (+4 more)
-
-### Community 29 - "Community 29"
-Cohesion: 0.17
-Nodes (12): Checkpoint, Checkpoint, Checkpoint, Checkpoint, Checkpoint, Phase 5: Playwright pipeline, Phase 5 verification record, Tasks (+4 more)
-
-### Community 30 - "Community 30"
-Cohesion: 0.17
-Nodes (12): Final checkpoint, Phase 8: Provider hardening, Phase 8 verification record, Tasks, Tasks, Tasks, Tasks, Tasks (+4 more)
-
-### Community 31 - "Community 31"
+### Community 27 - "code bash npm ci"
 Cohesion: 0.22
 Nodes (8): code:bash (npm ci), Commands, Commit quality pipeline, Current status, Prerequisites, Quality Agent Factory, Safety defaults, Setup
 
-### Community 32 - "Community 32"
-Cohesion: 0.25
-Nodes (8): Evaluator PASS, Exact-Revision Authorization, Execution Summary Artifact, Human APPROVED or APPROVED_WITH_EXCLUSIONS, Linked Playwright Test Artifact, Playwright Test Engineer, Safe Registered Evidence Paths, Exact Semantic Checksum
-
-### Community 33 - "Community 33"
-Cohesion: 0.29
-Nodes (6): createdUsers, username, createCleanupRegistry(), createDeterministicTestId(), QualityFixtures, test
-
-### Community 34 - "Community 34"
+### Community 28 - "repository health cli ts"
 Cohesion: 0.36
 Nodes (5): checkRepositoryHealth(), RepositoryHealth, requiredRepositoryEntries, entryPath, root
 
-### Community 35 - "Community 35"
+### Community 29 - "Bounded Reversible Agent Mechanics"
+Cohesion: 0.29
+Nodes (7): Bounded Reversible Agent Mechanics, Deterministic Playwright Capability Classifier, Human Review Required Capability Disposition, Human Intent and Authority Boundary, ADR-001 Policy-Driven Agent Autonomy, Human-Gated Active Policy Promotion, Workflow Improvement Analyst
+
+### Community 30 - "AGENTS md"
 Cohesion: 0.29
 Nodes (6): Development rules, graphify, Mission, Non-negotiable boundaries, Quality Agent Factory Agent Instructions, Required reading order
 
-### Community 36 - "Community 36"
-Cohesion: 0.25
-Nodes (8): Checkpoint, Phase 2: Contracts and orchestration, Phase 2 verification record, Tasks, Tasks, Tasks, Tasks, Tasks
-
-### Community 37 - "Community 37"
-Cohesion: 0.33
-Nodes (5): code:text (feat: enforce scenario approval before test generation), Commit examples, Contributing, Pull request expectations, Workflow
-
-### Community 38 - "Community 38"
-Cohesion: 0.33
-Nodes (6): Deterministic Fixtures and Reverse-Order Cleanup, Exact-Revision Human Scenario-Approval Gate, Human Exact-Revision Approval, Independent Evaluator PASS, Playwright Implementation Workflow, Semantic Checksum Validation
-
-### Community 39 - "Community 39"
-Cohesion: 0.33
-Nodes (6): Acceptance criteria, code:bash (npm run format:check), Phase 1: Repository foundation, Phase 1 verification record, Tasks, Verification
-
-### Community 40 - "Community 40"
-Cohesion: 0.33
-Nodes (6): Quality Agent Factory Development Plan, Phased Implementation Plan, Claude Code Provider, Codex Provider, Cursor Provider, Quality Agent Factory
-
-### Community 41 - "Community 41"
-Cohesion: 0.33
-Nodes (5): Boundaries, Failure Triage Analyst, Inputs, Mission, Responsibilities
-
-### Community 42 - "Community 42"
+### Community 31 - "final quality assessor md"
 Cohesion: 0.33
 Nodes (5): Boundaries, Decisions, Final Quality Assessor, Mission, Required review
 
-### Community 43 - "Community 43"
+### Community 32 - "code text feat enforce scenario"
+Cohesion: 0.33
+Nodes (5): code:text (feat: enforce scenario approval before test generation), Commit examples, Contributing, Pull request expectations, Workflow
+
+### Community 33 - "failure triage analyst md"
+Cohesion: 0.33
+Nodes (5): Boundaries, Failure Triage Analyst, Inputs, Mission, Responsibilities
+
+### Community 34 - "knowledge curator md"
 Cohesion: 0.33
 Nodes (5): Boundaries, Knowledge Curator, Mission, Outputs, Required review
 
-### Community 44 - "Community 44"
+### Community 35 - "playwright test engineer md"
 Cohesion: 0.33
 Nodes (5): Boundaries, Mission, Outputs, Playwright Test Engineer, Required inputs
 
-### Community 45 - "Community 45"
+### Community 36 - "workflow improvement analyst md"
 Cohesion: 0.33
 Nodes (5): Boundaries, Mission, Required proposal content, Trigger, Workflow Improvement Analyst
 
-### Community 46 - "Community 46"
+### Community 37 - "security boundaries md"
 Cohesion: 0.33
 Nodes (5): Dependencies and integrations, Security Boundaries, Sensitive material, Target environment, Untrusted inputs
 
-### Community 47 - "Community 47"
-Cohesion: 0.53
-Nodes (6): escapeRegExp(), isInteractionAction(), renderAction(), renderAssertion(), renderInteraction(), renderLocator()
-
-### Community 48 - "Community 48"
-Cohesion: 0.4
-Nodes (5): Accessible Locators and Web-First Assertions, Automate Approved Scenarios, Execution Summary Artifact, Safe Registered Evidence Paths, Typed Automation Plan
-
-### Community 49 - "Community 49"
-Cohesion: 0.4
-Nodes (5): Accessible Locators and Web-First Assertions, Approval Verification Before Test Generation, Automate Approved Scenarios, Safe Test Generation Using Repository Conventions, Target Application Read-Only Boundary
-
-### Community 50 - "Community 50"
+### Community 38 - "requirement analyst md"
 Cohesion: 0.4
 Nodes (4): Authority, Outputs, Required inputs, Requirement Analyst
 
-### Community 51 - "Community 51"
-Cohesion: 0.4
-Nodes (4): Authority, Outputs, Required inputs, Test Scenario Designer
-
-### Community 52 - "Community 52"
+### Community 39 - "scenario quality evaluator md"
 Cohesion: 0.4
 Nodes (4): Authority, Outputs, Required inputs, Scenario Quality Evaluator
 
-### Community 53 - "Community 53"
+### Community 40 - "Accessible Locators and Web First"
+Cohesion: 0.4
+Nodes (5): Accessible Locators and Web-First Assertions, Automate Approved Scenarios, Execution Summary Artifact, Safe Registered Evidence Paths, Typed Automation Plan
+
+### Community 41 - "scenario designer md"
+Cohesion: 0.4
+Nodes (4): Authority, Outputs, Required inputs, Test Scenario Designer
+
+### Community 42 - "triage test failures md"
 Cohesion: 0.4
 Nodes (4): Preconditions, Procedure, Stop conditions, Triage Test Failures
 
-### Community 54 - "Community 54"
+### Community 43 - "use knowledge graph md"
 Cohesion: 0.4
 Nodes (4): Boundaries, Query, Refresh, Use the Knowledge Graph
 
-### Community 55 - "Community 55"
+### Community 44 - "Lint Format Fallow TypeScript Graph"
 Cohesion: 0.5
-Nodes (4): Accepted Artifact Immutability, Quality Factory Pipeline, Repository-Resident Quality Agent Factory, Typed Artifact Contracts
+Nodes (4): Lint Format Fallow TypeScript Graph Order, Commit Quality Pipeline, Graph Artifact Freshness Check, Versioned Pre-commit Hook
 
-### Community 56 - "Community 56"
-Cohesion: 0.5
-Nodes (4): Controlled Sample-Application End-to-End Tests, Intercepted Repository-Local HTML Application, Synthetic Non-Secret Authentication State, Task-Scoped Environment-Configured Real Target Authentication
+### Community 45 - "Contribution Change Workflow"
+Cohesion: 0.67
+Nodes (4): Contribution Change Workflow, Focused Tests Immediately Before Commit, Focused Pre-commit Test, Full npm run check Gate
 
-### Community 57 - "Community 57"
+### Community 46 - "Commit Quality Pipeline Graphify Refresh"
 Cohesion: 0.5
 Nodes (4): Commit Quality Pipeline Graphify Refresh, Graphify CLI Prerequisite, Repository Prerequisites, Repository Setup
 
-### Community 58 - "Community 58"
+### Community 47 - "Approved Knowledge Memory"
 Cohesion: 0.67
 Nodes (3): Approved Knowledge Memory, Gated Policy Adoption, Immutable Sanitized Run Summary
 
+### Community 48 - "Deterministic Evaluation Baseline"
+Cohesion: 0.67
+Nodes (3): Deterministic Evaluation Baseline, Human Correction Rate, Provider Evaluation Methodology
+
+### Community 49 - "Versioned Artifact Templates"
+Cohesion: 0.67
+Nodes (3): Versioned Artifact Templates, Versioned Artifact Registry, Authoritative Markdown Scenario Contract
+
 ## Knowledge Gaps
-- **518 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+513 more)
+- **451 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+446 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **43 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **49 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `semanticChecksum()` connect `Community 14` to `Community 2`, `Community 6`, `Community 8`, `Community 9`, `Community 11`, `Community 17`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `Actor` connect `Community 2` to `Community 0`, `Community 1`, `Community 11`, `Community 6`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
-- **Why does `Quality Agent Factory Phased Implementation Plan` connect `Community 25` to `Community 36`, `Community 39`, `Community 19`, `Community 24`, `Community 27`, `Community 28`, `Community 29`, `Community 30`?**
+- **Why does `semanticChecksum()` connect `semanticChecksum` to `acceptArtifact`, `boundedTextSchema`, `actionSchema`, `checksumSchema`, `checksumSchema`, `NormalizedRequirements`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `Actor` connect `acceptArtifact` to `boundedTextSchema`, `analyzeRequirements`, `sameArtifactReference`, `checksumSchema`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `ArtifactReference` connect `sameArtifactReference` to `acceptArtifact`, `artifactDispositionSchema`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _568 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.06 - nodes in this community are weakly interconnected._
-- **Should `Community 1` be split into smaller, more focused modules?**
+  _507 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Agent Roles Catalog` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
-- **Should `Community 2` be split into smaller, more focused modules?**
+- **Should `acceptArtifact` be split into smaller, more focused modules?**
+  _Cohesion score 0.05 - nodes in this community are weakly interconnected._
+- **Should `analyzeRequirements` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._

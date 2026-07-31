@@ -26,16 +26,17 @@ tracker and should be updated in the same change that completes a task.
 
 ## Progress summary
 
-| Phase | Name                            | Status   | Depends on | Exit checkpoint                                                                |
-| ----: | ------------------------------- | -------- | ---------- | ------------------------------------------------------------------------------ |
-|     1 | Repository foundation           | COMPLETE | None       | Fresh clone installs, validates, builds, and exposes a safe Playwright harness |
-|     2 | Contracts and orchestration     | COMPLETE | Phase 1    | State transitions and authorization gates pass contract tests                  |
-|     3 | Requirement pipeline            | COMPLETE | Phase 2    | All supported inputs produce validated, source-linked requirements             |
-|     4 | Scenario pipeline               | COMPLETE | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe         |
-|     5 | Playwright pipeline             | COMPLETE | Phase 4    | Only approved scenarios produce executable, linked tests                       |
-|     6 | Failure and assessment pipeline | COMPLETE | Phase 5    | Failures are classified before repair and final packages are assessable        |
-|     7 | Memory and improvement          | COMPLETE | Phase 6    | Approved knowledge is retrievable and policy changes remain gated              |
-|     8 | Provider hardening              | COMPLETE | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                       |
+| Phase | Name                            | Status      | Depends on | Exit checkpoint                                                                                          |
+| ----: | ------------------------------- | ----------- | ---------- | -------------------------------------------------------------------------------------------------------- |
+|     1 | Repository foundation           | COMPLETE    | None       | Fresh clone installs, validates, builds, and exposes a safe Playwright harness                           |
+|     2 | Contracts and orchestration     | COMPLETE    | Phase 1    | State transitions and authorization gates pass contract tests                                            |
+|     3 | Requirement pipeline            | COMPLETE    | Phase 2    | All supported inputs produce validated, source-linked requirements                                       |
+|     4 | Scenario pipeline               | COMPLETE    | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe                                   |
+|     5 | Playwright pipeline             | COMPLETE    | Phase 4    | Only approved scenarios produce executable, linked tests                                                 |
+|     6 | Failure and assessment pipeline | COMPLETE    | Phase 5    | Failures are classified before repair and final packages are assessable                                  |
+|     7 | Memory and improvement          | COMPLETE    | Phase 6    | Approved knowledge is retrievable and policy changes remain gated                                        |
+|     8 | Provider hardening              | COMPLETE    | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                                                 |
+|     9 | Pilot workflow optimization     | IN_PROGRESS | Phase 8    | Isolated roles, generated-test quality, safe auth pilot, and disposition policy pass shadow verification |
 
 ## Current delivery snapshot
 
@@ -44,9 +45,8 @@ tracker and should be updated in the same change that completes a task.
 - Foundation status: the GitHub Actions provider matrix passed `npm ci`, the
   complete quality gate, integration tests, and provider contract tests on the
   pinned Node 22 runtime.
-- Active delivery branch: `codex/phase-8-provider-hardening`.
-- Active review: draft pull request
-  [#8](https://github.com/jamil2018/aristotle/pull/8), targeting `main`.
+- Active delivery branch: `codex/phase-9-pilot-workflow-optimization`.
+- Active review: not yet published.
 - Phase 4 merged through pull request
   [#3](https://github.com/jamil2018/aristotle/pull/3).
 - Current automated baseline: 13 unit-test files with 92 passing tests, 1
@@ -55,8 +55,8 @@ tracker and should be updated in the same change that completes a task.
 - Static-analysis baseline: Fallow 3.10.0 reports no dead code, duplication, or
   complexity findings across 47 analyzed files and 414 functions; average
   maintainability is 93.6.
-- Next development session: review and merge pull request #8, then select the
-  first task-scoped factory pilot; no implementation phase remains open.
+- Current work: implement the approved Phase 9 authentication-pilot workflow
+  optimization without adopting unapproved active policy.
 
 ## Phase 1: Repository foundation
 
@@ -496,6 +496,66 @@ complete production-quality documentation and examples.
 - Next-session handoff: review and merge pull request #8. After merge, begin a
   task-scoped pilot using a sanitized real requirement set and preserve the
   factory's final human-review stop; no phased implementation work remains.
+
+## Phase 9: Pilot workflow optimization
+
+**Goal:** Shadow a sanitized authentication pilot with isolated specialist
+contexts, generated-test quality gates, progressive safe execution, layered
+Playwright assets, and explicit artifact durability.
+
+### Tasks
+
+- [x] `P9-01` Add the thin coordinator contract, typed stage handoffs,
+      authoritative dispatch, fresh-context checks, bounded context, taxonomy
+      partitioning, and cross-partition evaluation requirement.
+- [x] `P9-02` Add the independent Playwright quality role, workflow stage,
+      exact-checksum artifact, focused generated-test gate, and revision route.
+- [x] `P9-03` Migrate controlled E2E assets to the layer-first,
+      taxonomy-mirrored architecture and enforce import and configurable size
+      boundaries.
+- [x] `P9-04` Add grouped authentication intake, static preflight,
+      single-Chromium credential-smoke sequencing, default-off evidence, and
+      redacted secret scanning across ignored outputs.
+- [x] `P9-05` Add task schema-v2 artifact disposition with schema-v1
+      normalization, package compaction, SCM eligibility, bounded digests, and
+      safe coordinator telemetry.
+- [x] `P9-06` Extend provider, registry, lifecycle, workflow, independence,
+      architecture, secret, preflight, quality-gate, and sanitized benchmark
+      coverage.
+- [x] `P9-07` Complete focused, aggregate, integration, provider, E2E, health,
+      and static-analysis verification.
+- [ ] `P9-08` Refresh the durable semantic graph once, commit, push, open the
+      draft pull request, and reconcile the final handoff.
+
+### Checkpoint
+
+- [x] The coordinator cannot author specialist output or substitute its context.
+- [x] Browser execution requires an independent PASS for the exact test
+      checksum.
+- [x] Credential smoke precedes the browser matrix and failures are classified
+      before expansion.
+- [x] Secrets and raw authentication evidence are never SCM-eligible.
+- [x] Shadow/regression evidence passes without fabricating policy approval.
+
+### Phase 9 verification record
+
+- Date: 2026-07-31
+- Branch: `codex/phase-9-pilot-workflow-optimization`
+- Status: implementation and local verification complete; publication pending.
+- Result: `npm run check:generated-tests` passed with architecture validation
+  and zero secret matches across source and ignored outputs; `npm run check`
+  passed with 15 unit-test files and 100 tests; `npm run test:integration`
+  passed with 4 tests; provider contracts passed with 3 tests; and
+  `npm run test:e2e` passed authentication setup plus 6 controlled tests across
+  Chromium, Firefox, and WebKit.
+- Static analysis: Fallow 3.10.0 reports zero dead code, duplication, or
+  functions above threshold across 59 analyzed files and 486 functions; average
+  maintainability is 93.9.
+- Graph note: the skill-directed durability-boundary refresh preserved the prior
+  semantic baseline and produced 1,227 nodes, 1,601 edges, and 111 communities.
+- Policy boundary: this change implements proposal and shadow-evaluation
+  mechanics. Active policy adoption still requires an exact
+  `improvement-evaluation` and genuine human policy approval.
 
 ## Decision log
 

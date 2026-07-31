@@ -31,9 +31,9 @@ const rawConfigSchema = z.object({
     .default("false")
     .transform((value) => value === "true"),
   FACTORY_ALLOWED_ORIGINS: z.string().default("http://127.0.0.1:3000"),
-  FACTORY_SCREENSHOT_POLICY: screenshotPolicySchema.default("only-on-failure"),
-  FACTORY_TRACE_POLICY: tracePolicySchema.default("retain-on-failure"),
-  FACTORY_VIDEO_POLICY: videoPolicySchema.default("retain-on-failure"),
+  FACTORY_SCREENSHOT_POLICY: screenshotPolicySchema.default("off"),
+  FACTORY_TRACE_POLICY: tracePolicySchema.default("off"),
+  FACTORY_VIDEO_POLICY: videoPolicySchema.default("off"),
 });
 
 export interface FactoryConfig {

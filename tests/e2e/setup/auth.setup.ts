@@ -8,14 +8,7 @@ setup(
     await page.route("**/*", async (route) => {
       await route.fulfill({
         contentType: "text/html",
-        body: `
-        <main>
-          <h1>Controlled sign in</h1>
-          <button type="button" onclick="localStorage.setItem('sample-session', 'authorized')">
-            Sign in
-          </button>
-        </main>
-      `,
+        body: `<main><h1>Controlled sign in</h1><button type="button" onclick="localStorage.setItem('sample-session', 'authorized')">Sign in</button></main>`,
       });
     });
     await page.goto("/");
