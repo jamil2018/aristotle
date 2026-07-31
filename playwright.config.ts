@@ -1,6 +1,16 @@
 import { defineConfig, devices } from "@playwright/test";
 
 import factoryConfig from "./factory.config.js";
+import {
+  resolvePlaywrightRunPaths,
+  resolveProjectTestDirs,
+} from "./src/playwright/run-config.js";
+
+const runPaths = resolvePlaywrightRunPaths(
+  process.env["FACTORY_RUN_ID"],
+  process.env["FACTORY_GENERATED_RUN"],
+);
+const projectTestDirs = resolveProjectTestDirs(runPaths.testDir);
 
 export default defineConfig({
   testDir: "./tests/e2e",
@@ -12,7 +22,7 @@ export default defineConfig({
   reporter: [
     ["list"],
     ["html", { open: "never", outputFolder: "playwright-report" }],
-    ["json", { outputFile: "artifacts/playwright-results.json" }],
+    ["json", { outputFile: runPaths.reportPath }],
   ],
   use: {
     baseURL: factoryConfig.baseUrl.toString(),
@@ -23,11 +33,25 @@ export default defineConfig({
   projects: [
     {
       name: "authentication-setup",
+      testDir: projectTestDirs.authenticationSetup,
       testMatch: /auth\.setup\.ts/,
     },
     {
-      name: "chromium",
+      name: "chromium-smoke",
       dependencies: ["authentication-setup"],
+      testDir: projectTestDirs.chromiumSmoke,
+      ...(runPaths.testDir === "./tests/e2e"
+        ? { testMatch: /controlled-sample\.spec\.ts/ }
+        : {}),
+      use: {
+        ...devices["Desktop Chrome"],
+        storageState: "playwright/.auth/authorized-user.json",
+      },
+    },
+    {
+      name: "chromium",
+      dependencies: ["chromium-smoke"],
+      testDir: projectTestDirs.chromium,
       use: {
         ...devices["Desktop Chrome"],
         storageState: "playwright/.auth/authorized-user.json",
@@ -35,7 +59,8 @@ export default defineConfig({
     },
     {
       name: "firefox",
-      dependencies: ["authentication-setup"],
+      dependencies: ["chromium-smoke"],
+      testDir: projectTestDirs.firefox,
       use: {
         ...devices["Desktop Firefox"],
         storageState: "playwright/.auth/authorized-user.json",
@@ -43,7 +68,8 @@ export default defineConfig({
     },
     {
       name: "webkit",
-      dependencies: ["authentication-setup"],
+      dependencies: ["chromium-smoke"],
+      testDir: projectTestDirs.webkit,
       use: {
         ...devices["Desktop Safari"],
         storageState: "playwright/.auth/authorized-user.json",

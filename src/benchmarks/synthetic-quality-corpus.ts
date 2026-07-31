@@ -6,7 +6,6 @@ import {
 } from "../scenarios/pipeline.js";
 import type {
   Scenario,
-  ScenarioEvaluation,
   ScenarioSpecification,
 } from "../scenarios/contracts.js";
 
@@ -68,22 +67,49 @@ function executeCandidate(candidate: SyntheticBenchmarkCase) {
     caseId: candidate.caseId,
     expected: candidate.expected,
     builtIn: evaluation.disposition,
-    independent: independentlyClassify(evaluation),
+    independent: independentlyClassify(specification),
     executedOrClassified: true,
   };
 }
 
 function independentlyClassify(
-  evaluation: ScenarioEvaluation,
+  specification: ScenarioSpecification,
 ): BenchmarkDisposition {
-  if (
-    evaluation.findings.some(
-      (finding) => finding.kind === "UNKNOWN_REQUIREMENT",
-    )
-  ) {
-    return "BLOCKED";
+  const seen = new Set<string>();
+  for (const scenario of specification.scenarios) {
+    const duplicateKey = [
+      [...scenario.requirementIds].sort().join(","),
+      scenario.semanticDomain,
+      scenario.coverage,
+      scenario.objective.toLowerCase(),
+      scenario.steps.map((step) => step.action.toLowerCase()).join("|"),
+    ].join(":");
+    if (seen.has(duplicateKey)) return "REVISE";
+    seen.add(duplicateKey);
+    if (
+      scenario.preconditions.length === 0 ||
+      scenario.testData.length === 0 ||
+      scenario.cleanup.length === 0 ||
+      (scenario.feasibility === "MANUAL" && scenario.automation !== "MANUAL") ||
+      scenario.steps.some(
+        (step) =>
+          normalize(step.action) === normalize(step.expectedResult) ||
+          !/\b(visible|hidden|absent|url|value|valid|invalid|rejected|recorded|state|count|message)\b/i.test(
+            step.expectedResult,
+          ),
+      )
+    ) {
+      return "REVISE";
+    }
   }
-  return evaluation.findings.length === 0 ? "PASS" : "REVISE";
+  return "PASS";
+}
+
+function normalize(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim();
 }
 
 function mutateCandidate(

@@ -14,7 +14,13 @@ import {
   createExecutionSummary,
   createCapabilityExtensionRecord,
   generatePlaywrightTest,
+  runPlaywrightPreflight,
+  registerBrowserMatrix,
 } from "../../../src/playwright/pipeline.js";
+import {
+  resolvePlaywrightRunPaths,
+  resolveProjectTestDirs,
+} from "../../../src/playwright/run-config.js";
 import type { AutomationPlan } from "../../../src/playwright/contracts.js";
 
 const requirements: NormalizedRequirements = {
@@ -46,7 +52,39 @@ function approvedScenario() {
     evaluation,
     decision: "APPROVED",
   });
-  return { specification, evaluation, review };
+  return {
+    runId: "run-001",
+    specification,
+    evaluation,
+    review,
+    preflight: {
+      baseOrigin: "https://synthetic.invalid",
+      allowedOrigin: "https://synthetic.invalid",
+      configuredEnvironmentVariables: ["E2E_USER_EMAIL"],
+      rendererActionKinds: [
+        "FILL",
+        "CLICK",
+        "CLEAR",
+        "NAVIGATE",
+        "CHECK",
+        "UNCHECK",
+        "SELECT_OPTION",
+        "PRESS_KEY",
+        "EXPECT_VISIBLE",
+        "EXPECT_HIDDEN",
+        "EXPECT_ABSENT",
+        "EXPECT_ENABLED",
+        "EXPECT_CHECKED",
+        "EXPECT_TEXT",
+        "EXPECT_VALUE",
+        "EXPECT_COUNT",
+        "EXPECT_URL",
+        "EXPECT_NATIVE_VALIDITY",
+        "EXPECT_NATIVE_VALIDATION_MESSAGE",
+      ],
+      testIdAttribute: "data-testid",
+    },
+  };
 }
 
 describe("Playwright generation authorization", () => {
@@ -385,5 +423,188 @@ describe("Playwright fixtures and result artifacts", () => {
 
     expect(summary.tests[0]?.metadata.requirementIds).toEqual(["req-login"]);
     expect(summary.tests[0]?.evidence[0]?.path).toContain("test-results/");
+  });
+
+  it("requires passing smoke and all three registered browser summaries", () => {
+    const tests = [
+      {
+        testId: "pw-flow-001",
+        status: "PASSED" as const,
+        durationMs: 10,
+        metadata: {
+          schemaVersion: 1 as const,
+          testId: "pw-flow-001",
+          scenarioId: "TS-FLOW-ABCDEF1234",
+          scenarioRevision: 1,
+          scenarioChecksum: "a".repeat(64),
+          requirementRevision: 1,
+          requirementChecksum: "b".repeat(64),
+          requirementIds: ["req-flow"],
+        },
+        evidence: [
+          {
+            kind: "REPORT" as const,
+            path: "artifacts/runs/run-001/report.json",
+          },
+        ],
+      },
+    ];
+    const summaries = ["chromium-smoke", "chromium", "firefox", "webkit"].map(
+      (project) =>
+        createExecutionSummary({
+          runId: "run-001",
+          project,
+          startedAt: "2026-07-31T10:00:00.000Z",
+          completedAt: "2026-07-31T10:00:01.000Z",
+          tests,
+        }),
+    );
+
+    expect(registerBrowserMatrix(summaries, ["pw-flow-001"])).toHaveLength(4);
+    expect(() =>
+      registerBrowserMatrix(summaries.slice(0, 3), ["pw-flow-001"]),
+    ).toThrow(/webkit/);
+  });
+});
+
+describe("Playwright remediation capabilities and preflight", () => {
+  it("discovers only the validated generated run and contains its report path", () => {
+    expect(resolvePlaywrightRunPaths("run-001", "run-001")).toEqual({
+      runId: "run-001",
+      testDir: "./artifacts/runs/run-001/generated",
+      reportPath: "artifacts/runs/run-001/playwright-results.json",
+    });
+    expect(() => resolvePlaywrightRunPaths("../escape", "../escape")).toThrow(
+      /safe identifier/,
+    );
+    expect(
+      resolveProjectTestDirs("./artifacts/runs/run-001/generated"),
+    ).toEqual({
+      authenticationSetup: "./tests/e2e",
+      chromiumSmoke: "./artifacts/runs/run-001/generated",
+      chromium: "./artifacts/runs/run-001/generated",
+      firefox: "./artifacts/runs/run-001/generated",
+      webkit: "./artifacts/runs/run-001/generated",
+    });
+  });
+
+  it("renders bounded stateful navigation and browser-native assertions", () => {
+    const approved = approvedScenario();
+    const scenario = approved.specification.scenarios[0];
+    if (scenario === undefined) throw new Error("Expected scenario fixture");
+    const generated = generatePlaywrightTest({
+      ...approved,
+      requirements,
+      scenarioId: scenario.scenarioId,
+      plan: {
+        route: "/start",
+        actions: [
+          {
+            kind: "CLEAR",
+            locator: { kind: "LABEL", value: "Neutral input" },
+          },
+          { kind: "NAVIGATE", path: "/next" },
+          {
+            kind: "EXPECT_HIDDEN",
+            locator: { kind: "TEST_ID", value: "loading" },
+          },
+          {
+            kind: "EXPECT_ABSENT",
+            locator: { kind: "TEST_ID", value: "error" },
+          },
+          {
+            kind: "EXPECT_NATIVE_VALIDITY",
+            locator: { kind: "LABEL", value: "Neutral input" },
+            valid: true,
+          },
+          {
+            kind: "EXPECT_NATIVE_VALIDATION_MESSAGE",
+            locator: { kind: "LABEL", value: "Neutral input" },
+            message: "Complete this field.",
+          },
+        ],
+      },
+    });
+
+    expect(generated.source).toContain(".clear()");
+    expect(generated.source).toContain('page.goto("/next")');
+    expect(generated.source).toContain("toBeHidden()");
+    expect(generated.source).toContain("toHaveCount(0)");
+    expect(generated.source).toContain('"validity"');
+    expect(generated.source).toContain('"validationMessage"');
+  });
+
+  it("preflights origins, environment, renderer, test IDs, and smoke ordering", () => {
+    const result = runPlaywrightPreflight({
+      baseOrigin: "https://synthetic.invalid",
+      allowedOrigin: "https://synthetic.invalid",
+      configuredEnvironmentVariables: ["E2E_VALUE"],
+      rendererActionKinds: ["FILL", "CLEAR", "NAVIGATE", "EXPECT_VISIBLE"],
+      testIdAttribute: "data-qa-id",
+      plan: {
+        route: "/start",
+        actions: [
+          {
+            kind: "FILL",
+            locator: {
+              kind: "TEST_ID",
+              attribute: "data-qa-id",
+              value: "neutral-input",
+            },
+            valueEnvironmentVariable: "E2E_VALUE",
+          },
+          {
+            kind: "CLEAR",
+            locator: { kind: "LABEL", value: "Neutral input" },
+          },
+          { kind: "NAVIGATE", path: "/next" },
+          {
+            kind: "EXPECT_VISIBLE",
+            locator: { kind: "ROLE", role: "heading", name: "Complete" },
+          },
+        ],
+      },
+    });
+
+    expect(result).toEqual({
+      ready: true,
+      smokeProject: "chromium-smoke",
+      fullProjects: ["chromium", "firefox", "webkit"],
+    });
+  });
+
+  it("fails preflight for locator configuration and navigation/origin errors", () => {
+    expect(() =>
+      runPlaywrightPreflight({
+        baseOrigin: "https://synthetic.invalid",
+        allowedOrigin: "https://synthetic.invalid",
+        configuredEnvironmentVariables: [],
+        rendererActionKinds: ["EXPECT_VISIBLE"],
+        testIdAttribute: "data-testid",
+        plan: {
+          route: "/",
+          actions: [
+            {
+              kind: "EXPECT_VISIBLE",
+              locator: {
+                kind: "TEST_ID",
+                attribute: "data-qa-id",
+                value: "status",
+              },
+            },
+          ],
+        },
+      }),
+    ).toThrow(/test-ID attribute/);
+    expect(() =>
+      runPlaywrightPreflight({
+        baseOrigin: "https://synthetic.invalid",
+        allowedOrigin: "https://other.invalid",
+        configuredEnvironmentVariables: [],
+        rendererActionKinds: ["NAVIGATE"],
+        testIdAttribute: "data-testid",
+        plan: { route: "/", actions: [{ kind: "NAVIGATE", path: "/next" }] },
+      }),
+    ).toThrow(/allowlist/);
   });
 });

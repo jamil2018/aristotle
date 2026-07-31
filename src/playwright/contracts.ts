@@ -36,7 +36,18 @@ const locatorSchema = z.discriminatedUnion("kind", [
   }),
   z.object({ kind: z.literal("LABEL"), value: z.string().min(1) }),
   z.object({ kind: z.literal("PLACEHOLDER"), value: z.string().min(1) }),
-  z.object({ kind: z.literal("TEST_ID"), value: z.string().min(1) }),
+  z.object({
+    kind: z.literal("TEST_ID"),
+    attribute: z
+      .string()
+      .regex(/^data-[a-z][a-z0-9-]*$/)
+      .optional(),
+    value: z
+      .string()
+      .min(1)
+      .max(200)
+      .regex(/^[a-zA-Z0-9][a-zA-Z0-9._:-]*$/),
+  }),
 ]);
 
 const actionSchema = z.discriminatedUnion("kind", [
@@ -48,6 +59,14 @@ const actionSchema = z.discriminatedUnion("kind", [
       .regex(/^[A-Z][A-Z0-9_]*$/, "Values must use an environment variable"),
   }),
   z.object({ kind: z.literal("CLICK"), locator: locatorSchema }),
+  z.object({ kind: z.literal("CLEAR"), locator: locatorSchema }),
+  z.object({
+    kind: z.literal("NAVIGATE"),
+    path: z
+      .string()
+      .startsWith("/")
+      .refine((value) => !value.startsWith("//")),
+  }),
   z.object({ kind: z.literal("CHECK"), locator: locatorSchema }),
   z.object({ kind: z.literal("UNCHECK"), locator: locatorSchema }),
   z.object({
@@ -75,6 +94,8 @@ const actionSchema = z.discriminatedUnion("kind", [
     kind: z.literal("EXPECT_VISIBLE"),
     locator: locatorSchema,
   }),
+  z.object({ kind: z.literal("EXPECT_HIDDEN"), locator: locatorSchema }),
+  z.object({ kind: z.literal("EXPECT_ABSENT"), locator: locatorSchema }),
   z.object({
     kind: z.literal("EXPECT_ENABLED"),
     locator: locatorSchema,
@@ -102,6 +123,16 @@ const actionSchema = z.discriminatedUnion("kind", [
     kind: z.literal("EXPECT_URL"),
     path: z.string().startsWith("/"),
   }),
+  z.object({
+    kind: z.literal("EXPECT_NATIVE_VALIDITY"),
+    locator: locatorSchema,
+    valid: z.boolean(),
+  }),
+  z.object({
+    kind: z.literal("EXPECT_NATIVE_VALIDATION_MESSAGE"),
+    locator: locatorSchema,
+    message: z.string().min(1).max(500),
+  }),
 ]);
 
 export const automationPlanSchema = z.object({
@@ -113,6 +144,22 @@ export const automationPlanSchema = z.object({
       "Automation plans require a relative route",
     ),
   actions: z.array(actionSchema),
+});
+
+export const playwrightPreflightSchema = z.object({
+  baseOrigin: z.url().refine((value) => new URL(value).origin === value),
+  allowedOrigin: z.url().refine((value) => new URL(value).origin === value),
+  configuredEnvironmentVariables: z.array(
+    z.string().regex(/^[A-Z][A-Z0-9_]*$/),
+  ),
+  rendererActionKinds: z.array(z.string().regex(/^[A-Z][A-Z0-9_]*$/)),
+  testIdAttribute: z
+    .string()
+    .regex(/^data-[a-z][a-z0-9-]*$/)
+    .default("data-testid"),
+  plan: automationPlanSchema.refine((plan) => plan.actions.length > 0, {
+    message: "Preflight requires a complete scenario plan with actions",
+  }),
 });
 
 const evidenceSchema = z.object({
@@ -184,6 +231,7 @@ export const capabilityExtensionRecordSchema = z.object({
 });
 
 export type AutomationPlan = z.infer<typeof automationPlanSchema>;
+export type PlaywrightPreflight = z.infer<typeof playwrightPreflightSchema>;
 export type AutomationLocator = z.infer<typeof locatorSchema>;
 export type PlaywrightTestMetadata = z.infer<
   typeof playwrightTestMetadataSchema

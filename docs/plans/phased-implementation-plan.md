@@ -58,6 +58,47 @@ tracker and should be updated in the same change that completes a task.
 - Next development session: review and merge pull request #8, then select the
   first task-scoped factory pilot; no implementation phase remains open.
 
+## Harness remediation program
+
+The first task-scoped pilot exposed harness weaknesses without authorizing any
+target-application change. The pilot outputs were permanently removed and are
+not part of this repository. Remediation preserves the original eight-phase
+source plan and records the bounded follow-up work here.
+
+| Remediation phase | Scope                                     | Status   | Exit checkpoint                                                                  |
+| ----------------: | ----------------------------------------- | -------- | -------------------------------------------------------------------------------- |
+|                 1 | Artifact integrity and repository hygiene | COMPLETE | Canonical checksums, exact approvals, isolated run output, manual results        |
+|                 2 | Requirement and scenario quality          | COMPLETE | Structured questions, semantic domains, feasibility, deterministic benchmark     |
+|                 3 | Safe Playwright capabilities and evidence | COMPLETE | Preflight, bounded actions/assertions, Chromium smoke, complete browser evidence |
+
+### Remediation verification record
+
+- Date: 2026-07-31.
+- Branch: `codex/harness-remediation`.
+- Phase 1: schema parse, canonical serialization, and semantic checksum are one
+  pipeline; reconciliation impact is separate; generated tests default to
+  ignored run storage; browser results use run/revision/browser paths; manual
+  results require exact human-reviewed scenario references; repository health
+  fails closed for tracked runtime output.
+- Phase 2: clarifications are contextual structured records; scenarios carry
+  typed semantic domains and feasibility; evaluator checks include circular
+  outcomes, unsupported coverage, semantic duplicates, missing state setup, and
+  insufficient assertions.
+- Benchmark: 20 provider-neutral deterministic cases, zero unsafe false `PASS`,
+  100% built-in/independent disposition agreement, and 100% agreement with
+  expected dispositions.
+- Phase 3: stable configurable `data-*` test IDs, same-origin relative
+  navigation, deterministic clearing, bounded visibility/absence/URL/value and
+  native-validity assertions, preflight validation, and a Chromium smoke
+  dependency before Chromium, Firefox, and WebKit.
+- Human and security gates remain unchanged: scenario approval is exact-revision
+  and human-only, only recorded `SCRIPT_ERROR` authorizes test repair, final
+  assessment cannot grant approval, and target application code remains
+  read-only.
+- Continuation point: human review of the draft remediation pull request. A new
+  task-scoped pilot requires separate authority and fresh environment-only
+  configuration; deleted pilot material must not be restored.
+
 ## Phase 1: Repository foundation
 
 **Goal:** Produce a clone-ready, repository-resident TypeScript and Playwright
