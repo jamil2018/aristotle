@@ -34,14 +34,14 @@ export default defineConfig({
     {
       name: "authentication-setup",
       testDir: projectTestDirs.authenticationSetup,
-      testMatch: /auth\.setup\.ts/,
+      testMatch: /setup\/auth\.setup\.ts/,
     },
     {
       name: "chromium-smoke",
       dependencies: ["authentication-setup"],
       testDir: projectTestDirs.chromiumSmoke,
       ...(runPaths.testDir === "./tests/e2e"
-        ? { testMatch: /controlled-sample\.spec\.ts/ }
+        ? { testMatch: /specs\/controlled-sample\/accounts\.spec\.ts/ }
         : {}),
       use: {
         ...devices["Desktop Chrome"],

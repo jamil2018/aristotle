@@ -32,7 +32,12 @@ const legalTransitions: Readonly<
     "playwright-implementation",
     "cancelled",
   ],
-  "playwright-implementation": ["test-execution", "cancelled"],
+  "playwright-implementation": ["test-quality-evaluation", "cancelled"],
+  "test-quality-evaluation": [
+    "playwright-implementation",
+    "test-execution",
+    "cancelled",
+  ],
   "test-execution": ["failure-triage", "final-quality-assessment", "cancelled"],
   "failure-triage": [
     "test-repair",
@@ -40,7 +45,7 @@ const legalTransitions: Readonly<
     "requirement-clarification",
     "cancelled",
   ],
-  "test-repair": ["test-execution", "cancelled"],
+  "test-repair": ["test-quality-evaluation", "cancelled"],
   "final-quality-assessment": [
     "requirement-analysis",
     "scenario-generation",
@@ -72,6 +77,13 @@ export type TransitionGate =
   | {
       readonly kind: "PLAYWRIGHT_TEST_READY";
       readonly subject: ArtifactReference;
+    }
+  | {
+      readonly kind: "TEST_QUALITY";
+      readonly subject: ArtifactReference;
+      readonly testSubject: ArtifactReference;
+      readonly evaluatedTestChecksum: string;
+      readonly decision: "PASS" | "REVISE" | "BLOCKED";
     }
   | {
       readonly kind: "EXECUTION_RESULT";
@@ -143,29 +155,8 @@ export function transitionWorkflow(
   }
 
   validateGate(workflow, input);
-  const retries = { ...workflow.retries };
-  if (
-    workflow.currentStage === "scenario-evaluation" &&
-    input.to === "scenario-generation"
-  ) {
-    incrementRetry(retries, "scenario-revision");
-  }
-  if (
-    workflow.currentStage === "failure-triage" &&
-    input.to === "test-repair"
-  ) {
-    incrementRetry(retries, "script-repair");
-  }
-
-  const gateSubject =
-    input.gate?.kind === "EVALUATOR_PASS" ||
-    input.gate?.kind === "HUMAN_SCENARIO_APPROVAL" ||
-    input.gate?.kind === "PLAYWRIGHT_TEST_READY" ||
-    input.gate?.kind === "EXECUTION_RESULT" ||
-    input.gate?.kind === "TRIAGE" ||
-    input.gate?.kind === "FINAL_ASSESSMENT"
-      ? [input.gate.subject]
-      : [];
+  const retries = updatedRetries(workflow, input);
+  const gateSubject = gateSubjectReference(input.gate);
   const inputReferences = [...(input.inputReferences ?? []), ...gateSubject];
 
   return workflowManifestSchema.parse({
@@ -190,6 +181,37 @@ export function transitionWorkflow(
   });
 }
 
+function updatedRetries(
+  workflow: WorkflowManifest,
+  input: TransitionInput,
+): Record<string, number> {
+  const retries = { ...workflow.retries };
+  if (
+    workflow.currentStage === "scenario-evaluation" &&
+    input.to === "scenario-generation"
+  ) {
+    incrementRetry(retries, "scenario-revision");
+  }
+  if (
+    workflow.currentStage === "failure-triage" &&
+    input.to === "test-repair"
+  ) {
+    incrementRetry(retries, "script-repair");
+  }
+  return retries;
+}
+
+function gateSubjectReference(
+  gate: TransitionGate | undefined,
+): ArtifactReference[] {
+  if (gate !== undefined && "subject" in gate) {
+    return gate.kind === "TEST_QUALITY"
+      ? [gate.subject, gate.testSubject]
+      : [gate.subject];
+  }
+  return [];
+}
+
 function validateGate(
   workflow: WorkflowManifest,
   input: TransitionInput,
@@ -211,11 +233,15 @@ function validatePlaywrightGate(
   workflow: WorkflowManifest,
   input: TransitionInput,
 ): void {
+  if (workflow.currentStage === "test-quality-evaluation") {
+    validateTestQualityGate(input);
+    return;
+  }
   if (
     !["playwright-implementation", "test-repair"].includes(
       workflow.currentStage,
     ) ||
-    input.to !== "test-execution"
+    input.to !== "test-quality-evaluation"
   ) {
     return;
   }
@@ -226,8 +252,45 @@ function validatePlaywrightGate(
     input.gate.subject.artifactType !== "playwright-test"
   ) {
     throw new Error(
-      "Test execution requires an exact registered playwright-test artifact",
+      "Test quality evaluation requires an exact registered playwright-test artifact",
     );
+  }
+}
+
+function validateTestQualityGate(input: TransitionInput): void {
+  requireRole(input.actor, "playwright-quality-evaluator");
+  requireGate(input, "TEST_QUALITY");
+  validateTestQualityReferences(input.gate);
+  validateTestQualityDecision(input);
+}
+
+function validateTestQualityReferences(gate: TransitionGate | undefined): void {
+  if (
+    gate?.kind !== "TEST_QUALITY" ||
+    gate.subject.artifactType !== "generated-test-quality" ||
+    gate.testSubject.artifactType !== "playwright-test"
+  ) {
+    throw new Error(
+      "Quality disposition requires generated-test-quality and exact playwright-test artifacts",
+    );
+  }
+  if (gate.evaluatedTestChecksum !== gate.testSubject.semanticChecksum) {
+    throw new Error(
+      "Quality PASS must reference the exact Playwright checksum",
+    );
+  }
+}
+
+function validateTestQualityDecision(input: TransitionInput): void {
+  if (input.gate?.kind !== "TEST_QUALITY") return;
+  if (input.to === "test-execution" && input.gate.decision !== "PASS") {
+    throw new Error("Browser execution requires an exact test-quality PASS");
+  }
+  if (
+    input.to === "playwright-implementation" &&
+    input.gate.decision !== "REVISE"
+  ) {
+    throw new Error("Playwright revision requires a REVISE quality decision");
   }
 }
 

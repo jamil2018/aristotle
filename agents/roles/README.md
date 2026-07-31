@@ -7,10 +7,13 @@ implementation phases. Shared boundaries already apply.
 
 Implemented role contracts:
 
+- [Workflow Coordinator](./workflow-coordinator.md)
+
 - [Requirement Analyst](./requirement-analyst.md)
 - [Test Scenario Designer](./scenario-designer.md)
 - [Scenario Quality Evaluator](./scenario-quality-evaluator.md)
 - [Playwright Test Engineer](./playwright-test-engineer.md)
+- [Playwright Quality Evaluator](./playwright-quality-evaluator.md)
 - [Failure Triage Analyst](./failure-triage-analyst.md)
 - [Final Quality Assessor](./final-quality-assessor.md)
 - [Knowledge Curator](./knowledge-curator.md)

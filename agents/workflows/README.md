@@ -1,5 +1,7 @@
 # Factory workflows
 
+- [Test quality evaluation](./test-quality-evaluation.md)
+
 The full, resume, clarification, scenario review, and failure recovery workflows
 will be implemented as enforceable state transitions in Phase 2.
 
