@@ -181,9 +181,9 @@ describe("requirement analysis", () => {
       ],
     });
 
-    expect(next.revision).toBe(2);
+    expect(next.canonical.revision).toBe(2);
     expect(next.impact.modified).toHaveLength(1);
-    expect(next.requirements[0]?.text).toContain("two seconds");
+    expect(next.canonical.requirements[0]?.text).toContain("two seconds");
   });
 
   it("rejects agent-authored or unknown clarification answers", () => {

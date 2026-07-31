@@ -10,7 +10,7 @@ import {
 } from "../schemas/contracts.js";
 
 export function semanticChecksum(content: unknown): string {
-  return createHash("sha256").update(canonicalJson(content)).digest("hex");
+  return createHash("sha256").update(canonicalSerialize(content)).digest("hex");
 }
 
 export interface AcceptArtifactInput {
@@ -152,7 +152,7 @@ export function invalidateDownstreamArtifacts(
   });
 }
 
-function canonicalJson(value: unknown): string {
+export function canonicalSerialize(value: unknown): string {
   return JSON.stringify(normalizeJson(value, new WeakSet()));
 }
 

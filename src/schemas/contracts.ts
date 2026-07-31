@@ -48,6 +48,7 @@ const artifactTypeSchema = z.enum([
   "capability-extension",
   "playwright-test",
   "execution-summary",
+  "manual-result",
   "failure-triage",
   "script-repair",
   "defect-candidate",

@@ -56,7 +56,18 @@ describe("checkRepositoryHealth", () => {
         const entryPath = path.join(root, entry);
         if (path.extname(entry)) {
           await mkdir(path.dirname(entryPath), { recursive: true });
-          await writeFile(entryPath, "");
+          await writeFile(
+            entryPath,
+            entry === ".gitignore"
+              ? [
+                  "artifacts/**",
+                  "tests/e2e/generated/",
+                  "tests/e2e/pilot/",
+                  "src/generated/",
+                  "src/pilot/",
+                ].join("\n")
+              : "",
+          );
         } else {
           await mkdir(entryPath, { recursive: true });
         }
@@ -66,6 +77,7 @@ describe("checkRepositoryHealth", () => {
     await expect(checkRepositoryHealth(root)).resolves.toEqual({
       healthy: true,
       missing: [],
+      hygieneViolations: [],
     });
   });
 });

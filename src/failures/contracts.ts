@@ -106,6 +106,9 @@ export const finalQualityAssessmentSchema = z.object({
   assessmentId: identifierSchema,
   runId: identifierSchema,
   executionSummaryChecksums: z.array(checksumSchema).min(1),
+  manualResultChecksums: z.array(checksumSchema),
+  requiredManualScenarioIds: z.array(scenarioIdSchema),
+  completedManualScenarioIds: z.array(scenarioIdSchema),
   traceability: z.array(
     z.object({
       requirementId: requirementIdSchema,

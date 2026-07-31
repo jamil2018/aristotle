@@ -190,6 +190,37 @@ describe("failure and assessment pipeline", () => {
     expect(revisionRequired.decision).toBe("REVISION_REQUIRED");
     expect(blocked.decision).toBe("BLOCKED");
   });
+
+  it("rejects a final assessment when a required manual result is missing", () => {
+    const assessment = createFinalQualityAssessment({
+      assessmentId: "assessment-manual-missing",
+      runId: "run-001",
+      executionSummaryChecksums: ["a".repeat(64)],
+      requiredManualScenarios: [
+        {
+          scenarioId: "TS-FLOW-ABCDEF1234",
+          scenarioRevision: 1,
+          scenarioChecksum: "b".repeat(64),
+        },
+      ],
+      manualResults: [],
+      traceability: [
+        {
+          requirementId: "req-flow",
+          scenarioId: "TS-FLOW-ABCDEF1234",
+          testId: "pw-flow-001",
+          result: "PASSED",
+        },
+      ],
+      missingArtifacts: [],
+      staleTestIds: [],
+      unresolvedFailureIds: [],
+      skippedCoverage: [],
+      residualRisks: [],
+    });
+
+    expect(assessment.decision).toBe("REVISION_REQUIRED");
+  });
 });
 
 function scriptErrorTriage() {
