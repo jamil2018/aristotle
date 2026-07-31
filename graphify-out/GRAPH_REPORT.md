@@ -1,20 +1,20 @@
 # Graph Report - .  (2026-07-31)
 
 ## Corpus Check
-- Corpus is ~34,103 words - fits in a single context window. You may not need a graph.
+- Corpus is ~34,121 words - fits in a single context window. You may not need a graph.
 
 ## Summary
-- 1066 nodes · 1405 edges · 104 communities (55 shown, 49 thin omitted)
+- 1066 nodes · 1403 edges · 104 communities (55 shown, 49 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 48 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Agent Roles Catalog|Agent Roles Catalog]]
-- [[_COMMUNITY_acceptArtifact|acceptArtifact]]
 - [[_COMMUNITY_analyzeRequirements|analyzeRequirements]]
+- [[_COMMUNITY_acceptArtifact|acceptArtifact]]
+- [[_COMMUNITY_Accepted Artifact Immutability|Accepted Artifact Immutability]]
 - [[_COMMUNITY_sameArtifactReference|sameArtifactReference]]
 - [[_COMMUNITY_artifactDispositionSchema|artifactDispositionSchema]]
-- [[_COMMUNITY_Accepted Artifact Immutability|Accepted Artifact Immutability]]
 - [[_COMMUNITY_quality agent factory development plan|quality agent factory development plan]]
 - [[_COMMUNITY_dependencies|dependencies]]
 - [[_COMMUNITY_boundedTextSchema|boundedTextSchema]]
@@ -23,13 +23,13 @@
 - [[_COMMUNITY_Deterministic Capability Classifier|Deterministic Capability Classifier]]
 - [[_COMMUNITY_checksumSchema|checksumSchema]]
 - [[_COMMUNITY_ControlledAccountPage|ControlledAccountPage]]
-- [[_COMMUNITY_Authentication Example|Authentication Example]]
 - [[_COMMUNITY_Arbitrary Execution and Destructive Writes|Arbitrary Execution and Destructive Writes]]
 - [[_COMMUNITY_BenchmarkCase|BenchmarkCase]]
 - [[_COMMUNITY_Task Schema V2 Artifact Disposition|Task Schema V2 Artifact Disposition]]
 - [[_COMMUNITY_semanticChecksum|semanticChecksum]]
 - [[_COMMUNITY_NormalizedRequirements|NormalizedRequirements]]
 - [[_COMMUNITY_compilerOptions|compilerOptions]]
+- [[_COMMUNITY_Authentication Example|Authentication Example]]
 - [[_COMMUNITY_acquireRunLock|acquireRunLock]]
 - [[_COMMUNITY_Code only Graph Refresh|Code only Graph Refresh]]
 - [[_COMMUNITY_Agent Roles Index|Agent Roles Index]]
@@ -53,12 +53,12 @@
 - [[_COMMUNITY_scenario designer md|scenario designer md]]
 - [[_COMMUNITY_triage test failures md|triage test failures md]]
 - [[_COMMUNITY_use knowledge graph md|use knowledge graph md]]
-- [[_COMMUNITY_Lint Format Fallow TypeScript Graph|Lint Format Fallow TypeScript Graph]]
 - [[_COMMUNITY_Contribution Change Workflow|Contribution Change Workflow]]
+- [[_COMMUNITY_Lint Format Fallow TypeScript Graph|Lint Format Fallow TypeScript Graph]]
 - [[_COMMUNITY_Commit Quality Pipeline Graphify Refresh|Commit Quality Pipeline Graphify Refresh]]
 - [[_COMMUNITY_Approved Knowledge Memory|Approved Knowledge Memory]]
-- [[_COMMUNITY_Deterministic Evaluation Baseline|Deterministic Evaluation Baseline]]
 - [[_COMMUNITY_Versioned Artifact Templates|Versioned Artifact Templates]]
+- [[_COMMUNITY_Deterministic Evaluation Baseline|Deterministic Evaluation Baseline]]
 - [[_COMMUNITY_invalidUsernames|invalidUsernames]]
 - [[_COMMUNITY_README md|README md]]
 - [[_COMMUNITY_operating principles md|operating principles md]]
@@ -118,8 +118,8 @@
 6. `3. Agent and Human Roles` - 12 edges
 7. `validateGate()` - 10 edges
 8. `requireGate()` - 10 edges
-9. `Phase 9 Local Verification Complete` - 10 edges
-10. `Agent Roles Catalog` - 10 edges
+9. `Agent Roles Catalog` - 10 edges
+10. `Complete Quality Agent Workflow` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Graphify Navigation Rules` --semantically_similar_to--> `Cursor Graphify Rule`  [INFERRED] [semantically similar]
@@ -139,25 +139,25 @@
 Cohesion: 0.05
 Nodes (63): Agent Roles Catalog, Analyze Requirements, Artifact Contract Principles, Artifact Contract Principles, Automate Approved Scenarios, Bidirectional Traceability, Bounded Scenario Revision Loop, Claude Code Entry Point (+55 more)
 
-### Community 1 - "acceptArtifact"
-Cohesion: 0.05
-Nodes (52): acceptArtifact(), AcceptArtifactInput, assertNotCyclic(), canonicalJson(), createArtifactRevision(), invalidateDownstreamArtifacts(), JsonValue, normalizeArray() (+44 more)
-
-### Community 2 - "analyzeRequirements"
+### Community 1 - "analyzeRequirements"
 Cohesion: 0.05
 Nodes (50): analyzeRequirements(), AtomicRequirement, canonicalizePolarity(), ClarificationAnswer, ClarificationInput, isContradiction(), normalizeRequirements(), reconcileClarifications() (+42 more)
 
-### Community 3 - "sameArtifactReference"
+### Community 2 - "acceptArtifact"
+Cohesion: 0.05
+Nodes (52): acceptArtifact(), AcceptArtifactInput, assertNotCyclic(), canonicalJson(), createArtifactRevision(), invalidateDownstreamArtifacts(), JsonValue, normalizeArray() (+44 more)
+
+### Community 3 - "Accepted Artifact Immutability"
+Cohesion: 0.05
+Nodes (53): Accepted Artifact Immutability, Agent Operating Instructions, Allowlisted Origin Policy, Approved Advisory Knowledge, Claude Code Provider Entrypoint, Clone-ready Repository Workflow, Commit Quality Pipeline, Contribution Workflow (+45 more)
+
+### Community 4 - "sameArtifactReference"
 Cohesion: 0.07
 Nodes (48): sameArtifactReference(), createWorkflow(), CreateWorkflowInput, gateSubjectReference(), incrementRetry(), legalTransitions, requireGate(), requireHuman() (+40 more)
 
-### Community 4 - "artifactDispositionSchema"
+### Community 5 - "artifactDispositionSchema"
 Cohesion: 0.07
 Nodes (43): artifactDispositionSchema, AuthenticationIntakeProfile, authenticationIntakeProfileSchema, checksum, GeneratedTestQuality, generatedTestQualitySchema, identifier, StageHandoff (+35 more)
-
-### Community 5 - "Accepted Artifact Immutability"
-Cohesion: 0.06
-Nodes (47): Accepted Artifact Immutability, Agent Operating Instructions, Allowlisted Origin Policy, Approved Advisory Knowledge, Claude Code Provider Entrypoint, Clone-ready Repository Workflow, Commit Quality Pipeline, Contribution Workflow (+39 more)
 
 ### Community 6 - "quality agent factory development plan"
 Cohesion: 0.04
@@ -191,33 +191,33 @@ Nodes (24): checksumSchema, HumanScenarioReview, humanScenarioReviewSchema, requ
 Cohesion: 0.11
 Nodes (11): ControlledAccountPage, openControlledHtml(), createdUsers, metadata, username, QualityFixtures, test, scenarioMetadata() (+3 more)
 
-### Community 14 - "Authentication Example"
-Cohesion: 0.1
-Nodes (24): Authentication Example, Synthetic Ignored Authentication Storage State, Controlled Sample Application, Repository-Local Intercepted HTML Harness, Clone-Ready Repository-Resident Factory, Complete Quality Agent Workflow, Failure Classification Policy, Failure Triage Analyst (+16 more)
-
-### Community 15 - "Arbitrary Execution and Destructive Writes"
+### Community 14 - "Arbitrary Execution and Destructive Writes"
 Cohesion: 0.08
 Nodes (24): Arbitrary Execution and Destructive Writes, Authentication, Browser Permissions, and Filesystem Access, AUTO_APPROVED Disposition, Automatic Missing Low-Risk Primitive Handling, Permanent Capability Extension Audit Record, Complete Repository Quality Gates, Continue Unrelated Authorized Work, Deterministic Renderer (+16 more)
 
-### Community 16 - "BenchmarkCase"
+### Community 15 - "BenchmarkCase"
 Cohesion: 0.16
 Nodes (17): BenchmarkCase, BenchmarkCaseSchema, benchmarkCategories, benchmarkCorpus, commonAdapter, ProviderAdapter, providerAdapters, ProviderAdapterSchema (+9 more)
 
-### Community 17 - "Task Schema V2 Artifact Disposition"
-Cohesion: 0.12
-Nodes (21): Task Schema V2 Artifact Disposition, Single-Chromium Credential-Smoke Sequence, Cross-Browser End-to-End Verification Result, Skill-Directed Durable Semantic Graph Refresh, Fallow Static Analysis Result, Generated-Test Architecture and Secret Check, Independent Playwright Generated-Test Quality Gate, Integration Verification Result (+13 more)
+### Community 16 - "Task Schema V2 Artifact Disposition"
+Cohesion: 0.11
+Nodes (21): Task Schema V2 Artifact Disposition, Phase 9 Complete Status, Durable Semantic Graph Refresh, Fallow Static Analysis Result, Generated-Test Architecture and Secret Check, Genuine Human Policy Approval Gate, Phase 9 Implementation Commit f3e1ad8407217866c474c90c4fa609cb8434690c, Exact Improvement Evaluation (+13 more)
 
-### Community 18 - "semanticChecksum"
+### Community 17 - "semanticChecksum"
 Cohesion: 0.12
 Nodes (20): semanticChecksum(), AutomationPlan, capabilityReviewReasons(), classifyCapabilityExtension(), createCapabilityExtensionRecord(), createExecutionSummary(), validateCapabilityExtensionRecord(), approved (+12 more)
 
-### Community 19 - "NormalizedRequirements"
+### Community 18 - "NormalizedRequirements"
 Cohesion: 0.11
 Nodes (18): NormalizedRequirements, normalizeMarkdown(), projectScenarioMarkdown(), reviseScenarioSpecification(), validateScenarioProjection(), validateTraceability(), divergent, evaluation (+10 more)
 
-### Community 20 - "compilerOptions"
+### Community 19 - "compilerOptions"
 Cohesion: 0.11
 Nodes (18): compilerOptions, esModuleInterop, exactOptionalPropertyTypes, forceConsistentCasingInFileNames, module, moduleResolution, noFallthroughCasesInSwitch, noImplicitOverride (+10 more)
+
+### Community 20 - "Authentication Example"
+Cohesion: 0.13
+Nodes (18): Authentication Example, Synthetic Ignored Authentication Storage State, Clone-Ready Repository-Resident Factory, Complete Quality Agent Workflow, Failure Classification Policy, Failure Triage Analyst, Final Human Reviewer, Final Quality Assessor (+10 more)
 
 ### Community 21 - "acquireRunLock"
 Cohesion: 0.2
@@ -311,13 +311,13 @@ Nodes (4): Preconditions, Procedure, Stop conditions, Triage Test Failures
 Cohesion: 0.4
 Nodes (4): Boundaries, Query, Refresh, Use the Knowledge Graph
 
-### Community 44 - "Lint Format Fallow TypeScript Graph"
-Cohesion: 0.5
-Nodes (4): Lint Format Fallow TypeScript Graph Order, Commit Quality Pipeline, Graph Artifact Freshness Check, Versioned Pre-commit Hook
-
-### Community 45 - "Contribution Change Workflow"
+### Community 44 - "Contribution Change Workflow"
 Cohesion: 0.67
 Nodes (4): Contribution Change Workflow, Focused Tests Immediately Before Commit, Focused Pre-commit Test, Full npm run check Gate
+
+### Community 45 - "Lint Format Fallow TypeScript Graph"
+Cohesion: 0.5
+Nodes (4): Lint Format Fallow TypeScript Graph Order, Commit Quality Pipeline, Graph Artifact Freshness Check, Versioned Pre-commit Hook
 
 ### Community 46 - "Commit Quality Pipeline Graphify Refresh"
 Cohesion: 0.5
@@ -327,16 +327,16 @@ Nodes (4): Commit Quality Pipeline Graphify Refresh, Graphify CLI Prerequisite, 
 Cohesion: 0.67
 Nodes (3): Approved Knowledge Memory, Gated Policy Adoption, Immutable Sanitized Run Summary
 
-### Community 48 - "Deterministic Evaluation Baseline"
-Cohesion: 0.67
-Nodes (3): Deterministic Evaluation Baseline, Human Correction Rate, Provider Evaluation Methodology
-
-### Community 49 - "Versioned Artifact Templates"
+### Community 48 - "Versioned Artifact Templates"
 Cohesion: 0.67
 Nodes (3): Versioned Artifact Templates, Versioned Artifact Registry, Authoritative Markdown Scenario Contract
 
+### Community 49 - "Deterministic Evaluation Baseline"
+Cohesion: 0.67
+Nodes (3): Deterministic Evaluation Baseline, Human Correction Rate, Provider Evaluation Methodology
+
 ## Knowledge Gaps
-- **451 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+446 more)
+- **456 isolated node(s):** `name`, `version`, `private`, `description`, `type` (+451 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **49 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -350,10 +350,10 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `ArtifactReference` connect `sameArtifactReference` to `acceptArtifact`, `artifactDispositionSchema`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _507 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _511 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Agent Roles Catalog` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
-- **Should `acceptArtifact` be split into smaller, more focused modules?**
-  _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `analyzeRequirements` be split into smaller, more focused modules?**
+  _Cohesion score 0.05 - nodes in this community are weakly interconnected._
+- **Should `acceptArtifact` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._

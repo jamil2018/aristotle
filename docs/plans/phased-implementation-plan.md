@@ -26,17 +26,17 @@ tracker and should be updated in the same change that completes a task.
 
 ## Progress summary
 
-| Phase | Name                            | Status      | Depends on | Exit checkpoint                                                                                          |
-| ----: | ------------------------------- | ----------- | ---------- | -------------------------------------------------------------------------------------------------------- |
-|     1 | Repository foundation           | COMPLETE    | None       | Fresh clone installs, validates, builds, and exposes a safe Playwright harness                           |
-|     2 | Contracts and orchestration     | COMPLETE    | Phase 1    | State transitions and authorization gates pass contract tests                                            |
-|     3 | Requirement pipeline            | COMPLETE    | Phase 2    | All supported inputs produce validated, source-linked requirements                                       |
-|     4 | Scenario pipeline               | COMPLETE    | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe                                   |
-|     5 | Playwright pipeline             | COMPLETE    | Phase 4    | Only approved scenarios produce executable, linked tests                                                 |
-|     6 | Failure and assessment pipeline | COMPLETE    | Phase 5    | Failures are classified before repair and final packages are assessable                                  |
-|     7 | Memory and improvement          | COMPLETE    | Phase 6    | Approved knowledge is retrievable and policy changes remain gated                                        |
-|     8 | Provider hardening              | COMPLETE    | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                                                 |
-|     9 | Pilot workflow optimization     | IN_PROGRESS | Phase 8    | Isolated roles, generated-test quality, safe auth pilot, and disposition policy pass shadow verification |
+| Phase | Name                            | Status   | Depends on | Exit checkpoint                                                                                          |
+| ----: | ------------------------------- | -------- | ---------- | -------------------------------------------------------------------------------------------------------- |
+|     1 | Repository foundation           | COMPLETE | None       | Fresh clone installs, validates, builds, and exposes a safe Playwright harness                           |
+|     2 | Contracts and orchestration     | COMPLETE | Phase 1    | State transitions and authorization gates pass contract tests                                            |
+|     3 | Requirement pipeline            | COMPLETE | Phase 2    | All supported inputs produce validated, source-linked requirements                                       |
+|     4 | Scenario pipeline               | COMPLETE | Phase 3    | Evaluated and human-approved scenarios are traceable and revision-safe                                   |
+|     5 | Playwright pipeline             | COMPLETE | Phase 4    | Only approved scenarios produce executable, linked tests                                                 |
+|     6 | Failure and assessment pipeline | COMPLETE | Phase 5    | Failures are classified before repair and final packages are assessable                                  |
+|     7 | Memory and improvement          | COMPLETE | Phase 6    | Approved knowledge is retrievable and policy changes remain gated                                        |
+|     8 | Provider hardening              | COMPLETE | Phases 1-7 | Codex, Cursor, and Claude Code pass the benchmark corpus                                                 |
+|     9 | Pilot workflow optimization     | COMPLETE | Phase 8    | Isolated roles, generated-test quality, safe auth pilot, and disposition policy pass shadow verification |
 
 ## Current delivery snapshot
 
@@ -46,7 +46,8 @@ tracker and should be updated in the same change that completes a task.
   complete quality gate, integration tests, and provider contract tests on the
   pinned Node 22 runtime.
 - Active delivery branch: `codex/phase-9-pilot-workflow-optimization`.
-- Active review: not yet published.
+- Active review: draft pull request
+  [#9](https://github.com/jamil2018/aristotle/pull/9), targeting `main`.
 - Phase 4 merged through pull request
   [#3](https://github.com/jamil2018/aristotle/pull/3).
 - Current automated baseline: 13 unit-test files with 92 passing tests, 1
@@ -55,8 +56,8 @@ tracker and should be updated in the same change that completes a task.
 - Static-analysis baseline: Fallow 3.10.0 reports no dead code, duplication, or
   complexity findings across 47 analyzed files and 414 functions; average
   maintainability is 93.6.
-- Current work: implement the approved Phase 9 authentication-pilot workflow
-  optimization without adopting unapproved active policy.
+- Next development session: review pull request #9 and its CI evidence. Any
+  active policy adoption remains at the genuine human-policy gate.
 
 ## Phase 1: Repository foundation
 
@@ -524,7 +525,7 @@ Playwright assets, and explicit artifact durability.
       coverage.
 - [x] `P9-07` Complete focused, aggregate, integration, provider, E2E, health,
       and static-analysis verification.
-- [ ] `P9-08` Refresh the durable semantic graph once, commit, push, open the
+- [x] `P9-08` Refresh the durable semantic graph once, commit, push, open the
       draft pull request, and reconcile the final handoff.
 
 ### Checkpoint
@@ -541,7 +542,10 @@ Playwright assets, and explicit artifact durability.
 
 - Date: 2026-07-31
 - Branch: `codex/phase-9-pilot-workflow-optimization`
-- Status: implementation and local verification complete; publication pending.
+- Draft pull request: [#9](https://github.com/jamil2018/aristotle/pull/9),
+  targeting `main`.
+- Implementation commit: `f3e1ad8407217866c474c90c4fa609cb8434690c`.
+- Status: complete and published for human review.
 - Result: `npm run check:generated-tests` passed with architecture validation
   and zero secret matches across source and ignored outputs; `npm run check`
   passed with 15 unit-test files and 100 tests; `npm run test:integration`
@@ -552,7 +556,7 @@ Playwright assets, and explicit artifact durability.
   functions above threshold across 59 analyzed files and 486 functions; average
   maintainability is 93.9.
 - Graph note: the skill-directed durability-boundary refresh preserved the prior
-  semantic baseline and produced 1,227 nodes, 1,601 edges, and 111 communities.
+  semantic baseline and produced 1,066 nodes, 1,403 edges, and 104 communities.
 - Policy boundary: this change implements proposal and shadow-evaluation
   mechanics. Active policy adoption still requires an exact
   `improvement-evaluation` and genuine human policy approval.

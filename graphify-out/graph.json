@@ -504,7 +504,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L1",
       "id": "tsconfig_json",
-      "community": 20,
+      "community": 19,
       "norm_label": "tsconfig.json"
     },
     {
@@ -513,7 +513,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L2",
       "id": "aristotle_tsconfig_compileroptions",
-      "community": 20,
+      "community": 19,
       "norm_label": "compileroptions"
     },
     {
@@ -522,7 +522,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L3",
       "id": "aristotle_tsconfig_compileroptions_target",
-      "community": 20,
+      "community": 19,
       "norm_label": "target"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "id": "aristotle_tsconfig_compileroptions_module",
-      "community": 20,
+      "community": 19,
       "norm_label": "module"
     },
     {
@@ -540,7 +540,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L5",
       "id": "aristotle_tsconfig_compileroptions_moduleresolution",
-      "community": 20,
+      "community": 19,
       "norm_label": "moduleresolution"
     },
     {
@@ -549,7 +549,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L6",
       "id": "aristotle_tsconfig_compileroptions_strict",
-      "community": 20,
+      "community": 19,
       "norm_label": "strict"
     },
     {
@@ -558,7 +558,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L7",
       "id": "aristotle_tsconfig_compileroptions_nouncheckedindexedaccess",
-      "community": 20,
+      "community": 19,
       "norm_label": "nouncheckedindexedaccess"
     },
     {
@@ -567,7 +567,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L8",
       "id": "aristotle_tsconfig_compileroptions_exactoptionalpropertytypes",
-      "community": 20,
+      "community": 19,
       "norm_label": "exactoptionalpropertytypes"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L9",
       "id": "aristotle_tsconfig_compileroptions_noimplicitoverride",
-      "community": 20,
+      "community": 19,
       "norm_label": "noimplicitoverride"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L10",
       "id": "aristotle_tsconfig_compileroptions_nofallthroughcasesinswitch",
-      "community": 20,
+      "community": 19,
       "norm_label": "nofallthroughcasesinswitch"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L11",
       "id": "aristotle_tsconfig_compileroptions_nopropertyaccessfromindexsignature",
-      "community": 20,
+      "community": 19,
       "norm_label": "nopropertyaccessfromindexsignature"
     },
     {
@@ -603,7 +603,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L12",
       "id": "aristotle_tsconfig_compileroptions_useunknownincatchvariables",
-      "community": 20,
+      "community": 19,
       "norm_label": "useunknownincatchvariables"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L13",
       "id": "aristotle_tsconfig_compileroptions_verbatimmodulesyntax",
-      "community": 20,
+      "community": 19,
       "norm_label": "verbatimmodulesyntax"
     },
     {
@@ -621,7 +621,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L14",
       "id": "aristotle_tsconfig_compileroptions_esmoduleinterop",
-      "community": 20,
+      "community": 19,
       "norm_label": "esmoduleinterop"
     },
     {
@@ -630,7 +630,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L15",
       "id": "aristotle_tsconfig_compileroptions_resolvejsonmodule",
-      "community": 20,
+      "community": 19,
       "norm_label": "resolvejsonmodule"
     },
     {
@@ -639,7 +639,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L16",
       "id": "aristotle_tsconfig_compileroptions_forceconsistentcasinginfilenames",
-      "community": 20,
+      "community": 19,
       "norm_label": "forceconsistentcasinginfilenames"
     },
     {
@@ -648,7 +648,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L17",
       "id": "aristotle_tsconfig_compileroptions_skiplibcheck",
-      "community": 20,
+      "community": 19,
       "norm_label": "skiplibcheck"
     },
     {
@@ -657,7 +657,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L18",
       "id": "aristotle_tsconfig_compileroptions_types",
-      "community": 20,
+      "community": 19,
       "norm_label": "types"
     },
     {
@@ -666,7 +666,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L20",
       "id": "aristotle_tsconfig_include",
-      "community": 20,
+      "community": 19,
       "norm_label": "include"
     },
     {
@@ -900,7 +900,7 @@
       "source_file": "tests/unit/optimization/phase-9-optimization.test.ts",
       "source_location": "L1",
       "id": "tests_unit_optimization_phase_9_optimization_test_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "phase-9-optimization.test.ts"
     },
     {
@@ -909,7 +909,7 @@
       "source_file": "tests/unit/optimization/phase-9-optimization.test.ts",
       "source_location": "L24",
       "id": "optimization_phase_9_optimization_test_checksum",
-      "community": 4,
+      "community": 5,
       "norm_label": "checksum"
     },
     {
@@ -918,7 +918,7 @@
       "source_file": "tests/unit/optimization/phase-9-optimization.test.ts",
       "source_location": "L28",
       "id": "optimization_phase_9_optimization_test_task",
-      "community": 4,
+      "community": 5,
       "norm_label": "task"
     },
     {
@@ -927,7 +927,7 @@
       "source_file": "tests/unit/optimization/phase-9-optimization.test.ts",
       "source_location": "L56",
       "id": "optimization_phase_9_optimization_test_handoff",
-      "community": 4,
+      "community": 5,
       "norm_label": "handoff"
     },
     {
@@ -936,7 +936,7 @@
       "source_file": "tests/unit/optimization/phase-9-optimization.test.ts",
       "source_location": "L92",
       "id": "optimization_phase_9_optimization_test_quality",
-      "community": 4,
+      "community": 5,
       "norm_label": "quality"
     },
     {
@@ -945,7 +945,7 @@
       "source_file": "tests/unit/optimization/phase-9-optimization.test.ts",
       "source_location": "L123",
       "id": "optimization_phase_9_optimization_test_intake",
-      "community": 4,
+      "community": 5,
       "norm_label": "intake"
     },
     {
@@ -954,7 +954,7 @@
       "source_file": "tests/unit/optimization/phase-9-optimization.test.ts",
       "source_location": "L141",
       "id": "optimization_phase_9_optimization_test_result",
-      "community": 4,
+      "community": 5,
       "norm_label": "result"
     },
     {
@@ -963,7 +963,7 @@
       "source_file": "tests/unit/optimization/phase-9-optimization.test.ts",
       "source_location": "L171",
       "id": "optimization_phase_9_optimization_test_scan",
-      "community": 4,
+      "community": 5,
       "norm_label": "scan"
     },
     {
@@ -972,7 +972,7 @@
       "source_file": "tests/unit/optimization/phase-9-optimization.test.ts",
       "source_location": "L180",
       "id": "optimization_phase_9_optimization_test_manifest",
-      "community": 4,
+      "community": 5,
       "norm_label": "manifest"
     },
     {
@@ -981,7 +981,7 @@
       "source_file": "tests/unit/optimization/phase-9-optimization.test.ts",
       "source_location": "L208",
       "id": "optimization_phase_9_optimization_test_partitions",
-      "community": 4,
+      "community": 5,
       "norm_label": "partitions"
     },
     {
@@ -990,7 +990,7 @@
       "source_file": "tests/unit/providers/provider-hardening.test.ts",
       "source_location": "L1",
       "id": "tests_unit_providers_provider_hardening_test_ts",
-      "community": 16,
+      "community": 15,
       "norm_label": "provider-hardening.test.ts"
     },
     {
@@ -999,7 +999,7 @@
       "source_file": "tests/unit/providers/provider-hardening.test.ts",
       "source_location": "L50",
       "id": "providers_provider_hardening_test_report",
-      "community": 16,
+      "community": 15,
       "norm_label": "report"
     },
     {
@@ -1008,7 +1008,7 @@
       "source_file": "tests/unit/requirements/requirement-pipeline.test.ts",
       "source_location": "L1",
       "id": "tests_unit_requirements_requirement_pipeline_test_ts",
-      "community": 2,
+      "community": 1,
       "norm_label": "requirement-pipeline.test.ts"
     },
     {
@@ -1017,7 +1017,7 @@
       "source_file": "tests/unit/requirements/requirement-pipeline.test.ts",
       "source_location": "L21",
       "id": "requirements_requirement_pipeline_test_source",
-      "community": 2,
+      "community": 1,
       "norm_label": "source"
     },
     {
@@ -1026,7 +1026,7 @@
       "source_file": "tests/unit/requirements/requirement-pipeline.test.ts",
       "source_location": "L81",
       "id": "requirements_requirement_pipeline_test_createminimalpdf",
-      "community": 2,
+      "community": 1,
       "norm_label": "createminimalpdf()"
     },
     {
@@ -1035,7 +1035,7 @@
       "source_file": "tests/unit/requirements/requirement-pipeline.test.ts",
       "source_location": "L116",
       "id": "requirements_requirement_pipeline_test_first",
-      "community": 2,
+      "community": 1,
       "norm_label": "first"
     },
     {
@@ -1044,7 +1044,7 @@
       "source_file": "tests/unit/requirements/requirement-pipeline.test.ts",
       "source_location": "L117",
       "id": "requirements_requirement_pipeline_test_second",
-      "community": 2,
+      "community": 1,
       "norm_label": "second"
     },
     {
@@ -1053,7 +1053,7 @@
       "source_file": "tests/unit/requirements/requirement-pipeline.test.ts",
       "source_location": "L148",
       "id": "requirements_requirement_pipeline_test_normalized",
-      "community": 2,
+      "community": 1,
       "norm_label": "normalized"
     },
     {
@@ -1062,7 +1062,7 @@
       "source_file": "tests/unit/requirements/requirement-pipeline.test.ts",
       "source_location": "L149",
       "id": "requirements_requirement_pipeline_test_analysis",
-      "community": 2,
+      "community": 1,
       "norm_label": "analysis"
     },
     {
@@ -1071,7 +1071,7 @@
       "source_file": "tests/unit/requirements/requirement-pipeline.test.ts",
       "source_location": "L173",
       "id": "requirements_requirement_pipeline_test_initial",
-      "community": 2,
+      "community": 1,
       "norm_label": "initial"
     },
     {
@@ -1080,7 +1080,7 @@
       "source_file": "tests/unit/requirements/requirement-pipeline.test.ts",
       "source_location": "L174",
       "id": "requirements_requirement_pipeline_test_next",
-      "community": 2,
+      "community": 1,
       "norm_label": "next"
     },
     {
@@ -1089,7 +1089,7 @@
       "source_file": "tests/unit/requirements/requirement-pipeline.test.ts",
       "source_location": "L218",
       "id": "requirements_requirement_pipeline_test_proposal",
-      "community": 2,
+      "community": 1,
       "norm_label": "proposal"
     },
     {
@@ -1098,7 +1098,7 @@
       "source_file": "tests/unit/requirements/requirement-pipeline.test.ts",
       "source_location": "L239",
       "id": "requirements_requirement_pipeline_test_visited",
-      "community": 2,
+      "community": 1,
       "norm_label": "visited"
     },
     {
@@ -1107,7 +1107,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L1",
       "id": "tests_unit_playwright_playwright_pipeline_test_ts",
-      "community": 18,
+      "community": 17,
       "norm_label": "playwright-pipeline.test.ts"
     },
     {
@@ -1116,7 +1116,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L20",
       "id": "playwright_playwright_pipeline_test_requirements",
-      "community": 18,
+      "community": 17,
       "norm_label": "requirements"
     },
     {
@@ -1125,7 +1125,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L40",
       "id": "playwright_playwright_pipeline_test_approvedscenario",
-      "community": 18,
+      "community": 17,
       "norm_label": "approvedscenario()"
     },
     {
@@ -1134,7 +1134,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L54",
       "id": "playwright_playwright_pipeline_test_approved",
-      "community": 18,
+      "community": 17,
       "norm_label": "approved"
     },
     {
@@ -1143,7 +1143,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L58",
       "id": "playwright_playwright_pipeline_test_generated",
-      "community": 18,
+      "community": 17,
       "norm_label": "generated"
     },
     {
@@ -1152,7 +1152,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L161",
       "id": "playwright_playwright_pipeline_test_base",
-      "community": 18,
+      "community": 17,
       "norm_label": "base"
     },
     {
@@ -1161,7 +1161,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L232",
       "id": "playwright_playwright_pipeline_test_lowriskproposal",
-      "community": 18,
+      "community": 17,
       "norm_label": "lowriskproposal"
     },
     {
@@ -1170,7 +1170,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L276",
       "id": "playwright_playwright_pipeline_test_record",
-      "community": 18,
+      "community": 17,
       "norm_label": "record"
     },
     {
@@ -1179,7 +1179,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L295",
       "id": "playwright_playwright_pipeline_test_existing",
-      "community": 18,
+      "community": 17,
       "norm_label": "existing"
     },
     {
@@ -1188,7 +1188,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L341",
       "id": "playwright_playwright_pipeline_test_events",
-      "community": 18,
+      "community": 17,
       "norm_label": "events"
     },
     {
@@ -1197,7 +1197,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L342",
       "id": "playwright_playwright_pipeline_test_cleanup",
-      "community": 18,
+      "community": 17,
       "norm_label": "cleanup"
     },
     {
@@ -1206,7 +1206,7 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L356",
       "id": "playwright_playwright_pipeline_test_summary",
-      "community": 18,
+      "community": 17,
       "norm_label": "summary"
     },
     {
@@ -1215,7 +1215,7 @@
       "source_file": "tests/unit/schemas/contracts.test.ts",
       "source_location": "L1",
       "id": "tests_unit_schemas_contracts_test_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "contracts.test.ts"
     },
     {
@@ -1224,7 +1224,7 @@
       "source_file": "tests/unit/schemas/contracts.test.ts",
       "source_location": "L11",
       "id": "schemas_contracts_test_provenance",
-      "community": 1,
+      "community": 2,
       "norm_label": "provenance"
     },
     {
@@ -1233,7 +1233,7 @@
       "source_file": "tests/unit/schemas/contracts.test.ts",
       "source_location": "L23",
       "id": "schemas_contracts_test_result",
-      "community": 1,
+      "community": 2,
       "norm_label": "result"
     },
     {
@@ -1242,7 +1242,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L1",
       "id": "tests_unit_scenarios_scenario_pipeline_test_ts",
-      "community": 19,
+      "community": 18,
       "norm_label": "scenario-pipeline.test.ts"
     },
     {
@@ -1251,7 +1251,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L15",
       "id": "scenarios_scenario_pipeline_test_requirements",
-      "community": 19,
+      "community": 18,
       "norm_label": "requirements"
     },
     {
@@ -1260,7 +1260,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L48",
       "id": "scenarios_scenario_pipeline_test_specification",
-      "community": 19,
+      "community": 18,
       "norm_label": "specification"
     },
     {
@@ -1269,7 +1269,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L64",
       "id": "scenarios_scenario_pipeline_test_first",
-      "community": 19,
+      "community": 18,
       "norm_label": "first"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L65",
       "id": "scenarios_scenario_pipeline_test_second",
-      "community": 19,
+      "community": 18,
       "norm_label": "second"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L74",
       "id": "scenarios_scenario_pipeline_test_markdown",
-      "community": 19,
+      "community": 18,
       "norm_label": "markdown"
     },
     {
@@ -1296,7 +1296,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L81",
       "id": "scenarios_scenario_pipeline_test_divergent",
-      "community": 19,
+      "community": 18,
       "norm_label": "divergent"
     },
     {
@@ -1305,7 +1305,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L112",
       "id": "scenarios_scenario_pipeline_test_evaluation",
-      "community": 19,
+      "community": 18,
       "norm_label": "evaluation"
     },
     {
@@ -1314,7 +1314,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L121",
       "id": "scenarios_scenario_pipeline_test_missingcoverage",
-      "community": 19,
+      "community": 18,
       "norm_label": "missingcoverage"
     },
     {
@@ -1323,7 +1323,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L127",
       "id": "scenarios_scenario_pipeline_test_unknownrequirement",
-      "community": 19,
+      "community": 18,
       "norm_label": "unknownrequirement"
     },
     {
@@ -1332,7 +1332,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L167",
       "id": "scenarios_scenario_pipeline_test_review",
-      "community": 19,
+      "community": 18,
       "norm_label": "review"
     },
     {
@@ -1341,7 +1341,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L210",
       "id": "scenarios_scenario_pipeline_test_traceability",
-      "community": 19,
+      "community": 18,
       "norm_label": "traceability"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_file": "tests/unit/scenarios/scenario-pipeline.test.ts",
       "source_location": "L218",
       "id": "scenarios_scenario_pipeline_test_orphaned",
-      "community": 19,
+      "community": 18,
       "norm_label": "orphaned"
     },
     {
@@ -1359,7 +1359,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L1",
       "id": "tests_unit_orchestration_artifact_lifecycle_test_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifact-lifecycle.test.ts"
     },
     {
@@ -1368,7 +1368,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L14",
       "id": "orchestration_artifact_lifecycle_test_provenance",
-      "community": 1,
+      "community": 2,
       "norm_label": "provenance"
     },
     {
@@ -1377,7 +1377,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L23",
       "id": "orchestration_artifact_lifecycle_test_designer",
-      "community": 1,
+      "community": 2,
       "norm_label": "designer"
     },
     {
@@ -1386,7 +1386,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L36",
       "id": "orchestration_artifact_lifecycle_test_accepted",
-      "community": 1,
+      "community": 2,
       "norm_label": "accepted"
     },
     {
@@ -1395,7 +1395,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L60",
       "id": "orchestration_artifact_lifecycle_test_review",
-      "community": 1,
+      "community": 2,
       "norm_label": "review"
     },
     {
@@ -1404,7 +1404,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L100",
       "id": "orchestration_artifact_lifecycle_test_revision",
-      "community": 1,
+      "community": 2,
       "norm_label": "revision"
     },
     {
@@ -1413,7 +1413,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L116",
       "id": "orchestration_artifact_lifecycle_test_oldchecksum",
-      "community": 1,
+      "community": 2,
       "norm_label": "oldchecksum"
     },
     {
@@ -1422,7 +1422,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L117",
       "id": "orchestration_artifact_lifecycle_test_dependent",
-      "community": 1,
+      "community": 2,
       "norm_label": "dependent"
     },
     {
@@ -1431,7 +1431,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L137",
       "id": "orchestration_artifact_lifecycle_test_invalidated",
-      "community": 1,
+      "community": 2,
       "norm_label": "[invalidated]"
     },
     {
@@ -1440,7 +1440,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L151",
       "id": "orchestration_artifact_lifecycle_test_draftscenario",
-      "community": 1,
+      "community": 2,
       "norm_label": "draftscenario()"
     },
     {
@@ -1449,7 +1449,7 @@
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
       "source_location": "L174",
       "id": "orchestration_artifact_lifecycle_test_acceptedrequirement",
-      "community": 1,
+      "community": 2,
       "norm_label": "acceptedrequirement()"
     },
     {
@@ -1458,7 +1458,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L1",
       "id": "tests_unit_orchestration_workflow_test_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "workflow.test.ts"
     },
     {
@@ -1467,7 +1467,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L12",
       "id": "orchestration_workflow_test_coordinator",
-      "community": 3,
+      "community": 4,
       "norm_label": "coordinator"
     },
     {
@@ -1476,7 +1476,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L16",
       "id": "orchestration_workflow_test_evaluator",
-      "community": 3,
+      "community": 4,
       "norm_label": "evaluator"
     },
     {
@@ -1485,7 +1485,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L20",
       "id": "orchestration_workflow_test_human",
-      "community": 3,
+      "community": 4,
       "norm_label": "human"
     },
     {
@@ -1494,7 +1494,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L21",
       "id": "orchestration_workflow_test_scenario",
-      "community": 3,
+      "community": 4,
       "norm_label": "scenario"
     },
     {
@@ -1503,7 +1503,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L27",
       "id": "orchestration_workflow_test_playwrighttest",
-      "community": 3,
+      "community": 4,
       "norm_label": "playwrighttest"
     },
     {
@@ -1512,7 +1512,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L33",
       "id": "orchestration_workflow_test_generatedtestquality",
-      "community": 3,
+      "community": 4,
       "norm_label": "generatedtestquality"
     },
     {
@@ -1521,7 +1521,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L39",
       "id": "orchestration_workflow_test_triage",
-      "community": 3,
+      "community": 4,
       "norm_label": "triage"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L45",
       "id": "orchestration_workflow_test_assessment",
-      "community": 3,
+      "community": 4,
       "norm_label": "assessment"
     },
     {
@@ -1539,7 +1539,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L51",
       "id": "orchestration_workflow_test_executionsummary",
-      "community": 3,
+      "community": 4,
       "norm_label": "executionsummary"
     },
     {
@@ -1548,7 +1548,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L60",
       "id": "orchestration_workflow_test_workflow",
-      "community": 3,
+      "community": 4,
       "norm_label": "workflow"
     },
     {
@@ -1557,7 +1557,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L164",
       "id": "orchestration_workflow_test_executing",
-      "community": 3,
+      "community": 4,
       "norm_label": "executing"
     },
     {
@@ -1566,7 +1566,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L253",
       "id": "orchestration_workflow_test_repairing",
-      "community": 3,
+      "community": 4,
       "norm_label": "repairing"
     },
     {
@@ -1575,7 +1575,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L266",
       "id": "orchestration_workflow_test_failed",
-      "community": 3,
+      "community": 4,
       "norm_label": "failed"
     },
     {
@@ -1584,7 +1584,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L280",
       "id": "orchestration_workflow_test_assessing",
-      "community": 3,
+      "community": 4,
       "norm_label": "assessing"
     },
     {
@@ -1593,7 +1593,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L320",
       "id": "orchestration_workflow_test_clarifying",
-      "community": 3,
+      "community": 4,
       "norm_label": "clarifying"
     },
     {
@@ -1602,7 +1602,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L390",
       "id": "orchestration_workflow_test_review",
-      "community": 3,
+      "community": 4,
       "norm_label": "review"
     },
     {
@@ -1611,7 +1611,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L433",
       "id": "orchestration_workflow_test_createworkflowat",
-      "community": 3,
+      "community": 4,
       "norm_label": "createworkflowat()"
     },
     {
@@ -1620,7 +1620,7 @@
       "source_file": "tests/unit/orchestration/workflow.test.ts",
       "source_location": "L454",
       "id": "orchestration_workflow_test_workflowatscenarioevaluation",
-      "community": 3,
+      "community": 4,
       "norm_label": "workflowatscenarioevaluation()"
     },
     {
@@ -1629,7 +1629,7 @@
       "source_file": "tests/unit/orchestration/provenance.test.ts",
       "source_location": "L1",
       "id": "tests_unit_orchestration_provenance_test_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "provenance.test.ts"
     },
     {
@@ -1638,7 +1638,7 @@
       "source_file": "tests/unit/orchestration/provenance.test.ts",
       "source_location": "L7",
       "id": "orchestration_provenance_test_provenance",
-      "community": 1,
+      "community": 2,
       "norm_label": "provenance"
     },
     {
@@ -1647,7 +1647,7 @@
       "source_file": "tests/unit/orchestration/artifact-registry.test.ts",
       "source_location": "L1",
       "id": "tests_unit_orchestration_artifact_registry_test_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifact-registry.test.ts"
     },
     {
@@ -1683,7 +1683,7 @@
       "source_file": "tests/unit/validation/generated-tests.test.ts",
       "source_location": "L1",
       "id": "tests_unit_validation_generated_tests_test_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "generated-tests.test.ts"
     },
     {
@@ -1746,7 +1746,7 @@
       "source_file": "tests/integration/orchestration/workflow-store.test.ts",
       "source_location": "L88",
       "id": "orchestration_workflow_store_test_sampleworkflow",
-      "community": 3,
+      "community": 4,
       "norm_label": "sampleworkflow()"
     },
     {
@@ -2601,7 +2601,7 @@
       "source_file": "src/optimization/contracts.ts",
       "source_location": "L1",
       "id": "src_optimization_contracts_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "contracts.ts"
     },
     {
@@ -2610,7 +2610,7 @@
       "source_file": "src/optimization/contracts.ts",
       "source_location": "L5",
       "id": "optimization_contracts_identifier",
-      "community": 4,
+      "community": 5,
       "norm_label": "identifier"
     },
     {
@@ -2619,7 +2619,7 @@
       "source_file": "src/optimization/contracts.ts",
       "source_location": "L10",
       "id": "optimization_contracts_checksum",
-      "community": 4,
+      "community": 5,
       "norm_label": "checksum"
     },
     {
@@ -2628,7 +2628,7 @@
       "source_file": "src/optimization/contracts.ts",
       "source_location": "L11",
       "id": "optimization_contracts_artifactdispositionschema",
-      "community": 4,
+      "community": 5,
       "norm_label": "artifactdispositionschema"
     },
     {
@@ -2637,7 +2637,7 @@
       "source_file": "src/optimization/contracts.ts",
       "source_location": "L17",
       "id": "optimization_contracts_stagehandoffschema",
-      "community": 4,
+      "community": 5,
       "norm_label": "stagehandoffschema"
     },
     {
@@ -2646,7 +2646,7 @@
       "source_file": "src/optimization/contracts.ts",
       "source_location": "L54",
       "id": "optimization_contracts_generatedtestqualityschema",
-      "community": 4,
+      "community": 5,
       "norm_label": "generatedtestqualityschema"
     },
     {
@@ -2655,7 +2655,7 @@
       "source_file": "src/optimization/contracts.ts",
       "source_location": "L91",
       "id": "optimization_contracts_authenticationintakeprofileschema",
-      "community": 4,
+      "community": 5,
       "norm_label": "authenticationintakeprofileschema"
     },
     {
@@ -2664,7 +2664,7 @@
       "source_file": "src/optimization/contracts.ts",
       "source_location": "L120",
       "id": "optimization_contracts_stagehandoff",
-      "community": 4,
+      "community": 5,
       "norm_label": "stagehandoff"
     },
     {
@@ -2673,7 +2673,7 @@
       "source_file": "src/optimization/contracts.ts",
       "source_location": "L121",
       "id": "optimization_contracts_generatedtestquality",
-      "community": 4,
+      "community": 5,
       "norm_label": "generatedtestquality"
     },
     {
@@ -2682,7 +2682,7 @@
       "source_file": "src/optimization/contracts.ts",
       "source_location": "L122",
       "id": "optimization_contracts_authenticationintakeprofile",
-      "community": 4,
+      "community": 5,
       "norm_label": "authenticationintakeprofile"
     },
     {
@@ -2691,7 +2691,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L1",
       "id": "src_optimization_pipeline_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "pipeline.ts"
     },
     {
@@ -2700,7 +2700,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L12",
       "id": "optimization_pipeline_authoritativestagerole",
-      "community": 4,
+      "community": 5,
       "norm_label": "authoritativestagerole"
     },
     {
@@ -2709,7 +2709,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L24",
       "id": "optimization_pipeline_validatestagedispatch",
-      "community": 4,
+      "community": 5,
       "norm_label": "validatestagedispatch()"
     },
     {
@@ -2718,7 +2718,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L35",
       "id": "optimization_pipeline_createstagehandoff",
-      "community": 4,
+      "community": 5,
       "norm_label": "createstagehandoff()"
     },
     {
@@ -2727,7 +2727,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L71",
       "id": "optimization_pipeline_validatefreshrolecontext",
-      "community": 4,
+      "community": 5,
       "norm_label": "validatefreshrolecontext()"
     },
     {
@@ -2736,7 +2736,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L85",
       "id": "optimization_pipeline_qualitydimensions",
-      "community": 4,
+      "community": 5,
       "norm_label": "qualitydimensions"
     },
     {
@@ -2745,7 +2745,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L97",
       "id": "optimization_pipeline_qualityinput",
-      "community": 4,
+      "community": 5,
       "norm_label": "qualityinput"
     },
     {
@@ -2754,7 +2754,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L104",
       "id": "optimization_pipeline_evaluategeneratedtestquality",
-      "community": 4,
+      "community": 5,
       "norm_label": "evaluategeneratedtestquality()"
     },
     {
@@ -2763,7 +2763,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L133",
       "id": "optimization_pipeline_preflightinput",
-      "community": 4,
+      "community": 5,
       "norm_label": "preflightinput"
     },
     {
@@ -2772,7 +2772,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L146",
       "id": "optimization_pipeline_runauthenticationpreflight",
-      "community": 4,
+      "community": 5,
       "norm_label": "runauthenticationpreflight()"
     },
     {
@@ -2781,7 +2781,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L179",
       "id": "optimization_pipeline_scanforsecrets",
-      "community": 4,
+      "community": 5,
       "norm_label": "scanforsecrets()"
     },
     {
@@ -2790,7 +2790,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L197",
       "id": "optimization_pipeline_createboundedartifactdigest",
-      "community": 4,
+      "community": 5,
       "norm_label": "createboundedartifactdigest()"
     },
     {
@@ -2799,7 +2799,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L213",
       "id": "optimization_pipeline_createsafetelemetry",
-      "community": 4,
+      "community": 5,
       "norm_label": "createsafetelemetry()"
     },
     {
@@ -2808,7 +2808,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L228",
       "id": "optimization_pipeline_progressiveexecutionplan",
-      "community": 4,
+      "community": 5,
       "norm_label": "progressiveexecutionplan()"
     },
     {
@@ -2817,7 +2817,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L256",
       "id": "optimization_pipeline_packageartifact",
-      "community": 4,
+      "community": 5,
       "norm_label": "packageartifact"
     },
     {
@@ -2826,7 +2826,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L261",
       "id": "optimization_pipeline_createpackagemanifest",
-      "community": 4,
+      "community": 5,
       "norm_label": "createpackagemanifest()"
     },
     {
@@ -2835,7 +2835,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L288",
       "id": "optimization_pipeline_compactcoordinatorcontext",
-      "community": 4,
+      "community": 5,
       "norm_label": "compactcoordinatorcontext()"
     },
     {
@@ -2844,7 +2844,7 @@
       "source_file": "src/optimization/pipeline.ts",
       "source_location": "L305",
       "id": "optimization_pipeline_partitioncorpus",
-      "community": 4,
+      "community": 5,
       "norm_label": "partitioncorpus()"
     },
     {
@@ -2853,7 +2853,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L1",
       "id": "src_providers_contracts_ts",
-      "community": 16,
+      "community": 15,
       "norm_label": "contracts.ts"
     },
     {
@@ -2862,7 +2862,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L3",
       "id": "providers_contracts_providers",
-      "community": 16,
+      "community": 15,
       "norm_label": "providers"
     },
     {
@@ -2871,7 +2871,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L5",
       "id": "providers_contracts_sharedboundaries",
-      "community": 16,
+      "community": 15,
       "norm_label": "sharedboundaries"
     },
     {
@@ -2880,7 +2880,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L16",
       "id": "providers_contracts_rolecontracts",
-      "community": 16,
+      "community": 15,
       "norm_label": "rolecontracts"
     },
     {
@@ -2889,7 +2889,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L29",
       "id": "providers_contracts_skillcontracts",
-      "community": 16,
+      "community": 15,
       "norm_label": "skillcontracts"
     },
     {
@@ -2898,7 +2898,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L40",
       "id": "providers_contracts_provideradapterschema",
-      "community": 16,
+      "community": 15,
       "norm_label": "provideradapterschema"
     },
     {
@@ -2907,7 +2907,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L48",
       "id": "providers_contracts_provideradapter",
-      "community": 16,
+      "community": 15,
       "norm_label": "provideradapter"
     },
     {
@@ -2916,7 +2916,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L50",
       "id": "providers_contracts_commonadapter",
-      "community": 16,
+      "community": 15,
       "norm_label": "commonadapter"
     },
     {
@@ -2925,7 +2925,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L57",
       "id": "providers_contracts_provideradapters",
-      "community": 16,
+      "community": 15,
       "norm_label": "provideradapters"
     },
     {
@@ -2934,7 +2934,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L75",
       "id": "providers_contracts_benchmarkcategories",
-      "community": 16,
+      "community": 15,
       "norm_label": "benchmarkcategories"
     },
     {
@@ -2943,7 +2943,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L107",
       "id": "providers_contracts_benchmarkcaseschema",
-      "community": 16,
+      "community": 15,
       "norm_label": "benchmarkcaseschema"
     },
     {
@@ -2952,7 +2952,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L115",
       "id": "providers_contracts_benchmarkcase",
-      "community": 16,
+      "community": 15,
       "norm_label": "benchmarkcase"
     },
     {
@@ -2961,7 +2961,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L117",
       "id": "providers_contracts_benchmarkcorpus",
-      "community": 16,
+      "community": 15,
       "norm_label": "benchmarkcorpus"
     },
     {
@@ -2970,7 +2970,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L128",
       "id": "providers_contracts_expectedbenchmarkclassification",
-      "community": 16,
+      "community": 15,
       "norm_label": "expectedbenchmarkclassification()"
     },
     {
@@ -2979,7 +2979,7 @@
       "source_file": "src/providers/contracts.ts",
       "source_location": "L142",
       "id": "providers_contracts_expectedbenchmarkaction",
-      "community": 16,
+      "community": 15,
       "norm_label": "expectedbenchmarkaction()"
     },
     {
@@ -2988,7 +2988,7 @@
       "source_file": "src/providers/pipeline.ts",
       "source_location": "L1",
       "id": "src_providers_pipeline_ts",
-      "community": 16,
+      "community": 15,
       "norm_label": "pipeline.ts"
     },
     {
@@ -2997,7 +2997,7 @@
       "source_file": "src/providers/pipeline.ts",
       "source_location": "L11",
       "id": "providers_pipeline_adaptervalidation",
-      "community": 16,
+      "community": 15,
       "norm_label": "adaptervalidation"
     },
     {
@@ -3006,7 +3006,7 @@
       "source_file": "src/providers/pipeline.ts",
       "source_location": "L17",
       "id": "providers_pipeline_validateprovideradapter",
-      "community": 16,
+      "community": 15,
       "norm_label": "validateprovideradapter()"
     },
     {
@@ -3015,7 +3015,7 @@
       "source_file": "src/providers/pipeline.ts",
       "source_location": "L43",
       "id": "providers_pipeline_providerbenchmarkreport",
-      "community": 16,
+      "community": 15,
       "norm_label": "providerbenchmarkreport"
     },
     {
@@ -3024,7 +3024,7 @@
       "source_file": "src/providers/pipeline.ts",
       "source_location": "L55",
       "id": "providers_pipeline_evaluateprovider",
-      "community": 16,
+      "community": 15,
       "norm_label": "evaluateprovider()"
     },
     {
@@ -3033,7 +3033,7 @@
       "source_file": "src/requirements/contracts.ts",
       "source_location": "L1",
       "id": "src_requirements_contracts_ts",
-      "community": 2,
+      "community": 1,
       "norm_label": "contracts.ts"
     },
     {
@@ -3042,7 +3042,7 @@
       "source_file": "src/requirements/contracts.ts",
       "source_location": "L3",
       "id": "requirements_contracts_identifierschema",
-      "community": 2,
+      "community": 1,
       "norm_label": "identifierschema"
     },
     {
@@ -3051,7 +3051,7 @@
       "source_file": "src/requirements/contracts.ts",
       "source_location": "L8",
       "id": "requirements_contracts_checksumschema",
-      "community": 2,
+      "community": 1,
       "norm_label": "checksumschema"
     },
     {
@@ -3060,7 +3060,7 @@
       "source_file": "src/requirements/contracts.ts",
       "source_location": "L10",
       "id": "requirements_contracts_ingestedrequirementsourceschema",
-      "community": 2,
+      "community": 1,
       "norm_label": "ingestedrequirementsourceschema"
     },
     {
@@ -3069,7 +3069,7 @@
       "source_file": "src/requirements/contracts.ts",
       "source_location": "L24",
       "id": "requirements_contracts_atomicrequirementschema",
-      "community": 2,
+      "community": 1,
       "norm_label": "atomicrequirementschema"
     },
     {
@@ -3078,7 +3078,7 @@
       "source_file": "src/requirements/contracts.ts",
       "source_location": "L36",
       "id": "requirements_contracts_normalizedrequirementsschema",
-      "community": 2,
+      "community": 1,
       "norm_label": "normalizedrequirementsschema"
     },
     {
@@ -3087,7 +3087,7 @@
       "source_file": "src/requirements/contracts.ts",
       "source_location": "L44",
       "id": "requirements_contracts_requirementanalysisschema",
-      "community": 2,
+      "community": 1,
       "norm_label": "requirementanalysisschema"
     },
     {
@@ -3096,7 +3096,7 @@
       "source_file": "src/requirements/exploration.ts",
       "source_location": "L1",
       "id": "src_requirements_exploration_ts",
-      "community": 2,
+      "community": 1,
       "norm_label": "exploration.ts"
     },
     {
@@ -3105,7 +3105,7 @@
       "source_file": "src/requirements/exploration.ts",
       "source_location": "L1",
       "id": "requirements_exploration_taxonomyproposal",
-      "community": 2,
+      "community": 1,
       "norm_label": "taxonomyproposal"
     },
     {
@@ -3114,7 +3114,7 @@
       "source_file": "src/requirements/exploration.ts",
       "source_location": "L8",
       "id": "requirements_exploration_proposetaxonomyplacement",
-      "community": 2,
+      "community": 1,
       "norm_label": "proposetaxonomyplacement()"
     },
     {
@@ -3123,7 +3123,7 @@
       "source_file": "src/requirements/exploration.ts",
       "source_location": "L44",
       "id": "requirements_exploration_explorationpolicy",
-      "community": 2,
+      "community": 1,
       "norm_label": "explorationpolicy"
     },
     {
@@ -3132,7 +3132,7 @@
       "source_file": "src/requirements/exploration.ts",
       "source_location": "L51",
       "id": "requirements_exploration_explorationevidence",
-      "community": 2,
+      "community": 1,
       "norm_label": "explorationevidence"
     },
     {
@@ -3141,7 +3141,7 @@
       "source_file": "src/requirements/exploration.ts",
       "source_location": "L57",
       "id": "requirements_exploration_exploreallowedorigin",
-      "community": 2,
+      "community": 1,
       "norm_label": "exploreallowedorigin()"
     },
     {
@@ -3150,7 +3150,7 @@
       "source_file": "src/requirements/exploration.ts",
       "source_location": "L91",
       "id": "requirements_exploration_validatedweburl",
-      "community": 2,
+      "community": 1,
       "norm_label": "validatedweburl()"
     },
     {
@@ -3159,7 +3159,7 @@
       "source_file": "src/requirements/exploration.ts",
       "source_location": "L103",
       "id": "requirements_exploration_validatetaxonomypath",
-      "community": 2,
+      "community": 1,
       "norm_label": "validatetaxonomypath()"
     },
     {
@@ -3168,7 +3168,7 @@
       "source_file": "src/requirements/exploration.ts",
       "source_location": "L109",
       "id": "requirements_exploration_tokens",
-      "community": 2,
+      "community": 1,
       "norm_label": "tokens()"
     },
     {
@@ -3177,7 +3177,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L1",
       "id": "src_requirements_analysis_ts",
-      "community": 2,
+      "community": 1,
       "norm_label": "analysis.ts"
     },
     {
@@ -3186,7 +3186,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L10",
       "id": "requirements_analysis_requirementclassification",
-      "community": 2,
+      "community": 1,
       "norm_label": "requirementclassification"
     },
     {
@@ -3195,7 +3195,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L13",
       "id": "requirements_analysis_requirementsourcereference",
-      "community": 2,
+      "community": 1,
       "norm_label": "requirementsourcereference"
     },
     {
@@ -3204,7 +3204,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L20",
       "id": "requirements_analysis_atomicrequirement",
-      "community": 2,
+      "community": 1,
       "norm_label": "atomicrequirement"
     },
     {
@@ -3213,7 +3213,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L27",
       "id": "requirements_analysis_normalizedrequirements",
-      "community": 19,
+      "community": 18,
       "norm_label": "normalizedrequirements"
     },
     {
@@ -3222,7 +3222,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L35",
       "id": "requirements_analysis_requirementissuekind",
-      "community": 2,
+      "community": 1,
       "norm_label": "requirementissuekind"
     },
     {
@@ -3231,7 +3231,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L38",
       "id": "requirements_analysis_requirementissue",
-      "community": 2,
+      "community": 1,
       "norm_label": "requirementissue"
     },
     {
@@ -3240,7 +3240,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L45",
       "id": "requirements_analysis_requirementanalysis",
-      "community": 2,
+      "community": 1,
       "norm_label": "requirementanalysis"
     },
     {
@@ -3249,7 +3249,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L51",
       "id": "requirements_analysis_normalizerequirements",
-      "community": 2,
+      "community": 1,
       "norm_label": "normalizerequirements()"
     },
     {
@@ -3258,7 +3258,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L80",
       "id": "requirements_analysis_analyzerequirements",
-      "community": 2,
+      "community": 1,
       "norm_label": "analyzerequirements()"
     },
     {
@@ -3267,7 +3267,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L150",
       "id": "requirements_analysis_clarificationanswer",
-      "community": 2,
+      "community": 1,
       "norm_label": "clarificationanswer"
     },
     {
@@ -3276,7 +3276,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L156",
       "id": "requirements_analysis_clarificationinput",
-      "community": 2,
+      "community": 1,
       "norm_label": "clarificationinput"
     },
     {
@@ -3285,7 +3285,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L165",
       "id": "requirements_analysis_requirementimpact",
-      "community": 2,
+      "community": 1,
       "norm_label": "requirementimpact"
     },
     {
@@ -3294,7 +3294,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L171",
       "id": "requirements_analysis_reconciledrequirements",
-      "community": 2,
+      "community": 1,
       "norm_label": "reconciledrequirements"
     },
     {
@@ -3303,7 +3303,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L175",
       "id": "requirements_analysis_reconcileclarifications",
-      "community": 2,
+      "community": 1,
       "norm_label": "reconcileclarifications()"
     },
     {
@@ -3312,7 +3312,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L237",
       "id": "requirements_analysis_splitatomicstatements",
-      "community": 2,
+      "community": 1,
       "norm_label": "splitatomicstatements()"
     },
     {
@@ -3321,7 +3321,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L249",
       "id": "requirements_analysis_stablerequirementid",
-      "community": 2,
+      "community": 1,
       "norm_label": "stablerequirementid()"
     },
     {
@@ -3330,7 +3330,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L257",
       "id": "requirements_analysis_classify",
-      "community": 2,
+      "community": 1,
       "norm_label": "classify()"
     },
     {
@@ -3339,7 +3339,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L263",
       "id": "requirements_analysis_iscontradiction",
-      "community": 2,
+      "community": 1,
       "norm_label": "iscontradiction()"
     },
     {
@@ -3348,7 +3348,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L270",
       "id": "requirements_analysis_canonicalizepolarity",
-      "community": 2,
+      "community": 1,
       "norm_label": "canonicalizepolarity()"
     },
     {
@@ -3357,7 +3357,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L1",
       "id": "src_requirements_ingestion_ts",
-      "community": 2,
+      "community": 1,
       "norm_label": "ingestion.ts"
     },
     {
@@ -3366,7 +3366,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L10",
       "id": "requirements_ingestion_requirementsourceformat",
-      "community": 2,
+      "community": 1,
       "norm_label": "requirementsourceformat"
     },
     {
@@ -3375,7 +3375,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L12",
       "id": "requirements_ingestion_sourcepage",
-      "community": 2,
+      "community": 1,
       "norm_label": "sourcepage"
     },
     {
@@ -3384,7 +3384,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L17",
       "id": "requirements_ingestion_ingestedrequirementsource",
-      "community": 2,
+      "community": 1,
       "norm_label": "ingestedrequirementsource"
     },
     {
@@ -3393,7 +3393,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L26",
       "id": "requirements_ingestion_pdfextractor",
-      "community": 2,
+      "community": 1,
       "norm_label": "pdfextractor"
     },
     {
@@ -3402,7 +3402,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L27",
       "id": "requirements_ingestion_docxextractor",
-      "community": 2,
+      "community": 1,
       "norm_label": "docxextractor"
     },
     {
@@ -3411,7 +3411,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L29",
       "id": "requirements_ingestion_ingestdirecttext",
-      "community": 2,
+      "community": 1,
       "norm_label": "ingestdirecttext()"
     },
     {
@@ -3420,7 +3420,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L38",
       "id": "requirements_ingestion_ingestmarkdown",
-      "community": 2,
+      "community": 1,
       "norm_label": "ingestmarkdown()"
     },
     {
@@ -3429,7 +3429,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L55",
       "id": "requirements_ingestion_ingestpdf",
-      "community": 2,
+      "community": 1,
       "norm_label": "ingestpdf()"
     },
     {
@@ -3438,7 +3438,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L77",
       "id": "requirements_ingestion_ingestdocx",
-      "community": 2,
+      "community": 1,
       "norm_label": "ingestdocx()"
     },
     {
@@ -3447,7 +3447,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L88",
       "id": "requirements_ingestion_extractpdftext",
-      "community": 2,
+      "community": 1,
       "norm_label": "extractpdftext()"
     },
     {
@@ -3456,7 +3456,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L110",
       "id": "requirements_ingestion_extractdocxtext",
-      "community": 2,
+      "community": 1,
       "norm_label": "extractdocxtext()"
     },
     {
@@ -3465,7 +3465,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L115",
       "id": "requirements_ingestion_source",
-      "community": 2,
+      "community": 1,
       "norm_label": "source()"
     },
     {
@@ -3474,7 +3474,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L136",
       "id": "requirements_ingestion_validatesource",
-      "community": 2,
+      "community": 1,
       "norm_label": "validatesource()"
     },
     {
@@ -3483,7 +3483,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L141",
       "id": "requirements_ingestion_validatesize",
-      "community": 2,
+      "community": 1,
       "norm_label": "validatesize()"
     },
     {
@@ -3492,7 +3492,7 @@
       "source_file": "src/requirements/ingestion.ts",
       "source_location": "L149",
       "id": "requirements_ingestion_validatetext",
-      "community": 2,
+      "community": 1,
       "norm_label": "validatetext()"
     },
     {
@@ -3618,7 +3618,7 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L186",
       "id": "playwright_contracts_automationplan",
-      "community": 18,
+      "community": 17,
       "norm_label": "automationplan"
     },
     {
@@ -3834,7 +3834,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L287",
       "id": "playwright_pipeline_createexecutionsummary",
-      "community": 18,
+      "community": 17,
       "norm_label": "createexecutionsummary()"
     },
     {
@@ -3861,7 +3861,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L341",
       "id": "playwright_pipeline_classifycapabilityextension",
-      "community": 18,
+      "community": 17,
       "norm_label": "classifycapabilityextension()"
     },
     {
@@ -3870,7 +3870,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L362",
       "id": "playwright_pipeline_capabilityreviewreasons",
-      "community": 18,
+      "community": 17,
       "norm_label": "capabilityreviewreasons()"
     },
     {
@@ -3888,7 +3888,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L411",
       "id": "playwright_pipeline_createcapabilityextensionrecord",
-      "community": 18,
+      "community": 17,
       "norm_label": "createcapabilityextensionrecord()"
     },
     {
@@ -3897,7 +3897,7 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L442",
       "id": "playwright_pipeline_validatecapabilityextensionrecord",
-      "community": 18,
+      "community": 17,
       "norm_label": "validatecapabilityextensionrecord()"
     },
     {
@@ -3906,7 +3906,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L1",
       "id": "src_schemas_contracts_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "contracts.ts"
     },
     {
@@ -3915,7 +3915,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L3",
       "id": "schemas_contracts_workflowstageschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "workflowstageschema"
     },
     {
@@ -3924,7 +3924,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L21",
       "id": "schemas_contracts_producingroleschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "producingroleschema"
     },
     {
@@ -3933,7 +3933,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L38",
       "id": "schemas_contracts_artifacttypeschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifacttypeschema"
     },
     {
@@ -3942,7 +3942,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L70",
       "id": "schemas_contracts_identifierschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "identifierschema"
     },
     {
@@ -3951,7 +3951,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L75",
       "id": "schemas_contracts_checksumschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "checksumschema"
     },
     {
@@ -3960,7 +3960,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L76",
       "id": "schemas_contracts_gitcommitschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "gitcommitschema"
     },
     {
@@ -3969,7 +3969,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L77",
       "id": "schemas_contracts_relativeartifactpathschema",
-      "community": 4,
+      "community": 5,
       "norm_label": "relativeartifactpathschema"
     },
     {
@@ -3978,7 +3978,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L87",
       "id": "schemas_contracts_provenanceschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "provenanceschema"
     },
     {
@@ -3987,7 +3987,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L97",
       "id": "schemas_contracts_artifactreferenceschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifactreferenceschema"
     },
     {
@@ -3996,7 +3996,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L104",
       "id": "schemas_contracts_manifestbase",
-      "community": 1,
+      "community": 2,
       "norm_label": "manifestbase"
     },
     {
@@ -4005,7 +4005,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L113",
       "id": "schemas_contracts_humanactorschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "humanactorschema"
     },
     {
@@ -4014,7 +4014,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L118",
       "id": "schemas_contracts_agentactorschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "agentactorschema"
     },
     {
@@ -4023,7 +4023,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L123",
       "id": "schemas_contracts_actorschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "actorschema"
     },
     {
@@ -4032,7 +4032,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L132",
       "id": "schemas_contracts_taskmanifestv1schema",
-      "community": 1,
+      "community": 2,
       "norm_label": "taskmanifestv1schema"
     },
     {
@@ -4041,7 +4041,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L148",
       "id": "schemas_contracts_artifactdispositionschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifactdispositionschema"
     },
     {
@@ -4050,7 +4050,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L154",
       "id": "schemas_contracts_taskmanifestv2schema",
-      "community": 1,
+      "community": 2,
       "norm_label": "taskmanifestv2schema"
     },
     {
@@ -4059,7 +4059,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L159",
       "id": "schemas_contracts_taskmanifestschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "taskmanifestschema"
     },
     {
@@ -4068,7 +4068,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L171",
       "id": "schemas_contracts_exactsubjectschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "exactsubjectschema"
     },
     {
@@ -4077,7 +4077,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L177",
       "id": "schemas_contracts_decisionmanifestschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "decisionmanifestschema"
     },
     {
@@ -4086,7 +4086,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L205",
       "id": "schemas_contracts_workflowmanifestschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "workflowmanifestschema"
     },
     {
@@ -4095,7 +4095,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L231",
       "id": "schemas_contracts_artifactmanifestschema",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifactmanifestschema"
     },
     {
@@ -4104,7 +4104,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L246",
       "id": "schemas_contracts_workflowstage",
-      "community": 1,
+      "community": 2,
       "norm_label": "workflowstage"
     },
     {
@@ -4113,7 +4113,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L247",
       "id": "schemas_contracts_producingrole",
-      "community": 1,
+      "community": 2,
       "norm_label": "producingrole"
     },
     {
@@ -4122,7 +4122,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L248",
       "id": "schemas_contracts_artifacttype",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifacttype"
     },
     {
@@ -4131,7 +4131,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L249",
       "id": "schemas_contracts_artifactreference",
-      "community": 3,
+      "community": 4,
       "norm_label": "artifactreference"
     },
     {
@@ -4140,7 +4140,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L250",
       "id": "schemas_contracts_actor",
-      "community": 1,
+      "community": 2,
       "norm_label": "actor"
     },
     {
@@ -4149,7 +4149,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L251",
       "id": "schemas_contracts_artifactmanifest",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifactmanifest"
     },
     {
@@ -4293,7 +4293,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L19",
       "id": "scenarios_pipeline_generatescenariospecification",
-      "community": 18,
+      "community": 17,
       "norm_label": "generatescenariospecification()"
     },
     {
@@ -4302,7 +4302,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L44",
       "id": "scenarios_pipeline_projectscenariomarkdown",
-      "community": 19,
+      "community": 18,
       "norm_label": "projectscenariomarkdown()"
     },
     {
@@ -4311,7 +4311,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L61",
       "id": "scenarios_pipeline_validatescenarioprojection",
-      "community": 19,
+      "community": 18,
       "norm_label": "validatescenarioprojection()"
     },
     {
@@ -4365,7 +4365,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L216",
       "id": "scenarios_pipeline_revisescenariospecification",
-      "community": 19,
+      "community": 18,
       "norm_label": "revisescenariospecification()"
     },
     {
@@ -4383,7 +4383,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L251",
       "id": "scenarios_pipeline_createhumanscenarioreview",
-      "community": 18,
+      "community": 17,
       "norm_label": "createhumanscenarioreview()"
     },
     {
@@ -4401,7 +4401,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L315",
       "id": "scenarios_pipeline_validatetraceability",
-      "community": 19,
+      "community": 18,
       "norm_label": "validatetraceability()"
     },
     {
@@ -4446,7 +4446,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L480",
       "id": "scenarios_pipeline_normalizemarkdown",
-      "community": 19,
+      "community": 18,
       "norm_label": "normalizemarkdown()"
     },
     {
@@ -4473,7 +4473,7 @@
       "source_file": "src/orchestration/provenance.ts",
       "source_location": "L1",
       "id": "src_orchestration_provenance_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "provenance.ts"
     },
     {
@@ -4482,7 +4482,7 @@
       "source_file": "src/orchestration/provenance.ts",
       "source_location": "L4",
       "id": "orchestration_provenance_provenanceinput",
-      "community": 1,
+      "community": 2,
       "norm_label": "provenanceinput"
     },
     {
@@ -4491,7 +4491,7 @@
       "source_file": "src/orchestration/provenance.ts",
       "source_location": "L15",
       "id": "orchestration_provenance_createprovenance",
-      "community": 1,
+      "community": 2,
       "norm_label": "createprovenance()"
     },
     {
@@ -4599,7 +4599,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L1",
       "id": "src_orchestration_workflow_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "workflow.ts"
     },
     {
@@ -4608,7 +4608,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L12",
       "id": "orchestration_workflow_legaltransitions",
-      "community": 3,
+      "community": 4,
       "norm_label": "legaltransitions"
     },
     {
@@ -4617,7 +4617,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L62",
       "id": "orchestration_workflow_transitiongate",
-      "community": 3,
+      "community": 4,
       "norm_label": "transitiongate"
     },
     {
@@ -4626,7 +4626,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L113",
       "id": "orchestration_workflow_createworkflowinput",
-      "community": 3,
+      "community": 4,
       "norm_label": "createworkflowinput"
     },
     {
@@ -4635,7 +4635,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L119",
       "id": "orchestration_workflow_transitioninput",
-      "community": 3,
+      "community": 4,
       "norm_label": "transitioninput"
     },
     {
@@ -4644,7 +4644,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L128",
       "id": "orchestration_workflow_createworkflow",
-      "community": 3,
+      "community": 4,
       "norm_label": "createworkflow()"
     },
     {
@@ -4653,7 +4653,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L146",
       "id": "orchestration_workflow_transitionworkflow",
-      "community": 3,
+      "community": 4,
       "norm_label": "transitionworkflow()"
     },
     {
@@ -4662,7 +4662,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L184",
       "id": "orchestration_workflow_updatedretries",
-      "community": 3,
+      "community": 4,
       "norm_label": "updatedretries()"
     },
     {
@@ -4671,7 +4671,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L204",
       "id": "orchestration_workflow_gatesubjectreference",
-      "community": 3,
+      "community": 4,
       "norm_label": "gatesubjectreference()"
     },
     {
@@ -4680,7 +4680,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L215",
       "id": "orchestration_workflow_validategate",
-      "community": 3,
+      "community": 4,
       "norm_label": "validategate()"
     },
     {
@@ -4689,7 +4689,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L232",
       "id": "orchestration_workflow_validateplaywrightgate",
-      "community": 3,
+      "community": 4,
       "norm_label": "validateplaywrightgate()"
     },
     {
@@ -4698,7 +4698,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L260",
       "id": "orchestration_workflow_validatetestqualitygate",
-      "community": 3,
+      "community": 4,
       "norm_label": "validatetestqualitygate()"
     },
     {
@@ -4707,7 +4707,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L267",
       "id": "orchestration_workflow_validatetestqualityreferences",
-      "community": 3,
+      "community": 4,
       "norm_label": "validatetestqualityreferences()"
     },
     {
@@ -4716,7 +4716,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L284",
       "id": "orchestration_workflow_validatetestqualitydecision",
-      "community": 3,
+      "community": 4,
       "norm_label": "validatetestqualitydecision()"
     },
     {
@@ -4725,7 +4725,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L297",
       "id": "orchestration_workflow_validateexecutiongate",
-      "community": 3,
+      "community": 4,
       "norm_label": "validateexecutiongate()"
     },
     {
@@ -4734,7 +4734,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L324",
       "id": "orchestration_workflow_validatetriagedispositiongate",
-      "community": 3,
+      "community": 4,
       "norm_label": "validatetriagedispositiongate()"
     },
     {
@@ -4743,7 +4743,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L347",
       "id": "orchestration_workflow_validatetriageroute",
-      "community": 3,
+      "community": 4,
       "norm_label": "validatetriageroute()"
     },
     {
@@ -4752,7 +4752,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L367",
       "id": "orchestration_workflow_validaterequirementgate",
-      "community": 3,
+      "community": 4,
       "norm_label": "validaterequirementgate()"
     },
     {
@@ -4761,7 +4761,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L392",
       "id": "orchestration_workflow_validatescenariogate",
-      "community": 3,
+      "community": 4,
       "norm_label": "validatescenariogate()"
     },
     {
@@ -4770,7 +4770,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L424",
       "id": "orchestration_workflow_validateexactscenarioapproval",
-      "community": 3,
+      "community": 4,
       "norm_label": "validateexactscenarioapproval()"
     },
     {
@@ -4779,7 +4779,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L440",
       "id": "orchestration_workflow_validaterepairgate",
-      "community": 3,
+      "community": 4,
       "norm_label": "validaterepairgate()"
     },
     {
@@ -4788,7 +4788,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L456",
       "id": "orchestration_workflow_validatefinalreviewgate",
-      "community": 3,
+      "community": 4,
       "norm_label": "validatefinalreviewgate()"
     },
     {
@@ -4797,7 +4797,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L480",
       "id": "orchestration_workflow_requiregate",
-      "community": 3,
+      "community": 4,
       "norm_label": "requiregate()"
     },
     {
@@ -4806,7 +4806,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L486",
       "id": "orchestration_workflow_requirehuman",
-      "community": 3,
+      "community": 4,
       "norm_label": "requirehuman()"
     },
     {
@@ -4815,7 +4815,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L492",
       "id": "orchestration_workflow_requirerole",
-      "community": 3,
+      "community": 4,
       "norm_label": "requirerole()"
     },
     {
@@ -4824,7 +4824,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L501",
       "id": "orchestration_workflow_incrementretry",
-      "community": 3,
+      "community": 4,
       "norm_label": "incrementretry()"
     },
     {
@@ -4833,7 +4833,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L514",
       "id": "orchestration_workflow_statusfor",
-      "community": 3,
+      "community": 4,
       "norm_label": "statusfor()"
     },
     {
@@ -4842,7 +4842,7 @@
       "source_file": "src/orchestration/workflow.ts",
       "source_location": "L527",
       "id": "orchestration_workflow_uniquereferences",
-      "community": 3,
+      "community": 4,
       "norm_label": "uniquereferences()"
     },
     {
@@ -4851,7 +4851,7 @@
       "source_file": "src/orchestration/artifact-reference.ts",
       "source_location": "L1",
       "id": "src_orchestration_artifact_reference_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "artifact-reference.ts"
     },
     {
@@ -4860,7 +4860,7 @@
       "source_file": "src/orchestration/artifact-reference.ts",
       "source_location": "L3",
       "id": "orchestration_artifact_reference_sameartifactreference",
-      "community": 3,
+      "community": 4,
       "norm_label": "sameartifactreference()"
     },
     {
@@ -4869,7 +4869,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L1",
       "id": "src_orchestration_artifact_lifecycle_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifact-lifecycle.ts"
     },
     {
@@ -4878,7 +4878,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L12",
       "id": "orchestration_artifact_lifecycle_semanticchecksum",
-      "community": 18,
+      "community": 17,
       "norm_label": "semanticchecksum()"
     },
     {
@@ -4887,7 +4887,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L16",
       "id": "orchestration_artifact_lifecycle_acceptartifactinput",
-      "community": 1,
+      "community": 2,
       "norm_label": "acceptartifactinput"
     },
     {
@@ -4896,7 +4896,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L23",
       "id": "orchestration_artifact_lifecycle_acceptartifact",
-      "community": 1,
+      "community": 2,
       "norm_label": "acceptartifact()"
     },
     {
@@ -4905,7 +4905,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L65",
       "id": "orchestration_artifact_lifecycle_validateartifactreferences",
-      "community": 1,
+      "community": 2,
       "norm_label": "validateartifactreferences()"
     },
     {
@@ -4914,7 +4914,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L116",
       "id": "orchestration_artifact_lifecycle_createartifactrevision",
-      "community": 1,
+      "community": 2,
       "norm_label": "createartifactrevision()"
     },
     {
@@ -4923,7 +4923,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L141",
       "id": "orchestration_artifact_lifecycle_invalidatedownstreamartifacts",
-      "community": 1,
+      "community": 2,
       "norm_label": "invalidatedownstreamartifacts()"
     },
     {
@@ -4932,7 +4932,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L155",
       "id": "orchestration_artifact_lifecycle_canonicaljson",
-      "community": 1,
+      "community": 2,
       "norm_label": "canonicaljson()"
     },
     {
@@ -4941,7 +4941,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L159",
       "id": "orchestration_artifact_lifecycle_jsonvalue",
-      "community": 1,
+      "community": 2,
       "norm_label": "jsonvalue"
     },
     {
@@ -4950,7 +4950,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L167",
       "id": "orchestration_artifact_lifecycle_normalizejson",
-      "community": 1,
+      "community": 2,
       "norm_label": "normalizejson()"
     },
     {
@@ -4959,7 +4959,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L184",
       "id": "orchestration_artifact_lifecycle_normalizearray",
-      "community": 1,
+      "community": 2,
       "norm_label": "normalizearray()"
     },
     {
@@ -4968,7 +4968,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L194",
       "id": "orchestration_artifact_lifecycle_normalizeobject",
-      "community": 1,
+      "community": 2,
       "norm_label": "normalizeobject()"
     },
     {
@@ -4977,7 +4977,7 @@
       "source_file": "src/orchestration/artifact-lifecycle.ts",
       "source_location": "L211",
       "id": "orchestration_artifact_lifecycle_assertnotcyclic",
-      "community": 1,
+      "community": 2,
       "norm_label": "assertnotcyclic()"
     },
     {
@@ -4986,7 +4986,7 @@
       "source_file": "src/orchestration/artifact-registry.ts",
       "source_location": "L1",
       "id": "src_orchestration_artifact_registry_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifact-registry.ts"
     },
     {
@@ -4995,7 +4995,7 @@
       "source_file": "src/orchestration/artifact-registry.ts",
       "source_location": "L9",
       "id": "orchestration_artifact_registry_artifactdefinition",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifactdefinition"
     },
     {
@@ -5004,7 +5004,7 @@
       "source_file": "src/orchestration/artifact-registry.ts",
       "source_location": "L234",
       "id": "orchestration_artifact_registry_artifactpathinput",
-      "community": 1,
+      "community": 2,
       "norm_label": "artifactpathinput"
     },
     {
@@ -5013,7 +5013,7 @@
       "source_file": "src/orchestration/artifact-registry.ts",
       "source_location": "L243",
       "id": "orchestration_artifact_registry_resolveartifactpath",
-      "community": 1,
+      "community": 2,
       "norm_label": "resolveartifactpath()"
     },
     {
@@ -5022,7 +5022,7 @@
       "source_file": "src/validation/generated-tests.ts",
       "source_location": "L1",
       "id": "src_validation_generated_tests_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "generated-tests.ts"
     },
     {
@@ -5031,7 +5031,7 @@
       "source_file": "src/validation/generated-tests.ts",
       "source_location": "L6",
       "id": "validation_generated_tests_generatedtestlimits",
-      "community": 4,
+      "community": 5,
       "norm_label": "generatedtestlimits"
     },
     {
@@ -5040,7 +5040,7 @@
       "source_file": "src/validation/generated-tests.ts",
       "source_location": "L11",
       "id": "validation_generated_tests_defaultgeneratedtestlimits",
-      "community": 4,
+      "community": 5,
       "norm_label": "defaultgeneratedtestlimits"
     },
     {
@@ -5049,7 +5049,7 @@
       "source_file": "src/validation/generated-tests.ts",
       "source_location": "L16",
       "id": "validation_generated_tests_layers",
-      "community": 4,
+      "community": 5,
       "norm_label": "layers"
     },
     {
@@ -5058,7 +5058,7 @@
       "source_file": "src/validation/generated-tests.ts",
       "source_location": "L26",
       "id": "validation_generated_tests_validategeneratedtestarchitecture",
-      "community": 4,
+      "community": 5,
       "norm_label": "validategeneratedtestarchitecture()"
     },
     {
@@ -5067,7 +5067,7 @@
       "source_file": "src/validation/generated-tests.ts",
       "source_location": "L65",
       "id": "validation_generated_tests_scangeneratedtestoutputs",
-      "community": 4,
+      "community": 5,
       "norm_label": "scangeneratedtestoutputs()"
     },
     {
@@ -5076,7 +5076,7 @@
       "source_file": "src/validation/generated-tests.ts",
       "source_location": "L81",
       "id": "validation_generated_tests_collectfiles",
-      "community": 4,
+      "community": 5,
       "norm_label": "collectfiles()"
     },
     {
@@ -5130,7 +5130,7 @@
       "source_file": "src/validation/generated-tests.cli.ts",
       "source_location": "L1",
       "id": "src_validation_generated_tests_cli_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "generated-tests.cli.ts"
     },
     {
@@ -5139,281 +5139,8 @@
       "source_file": "src/validation/generated-tests.cli.ts",
       "source_location": "L8",
       "id": "validation_generated_tests_cli_root",
-      "community": 4,
+      "community": 5,
       "norm_label": "root"
-    },
-    {
-      "label": "Quality Agent Factory Phased Implementation Plan",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phased_implementation_plan",
-      "community": 17,
-      "norm_label": "quality agent factory phased implementation plan"
-    },
-    {
-      "label": "Phase 9 Pilot Workflow Optimization",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_pilot_workflow_optimization",
-      "community": 17,
-      "norm_label": "phase 9 pilot workflow optimization"
-    },
-    {
-      "label": "Isolated Specialist Contexts",
-      "file_type": "rationale",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_isolated_specialist_contexts",
-      "community": 17,
-      "norm_label": "isolated specialist contexts"
-    },
-    {
-      "label": "Thin Coordinator Contract and Typed Handoffs",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_thin_coordinator_contract",
-      "community": 17,
-      "norm_label": "thin coordinator contract and typed handoffs"
-    },
-    {
-      "label": "Independent Playwright Generated-Test Quality Gate",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_independent_playwright_quality_gate",
-      "community": 17,
-      "norm_label": "independent playwright generated-test quality gate"
-    },
-    {
-      "label": "Layer-First Taxonomy-Mirrored Playwright Architecture",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_layered_playwright_architecture",
-      "community": 17,
-      "norm_label": "layer-first taxonomy-mirrored playwright architecture"
-    },
-    {
-      "label": "Progressive Safe Authentication Pilot",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_safe_authentication_pilot",
-      "community": 17,
-      "norm_label": "progressive safe authentication pilot"
-    },
-    {
-      "label": "Single-Chromium Credential-Smoke Sequence",
-      "file_type": "rationale",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_credential_smoke_sequence",
-      "community": 17,
-      "norm_label": "single-chromium credential-smoke sequence"
-    },
-    {
-      "label": "Task Schema V2 Artifact Disposition",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_artifact_disposition_v2",
-      "community": 17,
-      "norm_label": "task schema v2 artifact disposition"
-    },
-    {
-      "label": "SCM Eligibility and Authentication Evidence Boundary",
-      "file_type": "rationale",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_scm_eligibility_boundary",
-      "community": 17,
-      "norm_label": "scm eligibility and authentication evidence boundary"
-    },
-    {
-      "label": "Phase 9 Local Verification Complete",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_verification_complete",
-      "community": 17,
-      "norm_label": "phase 9 local verification complete"
-    },
-    {
-      "label": "Generated-Test Architecture and Secret Check",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_generated_test_check",
-      "community": 17,
-      "norm_label": "generated-test architecture and secret check"
-    },
-    {
-      "label": "Complete Repository Quality Gate Result",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_quality_gate_result",
-      "community": 17,
-      "norm_label": "complete repository quality gate result"
-    },
-    {
-      "label": "Integration Verification Result",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_integration_verification",
-      "community": 17,
-      "norm_label": "integration verification result"
-    },
-    {
-      "label": "Provider Contract Verification Result",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_provider_contract_verification",
-      "community": 17,
-      "norm_label": "provider contract verification result"
-    },
-    {
-      "label": "Cross-Browser End-to-End Verification Result",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_cross_browser_e2e_verification",
-      "community": 17,
-      "norm_label": "cross-browser end-to-end verification result"
-    },
-    {
-      "label": "Fallow Static Analysis Result",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_fallow_static_analysis",
-      "community": 17,
-      "norm_label": "fallow static analysis result"
-    },
-    {
-      "label": "Skill-Directed Durable Semantic Graph Refresh",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_durable_semantic_graph_refresh",
-      "community": 17,
-      "norm_label": "skill-directed durable semantic graph refresh"
-    },
-    {
-      "label": "Shadow and Regression Evidence",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_shadow_regression_evidence",
-      "community": 17,
-      "norm_label": "shadow and regression evidence"
-    },
-    {
-      "label": "Human-Gated Active Policy Adoption",
-      "file_type": "rationale",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_policy_approval_boundary",
-      "community": 17,
-      "norm_label": "human-gated active policy adoption"
-    },
-    {
-      "label": "Phase 9 Publication Pending",
-      "file_type": "document",
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "phase_9_publication_pending",
-      "community": 17,
-      "norm_label": "phase 9 publication pending"
     },
     {
       "label": "Quality Agent Factory",
@@ -5425,7 +5152,7 @@
       "author": null,
       "contributor": null,
       "id": "quality_agent_factory",
-      "community": 5,
+      "community": 3,
       "norm_label": "quality agent factory"
     },
     {
@@ -5438,7 +5165,7 @@
       "author": null,
       "contributor": null,
       "id": "clone_ready_repository_workflow",
-      "community": 5,
+      "community": 3,
       "norm_label": "clone-ready repository workflow"
     },
     {
@@ -5451,7 +5178,7 @@
       "author": null,
       "contributor": null,
       "id": "human_authorization_gates",
-      "community": 5,
+      "community": 3,
       "norm_label": "human authorization gates"
     },
     {
@@ -5464,7 +5191,7 @@
       "author": null,
       "contributor": null,
       "id": "exact_revision_approval",
-      "community": 5,
+      "community": 3,
       "norm_label": "exact-revision human approval"
     },
     {
@@ -5477,7 +5204,7 @@
       "author": null,
       "contributor": null,
       "id": "script_error_repair_boundary",
-      "community": 5,
+      "community": 3,
       "norm_label": "script_error repair boundary"
     },
     {
@@ -5490,7 +5217,7 @@
       "author": null,
       "contributor": null,
       "id": "contribution_workflow",
-      "community": 5,
+      "community": 3,
       "norm_label": "contribution workflow"
     },
     {
@@ -5503,7 +5230,7 @@
       "author": null,
       "contributor": null,
       "id": "commit_quality_pipeline",
-      "community": 5,
+      "community": 3,
       "norm_label": "commit quality pipeline"
     },
     {
@@ -5516,7 +5243,7 @@
       "author": null,
       "contributor": null,
       "id": "agent_operating_instructions",
-      "community": 5,
+      "community": 3,
       "norm_label": "agent operating instructions"
     },
     {
@@ -5529,7 +5256,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_provider_entrypoint",
-      "community": 5,
+      "community": 3,
       "norm_label": "claude code provider entrypoint"
     },
     {
@@ -5542,7 +5269,7 @@
       "author": null,
       "contributor": null,
       "id": "factory_documentation_index",
-      "community": 5,
+      "community": 3,
       "norm_label": "factory documentation index"
     },
     {
@@ -5555,7 +5282,7 @@
       "author": null,
       "contributor": null,
       "id": "repository_resident_architecture",
-      "community": 5,
+      "community": 3,
       "norm_label": "repository-resident architecture"
     },
     {
@@ -5568,7 +5295,7 @@
       "author": null,
       "contributor": null,
       "id": "typed_artifact_contracts",
-      "community": 5,
+      "community": 3,
       "norm_label": "typed artifact contracts"
     },
     {
@@ -5581,7 +5308,7 @@
       "author": null,
       "contributor": null,
       "id": "quality_pipeline",
-      "community": 5,
+      "community": 3,
       "norm_label": "quality pipeline"
     },
     {
@@ -5594,7 +5321,7 @@
       "author": null,
       "contributor": null,
       "id": "immutable_accepted_artifacts",
-      "community": 5,
+      "community": 3,
       "norm_label": "immutable accepted artifacts"
     },
     {
@@ -5607,7 +5334,7 @@
       "author": null,
       "contributor": null,
       "id": "evaluation_methodology",
-      "community": 5,
+      "community": 3,
       "norm_label": "evaluation methodology"
     },
     {
@@ -5620,7 +5347,7 @@
       "author": null,
       "contributor": null,
       "id": "deterministic_sanitized_benchmark",
-      "community": 5,
+      "community": 3,
       "norm_label": "deterministic sanitized benchmark"
     },
     {
@@ -5633,7 +5360,7 @@
       "author": null,
       "contributor": null,
       "id": "failure_triage",
-      "community": 5,
+      "community": 3,
       "norm_label": "failure triage"
     },
     {
@@ -5646,7 +5373,7 @@
       "author": null,
       "contributor": null,
       "id": "product_defect_candidate",
-      "community": 5,
+      "community": 3,
       "norm_label": "product-defect candidate"
     },
     {
@@ -5659,7 +5386,7 @@
       "author": null,
       "contributor": null,
       "id": "memory_model",
-      "community": 5,
+      "community": 3,
       "norm_label": "memory model"
     },
     {
@@ -5672,7 +5399,7 @@
       "author": null,
       "contributor": null,
       "id": "approved_advisory_knowledge",
-      "community": 5,
+      "community": 3,
       "norm_label": "approved advisory knowledge"
     },
     {
@@ -5685,7 +5412,7 @@
       "author": null,
       "contributor": null,
       "id": "playwright_conventions",
-      "community": 5,
+      "community": 3,
       "norm_label": "playwright conventions"
     },
     {
@@ -5698,7 +5425,7 @@
       "author": null,
       "contributor": null,
       "id": "generated_test_quality_gate",
-      "community": 5,
+      "community": 3,
       "norm_label": "generated test quality gate"
     },
     {
@@ -5711,7 +5438,7 @@
       "author": null,
       "contributor": null,
       "id": "layer_first_e2e_structure",
-      "community": 5,
+      "community": 3,
       "norm_label": "layer-first e2e structure"
     },
     {
@@ -5724,7 +5451,7 @@
       "author": null,
       "contributor": null,
       "id": "provider_portability",
-      "community": 5,
+      "community": 3,
       "norm_label": "provider portability"
     },
     {
@@ -5737,7 +5464,7 @@
       "author": null,
       "contributor": null,
       "id": "provider_contract_parity",
-      "community": 5,
+      "community": 3,
       "norm_label": "provider contract parity"
     },
     {
@@ -5750,7 +5477,7 @@
       "author": null,
       "contributor": null,
       "id": "security_and_privacy",
-      "community": 5,
+      "community": 3,
       "norm_label": "security and privacy"
     },
     {
@@ -5763,7 +5490,7 @@
       "author": null,
       "contributor": null,
       "id": "untrusted_input_boundary",
-      "community": 5,
+      "community": 3,
       "norm_label": "untrusted input boundary"
     },
     {
@@ -5776,7 +5503,7 @@
       "author": null,
       "contributor": null,
       "id": "evidence_minimization",
-      "community": 5,
+      "community": 3,
       "norm_label": "evidence minimization"
     },
     {
@@ -5789,7 +5516,7 @@
       "author": null,
       "contributor": null,
       "id": "troubleshooting_guide",
-      "community": 5,
+      "community": 3,
       "norm_label": "troubleshooting guide"
     },
     {
@@ -5802,7 +5529,7 @@
       "author": null,
       "contributor": null,
       "id": "workflow_contract",
-      "community": 5,
+      "community": 3,
       "norm_label": "workflow contract"
     },
     {
@@ -5815,7 +5542,7 @@
       "author": null,
       "contributor": null,
       "id": "independent_scenario_evaluation",
-      "community": 5,
+      "community": 3,
       "norm_label": "independent scenario evaluation"
     },
     {
@@ -5828,7 +5555,7 @@
       "author": null,
       "contributor": null,
       "id": "legal_workflow_resumption",
-      "community": 5,
+      "community": 3,
       "norm_label": "legal workflow resumption"
     },
     {
@@ -5841,7 +5568,7 @@
       "author": null,
       "contributor": null,
       "id": "shared_domain_components",
-      "community": 5,
+      "community": 3,
       "norm_label": "shared domain components"
     },
     {
@@ -5854,7 +5581,7 @@
       "author": null,
       "contributor": null,
       "id": "reusable_browser_assertions",
-      "community": 5,
+      "community": 3,
       "norm_label": "reusable browser assertions"
     },
     {
@@ -6296,7 +6023,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_quality_agent_factory",
-      "community": 14,
+      "community": 20,
       "norm_label": "quality agent factory development plan"
     },
     {
@@ -6309,7 +6036,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_clone_ready_repository",
-      "community": 14,
+      "community": 20,
       "norm_label": "clone-ready repository-resident factory"
     },
     {
@@ -6322,7 +6049,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_complete_workflow",
-      "community": 14,
+      "community": 20,
       "norm_label": "complete quality agent workflow"
     },
     {
@@ -6335,7 +6062,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_workflow_coordinator",
-      "community": 14,
+      "community": 20,
       "norm_label": "workflow coordinator"
     },
     {
@@ -6348,7 +6075,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_requirement_analyst",
-      "community": 14,
+      "community": 20,
       "norm_label": "requirement analyst"
     },
     {
@@ -6361,7 +6088,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_scenario_designer",
-      "community": 14,
+      "community": 20,
       "norm_label": "test scenario designer"
     },
     {
@@ -6374,7 +6101,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_scenario_evaluator",
-      "community": 14,
+      "community": 20,
       "norm_label": "scenario quality evaluator"
     },
     {
@@ -6387,7 +6114,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_human_scenario_reviewer",
-      "community": 14,
+      "community": 20,
       "norm_label": "human scenario reviewer"
     },
     {
@@ -6400,7 +6127,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_playwright_engineer",
-      "community": 14,
+      "community": 20,
       "norm_label": "playwright test engineer"
     },
     {
@@ -6413,7 +6140,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_failure_triage_analyst",
-      "community": 14,
+      "community": 20,
       "norm_label": "failure triage analyst"
     },
     {
@@ -6426,7 +6153,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_final_quality_assessor",
-      "community": 14,
+      "community": 20,
       "norm_label": "final quality assessor"
     },
     {
@@ -6439,7 +6166,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_final_human_reviewer",
-      "community": 14,
+      "community": 20,
       "norm_label": "final human reviewer"
     },
     {
@@ -6478,7 +6205,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_scenario_contract",
-      "community": 49,
+      "community": 48,
       "norm_label": "authoritative markdown scenario contract"
     },
     {
@@ -6491,7 +6218,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_artifact_registry",
-      "community": 49,
+      "community": 48,
       "norm_label": "versioned artifact registry"
     },
     {
@@ -6504,7 +6231,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_failure_policy",
-      "community": 14,
+      "community": 20,
       "norm_label": "failure classification policy"
     },
     {
@@ -6517,7 +6244,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_script_error_repair_gate",
-      "community": 14,
+      "community": 20,
       "norm_label": "script_error test repair gate"
     },
     {
@@ -6556,7 +6283,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan_security_privacy",
-      "community": 14,
+      "community": 20,
       "norm_label": "environment security and privacy controls"
     },
     {
@@ -6647,7 +6374,7 @@
       "author": null,
       "contributor": null,
       "id": "examples_overview",
-      "community": 14,
+      "community": 20,
       "norm_label": "sanitized factory examples"
     },
     {
@@ -6660,7 +6387,7 @@
       "author": null,
       "contributor": null,
       "id": "authentication_example",
-      "community": 14,
+      "community": 20,
       "norm_label": "authentication example"
     },
     {
@@ -6673,7 +6400,7 @@
       "author": null,
       "contributor": null,
       "id": "authentication_synthetic_storage_state",
-      "community": 14,
+      "community": 20,
       "norm_label": "synthetic ignored authentication storage state"
     },
     {
@@ -6686,7 +6413,7 @@
       "author": null,
       "contributor": null,
       "id": "controlled_sample_application",
-      "community": 14,
+      "community": 3,
       "norm_label": "controlled sample application"
     },
     {
@@ -6699,7 +6426,7 @@
       "author": null,
       "contributor": null,
       "id": "controlled_sample_local_html",
-      "community": 14,
+      "community": 3,
       "norm_label": "repository-local intercepted html harness"
     },
     {
@@ -6712,7 +6439,7 @@
       "author": null,
       "contributor": null,
       "id": "artifact_templates",
-      "community": 49,
+      "community": 48,
       "norm_label": "versioned artifact templates"
     },
     {
@@ -8588,7 +8315,7 @@
       "author": null,
       "contributor": null,
       "id": "development_plan",
-      "community": 5,
+      "community": 3,
       "norm_label": "quality agent factory development plan"
     },
     {
@@ -8796,7 +8523,7 @@
       "author": null,
       "contributor": null,
       "id": "provider_codex",
-      "community": 5,
+      "community": 3,
       "norm_label": "codex provider"
     },
     {
@@ -8809,7 +8536,7 @@
       "author": null,
       "contributor": null,
       "id": "provider_cursor",
-      "community": 5,
+      "community": 3,
       "norm_label": "cursor provider"
     },
     {
@@ -8822,7 +8549,7 @@
       "author": null,
       "contributor": null,
       "id": "provider_claude_code",
-      "community": 5,
+      "community": 3,
       "norm_label": "claude code provider"
     },
     {
@@ -8835,7 +8562,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_commit_quality_pipeline",
-      "community": 44,
+      "community": 45,
       "norm_label": "commit quality pipeline"
     },
     {
@@ -8848,7 +8575,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_versioned_pre_commit_hook",
-      "community": 44,
+      "community": 45,
       "norm_label": "versioned pre-commit hook"
     },
     {
@@ -8861,7 +8588,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_commit_gate_order",
-      "community": 44,
+      "community": 45,
       "norm_label": "lint format fallow typescript graph order"
     },
     {
@@ -8874,7 +8601,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_graph_artifact_freshness",
-      "community": 44,
+      "community": 45,
       "norm_label": "graph artifact freshness check"
     },
     {
@@ -8887,7 +8614,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_focused_pre_commit_test",
-      "community": 45,
+      "community": 44,
       "norm_label": "focused pre-commit test"
     },
     {
@@ -8900,7 +8627,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_full_quality_gate",
-      "community": 45,
+      "community": 44,
       "norm_label": "full npm run check gate"
     },
     {
@@ -8913,7 +8640,7 @@
       "author": null,
       "contributor": null,
       "id": "contributing_change_workflow",
-      "community": 45,
+      "community": 44,
       "norm_label": "contribution change workflow"
     },
     {
@@ -8926,7 +8653,7 @@
       "author": null,
       "contributor": null,
       "id": "contributing_focused_test_rule",
-      "community": 45,
+      "community": 44,
       "norm_label": "focused tests immediately before commit"
     },
     {
@@ -9212,7 +8939,7 @@
       "author": null,
       "contributor": null,
       "id": "six_failure_classifications",
-      "community": 5,
+      "community": 3,
       "norm_label": "six failure classifications"
     },
     {
@@ -9524,7 +9251,7 @@
       "author": null,
       "contributor": null,
       "id": "policy_driven_agent_autonomy",
-      "community": 15,
+      "community": 14,
       "norm_label": "policy-driven agent autonomy"
     },
     {
@@ -9537,7 +9264,7 @@
       "author": null,
       "contributor": null,
       "id": "versioned_capability_classifier",
-      "community": 15,
+      "community": 14,
       "norm_label": "deterministic versioned capability classifier"
     },
     {
@@ -9550,7 +9277,7 @@
       "author": null,
       "contributor": null,
       "id": "auto_approved_disposition",
-      "community": 15,
+      "community": 14,
       "norm_label": "auto_approved disposition"
     },
     {
@@ -9563,7 +9290,7 @@
       "author": null,
       "contributor": null,
       "id": "human_review_required_disposition",
-      "community": 15,
+      "community": 14,
       "norm_label": "human_review_required disposition"
     },
     {
@@ -9576,7 +9303,7 @@
       "author": null,
       "contributor": null,
       "id": "low_risk_capability_extension",
-      "community": 15,
+      "community": 14,
       "norm_label": "low-risk playwright capability extension"
     },
     {
@@ -9589,7 +9316,7 @@
       "author": null,
       "contributor": null,
       "id": "one_extension_per_run",
-      "community": 15,
+      "community": 14,
       "norm_label": "one extension per run"
     },
     {
@@ -9602,7 +9329,7 @@
       "author": null,
       "contributor": null,
       "id": "capability_extension_record",
-      "community": 15,
+      "community": 14,
       "norm_label": "permanent capability extension audit record"
     },
     {
@@ -9615,7 +9342,7 @@
       "author": null,
       "contributor": null,
       "id": "structured_capability_proposal",
-      "community": 15,
+      "community": 14,
       "norm_label": "structured capability proposal"
     },
     {
@@ -9628,7 +9355,7 @@
       "author": null,
       "contributor": null,
       "id": "safe_locator_contract",
-      "community": 15,
+      "community": 14,
       "norm_label": "existing safe locator contract"
     },
     {
@@ -9641,7 +9368,7 @@
       "author": null,
       "contributor": null,
       "id": "deterministic_renderer",
-      "community": 15,
+      "community": 14,
       "norm_label": "deterministic renderer"
     },
     {
@@ -9654,7 +9381,7 @@
       "author": null,
       "contributor": null,
       "id": "focused_extension_tests",
-      "community": 15,
+      "community": 14,
       "norm_label": "contract, renderer, unit, and controlled-browser tests"
     },
     {
@@ -9667,7 +9394,7 @@
       "author": null,
       "contributor": null,
       "id": "complete_quality_gates",
-      "community": 15,
+      "community": 14,
       "norm_label": "complete repository quality gates"
     },
     {
@@ -9680,7 +9407,7 @@
       "author": null,
       "contributor": null,
       "id": "sensitive_capability_boundaries",
-      "community": 15,
+      "community": 14,
       "norm_label": "sensitive capability boundaries"
     },
     {
@@ -9693,7 +9420,7 @@
       "author": null,
       "contributor": null,
       "id": "authentication_and_permissions",
-      "community": 15,
+      "community": 14,
       "norm_label": "authentication, browser permissions, and filesystem access"
     },
     {
@@ -9706,7 +9433,7 @@
       "author": null,
       "contributor": null,
       "id": "external_origins_and_dependencies",
-      "community": 15,
+      "community": 14,
       "norm_label": "external origins and dependency changes"
     },
     {
@@ -9719,7 +9446,7 @@
       "author": null,
       "contributor": null,
       "id": "arbitrary_execution_and_destructive_writes",
-      "community": 15,
+      "community": 14,
       "norm_label": "arbitrary execution and destructive writes"
     },
     {
@@ -9732,7 +9459,7 @@
       "author": null,
       "contributor": null,
       "id": "policy_self_modification_prohibition",
-      "community": 15,
+      "community": 14,
       "norm_label": "policy self-modification prohibition"
     },
     {
@@ -9745,7 +9472,7 @@
       "author": null,
       "contributor": null,
       "id": "human_authority_boundary",
-      "community": 15,
+      "community": 14,
       "norm_label": "human authority over intent, external impact, and policy"
     },
     {
@@ -9758,7 +9485,7 @@
       "author": null,
       "contributor": null,
       "id": "routine_mechanics_boundary",
-      "community": 15,
+      "community": 14,
       "norm_label": "agent autonomy over bounded routine mechanics"
     },
     {
@@ -9771,7 +9498,7 @@
       "author": null,
       "contributor": null,
       "id": "human_decision_audit",
-      "community": 15,
+      "community": 14,
       "norm_label": "existing human-decision audit"
     },
     {
@@ -9784,7 +9511,7 @@
       "author": null,
       "contributor": null,
       "id": "retained_human_gates",
-      "community": 15,
+      "community": 14,
       "norm_label": "retained human intent, authority, and acceptance gates"
     },
     {
@@ -9797,7 +9524,7 @@
       "author": null,
       "contributor": null,
       "id": "automatic_missing_primitive_handling",
-      "community": 15,
+      "community": 14,
       "norm_label": "automatic missing low-risk primitive handling"
     },
     {
@@ -9810,7 +9537,7 @@
       "author": null,
       "contributor": null,
       "id": "continue_unrelated_authorized_work",
-      "community": 15,
+      "community": 14,
       "norm_label": "continue unrelated authorized work"
     },
     {
@@ -9823,7 +9550,7 @@
       "author": null,
       "contributor": null,
       "id": "operating_principles_policy_boundary",
-      "community": 15,
+      "community": 14,
       "norm_label": "apply existing policy without expanding it"
     },
     {
@@ -10486,7 +10213,7 @@
       "author": null,
       "contributor": null,
       "id": "repository_resident_factory",
-      "community": 5,
+      "community": 3,
       "norm_label": "repository-resident quality agent factory"
     },
     {
@@ -10499,7 +10226,7 @@
       "author": null,
       "contributor": null,
       "id": "quality_factory_pipeline",
-      "community": 5,
+      "community": 3,
       "norm_label": "quality factory pipeline"
     },
     {
@@ -10512,7 +10239,7 @@
       "author": null,
       "contributor": null,
       "id": "accepted_artifact_immutability",
-      "community": 5,
+      "community": 3,
       "norm_label": "accepted artifact immutability"
     },
     {
@@ -10525,7 +10252,7 @@
       "author": null,
       "contributor": null,
       "id": "provider_evaluation_methodology",
-      "community": 48,
+      "community": 49,
       "norm_label": "provider evaluation methodology"
     },
     {
@@ -10538,7 +10265,7 @@
       "author": null,
       "contributor": null,
       "id": "deterministic_baseline",
-      "community": 48,
+      "community": 49,
       "norm_label": "deterministic evaluation baseline"
     },
     {
@@ -10551,7 +10278,7 @@
       "author": null,
       "contributor": null,
       "id": "human_correction_rate",
-      "community": 48,
+      "community": 49,
       "norm_label": "human correction rate"
     },
     {
@@ -10564,7 +10291,7 @@
       "author": null,
       "contributor": null,
       "id": "workflow_troubleshooting",
-      "community": 5,
+      "community": 3,
       "norm_label": "workflow troubleshooting"
     },
     {
@@ -10590,7 +10317,7 @@
       "author": null,
       "contributor": null,
       "id": "untrusted_data_boundary",
-      "community": 5,
+      "community": 3,
       "norm_label": "untrusted data boundary"
     },
     {
@@ -10603,7 +10330,7 @@
       "author": null,
       "contributor": null,
       "id": "allowlisted_origin_policy",
-      "community": 5,
+      "community": 3,
       "norm_label": "allowlisted origin policy"
     },
     {
@@ -10616,7 +10343,7 @@
       "author": null,
       "contributor": null,
       "id": "human_approval_separation",
-      "community": 14,
+      "community": 3,
       "norm_label": "human approval separation"
     },
     {
@@ -10629,7 +10356,7 @@
       "author": null,
       "contributor": null,
       "id": "resumable_human_gated_workflow",
-      "community": 5,
+      "community": 3,
       "norm_label": "resumable human-gated workflow"
     },
     {
@@ -10642,7 +10369,7 @@
       "author": null,
       "contributor": null,
       "id": "playwright_generation_conventions",
-      "community": 14,
+      "community": 3,
       "norm_label": "playwright generation conventions"
     },
     {
@@ -10655,7 +10382,7 @@
       "author": null,
       "contributor": null,
       "id": "exact_approved_scenario_revision",
-      "community": 14,
+      "community": 3,
       "norm_label": "exact approved scenario revision"
     },
     {
@@ -10668,7 +10395,7 @@
       "author": null,
       "contributor": null,
       "id": "traceable_test_results",
-      "community": 14,
+      "community": 3,
       "norm_label": "traceable test results"
     },
     {
@@ -10720,7 +10447,7 @@
       "author": null,
       "contributor": null,
       "id": "synthetic_authentication_example",
-      "community": 5,
+      "community": 3,
       "norm_label": "synthetic authentication example"
     },
     {
@@ -10748,6 +10475,279 @@
       "id": "node_22_quality_gate",
       "community": 0,
       "norm_label": "node 22 quality gate"
+    },
+    {
+      "label": "Quality Agent Factory Phased Implementation Plan",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phased_implementation_plan",
+      "community": 16,
+      "norm_label": "quality agent factory phased implementation plan"
+    },
+    {
+      "label": "Phase 9 Pilot Workflow Optimization",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_pilot_workflow_optimization",
+      "community": 16,
+      "norm_label": "phase 9 pilot workflow optimization"
+    },
+    {
+      "label": "Phase 9 Complete Status",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_complete_status",
+      "community": 16,
+      "norm_label": "phase 9 complete status"
+    },
+    {
+      "label": "Thin Coordinator Contract and Typed Handoffs",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_thin_coordinator_contract",
+      "community": 16,
+      "norm_label": "thin coordinator contract and typed handoffs"
+    },
+    {
+      "label": "Independent Playwright Generated-Test Quality Gate",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_independent_playwright_quality_gate",
+      "community": 16,
+      "norm_label": "independent playwright generated-test quality gate"
+    },
+    {
+      "label": "Layer-First Taxonomy-Mirrored Playwright Architecture",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_layered_playwright_architecture",
+      "community": 16,
+      "norm_label": "layer-first taxonomy-mirrored playwright architecture"
+    },
+    {
+      "label": "Progressive Safe Authentication Pilot",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_safe_authentication_pilot",
+      "community": 16,
+      "norm_label": "progressive safe authentication pilot"
+    },
+    {
+      "label": "Task Schema V2 Artifact Disposition",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_artifact_disposition_v2",
+      "community": 16,
+      "norm_label": "task schema v2 artifact disposition"
+    },
+    {
+      "label": "Phase 9 Verification Evidence",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_verification_evidence",
+      "community": 16,
+      "norm_label": "phase 9 verification evidence"
+    },
+    {
+      "label": "Generated-Test Architecture and Secret Check",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_generated_test_check",
+      "community": 16,
+      "norm_label": "generated-test architecture and secret check"
+    },
+    {
+      "label": "Repository Quality Gate with 100 Unit Tests",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_repository_quality_gate",
+      "community": 16,
+      "norm_label": "repository quality gate with 100 unit tests"
+    },
+    {
+      "label": "Integration Provider and Cross-Browser Verification",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_integration_provider_e2e",
+      "community": 16,
+      "norm_label": "integration provider and cross-browser verification"
+    },
+    {
+      "label": "Fallow Static Analysis Result",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_fallow_result",
+      "community": 16,
+      "norm_label": "fallow static analysis result"
+    },
+    {
+      "label": "Durable Semantic Graph Refresh",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_durable_semantic_graph",
+      "community": 16,
+      "norm_label": "durable semantic graph refresh"
+    },
+    {
+      "label": "Draft Pull Request 9",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_pull_request_9",
+      "community": 16,
+      "norm_label": "draft pull request 9"
+    },
+    {
+      "label": "Phase 9 Implementation Commit f3e1ad8407217866c474c90c4fa609cb8434690c",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_implementation_commit",
+      "community": 16,
+      "norm_label": "phase 9 implementation commit f3e1ad8407217866c474c90c4fa609cb8434690c"
+    },
+    {
+      "label": "Phase 9 Published for Human Review",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_published_for_human_review",
+      "community": 16,
+      "norm_label": "phase 9 published for human review"
+    },
+    {
+      "label": "Shadow Verification Without Fabricated Policy Approval",
+      "file_type": "rationale",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_shadow_regression_boundary",
+      "community": 16,
+      "norm_label": "shadow verification without fabricated policy approval"
+    },
+    {
+      "label": "Genuine Human Policy Approval Gate",
+      "file_type": "rationale",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_human_policy_gate",
+      "community": 16,
+      "norm_label": "genuine human policy approval gate"
+    },
+    {
+      "label": "Exact Improvement Evaluation",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_improvement_evaluation",
+      "community": 16,
+      "norm_label": "exact improvement evaluation"
+    },
+    {
+      "label": "Review Pull Request 9 and CI Evidence",
+      "file_type": "document",
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "phase_9_next_session_review",
+      "community": 16,
+      "norm_label": "review pull request 9 and ci evidence"
     }
   ],
   "links": [
@@ -20133,262 +20133,12 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_pilot_workflow_optimization",
-      "target": "phased_implementation_plan"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
       "confidence_score": 1,
       "source_file": "README.md",
       "source_location": null,
       "weight": 1,
       "source": "quality_agent_factory",
       "target": "phased_implementation_plan"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_isolated_specialist_contexts",
-      "target": "phase_9_pilot_workflow_optimization"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_independent_playwright_quality_gate",
-      "target": "phase_9_pilot_workflow_optimization"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_policy_approval_boundary",
-      "target": "phase_9_pilot_workflow_optimization"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_verification_complete",
-      "target": "phase_9_pilot_workflow_optimization"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_thin_coordinator_contract",
-      "target": "phase_9_isolated_specialist_contexts"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_provider_contract_verification",
-      "target": "phase_9_thin_coordinator_contract"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_independent_playwright_quality_gate",
-      "target": "phase_9_cross_browser_e2e_verification"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_layered_playwright_architecture",
-      "target": "phase_9_generated_test_check"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_credential_smoke_sequence",
-      "target": "phase_9_safe_authentication_pilot"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_safe_authentication_pilot",
-      "target": "phase_9_cross_browser_e2e_verification"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_scm_eligibility_boundary",
-      "target": "phase_9_artifact_disposition_v2"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_generated_test_check",
-      "target": "phase_9_scm_eligibility_boundary"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_generated_test_check",
-      "target": "phase_9_verification_complete"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_quality_gate_result",
-      "target": "phase_9_verification_complete"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_integration_verification",
-      "target": "phase_9_verification_complete"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_provider_contract_verification",
-      "target": "phase_9_verification_complete"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_cross_browser_e2e_verification",
-      "target": "phase_9_verification_complete"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_fallow_static_analysis",
-      "target": "phase_9_verification_complete"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_durable_semantic_graph_refresh",
-      "target": "phase_9_verification_complete"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_shadow_regression_evidence",
-      "target": "phase_9_verification_complete"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_publication_pending",
-      "target": "phase_9_verification_complete"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_generated_test_check",
-      "target": "phase_9_quality_gate_result"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_publication_pending",
-      "target": "phase_9_durable_semantic_graph_refresh"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/plans/phased-implementation-plan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "phase_9_policy_approval_boundary",
-      "target": "phase_9_shadow_regression_evidence"
     },
     {
       "relation": "rationale_for",
@@ -25189,8 +24939,238 @@
       "weight": 1.0,
       "source": "provider_matrix_ci",
       "target": "node_22_quality_gate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_pilot_workflow_optimization",
+      "target": "phased_implementation_plan"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_complete_status",
+      "target": "phase_9_pilot_workflow_optimization"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_thin_coordinator_contract",
+      "target": "phase_9_pilot_workflow_optimization"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_independent_playwright_quality_gate",
+      "target": "phase_9_pilot_workflow_optimization"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_layered_playwright_architecture",
+      "target": "phase_9_pilot_workflow_optimization"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_safe_authentication_pilot",
+      "target": "phase_9_pilot_workflow_optimization"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_artifact_disposition_v2",
+      "target": "phase_9_pilot_workflow_optimization"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_verification_evidence",
+      "target": "phase_9_complete_status"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_implementation_commit",
+      "target": "phase_9_complete_status"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_published_for_human_review",
+      "target": "phase_9_complete_status"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_shadow_regression_boundary",
+      "target": "phase_9_complete_status"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_independent_playwright_quality_gate",
+      "target": "phase_9_generated_test_check"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_generated_test_check",
+      "target": "phase_9_verification_evidence"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_repository_quality_gate",
+      "target": "phase_9_verification_evidence"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_integration_provider_e2e",
+      "target": "phase_9_verification_evidence"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_fallow_result",
+      "target": "phase_9_verification_evidence"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_durable_semantic_graph",
+      "target": "phase_9_verification_evidence"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_pull_request_9",
+      "target": "phase_9_published_for_human_review"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_next_session_review",
+      "target": "phase_9_pull_request_9"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_pull_request_9",
+      "target": "phase_9_implementation_commit"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_human_policy_gate",
+      "target": "phase_9_shadow_regression_boundary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_improvement_evaluation",
+      "target": "phase_9_human_policy_gate"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/plans/phased-implementation-plan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "phase_9_next_session_review",
+      "target": "phase_9_human_policy_gate"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8b7290b3ab7089d48e36889f8c13c6843b2950e5"
+  "built_at_commit": "f3e1ad8407217866c474c90c4fa609cb8434690c"
 }
