@@ -1143,115 +1143,124 @@
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
       "source_location": "L1",
       "id": "tests_unit_playwright_playwright_pipeline_test_ts",
-      "community": 0,
+      "community": 80,
       "norm_label": "playwright-pipeline.test.ts"
     },
     {
       "label": "requirements",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L21",
+      "source_location": "L22",
       "id": "playwright_playwright_pipeline_test_requirements",
-      "community": 0,
+      "community": 80,
       "norm_label": "requirements"
     },
     {
       "label": "approvedScenario()",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L41",
+      "source_location": "L42",
       "id": "playwright_playwright_pipeline_test_approvedscenario",
-      "community": 3,
+      "community": 83,
       "norm_label": "approvedscenario()"
     },
     {
       "label": "approved",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L55",
+      "source_location": "L88",
       "id": "playwright_playwright_pipeline_test_approved",
-      "community": 0,
+      "community": 80,
       "norm_label": "approved"
     },
     {
       "label": "generated",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L59",
+      "source_location": "L92",
       "id": "playwright_playwright_pipeline_test_generated",
-      "community": 0,
+      "community": 80,
       "norm_label": "generated"
     },
     {
       "label": "base",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L162",
+      "source_location": "L195",
       "id": "playwright_playwright_pipeline_test_base",
-      "community": 0,
+      "community": 80,
       "norm_label": "base"
     },
     {
       "label": "lowRiskProposal",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L233",
+      "source_location": "L266",
       "id": "playwright_playwright_pipeline_test_lowriskproposal",
-      "community": 0,
+      "community": 80,
       "norm_label": "lowriskproposal"
     },
     {
       "label": "record",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L277",
+      "source_location": "L310",
       "id": "playwright_playwright_pipeline_test_record",
-      "community": 0,
+      "community": 80,
       "norm_label": "record"
     },
     {
       "label": "existing",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L296",
+      "source_location": "L329",
       "id": "playwright_playwright_pipeline_test_existing",
-      "community": 0,
+      "community": 80,
       "norm_label": "existing"
     },
     {
       "label": "events",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L342",
+      "source_location": "L375",
       "id": "playwright_playwright_pipeline_test_events",
-      "community": 0,
+      "community": 80,
       "norm_label": "events"
     },
     {
       "label": "cleanup",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L343",
+      "source_location": "L376",
       "id": "playwright_playwright_pipeline_test_cleanup",
-      "community": 0,
+      "community": 80,
       "norm_label": "cleanup"
     },
     {
       "label": "summary",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L357",
+      "source_location": "L390",
       "id": "playwright_playwright_pipeline_test_summary",
-      "community": 0,
+      "community": 80,
       "norm_label": "summary"
+    },
+    {
+      "label": "summaries",
+      "file_type": "code",
+      "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
+      "source_location": "L425",
+      "id": "playwright_playwright_pipeline_test_summaries",
+      "community": 80,
+      "norm_label": "summaries"
     },
     {
       "label": "result",
       "file_type": "code",
       "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
-      "source_location": "L440",
+      "source_location": "L491",
       "id": "playwright_playwright_pipeline_test_result",
-      "community": 0,
+      "community": 80,
       "norm_label": "result"
     },
     {
@@ -1429,7 +1438,7 @@
       "label": "provenance",
       "file_type": "code",
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
-      "source_location": "L14",
+      "source_location": "L15",
       "id": "orchestration_artifact_lifecycle_test_provenance",
       "community": 2,
       "norm_label": "provenance"
@@ -1438,16 +1447,25 @@
       "label": "designer",
       "file_type": "code",
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
-      "source_location": "L23",
+      "source_location": "L24",
       "id": "orchestration_artifact_lifecycle_test_designer",
       "community": 2,
       "norm_label": "designer"
     },
     {
+      "label": "contentSchema",
+      "file_type": "code",
+      "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
+      "source_location": "L30",
+      "id": "orchestration_artifact_lifecycle_test_contentschema",
+      "community": 2,
+      "norm_label": "contentschema"
+    },
+    {
       "label": "accepted",
       "file_type": "code",
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
-      "source_location": "L36",
+      "source_location": "L38",
       "id": "orchestration_artifact_lifecycle_test_accepted",
       "community": 2,
       "norm_label": "accepted"
@@ -1456,7 +1474,7 @@
       "label": "review",
       "file_type": "code",
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
-      "source_location": "L60",
+      "source_location": "L64",
       "id": "orchestration_artifact_lifecycle_test_review",
       "community": 2,
       "norm_label": "review"
@@ -1465,7 +1483,7 @@
       "label": "revision",
       "file_type": "code",
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
-      "source_location": "L100",
+      "source_location": "L107",
       "id": "orchestration_artifact_lifecycle_test_revision",
       "community": 2,
       "norm_label": "revision"
@@ -1474,7 +1492,7 @@
       "label": "oldChecksum",
       "file_type": "code",
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
-      "source_location": "L116",
+      "source_location": "L123",
       "id": "orchestration_artifact_lifecycle_test_oldchecksum",
       "community": 2,
       "norm_label": "oldchecksum"
@@ -1483,7 +1501,7 @@
       "label": "dependent",
       "file_type": "code",
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
-      "source_location": "L117",
+      "source_location": "L124",
       "id": "orchestration_artifact_lifecycle_test_dependent",
       "community": 2,
       "norm_label": "dependent"
@@ -1492,7 +1510,7 @@
       "label": "[invalidated]",
       "file_type": "code",
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
-      "source_location": "L137",
+      "source_location": "L144",
       "id": "orchestration_artifact_lifecycle_test_invalidated",
       "community": 2,
       "norm_label": "[invalidated]"
@@ -1501,7 +1519,7 @@
       "label": "draftScenario()",
       "file_type": "code",
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
-      "source_location": "L151",
+      "source_location": "L158",
       "id": "orchestration_artifact_lifecycle_test_draftscenario",
       "community": 2,
       "norm_label": "draftscenario()"
@@ -1510,7 +1528,7 @@
       "label": "acceptedRequirement()",
       "file_type": "code",
       "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
-      "source_location": "L174",
+      "source_location": "L181",
       "id": "orchestration_artifact_lifecycle_test_acceptedrequirement",
       "community": 2,
       "norm_label": "acceptedrequirement()"
@@ -1737,7 +1755,7 @@
       "source_file": "tests/unit/remediation/artifact-integrity.test.ts",
       "source_location": "L1",
       "id": "tests_unit_remediation_artifact_integrity_test_ts",
-      "community": 8,
+      "community": 7,
       "norm_label": "artifact-integrity.test.ts"
     },
     {
@@ -1746,7 +1764,7 @@
       "source_file": "tests/unit/remediation/artifact-integrity.test.ts",
       "source_location": "L12",
       "id": "remediation_artifact_integrity_test_artifactschema",
-      "community": 8,
+      "community": 7,
       "norm_label": "artifactschema"
     },
     {
@@ -1755,7 +1773,7 @@
       "source_file": "tests/unit/remediation/artifact-integrity.test.ts",
       "source_location": "L20",
       "id": "remediation_artifact_integrity_test_first",
-      "community": 8,
+      "community": 7,
       "norm_label": "first"
     },
     {
@@ -1764,7 +1782,7 @@
       "source_file": "tests/unit/remediation/artifact-integrity.test.ts",
       "source_location": "L26",
       "id": "remediation_artifact_integrity_test_roundtrip",
-      "community": 8,
+      "community": 7,
       "norm_label": "roundtrip"
     },
     {
@@ -1773,7 +1791,7 @@
       "source_file": "tests/unit/remediation/artifact-integrity.test.ts",
       "source_location": "L41",
       "id": "remediation_artifact_integrity_test_current",
-      "community": 8,
+      "community": 7,
       "norm_label": "current"
     },
     {
@@ -1782,7 +1800,7 @@
       "source_file": "tests/unit/remediation/artifact-integrity.test.ts",
       "source_location": "L89",
       "id": "remediation_artifact_integrity_test_results",
-      "community": 8,
+      "community": 7,
       "norm_label": "results"
     },
     {
@@ -1791,7 +1809,7 @@
       "source_file": "tests/unit/remediation/artifact-integrity.test.ts",
       "source_location": "L106",
       "id": "remediation_artifact_integrity_test_result",
-      "community": 8,
+      "community": 7,
       "norm_label": "result"
     },
     {
@@ -1800,7 +1818,7 @@
       "source_file": "tests/unit/remediation/artifact-integrity.test.ts",
       "source_location": "L124",
       "id": "remediation_artifact_integrity_test_execution",
-      "community": 8,
+      "community": 7,
       "norm_label": "execution()"
     },
     {
@@ -1881,7 +1899,7 @@
       "source_file": "tests/e2e/controlled-sample.spec.ts",
       "source_location": "L1",
       "id": "tests_e2e_controlled_sample_spec_ts",
-      "community": 0,
+      "community": 84,
       "norm_label": "controlled-sample.spec.ts"
     },
     {
@@ -1890,7 +1908,7 @@
       "source_file": "tests/e2e/controlled-sample.spec.ts",
       "source_location": "L8",
       "id": "e2e_controlled_sample_spec_username",
-      "community": 0,
+      "community": 84,
       "norm_label": "username"
     },
     {
@@ -1899,7 +1917,7 @@
       "source_file": "tests/e2e/controlled-sample.spec.ts",
       "source_location": "L9",
       "id": "e2e_controlled_sample_spec_createdusers",
-      "community": 0,
+      "community": 84,
       "norm_label": "createdusers"
     },
     {
@@ -1908,7 +1926,7 @@
       "source_file": "tests/e2e/support/quality-test.ts",
       "source_location": "L1",
       "id": "tests_e2e_support_quality_test_ts",
-      "community": 0,
+      "community": 84,
       "norm_label": "quality-test.ts"
     },
     {
@@ -1917,7 +1935,7 @@
       "source_file": "tests/e2e/support/quality-test.ts",
       "source_location": "L8",
       "id": "support_quality_test_qualityfixtures",
-      "community": 0,
+      "community": 84,
       "norm_label": "qualityfixtures"
     },
     {
@@ -1926,7 +1944,7 @@
       "source_file": "tests/e2e/support/quality-test.ts",
       "source_location": "L13",
       "id": "support_quality_test_test",
-      "community": 0,
+      "community": 84,
       "norm_label": "test"
     },
     {
@@ -2871,7 +2889,7 @@
       "source_file": "src/requirements/analysis.ts",
       "source_location": "L27",
       "id": "requirements_analysis_normalizedrequirements",
-      "community": 3,
+      "community": 16,
       "norm_label": "normalizedrequirements"
     },
     {
@@ -3294,14 +3312,23 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L233",
       "id": "playwright_contracts_automationplan",
-      "community": 0,
+      "community": 80,
       "norm_label": "automationplan"
+    },
+    {
+      "label": "PlaywrightPreflight",
+      "file_type": "code",
+      "source_file": "src/playwright/contracts.ts",
+      "source_location": "L234",
+      "id": "playwright_contracts_playwrightpreflight",
+      "community": 0,
+      "norm_label": "playwrightpreflight"
     },
     {
       "label": "AutomationLocator",
       "file_type": "code",
       "source_file": "src/playwright/contracts.ts",
-      "source_location": "L234",
+      "source_location": "L235",
       "id": "playwright_contracts_automationlocator",
       "community": 0,
       "norm_label": "automationlocator"
@@ -3310,7 +3337,7 @@
       "label": "PlaywrightTestMetadata",
       "file_type": "code",
       "source_file": "src/playwright/contracts.ts",
-      "source_location": "L235",
+      "source_location": "L236",
       "id": "playwright_contracts_playwrighttestmetadata",
       "community": 0,
       "norm_label": "playwrighttestmetadata"
@@ -3319,7 +3346,7 @@
       "label": "ExecutionSummary",
       "file_type": "code",
       "source_file": "src/playwright/contracts.ts",
-      "source_location": "L238",
+      "source_location": "L239",
       "id": "playwright_contracts_executionsummary",
       "community": 0,
       "norm_label": "executionsummary"
@@ -3328,7 +3355,7 @@
       "label": "CapabilityExtensionProposal",
       "file_type": "code",
       "source_file": "src/playwright/contracts.ts",
-      "source_location": "L239",
+      "source_location": "L240",
       "id": "playwright_contracts_capabilityextensionproposal",
       "community": 0,
       "norm_label": "capabilityextensionproposal"
@@ -3337,7 +3364,7 @@
       "label": "CapabilityExtensionRecord",
       "file_type": "code",
       "source_file": "src/playwright/contracts.ts",
-      "source_location": "L242",
+      "source_location": "L243",
       "id": "playwright_contracts_capabilityextensionrecord",
       "community": 0,
       "norm_label": "capabilityextensionrecord"
@@ -3348,277 +3375,286 @@
       "source_file": "src/playwright/pipeline.ts",
       "source_location": "L1",
       "id": "src_playwright_pipeline_ts",
-      "community": 0,
+      "community": 8,
       "norm_label": "pipeline.ts"
     },
     {
       "label": "GeneratePlaywrightTestInput",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L29",
+      "source_location": "L31",
       "id": "playwright_pipeline_generateplaywrighttestinput",
-      "community": 0,
+      "community": 8,
       "norm_label": "generateplaywrighttestinput"
     },
     {
       "label": "GeneratedPlaywrightTest",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L38",
+      "source_location": "L42",
       "id": "playwright_pipeline_generatedplaywrighttest",
-      "community": 0,
+      "community": 8,
       "norm_label": "generatedplaywrighttest"
     },
     {
       "label": "generatePlaywrightTest()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L43",
+      "source_location": "L48",
       "id": "playwright_pipeline_generateplaywrighttest",
-      "community": 0,
+      "community": 8,
       "norm_label": "generateplaywrighttest()"
     },
     {
       "label": "renderTestSource()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L116",
+      "source_location": "L125",
       "id": "playwright_pipeline_rendertestsource",
-      "community": 0,
+      "community": 8,
       "norm_label": "rendertestsource()"
     },
     {
       "label": "AutomationAction",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L142",
+      "source_location": "L151",
       "id": "playwright_pipeline_automationaction",
-      "community": 0,
+      "community": 8,
       "norm_label": "automationaction"
     },
     {
       "label": "InteractionAction",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L143",
+      "source_location": "L152",
       "id": "playwright_pipeline_interactionaction",
-      "community": 0,
+      "community": 8,
       "norm_label": "interactionaction"
     },
     {
       "label": "interactionKinds",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L158",
+      "source_location": "L167",
       "id": "playwright_pipeline_interactionkinds",
-      "community": 0,
+      "community": 8,
       "norm_label": "interactionkinds"
     },
     {
       "label": "renderAction()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L169",
+      "source_location": "L178",
       "id": "playwright_pipeline_renderaction",
-      "community": 0,
+      "community": 85,
       "norm_label": "renderaction()"
     },
     {
       "label": "isInteractionAction()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L175",
+      "source_location": "L184",
       "id": "playwright_pipeline_isinteractionaction",
-      "community": 0,
+      "community": 85,
       "norm_label": "isinteractionaction()"
     },
     {
       "label": "renderInteraction()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L181",
+      "source_location": "L190",
       "id": "playwright_pipeline_renderinteraction",
-      "community": 0,
+      "community": 85,
       "norm_label": "renderinteraction()"
     },
     {
       "label": "renderAssertion()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L206",
+      "source_location": "L215",
       "id": "playwright_pipeline_renderassertion",
-      "community": 0,
+      "community": 85,
       "norm_label": "renderassertion()"
     },
     {
       "label": "visibilityAssertionKinds",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L244",
+      "source_location": "L253",
       "id": "playwright_pipeline_visibilityassertionkinds",
-      "community": 0,
+      "community": 8,
       "norm_label": "visibilityassertionkinds"
     },
     {
       "label": "nativeAssertionKinds",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L249",
+      "source_location": "L258",
       "id": "playwright_pipeline_nativeassertionkinds",
-      "community": 0,
+      "community": 8,
       "norm_label": "nativeassertionkinds"
     },
     {
       "label": "renderVisibilityAssertion()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L254",
+      "source_location": "L263",
       "id": "playwright_pipeline_rendervisibilityassertion",
-      "community": 0,
+      "community": 85,
       "norm_label": "rendervisibilityassertion()"
     },
     {
       "label": "renderNativeAssertion()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L268",
+      "source_location": "L277",
       "id": "playwright_pipeline_rendernativeassertion",
-      "community": 0,
+      "community": 85,
       "norm_label": "rendernativeassertion()"
     },
     {
       "label": "renderLocator()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L281",
+      "source_location": "L290",
       "id": "playwright_pipeline_renderlocator",
-      "community": 0,
+      "community": 85,
       "norm_label": "renderlocator()"
     },
     {
       "label": "escapeRegExp()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L297",
+      "source_location": "L306",
       "id": "playwright_pipeline_escaperegexp",
-      "community": 0,
+      "community": 85,
       "norm_label": "escaperegexp()"
     },
     {
       "label": "createTestId()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L301",
+      "source_location": "L310",
       "id": "playwright_pipeline_createtestid",
-      "community": 0,
+      "community": 8,
       "norm_label": "createtestid()"
     },
     {
       "label": "createDeterministicTestId()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L305",
+      "source_location": "L314",
       "id": "playwright_pipeline_createdeterministictestid",
-      "community": 0,
+      "community": 84,
       "norm_label": "createdeterministictestid()"
     },
     {
       "label": "CleanupRegistry",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L322",
+      "source_location": "L331",
       "id": "playwright_pipeline_cleanupregistry",
-      "community": 0,
+      "community": 8,
       "norm_label": "cleanupregistry"
     },
     {
       "label": "createCleanupRegistry()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L327",
+      "source_location": "L336",
       "id": "playwright_pipeline_createcleanupregistry",
-      "community": 0,
+      "community": 84,
       "norm_label": "createcleanupregistry()"
     },
     {
       "label": "createExecutionSummary()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L357",
+      "source_location": "L366",
       "id": "playwright_pipeline_createexecutionsummary",
-      "community": 0,
+      "community": 80,
       "norm_label": "createexecutionsummary()"
+    },
+    {
+      "label": "registerBrowserMatrix()",
+      "file_type": "code",
+      "source_file": "src/playwright/pipeline.ts",
+      "source_location": "L372",
+      "id": "playwright_pipeline_registerbrowsermatrix",
+      "community": 80,
+      "norm_label": "registerbrowsermatrix()"
     },
     {
       "label": "runPlaywrightPreflight()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L363",
+      "source_location": "L397",
       "id": "playwright_pipeline_runplaywrightpreflight",
-      "community": 0,
+      "community": 8,
       "norm_label": "runplaywrightpreflight()"
     },
     {
       "label": "CapabilityExtensionClassification",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L405",
+      "source_location": "L439",
       "id": "playwright_pipeline_capabilityextensionclassification",
-      "community": 0,
+      "community": 8,
       "norm_label": "capabilityextensionclassification"
     },
     {
       "label": "automaticCapabilityApis",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L411",
+      "source_location": "L445",
       "id": "playwright_pipeline_automaticcapabilityapis",
-      "community": 0,
+      "community": 8,
       "norm_label": "automaticcapabilityapis"
     },
     {
       "label": "classifyCapabilityExtension()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L453",
+      "source_location": "L487",
       "id": "playwright_pipeline_classifycapabilityextension",
-      "community": 0,
+      "community": 80,
       "norm_label": "classifycapabilityextension()"
     },
     {
       "label": "capabilityReviewReasons()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L474",
+      "source_location": "L508",
       "id": "playwright_pipeline_capabilityreviewreasons",
-      "community": 0,
+      "community": 80,
       "norm_label": "capabilityreviewreasons()"
     },
     {
       "label": "CreateCapabilityExtensionRecordInput",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L515",
+      "source_location": "L549",
       "id": "playwright_pipeline_createcapabilityextensionrecordinput",
-      "community": 0,
+      "community": 8,
       "norm_label": "createcapabilityextensionrecordinput"
     },
     {
       "label": "createCapabilityExtensionRecord()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L523",
+      "source_location": "L557",
       "id": "playwright_pipeline_createcapabilityextensionrecord",
-      "community": 0,
+      "community": 80,
       "norm_label": "createcapabilityextensionrecord()"
     },
     {
       "label": "validateCapabilityExtensionRecord()",
       "file_type": "code",
       "source_file": "src/playwright/pipeline.ts",
-      "source_location": "L554",
+      "source_location": "L588",
       "id": "playwright_pipeline_validatecapabilityextensionrecord",
-      "community": 3,
+      "community": 83,
       "norm_label": "validatecapabilityextensionrecord()"
     },
     {
@@ -3780,7 +3816,7 @@
       "source_file": "src/schemas/contracts.ts",
       "source_location": "L177",
       "id": "schemas_contracts_workflowmanifestschema",
-      "community": 2,
+      "community": 13,
       "norm_label": "workflowmanifestschema"
     },
     {
@@ -3868,34 +3904,34 @@
       "label": "BenchmarkDisposition",
       "file_type": "code",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
-      "source_location": "L1",
+      "source_location": "L13",
       "id": "benchmarks_synthetic_quality_corpus_benchmarkdisposition",
       "community": 16,
       "norm_label": "benchmarkdisposition"
     },
     {
+      "label": "FailureClass",
+      "file_type": "code",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L14",
+      "id": "benchmarks_synthetic_quality_corpus_failureclass",
+      "community": 16,
+      "norm_label": "failureclass"
+    },
+    {
       "label": "SyntheticBenchmarkCase",
       "file_type": "code",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
-      "source_location": "L3",
+      "source_location": "L22",
       "id": "benchmarks_synthetic_quality_corpus_syntheticbenchmarkcase",
       "community": 16,
       "norm_label": "syntheticbenchmarkcase"
     },
     {
-      "label": "unsafeClasses",
-      "file_type": "code",
-      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
-      "source_location": "L15",
-      "id": "benchmarks_synthetic_quality_corpus_unsafeclasses",
-      "community": 16,
-      "norm_label": "unsafeclasses"
-    },
-    {
       "label": "syntheticQualityCorpus",
       "file_type": "code",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
-      "source_location": "L23",
+      "source_location": "L28",
       "id": "benchmarks_synthetic_quality_corpus_syntheticqualitycorpus",
       "community": 16,
       "norm_label": "syntheticqualitycorpus"
@@ -3904,34 +3940,70 @@
       "label": "evaluateSyntheticBenchmark()",
       "file_type": "code",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
-      "source_location": "L32",
+      "source_location": "L37",
       "id": "benchmarks_synthetic_quality_corpus_evaluatesyntheticbenchmark",
       "community": 16,
       "norm_label": "evaluatesyntheticbenchmark()"
     },
     {
-      "label": "builtInDisposition()",
+      "label": "executeCandidate()",
       "file_type": "code",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
-      "source_location": "L63",
-      "id": "benchmarks_synthetic_quality_corpus_builtindisposition",
+      "source_location": "L62",
+      "id": "benchmarks_synthetic_quality_corpus_executecandidate",
       "community": 16,
-      "norm_label": "builtindisposition()"
+      "norm_label": "executecandidate()"
     },
     {
-      "label": "independentDisposition()",
+      "label": "independentlyClassify()",
       "file_type": "code",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
-      "source_location": "L71",
-      "id": "benchmarks_synthetic_quality_corpus_independentdisposition",
+      "source_location": "L76",
+      "id": "benchmarks_synthetic_quality_corpus_independentlyclassify",
       "community": 16,
-      "norm_label": "independentdisposition()"
+      "norm_label": "independentlyclassify()"
+    },
+    {
+      "label": "mutateCandidate()",
+      "file_type": "code",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L89",
+      "id": "benchmarks_synthetic_quality_corpus_mutatecandidate",
+      "community": 16,
+      "norm_label": "mutatecandidate()"
+    },
+    {
+      "label": "mutateScenario()",
+      "file_type": "code",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L108",
+      "id": "benchmarks_synthetic_quality_corpus_mutatescenario",
+      "community": 16,
+      "norm_label": "mutatescenario()"
+    },
+    {
+      "label": "benchmarkRequirements()",
+      "file_type": "code",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L138",
+      "id": "benchmarks_synthetic_quality_corpus_benchmarkrequirements",
+      "community": 16,
+      "norm_label": "benchmarkrequirements()"
+    },
+    {
+      "label": "duplicateId()",
+      "file_type": "code",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L161",
+      "id": "benchmarks_synthetic_quality_corpus_duplicateid",
+      "community": 16,
+      "norm_label": "duplicateid()"
     },
     {
       "label": "cases()",
       "file_type": "code",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
-      "source_location": "L79",
+      "source_location": "L166",
       "id": "benchmarks_synthetic_quality_corpus_cases",
       "community": 16,
       "norm_label": "cases()"
@@ -3942,7 +4014,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L1",
       "id": "src_scenarios_contracts_ts",
-      "community": 3,
+      "community": 82,
       "norm_label": "contracts.ts"
     },
     {
@@ -3951,7 +4023,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L3",
       "id": "scenarios_contracts_requirementidschema",
-      "community": 3,
+      "community": 82,
       "norm_label": "requirementidschema"
     },
     {
@@ -3960,7 +4032,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L7",
       "id": "scenarios_contracts_scenarioidschema",
-      "community": 3,
+      "community": 82,
       "norm_label": "scenarioidschema"
     },
     {
@@ -3969,7 +4041,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L11",
       "id": "scenarios_contracts_checksumschema",
-      "community": 3,
+      "community": 82,
       "norm_label": "checksumschema"
     },
     {
@@ -3978,7 +4050,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L13",
       "id": "scenarios_contracts_scenariostepschema",
-      "community": 3,
+      "community": 82,
       "norm_label": "scenariostepschema"
     },
     {
@@ -3987,7 +4059,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L19",
       "id": "scenarios_contracts_scenarioschema",
-      "community": 3,
+      "community": 82,
       "norm_label": "scenarioschema"
     },
     {
@@ -3996,7 +4068,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L72",
       "id": "scenarios_contracts_scenariospecificationschema",
-      "community": 3,
+      "community": 82,
       "norm_label": "scenariospecificationschema"
     },
     {
@@ -4005,7 +4077,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L95",
       "id": "scenarios_contracts_scenarioevaluationschema",
-      "community": 3,
+      "community": 82,
       "norm_label": "scenarioevaluationschema"
     },
     {
@@ -4014,7 +4086,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L121",
       "id": "scenarios_contracts_humanscenarioreviewschema",
-      "community": 3,
+      "community": 82,
       "norm_label": "humanscenarioreviewschema"
     },
     {
@@ -4023,7 +4095,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L131",
       "id": "scenarios_contracts_scenario",
-      "community": 3,
+      "community": 82,
       "norm_label": "scenario"
     },
     {
@@ -4032,7 +4104,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L132",
       "id": "scenarios_contracts_scenariospecification",
-      "community": 3,
+      "community": 82,
       "norm_label": "scenariospecification"
     },
     {
@@ -4041,7 +4113,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L133",
       "id": "scenarios_contracts_scenarioevaluation",
-      "community": 3,
+      "community": 82,
       "norm_label": "scenarioevaluation"
     },
     {
@@ -4050,7 +4122,7 @@
       "source_file": "src/scenarios/contracts.ts",
       "source_location": "L134",
       "id": "scenarios_contracts_humanscenarioreview",
-      "community": 3,
+      "community": 82,
       "norm_label": "humanscenarioreview"
     },
     {
@@ -4059,7 +4131,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L1",
       "id": "src_scenarios_pipeline_ts",
-      "community": 3,
+      "community": 81,
       "norm_label": "pipeline.ts"
     },
     {
@@ -4068,7 +4140,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L19",
       "id": "scenarios_pipeline_generatescenariospecification",
-      "community": 3,
+      "community": 83,
       "norm_label": "generatescenariospecification()"
     },
     {
@@ -4095,7 +4167,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L77",
       "id": "scenarios_pipeline_evaluatescenarios",
-      "community": 3,
+      "community": 83,
       "norm_label": "evaluatescenarios()"
     },
     {
@@ -4104,7 +4176,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L113",
       "id": "scenarios_pipeline_findscenariofindings",
-      "community": 3,
+      "community": 83,
       "norm_label": "findscenariofindings()"
     },
     {
@@ -4113,7 +4185,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L123",
       "id": "scenarios_pipeline_referencefindings",
-      "community": 3,
+      "community": 81,
       "norm_label": "referencefindings()"
     },
     {
@@ -4122,7 +4194,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L143",
       "id": "scenarios_pipeline_qualityfindings",
-      "community": 3,
+      "community": 81,
       "norm_label": "qualityfindings()"
     },
     {
@@ -4131,7 +4203,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L151",
       "id": "scenarios_pipeline_setupfindings",
-      "community": 3,
+      "community": 81,
       "norm_label": "setupfindings()"
     },
     {
@@ -4140,7 +4212,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L168",
       "id": "scenarios_pipeline_outcomefindings",
-      "community": 3,
+      "community": 81,
       "norm_label": "outcomefindings()"
     },
     {
@@ -4149,7 +4221,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L199",
       "id": "scenarios_pipeline_feasibilityfindings",
-      "community": 3,
+      "community": 81,
       "norm_label": "feasibilityfindings()"
     },
     {
@@ -4158,7 +4230,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L232",
       "id": "scenarios_pipeline_findcoveragefindings",
-      "community": 3,
+      "community": 83,
       "norm_label": "findcoveragefindings()"
     },
     {
@@ -4167,7 +4239,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L271",
       "id": "scenarios_pipeline_findduplicatescenarios",
-      "community": 3,
+      "community": 83,
       "norm_label": "findduplicatescenarios()"
     },
     {
@@ -4176,7 +4248,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L298",
       "id": "scenarios_pipeline_revisioninput",
-      "community": 3,
+      "community": 81,
       "norm_label": "revisioninput"
     },
     {
@@ -4194,7 +4266,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L334",
       "id": "scenarios_pipeline_humanreviewinput",
-      "community": 3,
+      "community": 81,
       "norm_label": "humanreviewinput"
     },
     {
@@ -4203,7 +4275,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L342",
       "id": "scenarios_pipeline_createhumanscenarioreview",
-      "community": 3,
+      "community": 83,
       "norm_label": "createhumanscenarioreview()"
     },
     {
@@ -4212,7 +4284,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L393",
       "id": "scenarios_pipeline_traceabilitymatrix",
-      "community": 3,
+      "community": 81,
       "norm_label": "traceabilitymatrix"
     },
     {
@@ -4230,7 +4302,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L449",
       "id": "scenarios_pipeline_scenariosfor",
-      "community": 3,
+      "community": 81,
       "norm_label": "scenariosfor()"
     },
     {
@@ -4239,7 +4311,7 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L457",
       "id": "scenarios_pipeline_applicablecoverage",
-      "community": 3,
+      "community": 81,
       "norm_label": "applicablecoverage()"
     },
     {
@@ -4248,41 +4320,50 @@
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L472",
       "id": "scenarios_pipeline_createscenario",
-      "community": 3,
+      "community": 81,
       "norm_label": "createscenario()"
+    },
+    {
+      "label": "classifyScenarioFeasibility()",
+      "file_type": "code",
+      "source_file": "src/scenarios/pipeline.ts",
+      "source_location": "L535",
+      "id": "scenarios_pipeline_classifyscenariofeasibility",
+      "community": 81,
+      "norm_label": "classifyscenariofeasibility()"
     },
     {
       "label": "semanticDomain()",
       "file_type": "code",
       "source_file": "src/scenarios/pipeline.ts",
-      "source_location": "L529",
+      "source_location": "L562",
       "id": "scenarios_pipeline_semanticdomain",
-      "community": 3,
+      "community": 81,
       "norm_label": "semanticdomain()"
     },
     {
       "label": "semanticText()",
       "file_type": "code",
       "source_file": "src/scenarios/pipeline.ts",
-      "source_location": "L552",
+      "source_location": "L585",
       "id": "scenarios_pipeline_semantictext",
-      "community": 3,
+      "community": 81,
       "norm_label": "semantictext()"
     },
     {
       "label": "renderScenario()",
       "file_type": "code",
       "source_file": "src/scenarios/pipeline.ts",
-      "source_location": "L559",
+      "source_location": "L592",
       "id": "scenarios_pipeline_renderscenario",
-      "community": 3,
+      "community": 81,
       "norm_label": "renderscenario()"
     },
     {
       "label": "normalizeMarkdown()",
       "file_type": "code",
       "source_file": "src/scenarios/pipeline.ts",
-      "source_location": "L607",
+      "source_location": "L640",
       "id": "scenarios_pipeline_normalizemarkdown",
       "community": 3,
       "norm_label": "normalizemarkdown()"
@@ -4291,18 +4372,18 @@
       "label": "markdownText()",
       "file_type": "code",
       "source_file": "src/scenarios/pipeline.ts",
-      "source_location": "L611",
+      "source_location": "L644",
       "id": "scenarios_pipeline_markdowntext",
-      "community": 3,
+      "community": 81,
       "norm_label": "markdowntext()"
     },
     {
       "label": "markdownCell()",
       "file_type": "code",
       "source_file": "src/scenarios/pipeline.ts",
-      "source_location": "L615",
+      "source_location": "L648",
       "id": "scenarios_pipeline_markdowncell",
-      "community": 3,
+      "community": 81,
       "norm_label": "markdowncell()"
     },
     {
@@ -4669,16 +4750,16 @@
       "label": "semanticChecksum()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L12",
+      "source_location": "L14",
       "id": "orchestration_artifact_lifecycle_semanticchecksum",
-      "community": 3,
+      "community": 83,
       "norm_label": "semanticchecksum()"
     },
     {
       "label": "AcceptArtifactInput",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L16",
+      "source_location": "L18",
       "id": "orchestration_artifact_lifecycle_acceptartifactinput",
       "community": 2,
       "norm_label": "acceptartifactinput"
@@ -4687,7 +4768,7 @@
       "label": "acceptArtifact()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L23",
+      "source_location": "L26",
       "id": "orchestration_artifact_lifecycle_acceptartifact",
       "community": 2,
       "norm_label": "acceptartifact()"
@@ -4696,7 +4777,7 @@
       "label": "validateArtifactReferences()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L65",
+      "source_location": "L69",
       "id": "orchestration_artifact_lifecycle_validateartifactreferences",
       "community": 2,
       "norm_label": "validateartifactreferences()"
@@ -4705,7 +4786,7 @@
       "label": "createArtifactRevision()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L116",
+      "source_location": "L120",
       "id": "orchestration_artifact_lifecycle_createartifactrevision",
       "community": 2,
       "norm_label": "createartifactrevision()"
@@ -4714,7 +4795,7 @@
       "label": "invalidateDownstreamArtifacts()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L141",
+      "source_location": "L145",
       "id": "orchestration_artifact_lifecycle_invalidatedownstreamartifacts",
       "community": 2,
       "norm_label": "invalidatedownstreamartifacts()"
@@ -4723,16 +4804,16 @@
       "label": "canonicalSerialize()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L155",
+      "source_location": "L159",
       "id": "orchestration_artifact_lifecycle_canonicalserialize",
-      "community": 8,
+      "community": 7,
       "norm_label": "canonicalserialize()"
     },
     {
       "label": "JsonValue",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L159",
+      "source_location": "L163",
       "id": "orchestration_artifact_lifecycle_jsonvalue",
       "community": 2,
       "norm_label": "jsonvalue"
@@ -4741,7 +4822,7 @@
       "label": "normalizeJson()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L167",
+      "source_location": "L171",
       "id": "orchestration_artifact_lifecycle_normalizejson",
       "community": 2,
       "norm_label": "normalizejson()"
@@ -4750,7 +4831,7 @@
       "label": "normalizeArray()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L184",
+      "source_location": "L188",
       "id": "orchestration_artifact_lifecycle_normalizearray",
       "community": 2,
       "norm_label": "normalizearray()"
@@ -4759,7 +4840,7 @@
       "label": "normalizeObject()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L194",
+      "source_location": "L198",
       "id": "orchestration_artifact_lifecycle_normalizeobject",
       "community": 2,
       "norm_label": "normalizeobject()"
@@ -4768,7 +4849,7 @@
       "label": "assertNotCyclic()",
       "file_type": "code",
       "source_file": "src/orchestration/artifact-lifecycle.ts",
-      "source_location": "L211",
+      "source_location": "L215",
       "id": "orchestration_artifact_lifecycle_assertnotcyclic",
       "community": 2,
       "norm_label": "assertnotcyclic()"
@@ -4878,7 +4959,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L1",
       "id": "src_remediation_artifact_integrity_ts",
-      "community": 8,
+      "community": 7,
       "norm_label": "artifact-integrity.ts"
     },
     {
@@ -4887,7 +4968,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L9",
       "id": "remediation_artifact_integrity_saferuntimepathschema",
-      "community": 8,
+      "community": 7,
       "norm_label": "saferuntimepathschema"
     },
     {
@@ -4896,7 +4977,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L24",
       "id": "remediation_artifact_integrity_canonicalartifact",
-      "community": 8,
+      "community": 7,
       "norm_label": "canonicalartifact"
     },
     {
@@ -4905,7 +4986,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L43",
       "id": "remediation_artifact_integrity_requireexactapproval",
-      "community": 8,
+      "community": 7,
       "norm_label": "requireexactapproval()"
     },
     {
@@ -4923,7 +5004,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L94",
       "id": "remediation_artifact_integrity_executionresultschema",
-      "community": 8,
+      "community": 7,
       "norm_label": "executionresultschema"
     },
     {
@@ -4932,7 +5013,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L114",
       "id": "remediation_artifact_integrity_executionresult",
-      "community": 8,
+      "community": 7,
       "norm_label": "executionresult"
     },
     {
@@ -4941,7 +5022,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L116",
       "id": "remediation_artifact_integrity_aggregateexecutionresults",
-      "community": 8,
+      "community": 7,
       "norm_label": "aggregateexecutionresults()"
     },
     {
@@ -4950,7 +5031,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L136",
       "id": "remediation_artifact_integrity_manualresultcontentschema",
-      "community": 8,
+      "community": 7,
       "norm_label": "manualresultcontentschema"
     },
     {
@@ -4959,7 +5040,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L153",
       "id": "remediation_artifact_integrity_manualresultschema",
-      "community": 8,
+      "community": 7,
       "norm_label": "manualresultschema"
     },
     {
@@ -4968,7 +5049,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L157",
       "id": "remediation_artifact_integrity_manualresult",
-      "community": 8,
+      "community": 7,
       "norm_label": "manualresult"
     },
     {
@@ -4977,7 +5058,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L159",
       "id": "remediation_artifact_integrity_createmanualresult",
-      "community": 8,
+      "community": 7,
       "norm_label": "createmanualresult()"
     },
     {
@@ -4986,7 +5067,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L172",
       "id": "remediation_artifact_integrity_publicationauthorizationschema",
-      "community": 8,
+      "community": 7,
       "norm_label": "publicationauthorizationschema"
     },
     {
@@ -4995,7 +5076,7 @@
       "source_file": "src/remediation/artifact-integrity.ts",
       "source_location": "L187",
       "id": "remediation_artifact_integrity_publicationauthorization",
-      "community": 8,
+      "community": 7,
       "norm_label": "publicationauthorization"
     },
     {
@@ -7355,6 +7436,33 @@
       "id": "templates_readme_artifact_templates",
       "community": 79,
       "norm_label": "artifact templates"
+    },
+    {
+      "label": "unsafeClasses",
+      "file_type": "code",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L15",
+      "community": 16,
+      "norm_label": "unsafeclasses",
+      "id": "benchmarks_synthetic_quality_corpus_unsafeclasses"
+    },
+    {
+      "label": "builtInDisposition()",
+      "file_type": "code",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L63",
+      "community": 16,
+      "norm_label": "builtindisposition()",
+      "id": "benchmarks_synthetic_quality_corpus_builtindisposition"
+    },
+    {
+      "label": "independentDisposition()",
+      "file_type": "code",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L71",
+      "community": 16,
+      "norm_label": "independentdisposition()",
+      "id": "benchmarks_synthetic_quality_corpus_independentdisposition"
     },
     {
       "label": "Quality Agent Factory",
@@ -9978,6 +10086,17 @@
       "target": "playwright_pipeline_runplaywrightpreflight"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tests_unit_playwright_playwright_pipeline_test_ts",
+      "target": "playwright_pipeline_registerbrowsermatrix",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -10108,6 +10227,16 @@
       "confidence_score": 1.0,
       "source": "tests_unit_playwright_playwright_pipeline_test_ts",
       "target": "playwright_playwright_pipeline_test_summary"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/playwright/playwright-pipeline.test.ts",
+      "source_location": "L425",
+      "weight": 1.0,
+      "source": "tests_unit_playwright_playwright_pipeline_test_ts",
+      "target": "playwright_playwright_pipeline_test_summaries",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10640,6 +10769,16 @@
       "confidence_score": 1.0,
       "source": "tests_unit_orchestration_artifact_lifecycle_test_ts",
       "target": "orchestration_artifact_lifecycle_test_designer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/orchestration/artifact-lifecycle.test.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "tests_unit_orchestration_artifact_lifecycle_test_ts",
+      "target": "orchestration_artifact_lifecycle_test_contentschema",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13228,6 +13367,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "src_requirements_analysis_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L4",
       "weight": 1.0,
@@ -13245,6 +13395,17 @@
       "confidence_score": 1.0,
       "source": "src_playwright_pipeline_ts",
       "target": "requirements_analysis_normalizedrequirements"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "requirements_analysis_normalizedrequirements",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -13718,6 +13879,16 @@
       "source_file": "src/playwright/contracts.ts",
       "source_location": "L234",
       "weight": 1.0,
+      "source": "src_playwright_contracts_ts",
+      "target": "playwright_contracts_playwrightpreflight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/playwright/contracts.ts",
+      "source_location": "L234",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_playwright_contracts_ts",
       "target": "playwright_contracts_automationlocator"
@@ -13855,6 +14026,17 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/playwright/pipeline.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_playwright_pipeline_ts",
+      "target": "playwright_contracts_playwrightpreflight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/playwright/pipeline.ts",
       "source_location": "L14",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -13926,6 +14108,28 @@
       "confidence_score": 1.0,
       "source": "src_playwright_pipeline_ts",
       "target": "orchestration_artifact_lifecycle_semanticchecksum"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/playwright/pipeline.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_playwright_pipeline_ts",
+      "target": "src_remediation_artifact_integrity_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/playwright/pipeline.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_playwright_pipeline_ts",
+      "target": "remediation_artifact_integrity_assertgeneratedtestpath",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -14228,6 +14432,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/playwright/pipeline.ts",
+      "source_location": "L372",
+      "weight": 1.0,
+      "source": "src_playwright_pipeline_ts",
+      "target": "playwright_pipeline_registerbrowsermatrix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/playwright/pipeline.ts",
       "source_location": "L362",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14309,6 +14523,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/playwright/pipeline.ts",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "playwright_pipeline_generateplaywrighttest",
+      "target": "playwright_pipeline_runplaywrightpreflight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/playwright/pipeline.ts",
       "source_location": "L99",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14336,6 +14561,17 @@
       "weight": 1.0,
       "source": "playwright_pipeline_generateplaywrighttest",
       "target": "orchestration_artifact_lifecycle_semanticchecksum"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/playwright/pipeline.ts",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "playwright_pipeline_generateplaywrighttest",
+      "target": "remediation_artifact_integrity_assertgeneratedtestpath"
     },
     {
       "relation": "calls",
@@ -15006,6 +15242,105 @@
       "target": "schemas_contracts_workflowmanifest"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "src_orchestration_artifact_lifecycle_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "orchestration_artifact_lifecycle_semanticchecksum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "src_scenarios_pipeline_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "scenarios_pipeline_evaluatescenarios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "scenarios_pipeline_generatescenariospecification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "src_scenarios_contracts_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "scenarios_contracts_scenario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "scenarios_contracts_scenarioevaluation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "scenarios_contracts_scenariospecification",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
@@ -15019,21 +15354,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
-      "source_location": "L3",
+      "source_location": "L14",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "src_benchmarks_synthetic_quality_corpus_ts",
-      "target": "benchmarks_synthetic_quality_corpus_syntheticbenchmarkcase"
+      "target": "benchmarks_synthetic_quality_corpus_failureclass",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
-      "source_location": "L15",
+      "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_benchmarks_synthetic_quality_corpus_ts",
-      "target": "benchmarks_synthetic_quality_corpus_unsafeclasses"
+      "target": "benchmarks_synthetic_quality_corpus_syntheticbenchmarkcase"
     },
     {
       "relation": "contains",
@@ -15059,6 +15394,86 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "benchmarks_synthetic_quality_corpus_executecandidate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "benchmarks_synthetic_quality_corpus_independentlyclassify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "benchmarks_synthetic_quality_corpus_mutatecandidate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "benchmarks_synthetic_quality_corpus_mutatescenario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "benchmarks_synthetic_quality_corpus_benchmarkrequirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "benchmarks_synthetic_quality_corpus_duplicateid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "benchmarks_synthetic_quality_corpus_cases"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_benchmarks_synthetic_quality_corpus_ts",
+      "target": "benchmarks_synthetic_quality_corpus_unsafeclasses"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
       "source_location": "L63",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -15076,14 +15491,92 @@
       "target": "benchmarks_synthetic_quality_corpus_independentdisposition"
     },
     {
-      "relation": "contains",
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
-      "source_location": "L79",
+      "source_location": "L63",
       "weight": 1.0,
+      "source": "benchmarks_synthetic_quality_corpus_executecandidate",
+      "target": "benchmarks_synthetic_quality_corpus_benchmarkrequirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "benchmarks_synthetic_quality_corpus_executecandidate",
+      "target": "benchmarks_synthetic_quality_corpus_mutatecandidate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "benchmarks_synthetic_quality_corpus_executecandidate",
+      "target": "benchmarks_synthetic_quality_corpus_independentlyclassify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source": "src_benchmarks_synthetic_quality_corpus_ts",
-      "target": "benchmarks_synthetic_quality_corpus_cases"
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "benchmarks_synthetic_quality_corpus_executecandidate",
+      "target": "scenarios_pipeline_generatescenariospecification"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "benchmarks_synthetic_quality_corpus_executecandidate",
+      "target": "scenarios_pipeline_evaluatescenarios"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "benchmarks_synthetic_quality_corpus_mutatecandidate",
+      "target": "benchmarks_synthetic_quality_corpus_mutatescenario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "benchmarks_synthetic_quality_corpus_mutatecandidate",
+      "target": "benchmarks_synthetic_quality_corpus_duplicateid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/benchmarks/synthetic-quality-corpus.ts",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "benchmarks_synthetic_quality_corpus_benchmarkrequirements",
+      "target": "orchestration_artifact_lifecycle_semanticchecksum"
     },
     {
       "relation": "contains",
@@ -15529,6 +16022,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/scenarios/pipeline.ts",
+      "source_location": "L535",
+      "weight": 1.0,
+      "source": "src_scenarios_pipeline_ts",
+      "target": "scenarios_pipeline_classifyscenariofeasibility",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scenarios/pipeline.ts",
       "source_location": "L529",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -15727,6 +16230,17 @@
       "confidence_score": 1.0,
       "source": "scenarios_pipeline_scenariosfor",
       "target": "scenarios_pipeline_applicablecoverage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scenarios/pipeline.ts",
+      "source_location": "L482",
+      "weight": 1.0,
+      "source": "scenarios_pipeline_createscenario",
+      "target": "scenarios_pipeline_classifyscenariofeasibility",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -17195,9 +17709,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "aristotle_readme_quality_agent_factory",
-      "confidence_score": 1.0
+      "target": "aristotle_readme_quality_agent_factory"
     },
     {
       "relation": "contains",
@@ -17205,9 +17719,9 @@
       "source_file": "README.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_readme_quality_agent_factory",
-      "target": "aristotle_readme_current_status",
-      "confidence_score": 1.0
+      "target": "aristotle_readme_current_status"
     },
     {
       "relation": "contains",
@@ -17215,9 +17729,9 @@
       "source_file": "README.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_readme_quality_agent_factory",
-      "target": "aristotle_readme_prerequisites",
-      "confidence_score": 1.0
+      "target": "aristotle_readme_prerequisites"
     },
     {
       "relation": "contains",
@@ -17225,9 +17739,9 @@
       "source_file": "README.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_readme_quality_agent_factory",
-      "target": "aristotle_readme_setup",
-      "confidence_score": 1.0
+      "target": "aristotle_readme_setup"
     },
     {
       "relation": "contains",
@@ -17235,9 +17749,9 @@
       "source_file": "README.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_readme_quality_agent_factory",
-      "target": "aristotle_readme_commands",
-      "confidence_score": 1.0
+      "target": "aristotle_readme_commands"
     },
     {
       "relation": "contains",
@@ -17245,9 +17759,9 @@
       "source_file": "README.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_readme_quality_agent_factory",
-      "target": "aristotle_readme_commit_quality_pipeline",
-      "confidence_score": 1.0
+      "target": "aristotle_readme_commit_quality_pipeline"
     },
     {
       "relation": "contains",
@@ -17255,9 +17769,9 @@
       "source_file": "README.md",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_readme_quality_agent_factory",
-      "target": "aristotle_readme_safety_defaults",
-      "confidence_score": 1.0
+      "target": "aristotle_readme_safety_defaults"
     },
     {
       "relation": "contains",
@@ -17265,9 +17779,9 @@
       "source_file": "README.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_readme_setup",
-      "target": "aristotle_readme_codeblock_1",
-      "confidence_score": 1.0
+      "target": "aristotle_readme_codeblock_1"
     },
     {
       "relation": "contains",
@@ -17275,9 +17789,9 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "contributing_md",
-      "target": "aristotle_contributing_contributing",
-      "confidence_score": 1.0
+      "target": "aristotle_contributing_contributing"
     },
     {
       "relation": "contains",
@@ -17285,9 +17799,9 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_contributing_contributing",
-      "target": "aristotle_contributing_workflow",
-      "confidence_score": 1.0
+      "target": "aristotle_contributing_workflow"
     },
     {
       "relation": "contains",
@@ -17295,9 +17809,9 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_contributing_contributing",
-      "target": "aristotle_contributing_commit_examples",
-      "confidence_score": 1.0
+      "target": "aristotle_contributing_commit_examples"
     },
     {
       "relation": "contains",
@@ -17305,9 +17819,9 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_contributing_contributing",
-      "target": "aristotle_contributing_pull_request_expectations",
-      "confidence_score": 1.0
+      "target": "aristotle_contributing_pull_request_expectations"
     },
     {
       "relation": "contains",
@@ -17315,9 +17829,9 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_contributing_commit_examples",
-      "target": "aristotle_contributing_codeblock_1",
-      "confidence_score": 1.0
+      "target": "aristotle_contributing_codeblock_1"
     },
     {
       "relation": "contains",
@@ -17325,9 +17839,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_md",
-      "target": "aristotle_agents_quality_agent_factory_agent_instructions",
-      "confidence_score": 1.0
+      "target": "aristotle_agents_quality_agent_factory_agent_instructions"
     },
     {
       "relation": "contains",
@@ -17335,9 +17849,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_agents_quality_agent_factory_agent_instructions",
-      "target": "aristotle_agents_mission",
-      "confidence_score": 1.0
+      "target": "aristotle_agents_mission"
     },
     {
       "relation": "contains",
@@ -17345,9 +17859,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_agents_quality_agent_factory_agent_instructions",
-      "target": "aristotle_agents_required_reading_order",
-      "confidence_score": 1.0
+      "target": "aristotle_agents_required_reading_order"
     },
     {
       "relation": "contains",
@@ -17355,9 +17869,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_agents_quality_agent_factory_agent_instructions",
-      "target": "aristotle_agents_non_negotiable_boundaries",
-      "confidence_score": 1.0
+      "target": "aristotle_agents_non_negotiable_boundaries"
     },
     {
       "relation": "contains",
@@ -17365,9 +17879,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_agents_quality_agent_factory_agent_instructions",
-      "target": "aristotle_agents_development_rules",
-      "confidence_score": 1.0
+      "target": "aristotle_agents_development_rules"
     },
     {
       "relation": "contains",
@@ -17375,9 +17889,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aristotle_agents_quality_agent_factory_agent_instructions",
-      "target": "aristotle_agents_graphify",
-      "confidence_score": 1.0
+      "target": "aristotle_agents_graphify"
     },
     {
       "relation": "contains",
@@ -17385,9 +17899,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_md",
-      "target": "aristotle_claude_claude_code_instructions",
-      "confidence_score": 1.0
+      "target": "aristotle_claude_claude_code_instructions"
     },
     {
       "relation": "contains",
@@ -17395,9 +17909,9 @@
       "source_file": "docs-factory/provider-portability.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_factory_provider_portability_md",
-      "target": "docs_factory_provider_portability_provider_portability",
-      "confidence_score": 1.0
+      "target": "docs_factory_provider_portability_provider_portability"
     },
     {
       "relation": "contains",
@@ -17405,9 +17919,9 @@
       "source_file": "docs-factory/architecture.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_factory_architecture_md",
-      "target": "docs_factory_architecture_architecture",
-      "confidence_score": 1.0
+      "target": "docs_factory_architecture_architecture"
     },
     {
       "relation": "contains",
@@ -17415,9 +17929,9 @@
       "source_file": "docs-factory/evaluation-methodology.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_factory_evaluation_methodology_md",
-      "target": "docs_factory_evaluation_methodology_evaluation_methodology",
-      "confidence_score": 1.0
+      "target": "docs_factory_evaluation_methodology_evaluation_methodology"
     },
     {
       "relation": "contains",
@@ -17425,9 +17939,9 @@
       "source_file": "docs-factory/troubleshooting.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_factory_troubleshooting_md",
-      "target": "docs_factory_troubleshooting_troubleshooting",
-      "confidence_score": 1.0
+      "target": "docs_factory_troubleshooting_troubleshooting"
     },
     {
       "relation": "contains",
@@ -17435,9 +17949,9 @@
       "source_file": "docs-factory/failure-triage.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_factory_failure_triage_md",
-      "target": "docs_factory_failure_triage_failure_triage",
-      "confidence_score": 1.0
+      "target": "docs_factory_failure_triage_failure_triage"
     },
     {
       "relation": "contains",
@@ -17445,9 +17959,9 @@
       "source_file": "docs-factory/security-and-privacy.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_factory_security_and_privacy_md",
-      "target": "docs_factory_security_and_privacy_security_and_privacy",
-      "confidence_score": 1.0
+      "target": "docs_factory_security_and_privacy_security_and_privacy"
     },
     {
       "relation": "contains",
@@ -17455,9 +17969,9 @@
       "source_file": "docs-factory/workflow.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_factory_workflow_md",
-      "target": "docs_factory_workflow_workflow",
-      "confidence_score": 1.0
+      "target": "docs_factory_workflow_workflow"
     },
     {
       "relation": "contains",
@@ -17465,9 +17979,9 @@
       "source_file": "docs-factory/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_factory_readme_md",
-      "target": "docs_factory_readme_factory_documentation",
-      "confidence_score": 1.0
+      "target": "docs_factory_readme_factory_documentation"
     },
     {
       "relation": "contains",
@@ -17475,9 +17989,9 @@
       "source_file": "docs-factory/playwright-conventions.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_factory_playwright_conventions_md",
-      "target": "docs_factory_playwright_conventions_playwright_conventions",
-      "confidence_score": 1.0
+      "target": "docs_factory_playwright_conventions_playwright_conventions"
     },
     {
       "relation": "contains",
@@ -17485,9 +17999,9 @@
       "source_file": "docs-factory/memory-model.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_factory_memory_model_md",
-      "target": "docs_factory_memory_model_memory_model",
-      "confidence_score": 1.0
+      "target": "docs_factory_memory_model_memory_model"
     },
     {
       "relation": "contains",
@@ -17495,9 +18009,9 @@
       "source_file": "agents/providers/claude-code/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_providers_claude_code_readme_md",
-      "target": "claude_code_readme_claude_code_provider",
-      "confidence_score": 1.0
+      "target": "claude_code_readme_claude_code_provider"
     },
     {
       "relation": "contains",
@@ -17505,9 +18019,9 @@
       "source_file": "agents/providers/cursor/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_providers_cursor_readme_md",
-      "target": "cursor_readme_cursor_provider",
-      "confidence_score": 1.0
+      "target": "cursor_readme_cursor_provider"
     },
     {
       "relation": "contains",
@@ -17515,9 +18029,9 @@
       "source_file": "agents/providers/codex/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_providers_codex_readme_md",
-      "target": "codex_readme_codex_provider",
-      "confidence_score": 1.0
+      "target": "codex_readme_codex_provider"
     },
     {
       "relation": "contains",
@@ -17525,9 +18039,9 @@
       "source_file": "agents/workflows/requirement-clarification.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_workflows_requirement_clarification_md",
-      "target": "workflows_requirement_clarification_requirement_clarification_workflow",
-      "confidence_score": 1.0
+      "target": "workflows_requirement_clarification_requirement_clarification_workflow"
     },
     {
       "relation": "contains",
@@ -17535,9 +18049,9 @@
       "source_file": "agents/workflows/playwright-implementation.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_workflows_playwright_implementation_md",
-      "target": "workflows_playwright_implementation_playwright_implementation_workflow",
-      "confidence_score": 1.0
+      "target": "workflows_playwright_implementation_playwright_implementation_workflow"
     },
     {
       "relation": "contains",
@@ -17545,9 +18059,9 @@
       "source_file": "agents/workflows/failure-recovery.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_workflows_failure_recovery_md",
-      "target": "workflows_failure_recovery_failure_recovery_workflow",
-      "confidence_score": 1.0
+      "target": "workflows_failure_recovery_failure_recovery_workflow"
     },
     {
       "relation": "contains",
@@ -17555,9 +18069,9 @@
       "source_file": "agents/workflows/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_workflows_readme_md",
-      "target": "workflows_readme_factory_workflows",
-      "confidence_score": 1.0
+      "target": "workflows_readme_factory_workflows"
     },
     {
       "relation": "contains",
@@ -17565,9 +18079,9 @@
       "source_file": "agents/workflows/memory-and-improvement.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_workflows_memory_and_improvement_md",
-      "target": "workflows_memory_and_improvement_memory_and_improvement_workflow",
-      "confidence_score": 1.0
+      "target": "workflows_memory_and_improvement_memory_and_improvement_workflow"
     },
     {
       "relation": "contains",
@@ -17575,9 +18089,9 @@
       "source_file": "agents/workflows/scenario-review.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_workflows_scenario_review_md",
-      "target": "workflows_scenario_review_scenario_review_workflow",
-      "confidence_score": 1.0
+      "target": "workflows_scenario_review_scenario_review_workflow"
     },
     {
       "relation": "contains",
@@ -17585,9 +18099,9 @@
       "source_file": "agents/roles/knowledge-curator.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_roles_knowledge_curator_md",
-      "target": "roles_knowledge_curator_knowledge_curator",
-      "confidence_score": 1.0
+      "target": "roles_knowledge_curator_knowledge_curator"
     },
     {
       "relation": "contains",
@@ -17595,9 +18109,9 @@
       "source_file": "agents/roles/knowledge-curator.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_knowledge_curator_knowledge_curator",
-      "target": "roles_knowledge_curator_mission",
-      "confidence_score": 1.0
+      "target": "roles_knowledge_curator_mission"
     },
     {
       "relation": "contains",
@@ -17605,9 +18119,9 @@
       "source_file": "agents/roles/knowledge-curator.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_knowledge_curator_knowledge_curator",
-      "target": "roles_knowledge_curator_required_review",
-      "confidence_score": 1.0
+      "target": "roles_knowledge_curator_required_review"
     },
     {
       "relation": "contains",
@@ -17615,9 +18129,9 @@
       "source_file": "agents/roles/knowledge-curator.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_knowledge_curator_knowledge_curator",
-      "target": "roles_knowledge_curator_outputs",
-      "confidence_score": 1.0
+      "target": "roles_knowledge_curator_outputs"
     },
     {
       "relation": "contains",
@@ -17625,9 +18139,9 @@
       "source_file": "agents/roles/knowledge-curator.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_knowledge_curator_knowledge_curator",
-      "target": "roles_knowledge_curator_boundaries",
-      "confidence_score": 1.0
+      "target": "roles_knowledge_curator_boundaries"
     },
     {
       "relation": "contains",
@@ -17635,9 +18149,9 @@
       "source_file": "agents/roles/scenario-quality-evaluator.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_roles_scenario_quality_evaluator_md",
-      "target": "roles_scenario_quality_evaluator_scenario_quality_evaluator",
-      "confidence_score": 1.0
+      "target": "roles_scenario_quality_evaluator_scenario_quality_evaluator"
     },
     {
       "relation": "contains",
@@ -17645,9 +18159,9 @@
       "source_file": "agents/roles/scenario-quality-evaluator.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_scenario_quality_evaluator_scenario_quality_evaluator",
-      "target": "roles_scenario_quality_evaluator_authority",
-      "confidence_score": 1.0
+      "target": "roles_scenario_quality_evaluator_authority"
     },
     {
       "relation": "contains",
@@ -17655,9 +18169,9 @@
       "source_file": "agents/roles/scenario-quality-evaluator.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_scenario_quality_evaluator_scenario_quality_evaluator",
-      "target": "roles_scenario_quality_evaluator_required_inputs",
-      "confidence_score": 1.0
+      "target": "roles_scenario_quality_evaluator_required_inputs"
     },
     {
       "relation": "contains",
@@ -17665,9 +18179,9 @@
       "source_file": "agents/roles/scenario-quality-evaluator.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_scenario_quality_evaluator_scenario_quality_evaluator",
-      "target": "roles_scenario_quality_evaluator_outputs",
-      "confidence_score": 1.0
+      "target": "roles_scenario_quality_evaluator_outputs"
     },
     {
       "relation": "contains",
@@ -17675,9 +18189,9 @@
       "source_file": "agents/roles/workflow-improvement-analyst.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_roles_workflow_improvement_analyst_md",
-      "target": "roles_workflow_improvement_analyst_workflow_improvement_analyst",
-      "confidence_score": 1.0
+      "target": "roles_workflow_improvement_analyst_workflow_improvement_analyst"
     },
     {
       "relation": "contains",
@@ -17685,9 +18199,9 @@
       "source_file": "agents/roles/workflow-improvement-analyst.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_workflow_improvement_analyst_workflow_improvement_analyst",
-      "target": "roles_workflow_improvement_analyst_mission",
-      "confidence_score": 1.0
+      "target": "roles_workflow_improvement_analyst_mission"
     },
     {
       "relation": "contains",
@@ -17695,9 +18209,9 @@
       "source_file": "agents/roles/workflow-improvement-analyst.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_workflow_improvement_analyst_workflow_improvement_analyst",
-      "target": "roles_workflow_improvement_analyst_trigger",
-      "confidence_score": 1.0
+      "target": "roles_workflow_improvement_analyst_trigger"
     },
     {
       "relation": "contains",
@@ -17705,9 +18219,9 @@
       "source_file": "agents/roles/workflow-improvement-analyst.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_workflow_improvement_analyst_workflow_improvement_analyst",
-      "target": "roles_workflow_improvement_analyst_required_proposal_content",
-      "confidence_score": 1.0
+      "target": "roles_workflow_improvement_analyst_required_proposal_content"
     },
     {
       "relation": "contains",
@@ -17715,9 +18229,9 @@
       "source_file": "agents/roles/workflow-improvement-analyst.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_workflow_improvement_analyst_workflow_improvement_analyst",
-      "target": "roles_workflow_improvement_analyst_boundaries",
-      "confidence_score": 1.0
+      "target": "roles_workflow_improvement_analyst_boundaries"
     },
     {
       "relation": "contains",
@@ -17725,9 +18239,9 @@
       "source_file": "agents/roles/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_roles_readme_md",
-      "target": "roles_readme_agent_roles",
-      "confidence_score": 1.0
+      "target": "roles_readme_agent_roles"
     },
     {
       "relation": "contains",
@@ -17735,9 +18249,9 @@
       "source_file": "agents/roles/requirement-analyst.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_roles_requirement_analyst_md",
-      "target": "roles_requirement_analyst_requirement_analyst",
-      "confidence_score": 1.0
+      "target": "roles_requirement_analyst_requirement_analyst"
     },
     {
       "relation": "contains",
@@ -17745,9 +18259,9 @@
       "source_file": "agents/roles/requirement-analyst.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_requirement_analyst_requirement_analyst",
-      "target": "roles_requirement_analyst_authority",
-      "confidence_score": 1.0
+      "target": "roles_requirement_analyst_authority"
     },
     {
       "relation": "contains",
@@ -17755,9 +18269,9 @@
       "source_file": "agents/roles/requirement-analyst.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_requirement_analyst_requirement_analyst",
-      "target": "roles_requirement_analyst_required_inputs",
-      "confidence_score": 1.0
+      "target": "roles_requirement_analyst_required_inputs"
     },
     {
       "relation": "contains",
@@ -17765,9 +18279,9 @@
       "source_file": "agents/roles/requirement-analyst.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_requirement_analyst_requirement_analyst",
-      "target": "roles_requirement_analyst_outputs",
-      "confidence_score": 1.0
+      "target": "roles_requirement_analyst_outputs"
     },
     {
       "relation": "contains",
@@ -17775,9 +18289,9 @@
       "source_file": "agents/roles/playwright-test-engineer.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_roles_playwright_test_engineer_md",
-      "target": "roles_playwright_test_engineer_playwright_test_engineer",
-      "confidence_score": 1.0
+      "target": "roles_playwright_test_engineer_playwright_test_engineer"
     },
     {
       "relation": "contains",
@@ -17785,9 +18299,9 @@
       "source_file": "agents/roles/playwright-test-engineer.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_playwright_test_engineer_playwright_test_engineer",
-      "target": "roles_playwright_test_engineer_mission",
-      "confidence_score": 1.0
+      "target": "roles_playwright_test_engineer_mission"
     },
     {
       "relation": "contains",
@@ -17795,9 +18309,9 @@
       "source_file": "agents/roles/playwright-test-engineer.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_playwright_test_engineer_playwright_test_engineer",
-      "target": "roles_playwright_test_engineer_required_inputs",
-      "confidence_score": 1.0
+      "target": "roles_playwright_test_engineer_required_inputs"
     },
     {
       "relation": "contains",
@@ -17805,9 +18319,9 @@
       "source_file": "agents/roles/playwright-test-engineer.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_playwright_test_engineer_playwright_test_engineer",
-      "target": "roles_playwright_test_engineer_boundaries",
-      "confidence_score": 1.0
+      "target": "roles_playwright_test_engineer_boundaries"
     },
     {
       "relation": "contains",
@@ -17815,9 +18329,9 @@
       "source_file": "agents/roles/playwright-test-engineer.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_playwright_test_engineer_playwright_test_engineer",
-      "target": "roles_playwright_test_engineer_outputs",
-      "confidence_score": 1.0
+      "target": "roles_playwright_test_engineer_outputs"
     },
     {
       "relation": "contains",
@@ -17825,9 +18339,9 @@
       "source_file": "agents/roles/final-quality-assessor.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_roles_final_quality_assessor_md",
-      "target": "roles_final_quality_assessor_final_quality_assessor",
-      "confidence_score": 1.0
+      "target": "roles_final_quality_assessor_final_quality_assessor"
     },
     {
       "relation": "contains",
@@ -17835,9 +18349,9 @@
       "source_file": "agents/roles/final-quality-assessor.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_final_quality_assessor_final_quality_assessor",
-      "target": "roles_final_quality_assessor_mission",
-      "confidence_score": 1.0
+      "target": "roles_final_quality_assessor_mission"
     },
     {
       "relation": "contains",
@@ -17845,9 +18359,9 @@
       "source_file": "agents/roles/final-quality-assessor.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_final_quality_assessor_final_quality_assessor",
-      "target": "roles_final_quality_assessor_required_review",
-      "confidence_score": 1.0
+      "target": "roles_final_quality_assessor_required_review"
     },
     {
       "relation": "contains",
@@ -17855,9 +18369,9 @@
       "source_file": "agents/roles/final-quality-assessor.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_final_quality_assessor_final_quality_assessor",
-      "target": "roles_final_quality_assessor_decisions",
-      "confidence_score": 1.0
+      "target": "roles_final_quality_assessor_decisions"
     },
     {
       "relation": "contains",
@@ -17865,9 +18379,9 @@
       "source_file": "agents/roles/final-quality-assessor.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_final_quality_assessor_final_quality_assessor",
-      "target": "roles_final_quality_assessor_boundaries",
-      "confidence_score": 1.0
+      "target": "roles_final_quality_assessor_boundaries"
     },
     {
       "relation": "contains",
@@ -17875,9 +18389,9 @@
       "source_file": "agents/roles/scenario-designer.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_roles_scenario_designer_md",
-      "target": "roles_scenario_designer_test_scenario_designer",
-      "confidence_score": 1.0
+      "target": "roles_scenario_designer_test_scenario_designer"
     },
     {
       "relation": "contains",
@@ -17885,9 +18399,9 @@
       "source_file": "agents/roles/scenario-designer.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_scenario_designer_test_scenario_designer",
-      "target": "roles_scenario_designer_authority",
-      "confidence_score": 1.0
+      "target": "roles_scenario_designer_authority"
     },
     {
       "relation": "contains",
@@ -17895,9 +18409,9 @@
       "source_file": "agents/roles/scenario-designer.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_scenario_designer_test_scenario_designer",
-      "target": "roles_scenario_designer_required_inputs",
-      "confidence_score": 1.0
+      "target": "roles_scenario_designer_required_inputs"
     },
     {
       "relation": "contains",
@@ -17905,9 +18419,9 @@
       "source_file": "agents/roles/scenario-designer.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_scenario_designer_test_scenario_designer",
-      "target": "roles_scenario_designer_outputs",
-      "confidence_score": 1.0
+      "target": "roles_scenario_designer_outputs"
     },
     {
       "relation": "contains",
@@ -17915,9 +18429,9 @@
       "source_file": "agents/roles/failure-triage-analyst.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_roles_failure_triage_analyst_md",
-      "target": "roles_failure_triage_analyst_failure_triage_analyst",
-      "confidence_score": 1.0
+      "target": "roles_failure_triage_analyst_failure_triage_analyst"
     },
     {
       "relation": "contains",
@@ -17925,9 +18439,9 @@
       "source_file": "agents/roles/failure-triage-analyst.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_failure_triage_analyst_failure_triage_analyst",
-      "target": "roles_failure_triage_analyst_mission",
-      "confidence_score": 1.0
+      "target": "roles_failure_triage_analyst_mission"
     },
     {
       "relation": "contains",
@@ -17935,9 +18449,9 @@
       "source_file": "agents/roles/failure-triage-analyst.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_failure_triage_analyst_failure_triage_analyst",
-      "target": "roles_failure_triage_analyst_inputs",
-      "confidence_score": 1.0
+      "target": "roles_failure_triage_analyst_inputs"
     },
     {
       "relation": "contains",
@@ -17945,9 +18459,9 @@
       "source_file": "agents/roles/failure-triage-analyst.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_failure_triage_analyst_failure_triage_analyst",
-      "target": "roles_failure_triage_analyst_responsibilities",
-      "confidence_score": 1.0
+      "target": "roles_failure_triage_analyst_responsibilities"
     },
     {
       "relation": "contains",
@@ -17955,9 +18469,9 @@
       "source_file": "agents/roles/failure-triage-analyst.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "roles_failure_triage_analyst_failure_triage_analyst",
-      "target": "roles_failure_triage_analyst_boundaries",
-      "confidence_score": 1.0
+      "target": "roles_failure_triage_analyst_boundaries"
     },
     {
       "relation": "contains",
@@ -17965,9 +18479,9 @@
       "source_file": "agents/shared/operating-principles.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_shared_operating_principles_md",
-      "target": "shared_operating_principles_operating_principles",
-      "confidence_score": 1.0
+      "target": "shared_operating_principles_operating_principles"
     },
     {
       "relation": "contains",
@@ -17975,9 +18489,9 @@
       "source_file": "agents/shared/security-boundaries.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_shared_security_boundaries_md",
-      "target": "shared_security_boundaries_security_boundaries",
-      "confidence_score": 1.0
+      "target": "shared_security_boundaries_security_boundaries"
     },
     {
       "relation": "contains",
@@ -17985,9 +18499,9 @@
       "source_file": "agents/shared/security-boundaries.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_security_boundaries_security_boundaries",
-      "target": "shared_security_boundaries_untrusted_inputs",
-      "confidence_score": 1.0
+      "target": "shared_security_boundaries_untrusted_inputs"
     },
     {
       "relation": "contains",
@@ -17995,9 +18509,9 @@
       "source_file": "agents/shared/security-boundaries.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_security_boundaries_security_boundaries",
-      "target": "shared_security_boundaries_target_environment",
-      "confidence_score": 1.0
+      "target": "shared_security_boundaries_target_environment"
     },
     {
       "relation": "contains",
@@ -18005,9 +18519,9 @@
       "source_file": "agents/shared/security-boundaries.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_security_boundaries_security_boundaries",
-      "target": "shared_security_boundaries_sensitive_material",
-      "confidence_score": 1.0
+      "target": "shared_security_boundaries_sensitive_material"
     },
     {
       "relation": "contains",
@@ -18015,9 +18529,9 @@
       "source_file": "agents/shared/security-boundaries.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_security_boundaries_security_boundaries",
-      "target": "shared_security_boundaries_dependencies_and_integrations",
-      "confidence_score": 1.0
+      "target": "shared_security_boundaries_dependencies_and_integrations"
     },
     {
       "relation": "contains",
@@ -18025,9 +18539,9 @@
       "source_file": "agents/shared/artifact-contracts.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_shared_artifact_contracts_md",
-      "target": "shared_artifact_contracts_artifact_contract_principles",
-      "confidence_score": 1.0
+      "target": "shared_artifact_contracts_artifact_contract_principles"
     },
     {
       "relation": "contains",
@@ -18035,9 +18549,9 @@
       "source_file": "agents/skills/design-test-scenarios.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_test_scenarios_md",
-      "target": "skills_design_test_scenarios_design_test_scenarios",
-      "confidence_score": 1.0
+      "target": "skills_design_test_scenarios_design_test_scenarios"
     },
     {
       "relation": "contains",
@@ -18045,9 +18559,9 @@
       "source_file": "agents/skills/use-knowledge-graph.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_use_knowledge_graph_md",
-      "target": "skills_use_knowledge_graph_use_the_knowledge_graph",
-      "confidence_score": 1.0
+      "target": "skills_use_knowledge_graph_use_the_knowledge_graph"
     },
     {
       "relation": "contains",
@@ -18055,9 +18569,9 @@
       "source_file": "agents/skills/use-knowledge-graph.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_use_knowledge_graph_use_the_knowledge_graph",
-      "target": "skills_use_knowledge_graph_boundaries",
-      "confidence_score": 1.0
+      "target": "skills_use_knowledge_graph_boundaries"
     },
     {
       "relation": "contains",
@@ -18065,9 +18579,9 @@
       "source_file": "agents/skills/use-knowledge-graph.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_use_knowledge_graph_use_the_knowledge_graph",
-      "target": "skills_use_knowledge_graph_query",
-      "confidence_score": 1.0
+      "target": "skills_use_knowledge_graph_query"
     },
     {
       "relation": "contains",
@@ -18075,9 +18589,9 @@
       "source_file": "agents/skills/use-knowledge-graph.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_use_knowledge_graph_use_the_knowledge_graph",
-      "target": "skills_use_knowledge_graph_refresh",
-      "confidence_score": 1.0
+      "target": "skills_use_knowledge_graph_refresh"
     },
     {
       "relation": "contains",
@@ -18085,9 +18599,9 @@
       "source_file": "agents/skills/automate-approved-scenarios.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_automate_approved_scenarios_md",
-      "target": "skills_automate_approved_scenarios_automate_approved_scenarios",
-      "confidence_score": 1.0
+      "target": "skills_automate_approved_scenarios_automate_approved_scenarios"
     },
     {
       "relation": "contains",
@@ -18095,9 +18609,9 @@
       "source_file": "agents/skills/evaluate-test-scenarios.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_evaluate_test_scenarios_md",
-      "target": "skills_evaluate_test_scenarios_evaluate_test_scenarios",
-      "confidence_score": 1.0
+      "target": "skills_evaluate_test_scenarios_evaluate_test_scenarios"
     },
     {
       "relation": "contains",
@@ -18105,9 +18619,9 @@
       "source_file": "agents/skills/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_readme_md",
-      "target": "skills_readme_factory_skills",
-      "confidence_score": 1.0
+      "target": "skills_readme_factory_skills"
     },
     {
       "relation": "contains",
@@ -18115,9 +18629,9 @@
       "source_file": "agents/skills/curate-project-knowledge.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_curate_project_knowledge_md",
-      "target": "skills_curate_project_knowledge_curate_project_knowledge",
-      "confidence_score": 1.0
+      "target": "skills_curate_project_knowledge_curate_project_knowledge"
     },
     {
       "relation": "contains",
@@ -18125,9 +18639,9 @@
       "source_file": "agents/skills/analyze-requirements.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_analyze_requirements_md",
-      "target": "skills_analyze_requirements_analyze_requirements",
-      "confidence_score": 1.0
+      "target": "skills_analyze_requirements_analyze_requirements"
     },
     {
       "relation": "contains",
@@ -18135,9 +18649,9 @@
       "source_file": "agents/skills/triage-test-failures.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_triage_test_failures_md",
-      "target": "skills_triage_test_failures_triage_test_failures",
-      "confidence_score": 1.0
+      "target": "skills_triage_test_failures_triage_test_failures"
     },
     {
       "relation": "contains",
@@ -18145,9 +18659,9 @@
       "source_file": "agents/skills/triage-test-failures.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_triage_test_failures_triage_test_failures",
-      "target": "skills_triage_test_failures_preconditions",
-      "confidence_score": 1.0
+      "target": "skills_triage_test_failures_preconditions"
     },
     {
       "relation": "contains",
@@ -18155,9 +18669,9 @@
       "source_file": "agents/skills/triage-test-failures.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_triage_test_failures_triage_test_failures",
-      "target": "skills_triage_test_failures_procedure",
-      "confidence_score": 1.0
+      "target": "skills_triage_test_failures_procedure"
     },
     {
       "relation": "contains",
@@ -18165,9 +18679,9 @@
       "source_file": "agents/skills/triage-test-failures.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_triage_test_failures_triage_test_failures",
-      "target": "skills_triage_test_failures_stop_conditions",
-      "confidence_score": 1.0
+      "target": "skills_triage_test_failures_stop_conditions"
     },
     {
       "relation": "contains",
@@ -18175,9 +18689,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_plans_quality_agent_factory_development_plan_md",
-      "target": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan"
     },
     {
       "relation": "contains",
@@ -18185,9 +18699,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_1_vision_and_objectives",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_1_vision_and_objectives"
     },
     {
       "relation": "contains",
@@ -18195,9 +18709,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_2_complete_workflow",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_2_complete_workflow"
     },
     {
       "relation": "contains",
@@ -18205,9 +18719,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles"
     },
     {
       "relation": "contains",
@@ -18215,9 +18729,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_4_clone_ready_repository",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_4_clone_ready_repository"
     },
     {
       "relation": "contains",
@@ -18225,9 +18739,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L348",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_5_feature_centric_organization",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_5_feature_centric_organization"
     },
     {
       "relation": "contains",
@@ -18235,9 +18749,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L371",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_6_tools_and_technical_stack",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_6_tools_and_technical_stack"
     },
     {
       "relation": "contains",
@@ -18245,9 +18759,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L418",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_7_human_readable_test_scenario_contract",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_7_human_readable_test_scenario_contract"
     },
     {
       "relation": "contains",
@@ -18255,9 +18769,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L495",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_8_output_determination",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_8_output_determination"
     },
     {
       "relation": "contains",
@@ -18265,9 +18779,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L544",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_9_failure_policy",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_9_failure_policy"
     },
     {
       "relation": "contains",
@@ -18275,9 +18789,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L571",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_10_requirement_and_scenario_revision_management",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_10_requirement_and_scenario_revision_management"
     },
     {
       "relation": "contains",
@@ -18285,9 +18799,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L588",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_11_memory_and_learning",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_11_memory_and_learning"
     },
     {
       "relation": "contains",
@@ -18295,9 +18809,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L636",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_12_feedback_and_workflow_improvement",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_12_feedback_and_workflow_improvement"
     },
     {
       "relation": "contains",
@@ -18305,9 +18819,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L671",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_13_rules_and_guardrails",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_13_rules_and_guardrails"
     },
     {
       "relation": "contains",
@@ -18315,9 +18829,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L720",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_14_environment_security_and_privacy",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_14_environment_security_and_privacy"
     },
     {
       "relation": "contains",
@@ -18325,9 +18839,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L746",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_15_resource_and_reliability_controls",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_15_resource_and_reliability_controls"
     },
     {
       "relation": "contains",
@@ -18335,9 +18849,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L760",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_16_evaluation_and_testing",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_16_evaluation_and_testing"
     },
     {
       "relation": "contains",
@@ -18345,9 +18859,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L805",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_17_delivery_phases",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_17_delivery_phases"
     },
     {
       "relation": "contains",
@@ -18355,9 +18869,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L839",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_quality_agent_factory_development_plan",
-      "target": "plans_quality_agent_factory_development_plan_18_acceptance_criteria",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_18_acceptance_criteria"
     },
     {
       "relation": "contains",
@@ -18365,9 +18879,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_2_complete_workflow",
-      "target": "plans_quality_agent_factory_development_plan_codeblock_1",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_codeblock_1"
     },
     {
       "relation": "contains",
@@ -18375,9 +18889,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "target": "plans_quality_agent_factory_development_plan_workflow_coordinator",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_workflow_coordinator"
     },
     {
       "relation": "contains",
@@ -18385,9 +18899,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "target": "plans_quality_agent_factory_development_plan_requirement_analyst",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_requirement_analyst"
     },
     {
       "relation": "contains",
@@ -18395,9 +18909,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "target": "plans_quality_agent_factory_development_plan_test_scenario_designer",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_test_scenario_designer"
     },
     {
       "relation": "contains",
@@ -18405,9 +18919,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "target": "plans_quality_agent_factory_development_plan_scenario_quality_evaluator",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_scenario_quality_evaluator"
     },
     {
       "relation": "contains",
@@ -18415,9 +18929,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "target": "plans_quality_agent_factory_development_plan_human_scenario_reviewer",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_human_scenario_reviewer"
     },
     {
       "relation": "contains",
@@ -18425,9 +18939,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "target": "plans_quality_agent_factory_development_plan_playwright_test_engineer",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_playwright_test_engineer"
     },
     {
       "relation": "contains",
@@ -18435,9 +18949,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "target": "plans_quality_agent_factory_development_plan_failure_triage_analyst",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_failure_triage_analyst"
     },
     {
       "relation": "contains",
@@ -18445,9 +18959,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "target": "plans_quality_agent_factory_development_plan_final_quality_assessor",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_final_quality_assessor"
     },
     {
       "relation": "contains",
@@ -18455,9 +18969,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L209",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "target": "plans_quality_agent_factory_development_plan_final_human_reviewer",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_final_human_reviewer"
     },
     {
       "relation": "contains",
@@ -18465,9 +18979,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L216",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "target": "plans_quality_agent_factory_development_plan_knowledge_curator",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_knowledge_curator"
     },
     {
       "relation": "contains",
@@ -18475,9 +18989,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L224",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_3_agent_and_human_roles",
-      "target": "plans_quality_agent_factory_development_plan_workflow_improvement_analyst",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_workflow_improvement_analyst"
     },
     {
       "relation": "contains",
@@ -18485,9 +18999,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L234",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_4_clone_ready_repository",
-      "target": "plans_quality_agent_factory_development_plan_codeblock_2",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_codeblock_2"
     },
     {
       "relation": "contains",
@@ -18495,9 +19009,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L353",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_5_feature_centric_organization",
-      "target": "plans_quality_agent_factory_development_plan_codeblock_3",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_codeblock_3"
     },
     {
       "relation": "contains",
@@ -18505,9 +19019,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L373",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_6_tools_and_technical_stack",
-      "target": "plans_quality_agent_factory_development_plan_required_stack",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_required_stack"
     },
     {
       "relation": "contains",
@@ -18515,9 +19029,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L391",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_6_tools_and_technical_stack",
-      "target": "plans_quality_agent_factory_development_plan_playwright_capabilities",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_playwright_capabilities"
     },
     {
       "relation": "contains",
@@ -18525,9 +19039,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L403",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_6_tools_and_technical_stack",
-      "target": "plans_quality_agent_factory_development_plan_internal_package_operations",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_internal_package_operations"
     },
     {
       "relation": "contains",
@@ -18535,9 +19049,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L422",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_7_human_readable_test_scenario_contract",
-      "target": "plans_quality_agent_factory_development_plan_codeblock_4",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_codeblock_4"
     },
     {
       "relation": "contains",
@@ -18545,9 +19059,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L428",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_7_human_readable_test_scenario_contract",
-      "target": "plans_quality_agent_factory_development_plan_codeblock_5",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_codeblock_5"
     },
     {
       "relation": "contains",
@@ -18555,9 +19069,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L455",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_7_human_readable_test_scenario_contract",
-      "target": "plans_quality_agent_factory_development_plan_codeblock_6",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_codeblock_6"
     },
     {
       "relation": "contains",
@@ -18565,9 +19079,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L592",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_11_memory_and_learning",
-      "target": "plans_quality_agent_factory_development_plan_immutable_run_history",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_immutable_run_history"
     },
     {
       "relation": "contains",
@@ -18575,9 +19089,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L607",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_11_memory_and_learning",
-      "target": "plans_quality_agent_factory_development_plan_curated_knowledge",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_curated_knowledge"
     },
     {
       "relation": "contains",
@@ -18585,9 +19099,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L624",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_11_memory_and_learning",
-      "target": "plans_quality_agent_factory_development_plan_active_policy",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_active_policy"
     },
     {
       "relation": "contains",
@@ -18595,9 +19109,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L673",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_13_rules_and_guardrails",
-      "target": "plans_quality_agent_factory_development_plan_programmatically_enforced",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_programmatically_enforced"
     },
     {
       "relation": "contains",
@@ -18605,9 +19119,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L691",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_13_rules_and_guardrails",
-      "target": "plans_quality_agent_factory_development_plan_behavioral_rules",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_behavioral_rules"
     },
     {
       "relation": "contains",
@@ -18615,9 +19129,9 @@
       "source_file": "docs/plans/quality-agent-factory-development-plan.md",
       "source_location": "L705",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_quality_agent_factory_development_plan_13_rules_and_guardrails",
-      "target": "plans_quality_agent_factory_development_plan_playwright_rules",
-      "confidence_score": 1.0
+      "target": "plans_quality_agent_factory_development_plan_playwright_rules"
     },
     {
       "relation": "contains",
@@ -18625,9 +19139,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_plans_phased_implementation_plan_md",
-      "target": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan"
     },
     {
       "relation": "contains",
@@ -18635,9 +19149,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_purpose",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_purpose"
     },
     {
       "relation": "contains",
@@ -18645,9 +19159,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_status_legend",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_status_legend"
     },
     {
       "relation": "contains",
@@ -18655,9 +19169,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_delivery_principles",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_delivery_principles"
     },
     {
       "relation": "contains",
@@ -18665,9 +19179,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_progress_summary",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_progress_summary"
     },
     {
       "relation": "contains",
@@ -18675,9 +19189,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_current_delivery_snapshot",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_current_delivery_snapshot"
     },
     {
       "relation": "contains",
@@ -18685,9 +19199,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_harness_remediation_program",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_harness_remediation_program"
     },
     {
       "relation": "contains",
@@ -18695,9 +19209,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_phase_1_repository_foundation",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_1_repository_foundation"
     },
     {
       "relation": "contains",
@@ -18705,9 +19219,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_phase_2_contracts_and_orchestration",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_2_contracts_and_orchestration"
     },
     {
       "relation": "contains",
@@ -18715,9 +19229,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L206",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_phase_3_requirement_pipeline",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_3_requirement_pipeline"
     },
     {
       "relation": "contains",
@@ -18725,9 +19239,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L254",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_phase_4_scenario_pipeline",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_4_scenario_pipeline"
     },
     {
       "relation": "contains",
@@ -18735,9 +19249,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L299",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_phase_5_playwright_pipeline",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_5_playwright_pipeline"
     },
     {
       "relation": "contains",
@@ -18745,9 +19259,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L360",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_phase_6_failure_and_assessment_pipeline",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_6_failure_and_assessment_pipeline"
     },
     {
       "relation": "contains",
@@ -18755,9 +19269,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L415",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_7_memory_and_improvement"
     },
     {
       "relation": "contains",
@@ -18765,9 +19279,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L479",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_phase_8_provider_hardening",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_8_provider_hardening"
     },
     {
       "relation": "contains",
@@ -18775,9 +19289,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L541",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_decision_log",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_decision_log"
     },
     {
       "relation": "contains",
@@ -18785,9 +19299,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L555",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_repository_tooling_record",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_repository_tooling_record"
     },
     {
       "relation": "contains",
@@ -18795,9 +19309,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L571",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_risks_and_mitigations",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_risks_and_mitigations"
     },
     {
       "relation": "contains",
@@ -18805,9 +19319,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L584",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_quality_agent_factory_phased_implementation_plan",
-      "target": "plans_phased_implementation_plan_open_decisions",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_open_decisions"
     },
     {
       "relation": "contains",
@@ -18815,9 +19329,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_harness_remediation_program",
-      "target": "plans_phased_implementation_plan_remediation_verification_record",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_remediation_verification_record"
     },
     {
       "relation": "contains",
@@ -18825,9 +19339,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_1_repository_foundation",
-      "target": "plans_phased_implementation_plan_tasks",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_tasks"
     },
     {
       "relation": "contains",
@@ -18835,9 +19349,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_1_repository_foundation",
-      "target": "plans_phased_implementation_plan_acceptance_criteria",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_acceptance_criteria"
     },
     {
       "relation": "contains",
@@ -18845,9 +19359,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_1_repository_foundation",
-      "target": "plans_phased_implementation_plan_phase_1_verification_record",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_1_verification_record"
     },
     {
       "relation": "contains",
@@ -18855,9 +19369,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_1_repository_foundation",
-      "target": "plans_phased_implementation_plan_verification",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_verification"
     },
     {
       "relation": "contains",
@@ -18865,9 +19379,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_verification",
-      "target": "plans_phased_implementation_plan_codeblock_1",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_codeblock_1"
     },
     {
       "relation": "contains",
@@ -18875,9 +19389,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_2_contracts_and_orchestration",
-      "target": "plans_phased_implementation_plan_tasks_167",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_tasks_167"
     },
     {
       "relation": "contains",
@@ -18885,9 +19399,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_2_contracts_and_orchestration",
-      "target": "plans_phased_implementation_plan_checkpoint",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_checkpoint"
     },
     {
       "relation": "contains",
@@ -18895,9 +19409,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_2_contracts_and_orchestration",
-      "target": "plans_phased_implementation_plan_phase_2_verification_record",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_2_verification_record"
     },
     {
       "relation": "contains",
@@ -18905,9 +19419,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L211",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_3_requirement_pipeline",
-      "target": "plans_phased_implementation_plan_tasks_211",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_tasks_211"
     },
     {
       "relation": "contains",
@@ -18915,9 +19429,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L227",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_3_requirement_pipeline",
-      "target": "plans_phased_implementation_plan_checkpoint_227",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_checkpoint_227"
     },
     {
       "relation": "contains",
@@ -18925,9 +19439,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L233",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_3_requirement_pipeline",
-      "target": "plans_phased_implementation_plan_phase_3_verification_record",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_3_verification_record"
     },
     {
       "relation": "contains",
@@ -18935,9 +19449,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L260",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_4_scenario_pipeline",
-      "target": "plans_phased_implementation_plan_tasks_260",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_tasks_260"
     },
     {
       "relation": "contains",
@@ -18945,9 +19459,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L273",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_4_scenario_pipeline",
-      "target": "plans_phased_implementation_plan_checkpoint_273",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_checkpoint_273"
     },
     {
       "relation": "contains",
@@ -18955,9 +19469,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L279",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_4_scenario_pipeline",
-      "target": "plans_phased_implementation_plan_phase_4_verification_record",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_4_verification_record"
     },
     {
       "relation": "contains",
@@ -18965,9 +19479,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L304",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_5_playwright_pipeline",
-      "target": "plans_phased_implementation_plan_tasks_304",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_tasks_304"
     },
     {
       "relation": "contains",
@@ -18975,9 +19489,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L316",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_5_playwright_pipeline",
-      "target": "plans_phased_implementation_plan_checkpoint_316",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_checkpoint_316"
     },
     {
       "relation": "contains",
@@ -18985,9 +19499,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L323",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_5_playwright_pipeline",
-      "target": "plans_phased_implementation_plan_phase_5_verification_record",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_5_verification_record"
     },
     {
       "relation": "contains",
@@ -18995,9 +19509,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L365",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_6_failure_and_assessment_pipeline",
-      "target": "plans_phased_implementation_plan_tasks_365",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_tasks_365"
     },
     {
       "relation": "contains",
@@ -19005,9 +19519,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L378",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_6_failure_and_assessment_pipeline",
-      "target": "plans_phased_implementation_plan_checkpoint_378",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_checkpoint_378"
     },
     {
       "relation": "contains",
@@ -19015,9 +19529,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L384",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_6_failure_and_assessment_pipeline",
-      "target": "plans_phased_implementation_plan_phase_6_verification_record",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_6_verification_record"
     },
     {
       "relation": "contains",
@@ -19025,9 +19539,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L420",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
-      "target": "plans_phased_implementation_plan_tasks_420",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_tasks_420"
     },
     {
       "relation": "contains",
@@ -19035,9 +19549,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L436",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
-      "target": "plans_phased_implementation_plan_checkpoint_436",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_checkpoint_436"
     },
     {
       "relation": "contains",
@@ -19045,9 +19559,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L442",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_7_memory_and_improvement",
-      "target": "plans_phased_implementation_plan_phase_7_verification_record",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_7_verification_record"
     },
     {
       "relation": "contains",
@@ -19055,9 +19569,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L484",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_8_provider_hardening",
-      "target": "plans_phased_implementation_plan_tasks_484",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_tasks_484"
     },
     {
       "relation": "contains",
@@ -19065,9 +19579,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L497",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_8_provider_hardening",
-      "target": "plans_phased_implementation_plan_final_checkpoint",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_final_checkpoint"
     },
     {
       "relation": "contains",
@@ -19075,9 +19589,9 @@
       "source_file": "docs/plans/phased-implementation-plan.md",
       "source_location": "L503",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_phased_implementation_plan_phase_8_provider_hardening",
-      "target": "plans_phased_implementation_plan_phase_8_verification_record",
-      "confidence_score": 1.0
+      "target": "plans_phased_implementation_plan_phase_8_verification_record"
     },
     {
       "relation": "contains",
@@ -19085,9 +19599,9 @@
       "source_file": "docs/decisions/002-harness-integrity-and-preflight.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_decisions_002_harness_integrity_and_preflight_md",
-      "target": "decisions_002_harness_integrity_and_preflight_adr_002_canonical_harness_integrity_and_fail_closed_preflight",
-      "confidence_score": 1.0
+      "target": "decisions_002_harness_integrity_and_preflight_adr_002_canonical_harness_integrity_and_fail_closed_preflight"
     },
     {
       "relation": "contains",
@@ -19095,9 +19609,9 @@
       "source_file": "docs/decisions/002-harness-integrity-and-preflight.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_002_harness_integrity_and_preflight_adr_002_canonical_harness_integrity_and_fail_closed_preflight",
-      "target": "decisions_002_harness_integrity_and_preflight_status",
-      "confidence_score": 1.0
+      "target": "decisions_002_harness_integrity_and_preflight_status"
     },
     {
       "relation": "contains",
@@ -19105,9 +19619,9 @@
       "source_file": "docs/decisions/002-harness-integrity-and-preflight.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_002_harness_integrity_and_preflight_adr_002_canonical_harness_integrity_and_fail_closed_preflight",
-      "target": "decisions_002_harness_integrity_and_preflight_date",
-      "confidence_score": 1.0
+      "target": "decisions_002_harness_integrity_and_preflight_date"
     },
     {
       "relation": "contains",
@@ -19115,9 +19629,9 @@
       "source_file": "docs/decisions/002-harness-integrity-and-preflight.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_002_harness_integrity_and_preflight_adr_002_canonical_harness_integrity_and_fail_closed_preflight",
-      "target": "decisions_002_harness_integrity_and_preflight_context",
-      "confidence_score": 1.0
+      "target": "decisions_002_harness_integrity_and_preflight_context"
     },
     {
       "relation": "contains",
@@ -19125,9 +19639,9 @@
       "source_file": "docs/decisions/002-harness-integrity-and-preflight.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_002_harness_integrity_and_preflight_adr_002_canonical_harness_integrity_and_fail_closed_preflight",
-      "target": "decisions_002_harness_integrity_and_preflight_decision",
-      "confidence_score": 1.0
+      "target": "decisions_002_harness_integrity_and_preflight_decision"
     },
     {
       "relation": "contains",
@@ -19135,9 +19649,9 @@
       "source_file": "docs/decisions/002-harness-integrity-and-preflight.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_002_harness_integrity_and_preflight_adr_002_canonical_harness_integrity_and_fail_closed_preflight",
-      "target": "decisions_002_harness_integrity_and_preflight_alternatives_considered",
-      "confidence_score": 1.0
+      "target": "decisions_002_harness_integrity_and_preflight_alternatives_considered"
     },
     {
       "relation": "contains",
@@ -19145,9 +19659,9 @@
       "source_file": "docs/decisions/002-harness-integrity-and-preflight.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_002_harness_integrity_and_preflight_adr_002_canonical_harness_integrity_and_fail_closed_preflight",
-      "target": "decisions_002_harness_integrity_and_preflight_consequences",
-      "confidence_score": 1.0
+      "target": "decisions_002_harness_integrity_and_preflight_consequences"
     },
     {
       "relation": "contains",
@@ -19155,9 +19669,9 @@
       "source_file": "docs/decisions/001-policy-driven-agent-autonomy.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_decisions_001_policy_driven_agent_autonomy_md",
-      "target": "decisions_001_policy_driven_agent_autonomy_adr_001_use_policy_driven_autonomy_for_routine_factory_decisions",
-      "confidence_score": 1.0
+      "target": "decisions_001_policy_driven_agent_autonomy_adr_001_use_policy_driven_autonomy_for_routine_factory_decisions"
     },
     {
       "relation": "contains",
@@ -19165,9 +19679,9 @@
       "source_file": "docs/decisions/001-policy-driven-agent-autonomy.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_001_policy_driven_agent_autonomy_adr_001_use_policy_driven_autonomy_for_routine_factory_decisions",
-      "target": "decisions_001_policy_driven_agent_autonomy_status",
-      "confidence_score": 1.0
+      "target": "decisions_001_policy_driven_agent_autonomy_status"
     },
     {
       "relation": "contains",
@@ -19175,9 +19689,9 @@
       "source_file": "docs/decisions/001-policy-driven-agent-autonomy.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_001_policy_driven_agent_autonomy_adr_001_use_policy_driven_autonomy_for_routine_factory_decisions",
-      "target": "decisions_001_policy_driven_agent_autonomy_date",
-      "confidence_score": 1.0
+      "target": "decisions_001_policy_driven_agent_autonomy_date"
     },
     {
       "relation": "contains",
@@ -19185,9 +19699,9 @@
       "source_file": "docs/decisions/001-policy-driven-agent-autonomy.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_001_policy_driven_agent_autonomy_adr_001_use_policy_driven_autonomy_for_routine_factory_decisions",
-      "target": "decisions_001_policy_driven_agent_autonomy_context",
-      "confidence_score": 1.0
+      "target": "decisions_001_policy_driven_agent_autonomy_context"
     },
     {
       "relation": "contains",
@@ -19195,9 +19709,9 @@
       "source_file": "docs/decisions/001-policy-driven-agent-autonomy.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_001_policy_driven_agent_autonomy_adr_001_use_policy_driven_autonomy_for_routine_factory_decisions",
-      "target": "decisions_001_policy_driven_agent_autonomy_decision",
-      "confidence_score": 1.0
+      "target": "decisions_001_policy_driven_agent_autonomy_decision"
     },
     {
       "relation": "contains",
@@ -19205,9 +19719,9 @@
       "source_file": "docs/decisions/001-policy-driven-agent-autonomy.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_001_policy_driven_agent_autonomy_adr_001_use_policy_driven_autonomy_for_routine_factory_decisions",
-      "target": "decisions_001_policy_driven_agent_autonomy_existing_human_decision_audit",
-      "confidence_score": 1.0
+      "target": "decisions_001_policy_driven_agent_autonomy_existing_human_decision_audit"
     },
     {
       "relation": "contains",
@@ -19215,9 +19729,9 @@
       "source_file": "docs/decisions/001-policy-driven-agent-autonomy.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_001_policy_driven_agent_autonomy_adr_001_use_policy_driven_autonomy_for_routine_factory_decisions",
-      "target": "decisions_001_policy_driven_agent_autonomy_alternatives_considered",
-      "confidence_score": 1.0
+      "target": "decisions_001_policy_driven_agent_autonomy_alternatives_considered"
     },
     {
       "relation": "contains",
@@ -19225,9 +19739,9 @@
       "source_file": "docs/decisions/001-policy-driven-agent-autonomy.md",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_001_policy_driven_agent_autonomy_adr_001_use_policy_driven_autonomy_for_routine_factory_decisions",
-      "target": "decisions_001_policy_driven_agent_autonomy_consequences",
-      "confidence_score": 1.0
+      "target": "decisions_001_policy_driven_agent_autonomy_consequences"
     },
     {
       "relation": "contains",
@@ -19235,9 +19749,9 @@
       "source_file": "docs/decisions/001-policy-driven-agent-autonomy.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_001_policy_driven_agent_autonomy_alternatives_considered",
-      "target": "decisions_001_policy_driven_agent_autonomy_require_approval_for_every_new_action",
-      "confidence_score": 1.0
+      "target": "decisions_001_policy_driven_agent_autonomy_require_approval_for_every_new_action"
     },
     {
       "relation": "contains",
@@ -19245,9 +19759,9 @@
       "source_file": "docs/decisions/001-policy-driven-agent-autonomy.md",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_001_policy_driven_agent_autonomy_alternatives_considered",
-      "target": "decisions_001_policy_driven_agent_autonomy_let_the_implementing_agent_decide_without_policy",
-      "confidence_score": 1.0
+      "target": "decisions_001_policy_driven_agent_autonomy_let_the_implementing_agent_decide_without_policy"
     },
     {
       "relation": "contains",
@@ -19255,9 +19769,9 @@
       "source_file": "docs/decisions/001-policy-driven-agent-autonomy.md",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_001_policy_driven_agent_autonomy_alternatives_considered",
-      "target": "decisions_001_policy_driven_agent_autonomy_allow_arbitrary_playwright_source_generation",
-      "confidence_score": 1.0
+      "target": "decisions_001_policy_driven_agent_autonomy_allow_arbitrary_playwright_source_generation"
     },
     {
       "relation": "contains",
@@ -19265,9 +19779,9 @@
       "source_file": "examples/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "examples_readme_md",
-      "target": "examples_readme_examples",
-      "confidence_score": 1.0
+      "target": "examples_readme_examples"
     },
     {
       "relation": "contains",
@@ -19275,9 +19789,9 @@
       "source_file": "examples/sample-application/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "examples_sample_application_readme_md",
-      "target": "sample_application_readme_controlled_sample_application",
-      "confidence_score": 1.0
+      "target": "sample_application_readme_controlled_sample_application"
     },
     {
       "relation": "contains",
@@ -19285,9 +19799,9 @@
       "source_file": "examples/authentication/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "examples_authentication_readme_md",
-      "target": "authentication_readme_authentication_example",
-      "confidence_score": 1.0
+      "target": "authentication_readme_authentication_example"
     },
     {
       "relation": "contains",
@@ -19295,9 +19809,9 @@
       "source_file": "templates/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "templates_readme_md",
-      "target": "templates_readme_artifact_templates",
-      "confidence_score": 1.0
+      "target": "templates_readme_artifact_templates"
     },
     {
       "relation": "conceptually_related_to",
@@ -20305,5 +20819,5 @@
       "source_file": "docs/decisions/002-harness-integrity-and-preflight.md"
     }
   ],
-  "built_at_commit": "8b7290b3ab7089d48e36889f8c13c6843b2950e5"
+  "built_at_commit": "0e692a1ac136cb49559f1d94253d91032c72f9d3"
 }
